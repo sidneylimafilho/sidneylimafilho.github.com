@@ -4,7 +4,7 @@ title: Sidney Lima Filho
 ---
 
 <ul id="posts" class="index">
-  {% for post in site.posts %}
+  {% for post in site.posts.reject{|p| p.data['draft']}.sort_by(&:date).reverse[0..9] %}
     <li>
       <a href="{{ post.url }}">{{ post.title | xml_escape }}</a>
       <span>
