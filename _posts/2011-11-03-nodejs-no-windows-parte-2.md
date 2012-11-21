@@ -130,11 +130,11 @@ Não. Na próxima parte mostrarei como montar uma aplicação web inteira no Win
 [Node.js no Windows: Parte I][1]
 
  [1]: /nodejs-no-windows/
- [2]: /wp-content/uploads/node_server_1_line.png
- [3]: /wp-content/uploads/node_server_1_line_result.png
+ [2]: /files/node_server_1_line.png
+ [3]: /files/node_server_1_line_result.png
  [4]: http://nodejs.org/cinco_de_node.pdf
- [5]: /wp-content/uploads/node_sugest_infra.png
- [6]: /wp-content/uploads/node_sugest_infra_windows.png
+ [5]: /files/node_sugest_infra.png
+ [6]: /files/node_sugest_infra_windows.png
  [7]: https://github.com/tjanczuk/iisnode
  [8]: http://tomasz.janczuk.org
  [9]: http://go.microsoft.com/?linkid=9784334
@@ -143,9 +143,9 @@ Não. Na próxima parte mostrarei como montar uma aplicação web inteira no Win
  [12]: http://go.microsoft.com/?linkid=9784330
  [13]: http://go.microsoft.com/?linkid=9784331
  [14]: http://go.microsoft.com/?linkid=9784329
- [15]: /wp-content/uploads/iisnode_sample_files.png
- [16]: /wp-content/uploads/iisnode_server_1_line_result.jpg
- [17]: /wp-content/uploads/erro500.19.png
+ [15]: /files/iisnode_sample_files.png
+ [16]: /files/iisnode_server_1_line_result.jpg
+ [17]: /files/erro500.19.png
  [18]: http://go.microsoft.com/?linkid=9722533
  [19]: http://go.microsoft.com/?linkid=9722532
  [20]: http://radar.oreilly.com/2011/06/time-to-learn-javascript.html
