@@ -4,7 +4,7 @@ title: Sidney Lima Filho
 ---
 
 <ul id="posts" class="index">
-  {% for post in site.posts reversed limit:10 %}
+  {% for post in site.posts limit:10 %}
     <li>
       <a href="{{ post.url }}">{{ post.title | xml_escape }}</a>
       <span>
