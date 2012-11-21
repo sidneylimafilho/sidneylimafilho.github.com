@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Gestão Orgânica! '
 excerpt:
 layout: post
-category:
-  - Tech
+category: [Tech]
 tags: [ ]
 post_format: [ ]
 draft: true
