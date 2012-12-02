@@ -1,102 +1,253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     
     <head>
-        <title>Smartizer by sidneylimafilho</title>
+        <title>
+            Smartizer by sidneylimafilho
+        </title>
         <link href="/themes/default/css/all.css" rel="stylesheet">
-        <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="sidneylimafilho.com.br" />
+        <link href="/rss.xml" rel="alternate" type="application/rss+xml" title="sidneylimafilho.com.br"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
+                                                            
+            </script>
+        <![endif]-->
+        <!--[if IE]>
+            <script type="text/javascript" src="http://fast.fonts.com/jsapi/d34e3f76-678a-447e-a024-f6b2e5185713.js">
+                                                            
+            </script>
         <![endif]-->
         <script type="text/javascript">
-            var metas = document.getElementsByTagName('meta');
-            var i;
-            if (navigator.userAgent.match(/iPhone/i)) {
-                for (i = 0; i < metas.length; i++) {
-                    if (metas[i].name == "viewport") {
-                        metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-                    }
-                }
-                document.addEventListener("gesturestart", gestureStart, false);
-            }
+                 var metas = document.getElementsByTagName('meta');
+         var i;
+         if (navigator.userAgent.match(/iPhone/i)) {
+             for (i = 0; i < metas.length; i++) {
+                 if (metas[i].name == "viewport") {
+                     metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+                 }
+             }
+             document.addEventListener("gesturestart", gestureStart, false);
+         }
 
-            function gestureStart() {
-                for (i = 0; i < metas.length; i++) {
-                    if (metas[i].name == "viewport") {
-                        metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-                    }
-                }
-            }
+         function gestureStart() {
+             for (i = 0; i < metas.length; i++) {
+                 if (metas[i].name == "viewport") {
+                     metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+                 }
+             }
+         }
         </script>
     </head>
     
     <body>
-        <div class="wrapper">
-            <header>
-                 <h1 class="signature">Sidney Lima Filho</h1>
-            </header>
-            <menu>
-                <ul>
-                    <li><a href="javascript:;">Sobre</a>
-                    </li>
-                    <li><a href="javascript:;">Projetos</a>
-                    </li>
-                    <li><a href="javascript:;">Leituras</a>
-                    </li>
-                </ul>
-            </menu>
-            <section>{{ content }}</section>
-            <section id="readerpublishermodule0" class="reader-publisher-module">
-                <ul>
-                    <li><a href="http://feedproxy.google.com/~r/insistimento/~3/xsDfjzmhv7k/" title="Deus dar�?" class="i">Deus dar�?</a>
-                        <div class="s">from <a href="http://www.insistimento.com.br">Insistimento</a>
-                        </div>
-                    </li>
-                    <li><a href="http://www.lucianolima.com.br/post.aspx?id=0d238960-1eeb-42a7-be91-b83dd016978e" title="Empregabilidade, voc� vem cuidando da sua?" class="i">Empregabilidade, você vem cuidando da sua?</a>
-                        <div class="s">from <a href="http://www.lucianolima.com.br/">Luciano Lima</a>
-                        </div>
-                    </li>
-                    <li><a href="http://www.israelaece.com/post.aspx?id=b8ece558-f6c8-41c1-9a8e-4303fe72a11c" title="Conte�do de WCF para estudo" class="i">Conte�do de WCF para estudo</a>
-                        <div class="s">from <a href="http://www.israelaece.com/">Israel Aece</a>
-                        </div>
-                    </li>
-                    <li><a href="http://blogs.msdn.com/b/otavio/archive/2010/09/18/paradoxo-de-schrodinger-e-projetos-de-software.aspx" title="Paradoxo de Schrodinger e Projetos de Software" class="i">Paradoxo de Schrodinger e Projetos de Software</a>
-                        <div class="s">from <a href="http://blogs.msdn.com/b/otavio/">Arquitetura em Pauta</a>
-                        </div>
-                    </li>
-                    <li><a href="http://www.bizrevolution.com.br/bizrevolution/2010/12/o-sistema-é-foda.html" title="O Sistema é Foda!" class="i">O Sistema é Foda!</a> <span>from <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a></span>
-                    </li>
-                    <li><a href="http://feedproxy.google.com/~r/PapodehomemLifestyleMagazine/~3/3LZTE0r07o4/story01.htm" title="�O l�der ensina pelas costas� [PdH Shot]" class="i">�O l�der ensina pelas costas� [PdH Shot]</a>
-                        <div class="s">from <a href="http://papodehomem.com.br">Papo de Homem - Lifestyle Magazine</a>
-                        </div>
-                    </li>
-                    <li><a href="http://feedproxy.google.com/~r/DotNetUnplugged/~3/A_f6q0ntlwo/post.aspx" title="Senior tem cicatriz" class="i">Senior tem cicatriz</a>
-                        <div class="s">from <a href="http://blog.lambda3.com.br">Blog Lambda3</a>
-                        </div>
-                    </li>
-                    <li><a href="http://www.papodeempreendedor.com.br/marketing/o-segredo-de-um-bom-nome/" title="O segredo de um bom nome" class="i">O segredo de um bom nome</a>
-                        <div class="s">from <a href="http://www.papodeempreendedor.com.br">Papo de Empreendedor</a>
-                        </div>
-                    </li>
-                    <li><a href="http://feedproxy.google.com/~r/feedburner/KMzJ/~3/1NlzRGQj1Is/" title="As tr�s perguntas" class="i">As três perguntas</a>
-                        <div class="s">from <a href="http://www.insistimento.com.br">Insistimento</a>
-                        </div>
-                    </li>
-                    <li><a href="http://feedproxy.google.com/~r/typepad/sethsmainblog/~3/Y5nO__SHQO4/sprezzatura.html" title="Sprezzatura" class="i">Sprezzatura</a>
-                        <div class="s">from <a href="http://sethgodin.typepad.com/seths_blog/">Seth's Blog</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            
-            <footer>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+        <header>
+            <div class="wrapper">
+                <h1 class="signature">
+                    Sidney Lima Filho
+                </h1>
+                <menu>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">SOBRE</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">PROJETOS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">LEITURAS</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">VIDEOS</a>
+                        </li>
+                    </ul>
+                </menu>
+            </div>
+        </header>
+        <banner>
+            <div class="wrapper">
+                <h1>
+                    Aprenda como funciona
+                </h1>
+                <h2>
+                    Desenvolver Software é a arte de cultivar a informação de forma que ela
+                    cresça naturalmente através de mãos distintas.
+                </h2>
+            </div>
+        </banner>
+        <section>
+            <div class="wrapper">
+                <div class="content left-side">
+                    {{ content }}
+                    <ul class="posts">
+                        <li style="background:url(/files/2012-05-02-rest-parte-1-StateMachineWF.jpg) no-repeat center;">
+                            <a href="/posts/2012/05/02/rest-parte-1"> O que é REST - Parte 1 <small> <time datetime="2012-05-02">May 02, 2012</time> </small> </a>
+                        </li>
+                        <li>
+                            <a href="/posts/2012/04/08/webware">O que é webware?</a>
+                            <span>
+                                <time datetime="2012-04-08">
+                                    April 08, 2012
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2012/04/08/dnad-2012-eu-vou-voce">DNAD 2012, eu vou e você?</a>
+                            <span>
+                                <time datetime="2012-04-08">
+                                    April 08, 2012
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/11/03/nodejs-no-windows-parte-2">Node.js no Windows (Parte 2)</a>
+                            <span>
+                                <time datetime="2011-11-03">
+                                    November 03, 2011
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/11/01/concatenacao-de-strings-em-javascript">Concatenação de Strings em Javascript</a>
+                            <span>
+                                <time datetime="2011-11-01">
+                                    November 01, 2011
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/10/20/nodejs-no-windows">Node.js no Windows</a>
+                            <span>
+                                <time datetime="2011-10-20">
+                                    October 20, 2011
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/10/18/como-manter-o-foco-na-era-da-infornicacao">&gt; Como manter o foco na era da infornicação?</a>
+                            <span>
+                                <time datetime="2011-10-18">
+                                    October 18, 2011
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/09/30/como-encontrar-sua-paixao-rentavel">Como encontrar sua paixão rentável?</a>
+                            <span>
+                                <time datetime="2011-09-30">
+                                    September 30, 2011
+                                </time>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="/posts/2011/09/21/o-que-e-produtividade-para-voce">O que é produtividade para você?</a>
+                            <span>
+                                <time datetime="2011-09-21">
+                                    September 21, 2011
+                                </time>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="readerpublishermodule0" class="reader-publisher-module right-side">
+                    <ul>
+                        <li>
+                            <a href="http://feedproxy.google.com/~r/insistimento/~3/xsDfjzmhv7k/"
+                            title="Deus dar�?" class="i">Deus dará?</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.insistimento.com.br">Insistimento</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://www.lucianolima.com.br/post.aspx?id=0d238960-1eeb-42a7-be91-b83dd016978e"
+                            title="Empregabilidade, voc� vem cuidando da sua?" class="i">Empregabilidade, você vem cuidando da sua?</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.lucianolima.com.br/">Luciano Lima</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://www.israelaece.com/post.aspx?id=b8ece558-f6c8-41c1-9a8e-4303fe72a11c"
+                            title="Conte�do de WCF para estudo" class="i">Conteúdo de WCF para estudo</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.israelaece.com/">Israel Aece</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://blogs.msdn.com/b/otavio/archive/2010/09/18/paradoxo-de-schrodinger-e-projetos-de-software.aspx"
+                            title="Paradoxo de Schrodinger e Projetos de Software" class="i">Paradoxo de Schrodinger e Projetos de Software</a>
+                            <small>
+                                fonte:
+                                <a href="http://blogs.msdn.com/b/otavio/">Arquitetura em Pauta</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://www.bizrevolution.com.br/bizrevolution/2010/12/o-sistema-é-foda.html"
+                            title="O Sistema é Foda!" class="i">O Sistema é Foda!</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://feedproxy.google.com/~r/PapodehomemLifestyleMagazine/~3/3LZTE0r07o4/story01.htm"
+                            title="O líder ensina pelas costas" class="i">O líder ensina pelas costas</a>
+                            <small>
+                                fonte:
+                                <a href="http://papodehomem.com.br">Papo de Homem - Lifestyle Magazine</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://feedproxy.google.com/~r/DotNetUnplugged/~3/A_f6q0ntlwo/post.aspx"
+                            title="Senior tem cicatriz" class="i">Senior tem cicatriz</a>
+                            <small>
+                                fonte:
+                                <a href="http://blog.lambda3.com.br">Blog Lambda3</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://www.papodeempreendedor.com.br/marketing/o-segredo-de-um-bom-nome/"
+                            title="O segredo de um bom nome" class="i">O segredo de um bom nome</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.papodeempreendedor.com.br">Papo de Empreendedor</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://feedproxy.google.com/~r/feedburner/KMzJ/~3/1NlzRGQj1Is/"
+                            title="As tr�s perguntas" class="i">As três perguntas</a>
+                            <small>
+                                fonte:
+                                <a href="http://www.insistimento.com.br">Insistimento</a>
+                            </small>
+                        </li>
+                        <li>
+                            <a href="http://feedproxy.google.com/~r/typepad/sethsmainblog/~3/Y5nO__SHQO4/sprezzatura.html"
+                            title="Sprezzatura" class="i">Sprezzatura</a>
+                            <small>
+                                fonte:
+                                <a href="http://sethgodin.typepad.com/seths_blog/">Seth's Blog</a>
+                            </small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <p>
+                    <small>
+                        Hosted on GitHub Pages &mdash; Theme by
+                        <a href="https://github.com/orderedlist">orderedlist</a>
+                    </small>
                 </p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 
 </html>

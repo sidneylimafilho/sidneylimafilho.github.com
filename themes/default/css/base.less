@@ -1,13 +1,25 @@
 @base: #f938ab;
 @red: #FF0000;
 
-.box-shadow (@x: 0, @y: 0, @blur: 1px, @alpha) {
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @rgba) {
   
-   @val: @x @y @blur rgba(0, 0, 0, @alpha);
-   
-   box-shadow:         @val;
-   -webkit-box-shadow: @val;
-   -moz-box-shadow:    @val; 
+   box-shadow:          @x @y @blur @rgba;
+   -webkit-box-shadow:  @x @y @blur @rgba;
+   -moz-box-shadow:     @x @y @blur @rgba; 
+}
+
+.text-shadow (@x: 0, @y: 0, @blur: 1px, @rgba) {
+	
+	text-shadow:  			@x @y @blur @rgba; 
+	-webkit-text-shadow:  	@x @y @blur @rgba; 
+	-moz-text-shadow:  		@x @y @blur @rgba;
+}
+
+.transition (@property: all, @speed: 400ms, @method: ease) {
+	transition: @property @speed @method;
+	-moz-transition: @property @speed @method;
+	-webkit-transition: @property @speed @method;
+	-o-transition: @property @speed @method;
 }
 
 

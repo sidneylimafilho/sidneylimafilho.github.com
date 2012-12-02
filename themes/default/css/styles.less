@@ -1,14 +1,232 @@
 @import url(base.less);
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+/* -------------------------------- */
+/* Font Definitions                 */
+/* -------------------------------- */
+@font-face {
+  font-family: "HelveticaNeueThCn";
+  src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'),  
+       url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
+}
+
+@font-face {
+  font-family: "HelveticaNeueLtCn";
+  src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'),  
+       url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
+}
+
+@font-face {
+  font-family: "HelveticaNeueLtCnO";
+  src: url('../fonts/HelveticaNeueLTCom-LtCnO.ttf') format('truetype'),  
+       url('../fonts/HelveticaNeueLTCom-LtCnO.woff') format('woff');
+}
+
+@font-face {
+  font-family: "HelveticaNeueMdCn";
+  src: url('../fonts/HelveticaNeueLTCom-MdCn.ttf') format('truetype'),  
+       url('../fonts/HelveticaNeueLTCom-MdCn.woff') format('woff');
+}
+
+@font-face {
+  font-family: "HelveticaNeueBdCn";
+  src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'),  
+       url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
+}
+
+/* -------------------------------- */
+/* Structure                        */
+/* -------------------------------- */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font:18px "HelveticaNeueMdCn", "HelveticaNeueW01-67MdCn 692710", Arial, sans-serif;
+}
+
+header, banner, section, footer {
+  width:100%;  
+}
+
+header {  
+   position:fixed;   
+   background-color: rgba(0, 0, 0, 0.75);
+   padding: 10px 0px;
+   z-index: 1000; /* cause banner position relative stay hover on the header */
+
+   .signature {
+      width: 300px;
+      height: 50px;
+      float: left;
+      color: transparent;
+      background: url(../img/signature-logo-white.png) no-repeat center;
+      margin: 0px;
+   }
+
+   menu {
+      float: right;
+      margin: 0px;
+
+      ul {
+         list-style:none;
+         padding:0px;
+         margin: 0px;
+
+        /* background: #eee;
+         background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+         background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+
+         border-radius:5px;
+         border:1px solid #d2d2d2;
+         box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
+         
+
+         li {
+            padding: 0px 10px;
+            display: table-cell;
+            /*border-right:1px solid #d2d2d2;*/
+            height:50px;
+            vertical-align: middle;
+
+            a {               
+               display:block;
+               text-align:center;  
+               font:18px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;    
+               color:#ffCC00;                              
+            }
+            a:hover{     
+               color:#FF00CC;
+               text-decoration:none;
+            }
+         }
+      }
+   }
+}
 
 
-testecasa{color:@base;}
+banner{
+   position: relative;
+   z-index: 1;
+   padding-top:  100px;
+   display: block;
+   height: 300px;
+   background: url(../img/nurture_seedling_in_hands_low_level.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   vertical-align: bottom;
 
-body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
+   .wrapper{
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -430px; /* .wrapper original width is 860px, then 50% is 430px */
+   }
+
+   h1 {
+      .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.4));
+      color: #990033;
+      font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+   }
+   h2 {
+      .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.4));
+      color: white;
+      font-family: "HelveticaNeueLtCn", "HelveticaNeueW01-47LtCn 692686", Helvetica, sans-serif;
+      font-size: 32px;
+      line-height: 30px;
+      width: 600px;
+   }
+}
+
+section {
+   background-color: #F3F3F3;
+   overflow:auto; /* fix bug background-color dont work */
+
+   .left-side{
+      width:610px;
+      float: left;
+
+      .posts{
+         padding: 0px;
+
+         li{
+            float: left;
+            display: block;
+            width: 280px;
+            height: 280px;
+            margin: 10px;
+            border:1px solid black;
+            position: relative;
+
+            a {             
+               display: block;  
+               position: absolute;
+               bottom:0px;               
+               padding: 5px;
+               width: 270px;               
+               background-color: rgba(0, 0, 0, 0.75);
+               color: #FFF;
+               opacity: 0;               
+               .transition(opacity, 400ms);
+
+               small{ display: block; }
+            }            
+         }
+
+         li:hover a{            
+            opacity: 1;
+            color: #FFF;
+         }
+      }
+   }
+   .right-side{
+      width:250px;
+      float: right;
+
+      ul{
+         list-style-type: none;
+         padding: 0px;
+
+         li {
+            padding: 3px 0px 7px 0px;
+         }
+
+         small{ display: block;}
+
+         a{color: #ccff33}
+         a:hover{color: #00FFFF}
+      }
+   }
+}
+
+footer {
+   clear: both;      
+}
+
+.wrapper {
+  width:860px;
+  margin:0 auto;
+}
+
+
+/* -------------------------------- */
+/* Generics                         */
+/* -------------------------------- */
+
+small {
+  font:13px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686",Arial,sans-serif;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +243,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  
 }
 
 h2 {
@@ -36,23 +254,16 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
-a {
-  color:#39c;
-  font-weight:400;
-  text-decoration:none;
+a {    
+   font-family:"HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;    
+   color:#660033; 
+   text-decoration:none;
+   .transition;
 }
 
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
-}
+a:hover{color:#FF0066; text-decoration:none; }
 
-.wrapper {
-  width:860px;
-  margin:0 auto;
-}
+
 
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -99,93 +310,7 @@ img {
   max-width:100%;
 }
 
-header {
-  width:270px;
-  float:left;
-  position:fixed;
-}
 
-header ul {
-  list-style:none;
-  height:40px;
-  
-  padding:0;
-  
-  background: #eee;
-  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
-  border-radius:5px;
-  border:1px solid #d2d2d2;
-  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
-}
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
-  height:40px;
-}
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
-}
-
-strong {
-  color:#222;
-  font-weight:700;
-}
-
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
-}
-
-small {
-  font-size:11px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
-}
-
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-}
 
 @media print, screen and (max-width: 960px) {
   
