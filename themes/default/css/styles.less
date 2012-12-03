@@ -36,11 +36,6 @@
 /* -------------------------------- */
 /* Structure                        */
 /* -------------------------------- */
-html, body {
-  margin: 0px;
-  padding: 0px;
-  font:18px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;
-}
 
 header, banner, section, footer {
   width:100%;  
@@ -53,12 +48,13 @@ header {
    z-index: 1000; /* cause banner position relative stay hover on the header */
 
    .signature {
+      .text-shadow(0px, 0px, 0px, rgba(255, 255, 255, 0.4));
       width: 300px;
       height: 50px;
       float: left;
       color: transparent;
       background: url(../img/signature-logo-white.png) no-repeat left center;
-      margin: 0px;
+      margin: 0px;      
    }
 
    menu {
@@ -157,7 +153,7 @@ section {
    .left-side{
       width: 584px;
       float: left;
-      padding: 24px;
+      padding-right: 24px;
 
       .posts{
          padding: 0px;
@@ -194,7 +190,7 @@ section {
 
       article {
          h1 {
-            font-size: 38px;
+            font-size: 34px;
          }
       }
    }
@@ -276,9 +272,14 @@ footer {
 /* -------------------------------- */
 /* Generics                         */
 /* -------------------------------- */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font:16px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;
+}
 
 small {
-  font:13px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686",Arial,sans-serif;
+  font:12px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686",Arial,sans-serif;
 }
 
 p { text-align: justify; }
@@ -298,11 +299,12 @@ h1, h2, h3 {
 }
 
 h1 {
-   font-size: 24px;
+   font-size: 34px;
    color:#333;
 }
 
 h2 {
+   font-size: 24px;
    color:#393939;
 }
 
@@ -319,7 +321,7 @@ a {
 
 a:hover{color:#FF0099; text-decoration:none; }
 
-
+b { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; }
 
 blockquote {
   border-left:1px solid #e5e5e5;
