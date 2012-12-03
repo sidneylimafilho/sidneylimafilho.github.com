@@ -1,4 +1,4 @@
 url: http://localhost
 name: O blog do Sidney Filho
 description: A página pessoal do Sidney
-permalink: /posts/:year/:month/:day/:title
+permalink: /:title
