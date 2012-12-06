@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Senso de Urgência
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
 post_format: [ ]

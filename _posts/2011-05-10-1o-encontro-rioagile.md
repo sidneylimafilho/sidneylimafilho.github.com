@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: 1o Encontro RioAgile
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Agile
 post_format: [ ]

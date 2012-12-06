@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' E se fez homem... '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

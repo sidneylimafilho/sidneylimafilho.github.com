@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' A internet é meritocrática? '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

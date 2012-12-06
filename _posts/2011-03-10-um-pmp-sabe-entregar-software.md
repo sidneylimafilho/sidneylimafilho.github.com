@@ -3,9 +3,7 @@ author: Sidney Lima Filho
 title: Um PMP sabe entregar software?
 excerpt:
 layout: post
-category:
-  - Human
-  - Tech
+published: false
 tags:
   - Carreira
 post_format: [ ]

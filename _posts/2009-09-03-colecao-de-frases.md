@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Coleção de Frases '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

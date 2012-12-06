@@ -1,13 +1,9 @@
 ---
 author: Sidney Lima Filho
-title: |
-  >
-     Padrão de Linguagem, Padrão de
-    Projeto, Padrão de Gestão!
+title: Padrão de Linguagem, Padrão de Projeto, Padrão de Gestão!
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

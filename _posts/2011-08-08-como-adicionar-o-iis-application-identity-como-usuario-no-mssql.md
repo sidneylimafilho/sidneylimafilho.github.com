@@ -5,8 +5,7 @@ title: >
   Identity como usuário no MSSQL
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - AppPool
   - IIS

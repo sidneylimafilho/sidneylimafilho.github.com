@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Concatenação de Strings em Javascript
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Javascript
 post_format: [ ]

@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Node.js no Windows (Parte 2)
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - IIS
   - Javascript

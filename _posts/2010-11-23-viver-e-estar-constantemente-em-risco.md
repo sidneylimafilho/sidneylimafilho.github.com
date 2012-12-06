@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Viver é estar constantemente em risco
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
 post_format: [ ]

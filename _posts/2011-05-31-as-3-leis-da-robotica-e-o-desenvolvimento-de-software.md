@@ -5,9 +5,7 @@ title: >
   Desenvolvimento de Software
 excerpt:
 layout: post
-category:
-  - Human
-  - Tech
+published: false
 tags:
   - Carreira
 post_format: [ ]

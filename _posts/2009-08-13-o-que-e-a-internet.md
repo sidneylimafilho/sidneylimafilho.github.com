@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' O que é a internet? '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

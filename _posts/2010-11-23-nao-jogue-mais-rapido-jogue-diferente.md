@@ -5,8 +5,7 @@ title: >
   diferente!
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
 post_format: [ ]

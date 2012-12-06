@@ -1,10 +1,9 @@
 ---
 author: Sidney Lima Filho
-title: ' Resenha: Pensamento Lateral na AdministraÃ§Ã£o '
+title: ' Resenha: Pensamento Lateral na Administração '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

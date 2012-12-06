@@ -5,8 +5,7 @@ title: >
   Tecnológica?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Agile
   - Débito Técnico

@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Razões para Trabalhar
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
   - Motivação

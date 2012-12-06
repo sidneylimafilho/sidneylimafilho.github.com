@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Compilando um WebSite com MsBuild
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Continuous Integration
   - MsBuild

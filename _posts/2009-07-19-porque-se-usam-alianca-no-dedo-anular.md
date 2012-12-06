@@ -1,12 +1,9 @@
 ---
 author: Sidney Lima Filho
-title: |
-  >
-     Porque se usam aliança no dedo anular?
+title: Porque se usam aliança no dedo anular?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

@@ -1,10 +1,9 @@
 ---
 author: Sidney Lima Filho
-title: ' Como pensar orgânicamente em gestão? '
+title: 'Como pensar orgânicamente em gestão?'
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

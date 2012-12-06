@@ -1,13 +1,9 @@
 ---
 author: Sidney Lima Filho
-title: |
-  >
-     Como aumentar a criatividade no
-    raciocÃ­nio?
+title: Como aumentar a criatividade no raciocínio?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

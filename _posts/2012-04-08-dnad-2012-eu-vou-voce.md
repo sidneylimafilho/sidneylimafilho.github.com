@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: DNAD 2012, eu vou e você?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Agile
   - Arquitetura

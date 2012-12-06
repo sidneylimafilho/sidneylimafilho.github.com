@@ -3,11 +3,12 @@ author: Sidney Lima Filho
 title: ' 5 blogs que me enriqueceram este ano. '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---
+
+
 ![][1]O [blogDay][2] foi na segunda, mas como ninguem me referenciou vou colocar aqui minhas referencias, afinal este blog é muito novato para já ter muitos leitores (Mãe, comenta ae, pô!!!)
 
 Para seu conhecimento o BlogDay é o dia onde os blogueiros tiram para postar suas referencias, para indicar quais blogs eles estão de olho, quais blogs são especiais para eles, você entendeu, rsrsrs. 

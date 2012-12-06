@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Node.js no Windows
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Javascript
   - Node.js

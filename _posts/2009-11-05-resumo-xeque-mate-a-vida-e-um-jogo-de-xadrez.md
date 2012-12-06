@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Resumo: Xeque-Mate, a vida é um jogo de xadrez! '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

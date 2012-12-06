@@ -6,8 +6,7 @@ title: |
     tarefas do dia?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

@@ -5,8 +5,7 @@ title: >
   Chrome
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Javascript
   - jQuery

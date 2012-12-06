@@ -6,8 +6,7 @@ title: |
     Orgânica tem haver?
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

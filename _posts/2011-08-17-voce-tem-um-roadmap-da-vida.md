@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Você tem um roadmap da vida? '
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Experiência
   - Produtividade

@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Porque uma flor? '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

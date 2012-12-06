@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Agile Brazil 2011: O ano em que a Terra parou acabou, porque o software travou '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Agile
 post_format: [ ]

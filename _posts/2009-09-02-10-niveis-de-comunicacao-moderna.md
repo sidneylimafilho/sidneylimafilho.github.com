@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' 10 níveis de comunicação moderna '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags: [ ]
 post_format: [ ]
 ---

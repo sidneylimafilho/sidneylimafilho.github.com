@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Agile Brazil 2011: Trabalhando de forma eficaz com mentalidade legada '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Agile
 post_format: [ ]

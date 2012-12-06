@@ -6,8 +6,7 @@ title: |
     infornicação?
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - GTD
   - Produtividade

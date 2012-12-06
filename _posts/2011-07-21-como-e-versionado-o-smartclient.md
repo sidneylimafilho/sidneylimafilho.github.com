@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Como é versionado o SmartClient? '
 excerpt:
 layout: post
-category:
-  - Tech
+published: false
 tags:
   - Javascript
 post_format: [ ]

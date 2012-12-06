@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: Use o que você faz!
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
 post_format: [ ]

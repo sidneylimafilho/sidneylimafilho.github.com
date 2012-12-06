@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: 15 minutos, 15 livros e 15 filmes
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
 post_format: [ ]

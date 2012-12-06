@@ -5,8 +5,7 @@ title: >
   criador do Dilbert
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Carreira
   - Dilbert

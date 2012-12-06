@@ -3,8 +3,7 @@ author: Sidney Lima Filho
 title: ' Como encontrar sua paixão rentável? '
 excerpt:
 layout: post
-category:
-  - Human
+published: false
 tags:
   - Paixão
   - Produtividade
