@@ -42,8 +42,8 @@ header, banner, section, footer {
 }
 
 header {  
-   position:fixed;   
-   background-color: rgba(0, 0, 0, 0.75);
+   position:absolute;   
+   background-color: rgba(255, 255, 255, 0.75);
    padding: 10px 0px;
    z-index: 1000; /* cause banner position relative stay hover on the header */
 
@@ -53,7 +53,7 @@ header {
       height: 50px;
       float: left;
       color: transparent;
-      background: url(../img/signature-logo-white.png) no-repeat left center;
+      background: url(../img/signature-logo-purple.png) no-repeat left center;
       margin: 0px;      
    }
 
@@ -89,8 +89,7 @@ header {
             a {               
                display:block;
                text-align:center;  
-               font:18px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;    
-               color:#FFCC00;                              
+               font:18px "HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;                                             
             }
             a:hover{                    
                text-decoration:none;
@@ -121,15 +120,15 @@ banner{
    }
 
    h1 {
-      .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.4));
-      color: #990033;
+      .text-shadow(0px, 0px, 8px, rgba(255, 255, 0, 0.5));
+      color: @primaryColorHover;
       font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
       font-size: 16px;
       text-transform: uppercase;
       margin-bottom: 8px;
    }
    h2 {
-      .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.4));
+      .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1));
       color: white;
       font-family: "HelveticaNeueLtCn", "HelveticaNeueW01-47LtCn 692686", Helvetica, sans-serif;
       font-size: 32px;
@@ -140,7 +139,7 @@ banner{
 
 section {
    
-   background: url(../img/corner-shadow-top-left.png) #F3F3F3 no-repeat top left;   
+   background: url(../img/corner-shadow-top-left.png) #FFF no-repeat top left;   
    overflow:auto; /* fix bug background-color dont work */
 
    .super{
@@ -192,6 +191,7 @@ section {
          padding-right: 24px;        
       }
    }
+
    .right-side{
       width:250px;
       float: right;      
@@ -221,6 +221,11 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: 76%;
+            .opacity(0.5);
+         }
+
+         .button:hover, .button:active{
+            .opacity(1)
          }
 
          .twitter { background-image: url(../img/twitter.png);  }
@@ -316,12 +321,13 @@ h3, h4, h5, h6 {
 
 a {    
    font-family:"HelveticaNeueLtCn","HelveticaNeueW01-47LtCn 692686", Arial, sans-serif;    
-   color:#660033; 
+   color:@primaryColor; 
    text-decoration:none;
    .transition;
+   .text-shadow(0px, 0px, 1px, rgba(0, 0, 0, 0.2));
 }
 
-a:hover{color:#FF0099; text-decoration:none; }
+a:hover{ color:@primaryColorHover; text-decoration:none; .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0.15));}
 
 b { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; }
 
