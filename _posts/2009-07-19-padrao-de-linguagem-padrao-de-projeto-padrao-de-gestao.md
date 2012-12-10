@@ -17,7 +17,7 @@ Num mundo cada vez mais especializado e com desenvolvimento
 extremamente rápido, cada vez mais demanda-se a criação de padrões de  
 solução (o mais rápido possivel), assim como [Christopher Alexander][1] fez na [Arquitetura][2], a [Gang of Four][3] fez na [Informática][3], eu ([Sidney Filho][4]) tenho a ousadia de fazer na [Gestão de Empresas.][5]
 
-Para facilitar a vida de vocês vou aos poucos adicionando aqui pelo blog mesmo, assim que eu for reconhecendo os padrões de [gestão orgânica de empresas][6], que a partir de hoje vou chamar de [GOE][6].
+Para facilitar a vida de vocês vou aos poucos adicionando aqui pelo blog mesmo, assim que eu for reconhecendo os padrões de [gestão orgnica de empresas][6], que a partir de hoje vou chamar de [GOE][6].
 
 Alexander, muitas vezes, utiliza de recursos visuais para ilustrar os  
 padrões que se repetem, não precisa ser um arquiteto para reconhecer  
@@ -28,7 +28,7 @@ WORKING GROUPS” (pequenos grupos de trabalho), como arquiteto ele
 apresenta que pequenos grupos de trabalho EXIGEM uma arquitetura  
 diferenciada (e recomendamos, como já vimos na [resenha do Peoplaware][7], é muito mais produtiva e muito mais barata no médio prazo, já que a produtividade chega a ser 40% maior) .
 
-No nosso mundo de gestão orgânica de empresas, devemos estar atentos a  
+No nosso mundo de gestão orgnica de empresas, devemos estar atentos a  
 padrões que ocorrem sempre e como solucionar. Nós temos inúmeros  
 padrões, só não percebiamos, quer um exemplo? “[Fluxo de Caixa][8]“,  
 que empresa não tem Fluxo de Caixa? Será que existem formas diferentes  

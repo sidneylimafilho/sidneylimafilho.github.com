@@ -18,7 +18,7 @@ Neste sábado dia (07/05) rolou o 1o encontro RioAgile, que tem como propósito 
 
 
 
-Em 2009 voltei a estudar o tema agora focado no Scrum, pois minha empresa precisava de um modelo de trabalho mais dinâmico e eu estava atuando num papel extremamente centralizador, #GerenteFeelings, além de que minha equipe cobrava uma dinâmica mais coletivista e meus clientes cobravam algo mais transparente, lembrando que eu não empregava nenhum modelo de desenvolvimento, nem Waterfall, nem nada, estava mais situado como CMM Nivel -1, seja lá se isso existir. Após entender tudo aquilo que o Scrum poderia oferecer, me apaixonei profundamente por ele, até conhecer um novo amor o Extreme Programming. 
+Em 2009 voltei a estudar o tema agora focado no Scrum, pois minha empresa precisava de um modelo de trabalho mais dinmico e eu estava atuando num papel extremamente centralizador, #GerenteFeelings, além de que minha equipe cobrava uma dinmica mais coletivista e meus clientes cobravam algo mais transparente, lembrando que eu não empregava nenhum modelo de desenvolvimento, nem Waterfall, nem nada, estava mais situado como CMM Nivel -1, seja lá se isso existir. Após entender tudo aquilo que o Scrum poderia oferecer, me apaixonei profundamente por ele, até conhecer um novo amor o Extreme Programming. 
 
 
 

@@ -10,39 +10,39 @@ tags:
   - Carreira
 post_format: [ ]
 ---
-No caminho profissional de qualquer desenvolvedor nos encontramos em situa√ß√µes onde n√£o sabemos bem exatamente como prosseguir, devemos ou n√£o duplicar o c√≥digo, quando usar uma boa pr√°tica, como entender a demanda e traduzi-la em software, como interpretar os conceitos abstratos do cliente em Domain do DDD, etc.¬†
+No caminho profissional de qualquer desenvolvedor nos encontramos em situaÁıes onde n„o sabemos bem exatamente como prosseguir, devemos ou n„o duplicar o cÛdigo, quando usar uma boa pr·tica, como entender a demanda e traduzi-la em software, como interpretar os conceitos abstratos do cliente em Domain do DDD, etc.†
 
 
 
-Os dilemas di√°rios que vivenciamos nos levam a uma falta de norte, j√° vi muitas pessoas me fazerem a mesma pergunta. O que leva a uma regra ou teorema a ser considerado melhor ou uma evolu√ß√£o na cadeia produtiva?
+Os dilemas di·rios que vivenciamos nos levam a uma falta de norte, j· vi muitas pessoas me fazerem a mesma pergunta. O que leva a uma regra ou teorema a ser considerado melhor ou uma evoluÁ„o na cadeia produtiva?
 
 
 
-> Para descobrirmos o que devemos fazer para maximizar recompensas ou minimizar riscos, devemos n√£o apenas considerar as recompensas ou os riscos, mas tamb√©m a probabilidade do fato acontecer ou n√£o, e analisar geometricamente √ propor√ß√£o que ambas possuem juntas.
+> Para descobrirmos o que devemos fazer para maximizar recompensas ou minimizar riscos, devemos n„o apenas considerar as recompensas ou os riscos, mas tambÈm a probabilidade do fato acontecer ou n„o, e analisar geometricamente √ proporÁ„o que ambas possuem juntas.
 > 
-> Art of Thinking ‚Äì Antoine Arnault ‚Äì 1664
+> Art of Thinking Äì Antoine Arnault Äì 1664
 
 
 
-Segundo os antrop√≥logos e neurocientistas, o c√©rebro humano sempre trabalha, buscando incessantemente minimizar riscos e depois maximizar recompensas, este comportamento √© que faz algumas pessoas n√£o praticarem esportes radicais, por exemplo.
+Segundo os antropÛlogos e neurocientistas, o cÈrebro humano sempre trabalha, buscando incessantemente minimizar riscos e depois maximizar recompensas, este comportamento È que faz algumas pessoas n„o praticarem esportes radicais, por exemplo.
 
 
 
-Quando isso acontece devemos reavaliar nossa balan√ßa de avalia√ß√£o. Lembre-se sempre da frase do Arnault que j√° era s√°bia desde o s√©culo 16.
+Quando isso acontece devemos reavaliar nossa balanÁa de avaliaÁ„o. Lembre-se sempre da frase do Arnault que j· era s·bia desde o sÈculo 16.
 
 
 
-Agora que j√° contextualizamos o processo de racioc√≠nio primitivo vou falar da aud√°cia que os humanos buscam em querer fazer uma nova natureza. Geralmente pior, mas √© a nossa tentativa. O passo mais audaz est√° em conseguir construir um ser humano rob√≥tico. Ao tentar construir um ser humano baseado em eletr√¥nica o homem tentou mudar um pouco o processo de racioc√≠nio primitivo criando as 3 leis da rob√≥tica de Asimov.</p> 
+Agora que j· contextualizamos o processo de raciocÌnio primitivo vou falar da aud·cia que os humanos buscam em querer fazer uma nova natureza. Geralmente pior, mas È a nossa tentativa. O passo mais audaz est· em conseguir construir um ser humano robÛtico. Ao tentar construir um ser humano baseado em eletr√¥nica o homem tentou mudar um pouco o processo de raciocÌnio primitivo criando as 3 leis da robÛtica de Asimov.</p> 
 
-¬†As 3 leis da rob√≥tica s√£o:
+†As 3 leis da robÛtica s„o:
 
-1.  Robos n√£o devem fazer mal a humanos, nem por a√ß√£o nem por ina√ß√£o
-2.  Robos devem obedecer aos humanos, exceto viole a 1¬™ lei
-3.  Robos devem se auto-proteger, exceto viole as 1¬™ e 2¬™ leis
+1.  Robos n„o devem fazer mal a humanos, nem por aÁ„o nem por inaÁ„o
+2.  Robos devem obedecer aos humanos, exceto viole a 1™ lei
+3.  Robos devem se auto-proteger, exceto viole as 1™ e 2™ leis
 
 
 
-Os maiores problemas dessas 3 leis est√° com a natureza booleana da eletr√¥nica digital, contra a natureza humanamente subjetiva encontrada nas palavras (obedecer, proteger, viole, fazer mal), que torna a constru√ß√£o do seu algoritmo muito complexo al√©m de buscar entender o como interpretar conceitos, que n√£o s√£o aprendidos.
+Os maiores problemas dessas 3 leis est· com a natureza booleana da eletr√¥nica digital, contra a natureza humanamente subjetiva encontrada nas palavras (obedecer, proteger, viole, fazer mal), que torna a construÁ„o do seu algoritmo muito complexo alÈm de buscar entender o como interpretar conceitos, que n„o s„o aprendidos.
 
 
 
@@ -50,43 +50,43 @@ Os maiores problemas dessas 3 leis est√° com a natureza booleana da eletr√¥nica 
 
 
 
-As 3 leis da rob√≥tica n√£o s√£o plenamente aplic√°veis a um aparato mec√¢nico/eletr√¥nico mas s√£o um belo exemplo de como se processa o pensamento de um desenvolvedor que constr√≥i seu algoritmo baseado naquilo que ele pressup√µe ser o que o cliente quer.
+As 3 leis da robÛtica n„o s„o plenamente aplic·veis a um aparato mecnico/eletr√¥nico mas s„o um belo exemplo de como se processa o pensamento de um desenvolvedor que constrÛi seu algoritmo baseado naquilo que ele pressupıe ser o que o cliente quer.
 
 
 
-A arte de entender o ser humano e buscar interpretar seu significado vai al√©m dos nossos meros 80 anos de profiss√£o. Os m√©dicos lidam com isso a mais de 3000 anos, tentando entender que uma ‚Äúdor DE barriga‚Äù √© diferente de ‚Äúdor NA barriga‚Äù, dor de cabe√ßa pode ser desde uma pequena cefal√©ia at√© um aneurisma, como diferenciar comportamentos t√£o distintos?
+A arte de entender o ser humano e buscar interpretar seu significado vai alÈm dos nossos meros 80 anos de profiss„o. Os mÈdicos lidam com isso a mais de 3000 anos, tentando entender que uma Äúdor DE barrigaÄù È diferente de Äúdor NA barrigaÄù, dor de cabeÁa pode ser desde uma pequena cefalÈia atÈ um aneurisma, como diferenciar comportamentos t„o distintos?
 
 
 
-Fa√ßa a seguinte pergunta a si mesmo, se o ultimo software que desenvolveu fosse solicitado por outra pessoa, o resultado seria o mesmo? Voc√™ projetaria o mesmo software?
+FaÁa a seguinte pergunta a si mesmo, se o ultimo software que desenvolveu fosse solicitado por outra pessoa, o resultado seria o mesmo? VocÍ projetaria o mesmo software?
 
 
 
-Certamente que n√£o.
+Certamente que n„o.
 
 
 
-A partir de hoje coloque na sua caixa de ferramentas mental que desenvolver software est√° mais ligado a diagn√≥stico do que a medicamentos, aprender uma nova tecnologia, uma nova metodologia, est√° aumentando sua capacidade de resolver um problema, mas nada disso adianta se voc√™ n√£o aumentar sua capacidade de entender os problemas.
+A partir de hoje coloque na sua caixa de ferramentas mental que desenvolver software est· mais ligado a diagnÛstico do que a medicamentos, aprender uma nova tecnologia, uma nova metodologia, est· aumentando sua capacidade de resolver um problema, mas nada disso adianta se vocÍ n„o aumentar sua capacidade de entender os problemas.
 
 
 
-Na minha hist√≥ria profissional eu j√° fracassei muitas vezes nos projetos, por n√£o ter entendido completamente qual seria o problema do cliente, por mais que eu soubesse muito sobre desenvolvimento de software, dominasse as tecnologias e empregasse as metodologias mais eficientes da √©poca.
+Na minha histÛria profissional eu j· fracassei muitas vezes nos projetos, por n„o ter entendido completamente qual seria o problema do cliente, por mais que eu soubesse muito sobre desenvolvimento de software, dominasse as tecnologias e empregasse as metodologias mais eficientes da Època.
 
 
 
-Todo software come√ßa na cabe√ßa do seu cliente/solicitante e termina quando ele enxerga funcionando aquilo que ele sonhou. Desenvolver software sob encomenda √© igual a um pintor que desenha um auto-retrato de uma pessoa.¬†
+Todo software comeÁa na cabeÁa do seu cliente/solicitante e termina quando ele enxerga funcionando aquilo que ele sonhou. Desenvolver software sob encomenda È igual a um pintor que desenha um auto-retrato de uma pessoa.†
 
 
 
-Software n√£o √© produto. Software n√£o √© posse sua. Software √© primeiro SOFT depois √© WARE.
+Software n„o È produto. Software n„o È posse sua. Software È primeiro SOFT depois È WARE.
 
 
 
-Se sua empresa criou um produto/servi√ßo baseado em software entenda que o software n√£o √© o produto em si, pois o produto/servi√ßo √© o que o cliente consome. Software √© apenas o motor da empresa. Ainda precisa de freio, engrenagem, volante, marcha, far√≥is, etc.
+Se sua empresa criou um produto/serviÁo baseado em software entenda que o software n„o È o produto em si, pois o produto/serviÁo È o que o cliente consome. Software È apenas o motor da empresa. Ainda precisa de freio, engrenagem, volante, marcha, farÛis, etc.
 
 
 
-Espero que a partir de hoje enxerguem seu trabalho como mais humano e menos tecnol√≥gico, comecem sempre pelo lado humano de quem demanda, depois vai para o lado tecnol√≥gico de quem entrega.
+Espero que a partir de hoje enxerguem seu trabalho como mais humano e menos tecnolÛgico, comecem sempre pelo lado humano de quem demanda, depois vai para o lado tecnolÛgico de quem entrega.
 
 
 

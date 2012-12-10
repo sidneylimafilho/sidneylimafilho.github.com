@@ -15,7 +15,7 @@ Este post é uma resposta a pergunta feita pelo [Ricardo Jordão][1] no [blog de
 
 Quando os blogs explodiram, cirando uma coisa chamada “blogosfera”, cada um começou a dominar uma parte do sistema de conhecimento humano, se super especializando na sua área de atuação (é o que o Jordão prega, para as empresas fazerem, foco, foco, foco, na sua área de atuação) porém o desenvolvimento de organismos super especializados mostram que a tendência é a sua interrelação, ao contrário do que hoje vivemos, inter-dependência.
 
-O organismo (a internet se comporta de forma orgânica) tende a se segmentar e interrelacionar. Logo tende-se não a meritocracia, mas uma evolução da democracia, onde quem determina a “cracia”, ou seja, forma de poder é o povo “demo”, porém com um poder maior, que eu chamo de meta-democracia.
+O organismo (a internet se comporta de forma orgnica) tende a se segmentar e interrelacionar. Logo tende-se não a meritocracia, mas uma evolução da democracia, onde quem determina a “cracia”, ou seja, forma de poder é o povo “demo”, porém com um poder maior, que eu chamo de meta-democracia.
 
 Meta-democracia é um sistema onde o povo democraticamente determina a própria democracia, um exemplo.
 

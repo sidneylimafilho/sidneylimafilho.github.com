@@ -15,7 +15,7 @@ O livro se baseia nisso, em que pensar visual é mais rápido do que ficar baten
 
 A arte de pensar visual vem de longe quando desde criança tentamos expressar nossas idéias para nossos pais. Porém atualmente, precisamos de tempo e o pensamento visual nos faz ganhar tempo.
 
-Uma outra técnica interessante é o de mapas mentais, que nos ajuda a direcionar um assunto ou tema, até mesmo para explorar bastante o sobre como devemos conduzir um processo ágil, com intuito de torná-lo orgânico.
+Uma outra técnica interessante é o de mapas mentais, que nos ajuda a direcionar um assunto ou tema, até mesmo para explorar bastante o sobre como devemos conduzir um processo ágil, com intuito de torná-lo orgnico.
 
 O site do back of the napkin, dá tudo aquilo que você precisa saber, o livro apenas é uma explanação do assunto, então olhe o site, entendeu tudo o que ele expõe? Maravilha o pensamento visual dele foi tão eficaz que você não precisa do livro, e falo sério. No site ele explica (muito bem por sinal) o conteúdo que deseja passar com o livro, tanto que visitei o site antes e quando li o livro, ficou boring.
 

@@ -2,7 +2,7 @@
 author: Sidney Lima Filho
 title: >
   Como adicionar o IIS Application
-  Identity como usuÃ¡rio no MSSQL
+  Identity como usuário no MSSQL
 excerpt:
 layout: post
 published: false
@@ -12,30 +12,30 @@ tags:
   - MSSQL
 post_format: [ ]
 ---
-Ultimamente andei pesquisando como colocar o usuÃ¡rio default do IIS application pool. O IIS cria um usuÃ¡rio no servidor que fica oculto, este usuÃ¡rio Ã© identificado como ApplicationPoolIdentity exatamente como a imagem abaixo.
+Ultimamente andei pesquisando como colocar o usuário default do IIS application pool. O IIS cria um usuário no servidor que fica oculto, este usuário é identificado como ApplicationPoolIdentity exatamente como a imagem abaixo.
 
 ![][1]
 
-EntÃ£o se este usuÃ¡rio Ã© oculto, como podemos colocÃ¡-lo como usuÃ¡rio do SQL Server? Nas pesquisas descobri que este usuario se â€œidentificaâ€ para a base de dados como â€œIIS APPPOOL\[seu nome]â€œ, entÃ£o fica fÃ¡cil. Errado a interface grÃ¡fica nÃ£o acha/reconhece este usuÃ¡rio.Â Logo sÃ³ Ã© possivel via SQL.
+Então se este usuário é oculto, como podemos colocá-lo como usuário do SQL Server? Nas pesquisas descobri que este usuario se €œidentifica€ para a base de dados como €œIIS APPPOOL\[seu nome]€œ, então fica fácil. Errado a interface gráfica não acha/reconhece este usuário. Logo só é possivel via SQL.
 
-Â 
+ 
 
-â€“
+€“
 
-â€“ Cria o usuÃ¡rio na base de dados
+€“ Cria o usuário na base de dados
 
-â€“
+€“
 
-sp_grantlogin â€˜IIS APPPOOL\DefaultAppPoolâ€™
+sp_grantlogin €˜IIS APPPOOL\DefaultAppPool€™
 
-â€“
+€“
 
-â€“ Associa o usuÃ¡rio com uma base de dados especifica
+€“ Associa o usuário com uma base de dados especifica
 
-â€“
+€“
 
-sp_grantdbaccess â€˜IIS APPPOOL\DefaultAppPoolâ€™
+sp_grantdbaccess €˜IIS APPPOOL\DefaultAppPool€™
 
-Â 
+ 
 
  [1]: /wp-content/uploads/applicationpoolidentity.png

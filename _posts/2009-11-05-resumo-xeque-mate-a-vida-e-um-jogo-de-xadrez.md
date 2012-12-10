@@ -1,54 +1,54 @@
 ---
 author: Sidney Lima Filho
-title: ' Resumo: Xeque-Mate, a vida Ã© um jogo de xadrez! '
+title: ' Resumo: Xeque-Mate, a vida é um jogo de xadrez! '
 excerpt:
 layout: post
 published: false
 tags: [ ]
 post_format: [ ]
 ---
-Um livro fascinante, muito bem fundamentado na histÃ³ria de um dos maiores vencedores da histÃ³ria do xadrez que merece atenÃ§Ã£o e destaque, pois alÃ©m de contar sua histÃ³ria no xadrez ele traÃ§a um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e polÃ­tico ativo num mundo globalizado e irracional.
+Um livro fascinante, muito bem fundamentado na história de um dos maiores vencedores da história do xadrez que merece atenção e destaque, pois além de contar sua história no xadrez ele traça um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e político ativo num mundo globalizado e irracional.
 
-Sua vida nunca foi um exemplo a ser seguido, mas isso nÃ£o indica que devemos ignorar suas experiÃªncias, na verdade muito pelo contrÃ¡rio. Garry Kasparov nos presenteia com um livro rico em comparaÃ§Ãµes com o mundo dos negÃ³cios de filosofias e metodologias que foram implacÃ¡veis nas mesas de xadrez.
+Sua vida nunca foi um exemplo a ser seguido, mas isso não indica que devemos ignorar suas experiências, na verdade muito pelo contrário. Garry Kasparov nos presenteia com um livro rico em comparações com o mundo dos negócios de filosofias e metodologias que foram implacáveis nas mesas de xadrez.
 
-O mundo Ã© um tabuleiro? A vida Ã© um jogo de xadrez? Essas comparaÃ§Ãµes seriam muito simplistas se fossem uma forma de exemplificar sua complexidade, mas quando falamos de estratÃ©gias, negÃ³cios, polÃ­tica, influÃªncias, gestÃ£o do tempo, vida em sociedade, competiÃ§Ã£o, os paralelos se tornam praticamente um pleonasmo.
+O mundo é um tabuleiro? A vida é um jogo de xadrez? Essas comparações seriam muito simplistas se fossem uma forma de exemplificar sua complexidade, mas quando falamos de estratégias, negócios, política, influências, gestão do tempo, vida em sociedade, competição, os paralelos se tornam praticamente um pleonasmo.
 
-No livro Garry responde com sua prÃ³pria vida, cheia de erros e acertos a perguntas tÃ£o cotidianas num mundo empresarial 2.0, onde a internet nos invade de informaÃ§Ã£o, ele cita tÃ³picos que sÃ£o extremamente pertinentes e aprofundados por outros autores como: 
+No livro Garry responde com sua própria vida, cheia de erros e acertos a perguntas tão cotidianas num mundo empresarial 2.0, onde a internet nos invade de informação, ele cita tópicos que são extremamente pertinentes e aprofundados por outros autores como: 
 
-*   Â â€œProcesso VS ConteÃºdoâ€ â€“ GestÃ£o OrgÃ¢nica, Sidney Filho 
-*   Â â€œSucesso a qualquer velocidadeâ€ â€“ Sucesso na velocidade da luz, Neil Weinbraun 
-*   Â â€œNÃ£o vigie mais a concorrÃªncia do que a si prÃ³prioâ€ â€“ Arte da Guerra, Sun Tzu 
-*   â€œA fantasia consegue atravessar a neblinaâ€ â€“ Pensamento Lateral, Edward de Bono 
-*   Â â€œInteire-se de suas rotinas e depois quebre-asâ€ â€“ Manual da Criatividade 
-*   Â Qual a quantidade de informaÃ§Ã£o suficiente? 
-*   Â â€œ1 hora de talento Ã© construÃ­da, com 8 horas de esforÃ§o continuoâ€ â€“ Outlier, Malcolm Gladwell 
-*   Â â€œNunca tome uma decisÃ£o atÃ© que seja necessÃ¡rioâ€ â€“ Margareth Thatcher 
+*    €œProcesso VS Conteúdo€ €“ Gestão Orgnica, Sidney Filho 
+*    €œSucesso a qualquer velocidade€ €“ Sucesso na velocidade da luz, Neil Weinbraun 
+*    €œNão vigie mais a concorrência do que a si próprio€ €“ Arte da Guerra, Sun Tzu 
+*   €œA fantasia consegue atravessar a neblina€ €“ Pensamento Lateral, Edward de Bono 
+*    €œInteire-se de suas rotinas e depois quebre-as€ €“ Manual da Criatividade 
+*    Qual a quantidade de informação suficiente? 
+*    €œ1 hora de talento é construída, com 8 horas de esforço continuo€ €“ Outlier, Malcolm Gladwell 
+*    €œNunca tome uma decisão até que seja necessário€ €“ Margareth Thatcher 
 
-AlÃ©m de tornar conteÃºdos complexos em simples ele tambÃ©m nos traz pÃ©rolas que nos fazem pensar, como:
+Além de tornar conteúdos complexos em simples ele também nos traz pérolas que nos fazem pensar, como:
 
 *   Tudo na vida se resume em Material, Tempo e Qualidade; 
-*   PercepÃ§Ã£o de qualidade jÃ¡ Ã© qualidade; 
-*   A estratÃ©gia Ã© aquilo que as tÃ¡ticas sÃ£o; 
-*   Jogue sempre o seu prÃ³prio jogo, nunca o do mercado; 
-    *   Essa foi foda de engolir, mas no final ele tem razÃ£o; Porque? Ele mostra que se vocÃª nÃ£o for autentico com seu jogo, o mercado saberÃ¡ que vocÃª Ã© apenas mais um player, ao invÃ©s de reconhecer vocÃª como O player. Siga a risca aquilo que acredita para se tornar referencia, senÃ£o vocÃª serÃ¡ apenas mais um competidor. 
-*   Adaptabilidade, requer conhecer bem suas opÃ§Ãµes 
-    *   Ele mostra o porque vocÃª nÃ£o pode se adaptar no mercado se nÃ£o conhece bem sobre o como se adaptar, hoje em dia as empresas â€œse posicionamâ€ mas nÃ£o mudam realmente; 
-*   EstratÃ©gia estÃ¡ intrinsecamente ligado ao Ambiente; 
-*   A estratÃ©gia sÃ³ pode mudar se o ambiente mudar, caso contrÃ¡rio, nunca saberÃ¡ se tomou a decisÃ£o certa. 
-*   Saber o porquÃª vencemos Ã© tÃ£o importante que saber o porque perdemos; 
-*   Homem + MÃ¡quina Ã© melhor que dois Homens e ainda melhor que duas mÃ¡quinas; 
-*   Sempre use sua intuiÃ§Ã£o, mas certifique-se de que eliminou todas as possibilidades; 
-*   O fim do dia indica fim dos trabalhos, inicio do processo de avaliaÃ§Ã£o; 
-*   Saiba com antecedÃªncia o que farÃ¡ com suas horas; 
-*   Uma troca sempre tem inconveniÃªncia mesmo que seja de pior para melhor; 
+*   Percepção de qualidade já é qualidade; 
+*   A estratégia é aquilo que as táticas são; 
+*   Jogue sempre o seu próprio jogo, nunca o do mercado; 
+    *   Essa foi foda de engolir, mas no final ele tem razão; Porque? Ele mostra que se você não for autentico com seu jogo, o mercado saberá que você é apenas mais um player, ao invés de reconhecer você como O player. Siga a risca aquilo que acredita para se tornar referencia, senão você será apenas mais um competidor. 
+*   Adaptabilidade, requer conhecer bem suas opções 
+    *   Ele mostra o porque você não pode se adaptar no mercado se não conhece bem sobre o como se adaptar, hoje em dia as empresas €œse posicionam€ mas não mudam realmente; 
+*   Estratégia está intrinsecamente ligado ao Ambiente; 
+*   A estratégia só pode mudar se o ambiente mudar, caso contrário, nunca saberá se tomou a decisão certa. 
+*   Saber o porquê vencemos é tão importante que saber o porque perdemos; 
+*   Homem + Máquina é melhor que dois Homens e ainda melhor que duas máquinas; 
+*   Sempre use sua intuição, mas certifique-se de que eliminou todas as possibilidades; 
+*   O fim do dia indica fim dos trabalhos, inicio do processo de avaliação; 
+*   Saiba com antecedência o que fará com suas horas; 
+*   Uma troca sempre tem inconveniência mesmo que seja de pior para melhor; 
 *   Todos os inovadores precisam dos imitadores; 
-*   A sabedoria (?) popular diz que Ã© melhor e mais confortÃ¡vel um mal conhecido do que um bem conhecido; 
-*   Comece com pelo menos duas opÃ§Ãµes e tempo suficiente para avaliar ambas; 
-*   Nunca ignore a concorrÃªncia, o DiÃ¡rio de George III em 04/07/1776: â€œNada de Importante aconteceu hojeâ€ 
-*   â€œSaber nÃ£o basta, devemos aplicar. Desejar nÃ£o basta, devemos fazerâ€ â€“ Goethe 
-*   Desde que o mundo Ã© mundo hÃ¡ competiÃ§Ã£o, ninguÃ©m treina e se dedica para chegar em segundo; 
-*   O que nos interessa Ã© desenvolver um sistema de agressividade controlada a fim de nos aprimorarmos no que fazemos; Agressividade nesse contexto, significa, dinamismo, inovaÃ§Ã£o, melhoria, coragem, risco e disposiÃ§Ã£o para agir; 
-*   Medo de mudar Ã© pior que mudar rÃ¡pido demais; 
+*   A sabedoria (?) popular diz que é melhor e mais confortável um mal conhecido do que um bem conhecido; 
+*   Comece com pelo menos duas opções e tempo suficiente para avaliar ambas; 
+*   Nunca ignore a concorrência, o Diário de George III em 04/07/1776: €œNada de Importante aconteceu hoje€ 
+*   €œSaber não basta, devemos aplicar. Desejar não basta, devemos fazer€ €“ Goethe 
+*   Desde que o mundo é mundo há competição, ninguém treina e se dedica para chegar em segundo; 
+*   O que nos interessa é desenvolver um sistema de agressividade controlada a fim de nos aprimorarmos no que fazemos; Agressividade nesse contexto, significa, dinamismo, inovação, melhoria, coragem, risco e disposição para agir; 
+*   Medo de mudar é pior que mudar rápido demais; 
 
 [![][2]</img>][2] [![][3]</img>][3] [![][4]</img>][4] 
 

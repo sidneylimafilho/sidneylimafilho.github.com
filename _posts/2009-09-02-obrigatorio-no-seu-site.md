@@ -7,9 +7,9 @@ published: false
 tags: [ ]
 post_format: [ ]
 ---
-A [SEOmoz][1] fez um levantamento de quais indicadores de relevância são mais importantes para os mecanismos de buscas, o resultado vem a baixo:
+A [SEOmoz][1] fez um levantamento de quais indicadores de relevncia são mais importantes para os mecanismos de buscas, o resultado vem a baixo:
 
-1.  Texto âncora de links externos (73%)
+1.  Texto ncora de links externos (73%)
 2.  Uso de keywords no título (66%)
 3.  Simples popularidade de links – quantidade de links (64%)
 4.  Diversidade de domínios com links para o site (64%)

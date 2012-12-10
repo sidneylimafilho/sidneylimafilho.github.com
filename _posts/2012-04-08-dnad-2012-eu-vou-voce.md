@@ -1,6 +1,6 @@
 ---
 author: Sidney Lima Filho
-title: DNAD 2012, eu vou e vocÃª?
+title: DNAD 2012, eu vou e você?
 excerpt:
 layout: post
 published: false
@@ -12,17 +12,17 @@ tags:
   - Node.js
 post_format: [ ]
 ---
-Nos dias 1 e 2 de junho de 2012 ocorrerÃ¡ um dos maiores eventos sobre arquitetura de software do brasil e dessa vez uma grande novidade, eu vou palestrar.
+Nos dias 1 e 2 de junho de 2012 ocorrerá um dos maiores eventos sobre arquitetura de software do brasil e dessa vez uma grande novidade, eu vou palestrar.
 
-[Na ediÃ§Ã£o de 2010 eu participei com uma lightning talk][1], sobre as diferenÃ§as de padrÃµes de projeto entre linguagens funcionais e linguagens orientadas a objeto.
+[Na edição de 2010 eu participei com uma lightning talk][1], sobre as diferenças de padrões de projeto entre linguagens funcionais e linguagens orientadas a objeto.
 
 Este ano eu vou participar com uma palestra sobre a Arquitetura do IIS e NodeJS, falarei sobre assincronismo, sistema operacional, threading, e muito mais.
 
-Gostou? Ficou interessado? Aproveite que as [inscriÃ§Ãµes][2]Â estÃ£o com um super desconto acessando no link abaixo.
+Gostou? Ficou interessado? Aproveite que as [inscrições][2] estão com um super desconto acessando no link abaixo.
 
 <http://dnad.dotnetarchitects.net/dnad/2012/inscricoes/>
 
-Te vejo lÃ¡. ![;)][3]
+Te vejo lá. ![;)][3]
 
  [1]: http://www.infoq.com/br/presentations/dnad-lightning-sidney
  [2]: http://dnad.dotnetarchitects.net/dnad/2012/inscricoes/

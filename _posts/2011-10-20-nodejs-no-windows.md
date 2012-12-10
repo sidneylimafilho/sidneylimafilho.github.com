@@ -10,102 +10,102 @@ tags:
   - Windows
 post_format: [ ]
 ---
-### Â O que o Javascript Ã©?
+###  O que o Javascript é?
 
-Antes de comeÃ§ar a contar uma breve histÃ³ria do javascript, um ponto a observar Ã© que o Javascript nÃ£o Ã© uma linguagem puramente da web como muitos imaginam, ela roda localmente como qualquer linguagem script, se vocÃª usa Windows no dia-a-dia, assim como eu, ele esteve sempre ao seu lado e vocÃª nem sabia.
+Antes de começar a contar uma breve história do javascript, um ponto a observar é que o Javascript não é uma linguagem puramente da web como muitos imaginam, ela roda localmente como qualquer linguagem script, se você usa Windows no dia-a-dia, assim como eu, ele esteve sempre ao seu lado e você nem sabia.
 
-Exemplo. VocÃª pode criar um arquivo .js, clicar duas vezes nele que ele executarÃ¡. Claro, quando se escreve um javascript dessa forma o paradigma de programa Ã© outro. VocÃª nÃ£o tem window, document, DOM, alert, seu JQuery nÃ£o funciona, as coisas de HTML em geral, vocÃª passa a ter acesso a funÃ§Ãµes que normalmente vocÃª nÃ£o usaria como CreateObject, MsgBox, WScript, que por sua vez nÃ£o funciona nos browsers, mas a linguagem Ã© a mesma, o mesmo FOR, IF, WHILE, EVAL, FUNCTION, etc. Se quiser mais informaÃ§Ãµes de quais opÃ§Ãµes estÃ£o disponÃ­veis para desenvolver em javascript no Windows vocÃª pode acessar o site do MSDN
+Exemplo. Você pode criar um arquivo .js, clicar duas vezes nele que ele executará. Claro, quando se escreve um javascript dessa forma o paradigma de programa é outro. Você não tem window, document, DOM, alert, seu JQuery não funciona, as coisas de HTML em geral, você passa a ter acesso a funções que normalmente você não usaria como CreateObject, MsgBox, WScript, que por sua vez não funciona nos browsers, mas a linguagem é a mesma, o mesmo FOR, IF, WHILE, EVAL, FUNCTION, etc. Se quiser mais informações de quais opções estão disponíveis para desenvolver em javascript no Windows você pode acessar o site do MSDN
 
 ![][1]
 
 Guia Referencia <http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=VS.85).aspx>
 
-JScript onÂ Windows <http://msdn.microsoft.com/en-us/library/xazzc41b(v=VS.85).aspx>Â 
+JScript on Windows <http://msdn.microsoft.com/en-us/library/xazzc41b(v=VS.85).aspx> 
 
 Manipulando Arquivos e Diretorios <http://msdn.microsoft.com/en-us/library/ch28h2s7(v=VS.85).aspx>
 
-### Um Breve HistÃ³rico
+### Um Breve Histórico
 
-Agora que jÃ¡ desmistifiquei um pouco que Javascript nÃ£o Ã©Â uma linguagem sÃ³ de navegador e vocÃª jÃ¡ sabe que ela serve para mais coisasÂ inclusive para realizar tarefas no Windows, vamos a outra aplicabilidade dela,Â que Ã© o lado Server-side, isso mesmo, usar o javascript para processar nossasÂ pÃ¡ginas HTML do lado do servidor.
+Agora que já desmistifiquei um pouco que Javascript não é uma linguagem só de navegador e você já sabe que ela serve para mais coisas inclusive para realizar tarefas no Windows, vamos a outra aplicabilidade dela, que é o lado Server-side, isso mesmo, usar o javascript para processar nossas páginas HTML do lado do servidor.
 
-O javascript no lado servidor nÃ£o Ã© algo novo, muito menosÂ uma faÃ§anha e nem revolucionÃ¡rio como muitos imaginam.Â A Netscape, empresa que contratou [Brendan Eich][2], para desenvolver uma linguagem para tudo relacionado a Web (note que Web Ã© tanto o lado cliente, com osÂ browsers, como tambÃ©m Ã© o lado servidor) sabia que a web necessitava de:
+O javascript no lado servidor não é algo novo, muito menos uma façanha e nem revolucionário como muitos imaginam. A Netscape, empresa que contratou [Brendan Eich][2], para desenvolver uma linguagem para tudo relacionado a Web (note que Web é tanto o lado cliente, com os browsers, como também é o lado servidor) sabia que a web necessitava de:
 
-*   **LinguagemÂ dinÃ¢mica**, pois cada pagina poderia ter estruturas diferentes;
-*   **FracamenteÂ tipada**, pois os dados principais na Web sÃ£o texto e haveria conversÃ£o oÂ tempo todo;
-*   **ConversÃ£oÂ implÃ­cita**, pois alÃ©m do motivo acima, o desenvolvimento deveria ser focadoÂ na utilizaÃ§Ã£o dos recursos ao invÃ©s do conteÃºdo deles.
-*   **DerivarÂ de uma linguagem conhecida**, para facilitar a migraÃ§Ã£o dos desenvolvedoresÂ para a programaÃ§Ã£o para Web
-*   **Script**,Â para que o desenvolvimento seja relativo a cada pÃ¡gina e que nÃ£o necessite compilaÃ§Ã£oÂ a cada modificaÃ§Ã£o
+*   **Linguagem dinmica**, pois cada pagina poderia ter estruturas diferentes;
+*   **Fracamente tipada**, pois os dados principais na Web são texto e haveria conversão o tempo todo;
+*   **Conversão implícita**, pois além do motivo acima, o desenvolvimento deveria ser focado na utilização dos recursos ao invés do conteúdo deles.
+*   **Derivar de uma linguagem conhecida**, para facilitar a migração dos desenvolvedores para a programação para Web
+*   **Script**, para que o desenvolvimento seja relativo a cada página e que não necessite compilação a cada modificação
 
-Nesta Ã©poca, [emÂ torno de 1995][3], a Netscape junto com Brendan Eich, criaram o Livescript queÂ no ano seguinte, com a junÃ§Ã£o e aprovaÃ§Ã£o da SUN incluindo-a no processo, poisÂ a Netscape queria dar suporte a Java Applets no seu revolucionÃ¡rio [Netscape Navigator][4], passouÂ a se chamar de JavaScript, numa referencia explicita a linguagem que derivou  
-seu estilo de codificaÃ§Ã£o. (Esta referencia nota-se atÃ© hoje, na equipe daÂ Mozila, desenvolvendo a nova [especificaÃ§Ã£oÂ da evoluÃ§Ã£o][5] da linguagem, [vÃ¡riasÂ palavras reservadas do Java vÃ£o aparecer no Javascript][6])
+Nesta época, [em torno de 1995][3], a Netscape junto com Brendan Eich, criaram o Livescript que no ano seguinte, com a junção e aprovação da SUN incluindo-a no processo, pois a Netscape queria dar suporte a Java Applets no seu revolucionário [Netscape Navigator][4], passou a se chamar de JavaScript, numa referencia explicita a linguagem que derivou  
+seu estilo de codificação. (Esta referencia nota-se até hoje, na equipe da Mozila, desenvolvendo a nova [especificação da evolução][5] da linguagem, [várias palavras reservadas do Java vão aparecer no Javascript][6])
 
-Neste momento a prÃ³pria Netscape viu que a linguagem eraÂ muito interesante e jÃ¡ comeÃ§ava a criar seu prÃ³prio lado servidor (Server-Side), para rodar seu â€œLiveScriptâ€ que se chamava [Netscape][7]Â [Enterprise Server][7], atravÃ©s do Netscape LiveWire, que rodava [SSJS (Server Side][8]Â [Javascript),][8] olha [exemplo][9]Â [de cÃ³digo][9] da Ã©poca.
+Neste momento a própria Netscape viu que a linguagem era muito interesante e já começava a criar seu próprio lado servidor (Server-Side), para rodar seu €œLiveScript€ que se chamava [Netscape][7] [Enterprise Server][7], através do Netscape LiveWire, que rodava [SSJS (Server Side][8] [Javascript),][8] olha [exemplo][9] [de código][9] da época.
 
-A Microsoft em 1997 (ou em 1998, nÃ£o sei agora) tambÃ©m seÂ interessou pela tecnologia e adotou-a em seus ambientes, porÃ©m apÃ³s uma brigaÂ com a SUN, pois usava a marca Java, ela foi judicialmente obrigada a mudar oÂ nome da linguagem Javascript que ela usava, entÃ£o ou ela continuava a usar umaÂ linguagem chamada Javascript ou usava outra linguagem, nesse Ã­nterim ela tentouÂ emplacar um VBScript, sem sucesso e acabou â€œinventandoâ€ uma nova linguagemÂ JScript, que Ã© praticamente igual ao Javascript, sÃ³ diferenciou naquilo que umÂ juiz federal entende, ou seja, quase nada.
+A Microsoft em 1997 (ou em 1998, não sei agora) também se interessou pela tecnologia e adotou-a em seus ambientes, porém após uma briga com a SUN, pois usava a marca Java, ela foi judicialmente obrigada a mudar o nome da linguagem Javascript que ela usava, então ou ela continuava a usar uma linguagem chamada Javascript ou usava outra linguagem, nesse ínterim ela tentou emplacar um VBScript, sem sucesso e acabou €œinventando€ uma nova linguagem JScript, que é praticamente igual ao Javascript, só diferenciou naquilo que um juiz federal entende, ou seja, quase nada.
 
-NÃ£o se importando se era Javascript ou JScript a MicrosoftÂ tambÃ©m ofereceu suporte tanto do lado cliente com seu maravilhoso InternetÂ Explorer (sic) e do lado servidor com as poderosas Active Server Pages (realmenteÂ eram poderosas).
+Não se importando se era Javascript ou JScript a Microsoft também ofereceu suporte tanto do lado cliente com seu maravilhoso Internet Explorer (sic) e do lado servidor com as poderosas Active Server Pages (realmente eram poderosas).
 
-### Se tudo isso jÃ¡Â existia, qual a vantagem do Node.JS?
+### Se tudo isso já existia, qual a vantagem do Node.JS?
 
-Como vocÃª jÃ¡ sabe o principal objetivo do Node.JS Ã© permitirÂ criar aplicaÃ§Ãµes de rede [altamenteÂ escalÃ¡veis][10], isso signfica que hÃ¡ alguns [desafios][11] [fÃ­sicos][12] a serem vencidos,  
-como por exemplo o problema das [10000Â conexÃµes][13] simultÃ¢neas. AlÃ©m disso, outra grande vantagem Ã© usar o motor V8,Â que o pessoal no Google criou para o Javascript , pois antes a engine era lentaÂ e buguenta, entÃ£o veio o Google e deu a turbinada na linguagem tornando-a muitoÂ mais eficiente e equivalente a linguagens de peso como C#, PHP, Python, Ruby eÂ Java.
+Como você já sabe o principal objetivo do Node.JS é permitir criar aplicações de rede [altamente escaláveis][10], isso signfica que há alguns [desafios][11] [físicos][12] a serem vencidos,  
+como por exemplo o problema das [10000 conexões][13] simultneas. Além disso, outra grande vantagem é usar o motor V8, que o pessoal no Google criou para o Javascript , pois antes a engine era lenta e buguenta, então veio o Google e deu a turbinada na linguagem tornando-a muito mais eficiente e equivalente a linguagens de peso como C#, PHP, Python, Ruby e Java.
 
-### TÃ¡ mas e o titulo doÂ post?
+### Tá mas e o titulo do post?
 
-OK era necessÃ¡rio contar um pouco do casal para as coisasÂ que virÃ£o pela frente faÃ§am sentido. Agora vamos ao que interessa.Â O Node.js foi um projeto que comeÃ§ou no Linux, com a galeraÂ do mundo open source (novidade?), porem mais uma vez a Microsoft viuÂ e se interessou pelo projeto, assim destacouÂ 2 profissionais para colaborar ativamente a tornar o Node.js fluente no Windows (afinalÂ ela vende Windows certo?), ajudou com conhecimento, recursos, acesso aÂ informaÃ§Ãµes privilegiadas, assim removeu-se os acoplamentos ao kernel do Linux,Â [sem perder sua][14]Â [performance][14] que Ã© muito importante, promovendo uma maior adaptabilidade Â aos usuÃ¡rios Windows.
+OK era necessário contar um pouco do casal para as coisas que virão pela frente façam sentido. Agora vamos ao que interessa. O Node.js foi um projeto que começou no Linux, com a galera do mundo open source (novidade?), porem mais uma vez a Microsoft viu e se interessou pelo projeto, assim destacou 2 profissionais para colaborar ativamente a tornar o Node.js fluente no Windows (afinal ela vende Windows certo?), ajudou com conhecimento, recursos, acesso a informações privilegiadas, assim removeu-se os acoplamentos ao kernel do Linux, [sem perder sua][14] [performance][14] que é muito importante, promovendo uma maior adaptabilidade  aos usuários Windows.
 
-Com isso existe duas formas de se instalar o Node.js noÂ Windows:
+Com isso existe duas formas de se instalar o Node.js no Windows:
 
-1.  Baixa o cÃ³digo fonte, descobre queÂ precisa de um emulador POSIX (msys ou cygwin), tenta compilar, descobre queÂ precisa baixar uma parafernÃ¡lia que vocÃª nÃ£o faz idÃ©ia para que serve, tenta deÂ novo, a compilaÃ§Ã£o falha pela falta de alguma variÃ¡vel de ambiente, tenta deÂ novo, assim sucessivamente.
-2.  Estilo WIN: Baixa o arquivo executÃ¡vel, clicaÂ duas vezes e funciona.
+1.  Baixa o código fonte, descobre que precisa de um emulador POSIX (msys ou cygwin), tenta compilar, descobre que precisa baixar uma parafernália que você não faz idéia para que serve, tenta de novo, a compilação falha pela falta de alguma variável de ambiente, tenta de novo, assim sucessivamente.
+2.  Estilo WIN: Baixa o arquivo executável, clica duas vezes e funciona.
 
-Na primeira opÃ§Ã£o, uma vez conseguindo, ela te abre maisÂ opÃ§Ãµes de plugins / ferramentas / frameworks desenvolvidos pela comunidade, [masÂ isso jÃ¡ estÃ¡ mudando][15], como o NPM que sÃ³ funciona no estilo UNIX.
+Na primeira opção, uma vez conseguindo, ela te abre mais opções de plugins / ferramentas / frameworks desenvolvidos pela comunidade, [mas isso já está mudando][15], como o NPM que só funciona no estilo UNIX.
 
-Como a maioria das coisas que realmente importam, estÃ£oÂ funcionando para os dois modos, entÃ£o vou comeÃ§ar pela segunda opÃ§Ã£o e que maisÂ se aproxima da nossa realidade.
+Como a maioria das coisas que realmente importam, estão funcionando para os dois modos, então vou começar pela segunda opção e que mais se aproxima da nossa realidade.
 
 ### Passo-a-Passo
 
-1.  Acesse o seguinte endereÃ§o <http://nodejs.org/#download>
-2.  Baixe o executÃ¡vel para Windows
+1.  Acesse o seguinte endereço <http://nodejs.org/#download>
+2.  Baixe o executável para Windows
 3.  Clique 2x no arquivo node.exe
 
-Â 
+ 
 
 ### ![][16]
 
-### NÃ£o acredito que vocÃªÂ me fez ler isso tudo para apenas trÃªs passos
+### Não acredito que você me fez ler isso tudo para apenas três passos
 
-NÃ£o, esses 3 passos foram apenas para mostrar funcionandoÂ porÃ©m para executar arquivos com cÃ³digo javascript e integrar ao ambiente sÃ£oÂ necessÃ¡rios mais passos, que explicarei mais adiante.
+Não, esses 3 passos foram apenas para mostrar funcionando porém para executar arquivos com código javascript e integrar ao ambiente são necessários mais passos, que explicarei mais adiante.
 
-Quando vocÃª clica 2x no arquivo node.exe, ele abre um consoleÂ e coloca um cursor piscando, este console Ã© o REPL (Read-Eval-Print-Loop), ouÂ seja, ele lÃª o que vocÃª escreve, avalia se Ã© um javascript vÃ¡lido, imprime oÂ resultado caso haja e comeÃ§a tudo de novo, esperando vocÃª escrever a prÃ³ximaÂ instruÃ§Ã£o. Isso nos permite programar e ver o resultado na tela, semelhante aoÂ que algumas IDEâ€™s fazem, por exemplo, o Visual Studio.
+Quando você clica 2x no arquivo node.exe, ele abre um console e coloca um cursor piscando, este console é o REPL (Read-Eval-Print-Loop), ou seja, ele lê o que você escreve, avalia se é um javascript válido, imprime o resultado caso haja e começa tudo de novo, esperando você escrever a próxima instrução. Isso nos permite programar e ver o resultado na tela, semelhante ao que algumas IDE€™s fazem, por exemplo, o Visual Studio.
 
 ![][17]
 
 ![][18]
 
-Mas e se quisermos executar um arquivo? NÃ£o tem problemaÂ entra no console e digita â€œnode exemplo.jsâ€
+Mas e se quisermos executar um arquivo? Não tem problema entra no console e digita €œnode exemplo.js€
 
 ![][19]
 
-Tem como eu nÃ£oÂ depender do console?
+Tem como eu não depender do console?
 
-Claro, essa Ã© a finalidade do artigo. Primeiro vamos voltarÂ ao conceito. Se lembra que no comeÃ§o desse artigo eu falei sobre o paradigma deÂ desenvolvimento local Ã© diferente de desenvolver para web? EntÃ£o com o Node.js Ã©Â a mesma coisa, haverÃ£o keywords que tem no Node.js que nÃ£o terÃ¡ no browser, o cÃ³digo Ã© javascript mas os ambientes nÃ£o sÃ£o os mesmos. Veja na imagem do REPLÂ que eu escrevi propositalmente um â€œalertâ€ e ele retornou que era â€œundefinedâ€,Â porem escrevi â€œprocess.versions.nodeâ€ e retornou â€œ0.5.8â€, jÃ¡ que a palavra â€œprocessâ€ Ã©Â reservada no Node.js, que declara informaÃ§Ãµes do processo que estÃ¡ emÂ execuÃ§Ã£o.
+Claro, essa é a finalidade do artigo. Primeiro vamos voltar ao conceito. Se lembra que no começo desse artigo eu falei sobre o paradigma de desenvolvimento local é diferente de desenvolver para web? Então com o Node.js é a mesma coisa, haverão keywords que tem no Node.js que não terá no browser, o código é javascript mas os ambientes não são os mesmos. Veja na imagem do REPL que eu escrevi propositalmente um €œalert€ e ele retornou que era €œundefined€, porem escrevi €œprocess.versions.node€ e retornou €œ0.5.8€, já que a palavra €œprocess€ é reservada no Node.js, que declara informações do processo que está em execução.
 
-EntÃ£o para facilitar o reconhecimento desses arquivos Node.js,Â eu passo a nomeÃ¡-los com a extensÃ£o â€œnjsâ€, isso nÃ£o Ã© obrigatÃ³rio, porÃ©m maisÂ na frente quando vocÃª tiver inÃºmeros arquivos â€œjsâ€, nÃ£o saberÃ¡ reconhecerÂ facilmente no seu projeto se aquele â€œcommon.jsâ€ Ã© um arquivo com funÃ§Ãµes para oÂ browser, ou para suas pÃ¡ginas no servidor, ou sÃ£o funÃ§Ãµes matemÃ¡ticas e deÂ manipulaÃ§Ã£o de string, genÃ©ricas que servem para os dois ambientes.
+Então para facilitar o reconhecimento desses arquivos Node.js, eu passo a nomeá-los com a extensão €œnjs€, isso não é obrigatório, porém mais na frente quando você tiver inúmeros arquivos €œjs€, não saberá reconhecer facilmente no seu projeto se aquele €œcommon.js€ é um arquivo com funções para o browser, ou para suas páginas no servidor, ou são funções matemáticas e de manipulação de string, genéricas que servem para os dois ambientes.
 
-Os arquivos javascript que sÃ£o usados nos projetos web,Â usados no HTML e browser eu continuo usando a extensÃ£o â€œjsâ€, atÃ© mesmo porÂ causa dos arquivos jÃ¡ existentes, porÃ©m a partir deste momento os arquivos queÂ uso atravÃ©s do Node.js eu uso a extensÃ£o â€œnjsâ€.
+Os arquivos javascript que são usados nos projetos web, usados no HTML e browser eu continuo usando a extensão €œjs€, até mesmo por causa dos arquivos já existentes, porém a partir deste momento os arquivos que uso através do Node.js eu uso a extensão €œnjs€.
 
-Com essa convenÃ§Ã£o criada, fica mais fÃ¡cil integrar aoÂ ambiente, pois bastarÃ¡ associar esta extensÃ£o ao Node.js, que o WindowsÂ reconhecerÃ¡ quando eu clicar 2x no arquivo NJS, ele executarÃ¡ usando o Node.js.Â Para associar a extensÃ£o basta executar no console do windows (CMD), as duas linhas abaixo, prestando aÂ atenÃ§Ã£o para mudar o caminho do executÃ¡vel para onde vocÃª colocou o arquivoÂ original.
+Com essa convenção criada, fica mais fácil integrar ao ambiente, pois bastará associar esta extensão ao Node.js, que o Windows reconhecerá quando eu clicar 2x no arquivo NJS, ele executará usando o Node.js. Para associar a extensão basta executar no console do windows (CMD), as duas linhas abaixo, prestando a atenção para mudar o caminho do executável para onde você colocou o arquivo original.
 
-REG ADD â€œHKEY\_CURRENT\_USER\Software\Classes\joyent.node.js\shell\open\commandâ€ /ve /d â€œc:\node\node.exe %1â€³ /f
+REG ADD €œHKEY\_CURRENT\_USER\Software\Classes\joyent.node.js\shell\open\command€ /ve /d €œc:\node\node.exe %1€³ /f
 
-REG ADD â€œHKEY\_CURRENT\_USER\Software\Classes\.njsâ€ /ve /d â€œjoyent.node.jsâ€
+REG ADD €œHKEY\_CURRENT\_USER\Software\Classes\.njs€ /ve /d €œjoyent.node.js€
 
-Â 
+ 
 
-Uma vez feito isso, prontinho seus scripts estarÃ£oÂ executando no Windows perfeitamente.
+Uma vez feito isso, prontinho seus scripts estarão executando no Windows perfeitamente.
 
-Em breve, publicarei a segunda parte deste postÂ explicando como usar o Node.js como um servidor web.
+Em breve, publicarei a segunda parte deste post explicando como usar o Node.js como um servidor web.
 
  [1]: /wp-content/uploads/wscript.png
  [2]: http://brendaneich.com/

@@ -1,13 +1,13 @@
 ---
 author: Sidney Lima Filho
-title: 'Como pensar orgânicamente em gestão?'
+title: 'Como pensar orgnicamente em gestão?'
 excerpt:
 layout: post
 published: false
 tags: [ ]
 post_format: [ ]
 ---
-Pessoal, quando estava lendo o livro sobre [Pensamento Lateral na Administração][1], andei refletindo muito sobre o como uma empresa deve pensar num modelo de [Gestão Orgânica][2]. Pois na [Gestão Orgânica][2], temos muitas equipes separadas buscando agilidade na efetuação do seu trabalho para que outras equipes também tenham seu trabalho resolvido num prazo confortável. Para isso as equipes precisam de autonomia de tomada de decisão e processos de raciocinio corporativo, um excelente exemplo de empresa assim é a [Zappos][3].
+Pessoal, quando estava lendo o livro sobre [Pensamento Lateral na Administração][1], andei refletindo muito sobre o como uma empresa deve pensar num modelo de [Gestão Orgnica][2]. Pois na [Gestão Orgnica][2], temos muitas equipes separadas buscando agilidade na efetuação do seu trabalho para que outras equipes também tenham seu trabalho resolvido num prazo confortável. Para isso as equipes precisam de autonomia de tomada de decisão e processos de raciocinio corporativo, um excelente exemplo de empresa assim é a [Zappos][3].
 
 **Lateral vs Vertical  
 **  
@@ -23,7 +23,7 @@ O pensamento Lateral produz uma idéia. O pensamento vertical a desenvolve.
 
 Logo podemos concluir que as formas de pensamento são complementares, mas NUNCA intercaladas. Geralmente o pensamento predominantemente lateral é o de 1º estágio, deve vir antes de pensar verticalmente e desenvolver.
 
-Para pensar orgânicamente, deve primeiro esboçar o problema descaracterizado (Lateral), depois resolver pragmáticamente (Vertical). [![][5]</img>][5] [![][6]</img>][6] [![][7]</img>][7] 
+Para pensar orgnicamente, deve primeiro esboçar o problema descaracterizado (Lateral), depois resolver pragmáticamente (Vertical). [![][5]</img>][5] [![][6]</img>][6] [![][7]</img>][7] 
 
 ![][7]
 

@@ -10,7 +10,7 @@ post_format: [ ]
 ---
 [Para entender o como foi o evento comece por aqui][1]
 
-O Alisson Vale é um dos grandes expoentes quando o assunto é Lean/Kanban ele veio correndo da Islândia  
+O Alisson Vale é um dos grandes expoentes quando o assunto é Lean/Kanban ele veio correndo da Islndia  
 onde tinha participado como palestrante nesse evento fechado para os certificadores e ele foi o responsavel  
 pela minha grata e grande surpresa com uma palestra de alto nível filosófico onde apresentou como avaliar  
 ciclos de pressupostos nos ajudam  evoluir o desenvolvimento de software.

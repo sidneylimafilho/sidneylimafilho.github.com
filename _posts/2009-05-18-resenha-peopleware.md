@@ -31,7 +31,7 @@ Os autores foram muito felizes na busca de informações para embassar seu livro
 *   A diferença entre a melhor equipe e a pior equipe foi de 10:1, ou seja, 1000% 
 *   A diferença entre as equipes de uma mesma empresa não passa de 10%, que faz a distinção entre equipes e empresas, pequenas com relação a produtividade; 
 *   A diferença de salário entre as melhores equipes e as piores é de 30% 
-*   A diferença de experiência entre as melhores equipes e a pior não tem relevância 
+*   A diferença de experiência entre as melhores equipes e a pior não tem relevncia 
 
 Essa parte ele dismistifica a relação entre experiência e salário com produtividade. “Produtividade está tão ligado a salário e experiência, quanto um carro mais velho de tanque cheio ir mais longe!”
 

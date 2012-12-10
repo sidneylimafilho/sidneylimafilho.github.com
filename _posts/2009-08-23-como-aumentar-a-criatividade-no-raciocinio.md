@@ -9,15 +9,15 @@ post_format: [ ]
 ---
 Para aumentar a criatividade do raciocinio deve-se incluir alguns aspectos na forma de pensar como:
 
-*   **Invers√£o;** 
-    Inverta a caracteristica do pensamento, se voc√™ precisa de uma ferramenta para fazer suco, por exemplo, eu posso come√ßar a raciocinar me perguntando: Se a fruta n√£o pudesse fazer suco? Se o suco da fruta n√£o matar a sede? Como se faz o suco manualmente? 
+*   **Invers„o;** 
+    Inverta a caracteristica do pensamento, se vocÍ precisa de uma ferramenta para fazer suco, por exemplo, eu posso comeÁar a raciocinar me perguntando: Se a fruta n„o pudesse fazer suco? Se o suco da fruta n„o matar a sede? Como se faz o suco manualmente? 
 
-*   **Distor√ß√£o / Exagero;  
+*   **DistorÁ„o / Exagero;  
     **  
-    Distor√ßa a realidade do problema, ou ent√£o exagere o tamanho do problema, assim ir√£o surgir os limites do que √© necess√°rio para a solu√ß√£o final. Ex: Como fazer 10.000L de suco? Se a ferramenta for movida a vento, como posso fazer? Quantas frutas preciso para fazer 10ml¬ desse suco? 
-*   **Exposi√ß√£o;  
+    DistorÁa a realidade do problema, ou ent„o exagere o tamanho do problema, assim ir„o surgir os limites do que È necess·rio para a soluÁ„o final. Ex: Como fazer 10.000L de suco? Se a ferramenta for movida a vento, como posso fazer? Quantas frutas preciso para fazer 10ml desse suco? 
+*   **ExposiÁ„o;  
     **  
-    Para aumentar suas possibilidades de criatividade aumente sua exposi√ß√£o a fontes de informa√ß√£o alheias ao seu problema. Ex: Precisa fazer um suco, para o almo√ßo. Converse com um advogado sobre leis trabalhistas. Muitas vezes os assuntos mais desconexos, libertam fontes de informa√ß√£o dentro do c√©rebro que cedem a solu√ß√£o. 
+    Para aumentar suas possibilidades de criatividade aumente sua exposiÁ„o a fontes de informaÁ„o alheias ao seu problema. Ex: Precisa fazer um suco, para o almoÁo. Converse com um advogado sobre leis trabalhistas. Muitas vezes os assuntos mais desconexos, libertam fontes de informaÁ„o dentro do cÈrebro que cedem a soluÁ„o. 
 
 [![][2]</img>][2] [![][3]</img>][3] [![][4]</img>][4] 
 

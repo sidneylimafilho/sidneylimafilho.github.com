@@ -10,7 +10,7 @@ post_format: [ ]
 ---
 ## Porque você precisa entender?
 
-A concatenação de strings é uma das tarefas que todo desenvolvedor realiza pelo menos algumas vezes por dia, então é de extrema importância entender tudo relacionado a este tema, desde a sua sintaxe, alternativas, performance, visão holistica e tudo mais que você possa colocar na sua caixa mental para resolver problemas de hoje e no futuro.
+A concatenação de strings é uma das tarefas que todo desenvolvedor realiza pelo menos algumas vezes por dia, então é de extrema importncia entender tudo relacionado a este tema, desde a sua sintaxe, alternativas, performance, visão holistica e tudo mais que você possa colocar na sua caixa mental para resolver problemas de hoje e no futuro.
 
 ## Sintaxe
 

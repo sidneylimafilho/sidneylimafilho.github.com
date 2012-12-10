@@ -13,14 +13,14 @@ CHEGARAM MEUS LIVROS!!! √â√â√â√â√â√â√â√â√â√â
 
 Made to Stick, Back of the Napkin e Tribes.
 
-Comecei pelo Tribes que √© curtinho e estou devorando, enquanto n√£o vem a resenha segue uma introdu√ß√£o ao Back of the Napkin.
+Comecei pelo Tribes que È curtinho e estou devorando, enquanto n„o vem a resenha segue uma introduÁ„o ao Back of the Napkin.
 
-Se √© uma id√©ia, v√° direto ao ponto n√£o enrole, fa√ßa no guadarnapo e mande ver.
+Se È uma idÈia, v· direto ao ponto n„o enrole, faÁa no guadarnapo e mande ver.
 
-Olha a apresenta√ß√£o.  
+Olha a apresentaÁ„o.  
 
 
-O livro √© meio fraco, mas bastante pragm√°tico, serve de excelente guia para come√ßar a se soltar em explica√ß√µes, tem boas maneiras de criar exemplos, al√©m de dar v√°rios desenhos simplissimos de se fazer que matam a pau numa reuni√£o r√°pida. N√£o recomendo voc√™ gastar seu dinheiro, pois o¬ [site][1] diz os t√≥picos principais e o livro se aprofunda para quem quer se especializar em guardanapos, rsrs! [![][3]</img>][3] [![][4]</img>][4] [![][5]</img>][5] 
+O livro È meio fraco, mas bastante pragm·tico, serve de excelente guia para comeÁar a se soltar em explicaÁıes, tem boas maneiras de criar exemplos, alÈm de dar v·rios desenhos simplissimos de se fazer que matam a pau numa reuni„o r·pida. N„o recomendo vocÍ gastar seu dinheiro, pois o [site][1] diz os tÛpicos principais e o livro se aprofunda para quem quer se especializar em guardanapos, rsrs! [![][3]</img>][3] [![][4]</img>][4] [![][5]</img>][5] 
 
 ![][5]
 

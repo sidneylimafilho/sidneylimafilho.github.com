@@ -16,7 +16,7 @@ me levou a trabalhar com JavaScript que é uma linguagem que sou apaixonado e
 sempre fui, eu era tão apaixonado por JavaScript que na época em que eu  
 trabalhava com ASP Clássico eu preferia usar JScript, precisava de algum  
 comando mais avançado do batch, partia para JScript como Scripting no Windows,  
-enfim sempre gostei da maneira dinâmica de lidar com as coisas, até escrever  
+enfim sempre gostei da maneira dinmica de lidar com as coisas, até escrever  
 coisas bizarras eu gostava de escrever tamanho era a paixão por essa  
 tecnologia.<o:p></o:p>
 

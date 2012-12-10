@@ -21,14 +21,14 @@ seguem adiante.
 > Thomas Edison 
 
 Pior que não trabalhar é se enganar com auto-piedade ou negligenciar  
-seu potencial. Quantas vezes Thomas Edison tentou criar a lâmpada? 
+seu potencial. Quantas vezes Thomas Edison tentou criar a lmpada? 
 
 
 
 > Fracassos? Não sei do que  
-> falas, em cada experiência descubro um dos motivos pelo qual a lâmpada  
+> falas, em cada experiência descubro um dos motivos pelo qual a lmpada  
 > não funciona. Agora sei mais de mil maneiras de como não fazer a  
-> lâmpada.” 
+> lmpada.” 
 
 Isso é crescer!!! Não importa os tropeços, o que importa é o que se aprende com eles e só não aprende quem não quer.
 

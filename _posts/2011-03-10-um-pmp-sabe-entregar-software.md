@@ -32,7 +32,7 @@ O que o PMI vende é que para software de conceitos estáticos o waterfall é um
 
 
 
-Como trabalho atualmente desenvolvendo produtos, com conceitos dinâmicos e o mercado vive entregando novas funcionalidades, preciso estar antenado nos concorrentes o tempo todo e acredito que muitos integrantes dessa lista devem passar por cenários parecidos, logo é facil enxergarmos que o movimento agil é sempre uma opção melhor de desenvolvimento.
+Como trabalho atualmente desenvolvendo produtos, com conceitos dinmicos e o mercado vive entregando novas funcionalidades, preciso estar antenado nos concorrentes o tempo todo e acredito que muitos integrantes dessa lista devem passar por cenários parecidos, logo é facil enxergarmos que o movimento agil é sempre uma opção melhor de desenvolvimento.
 
 
 

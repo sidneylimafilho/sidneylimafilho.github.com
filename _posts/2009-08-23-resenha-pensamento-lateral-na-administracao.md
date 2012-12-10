@@ -7,36 +7,36 @@ published: false
 tags: [ ]
 post_format: [ ]
 ---
-Acabei de ler o livro â€œPensamento Lateral na AdminstraÃ§Ã£oâ€ de Edward De Bono. O livro Ã© bem interessante, apesar de ter algumas passagens extremamente abstratas que dificultam bastante a sua aplicaÃ§Ã£o e entendimento, mas extremamente recomendado, ajuda muito a entender o que costumo postular por essas bandas daqui sobre GestÃ£o OrgÃ¢nica.
+Acabei de ler o livro €œPensamento Lateral na Adminstração€ de Edward De Bono. O livro é bem interessante, apesar de ter algumas passagens extremamente abstratas que dificultam bastante a sua aplicação e entendimento, mas extremamente recomendado, ajuda muito a entender o que costumo postular por essas bandas daqui sobre Gestão Orgnica.
 
-> Criatividade Ã© o motor da inovaÃ§Ã£o, que por sua vez, Ã© o oxigÃªnioÂ de qualquer empresa.
+> Criatividade é o motor da inovação, que por sua vez, é o oxigênio de qualquer empresa.
 
-Quando falo de criatividade e inovaÃ§Ã£o me refiro a tudo, nÃ£o somente a produtos e comunicaÃ§Ã£o, mas tambÃ©m a atitude dos funcionÃ¡rios, gestÃ£o de problemas, criaÃ§Ã£o de oportunidades, vendas, etc.
+Quando falo de criatividade e inovação me refiro a tudo, não somente a produtos e comunicação, mas também a atitude dos funcionários, gestão de problemas, criação de oportunidades, vendas, etc.
 
 
 
 ![][1]
 
-No livro, De Bono apresenta exatamente o como a forma de pensar Ã© importante na tomada de decisÃ£o e que existem 2 formas de pensar. Pensamento Vertical e o Pensamento Lateral. 
+No livro, De Bono apresenta exatamente o como a forma de pensar é importante na tomada de decisão e que existem 2 formas de pensar. Pensamento Vertical e o Pensamento Lateral. 
 
-Nas empresas Ã© muito comum os empresÃ¡rios somente utilizarem o Pensamento Vertical parase guiarem ou justificar os investimentos, mas ignoram a utilizaÃ§Ã£o do Pensamento Lateral (que sempre Ã© presente) em outras situaÃ§Ãµes. Nenhum ser humano utiliza 100% um mecanismo de pensamento, ou sÃ³ vertical ou sÃ³ lateral, e sim um mix dos dois pensamentos. De Bono apresenta no livro o momento certo de:
+Nas empresas é muito comum os empresários somente utilizarem o Pensamento Vertical parase guiarem ou justificar os investimentos, mas ignoram a utilização do Pensamento Lateral (que sempre é presente) em outras situações. Nenhum ser humano utiliza 100% um mecanismo de pensamento, ou só vertical ou só lateral, e sim um mix dos dois pensamentos. De Bono apresenta no livro o momento certo de:
 
 *   Como utilizar as formas de pensamento no momento certo; 
-*   Quanto de cada forma de pensamento Ã© adequada para cada tipo de problema; 
+*   Quanto de cada forma de pensamento é adequada para cada tipo de problema; 
 *   Como estimular o pensamento lateral; 
-*   O que sÃ£o raciocinios de 1Âº e 2Âº estÃ¡gios; 
-*   TÃ©cnicas de identificaÃ§Ã£o sobre as formas de raciocÃ­nios; 
+*   O que são raciocinios de 1º e 2º estágios; 
+*   Técnicas de identificação sobre as formas de raciocínios; 
 
-Recomendo e digo que se vocÃª um dia se interessar por [GestÃ£o OrgÃ¢nica][2], deve entender que para ser OrgÃ¢nico uma gestÃ£o precisa ser criativa e ter cÃ©lulas de raciocÃ­nios independentes. E essas unidades de raciocÃ­nios precisam saber empresar o PensamentoÂ Vertical e o PensamentoÂ Lateral no momento certo.
+Recomendo e digo que se você um dia se interessar por [Gestão Orgnica][2], deve entender que para ser Orgnico uma gestão precisa ser criativa e ter células de raciocínios independentes. E essas unidades de raciocínios precisam saber empresar o Pensamento Vertical e o Pensamento Lateral no momento certo.
 
 Saiba Mais sobre CRIATIVIDADE:
 
 *   [Pense Fora do Quadrado][3] 
-*   [GestÃ£o OrgÃ¢nica][2] 
+*   [Gestão Orgnica][2] 
 
-Â 
+ 
 
-Â 
+ 
 
 [![][5]</img>][5] [![][6]</img>][6] [![][7]</img>][7] 
 

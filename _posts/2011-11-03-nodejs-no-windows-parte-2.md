@@ -13,79 +13,79 @@ post_format: [ ]
 ---
 [Para entender esse post recomendo a leitura da Parte I][1]
 
-Neste post continuo na saga de explicar o Node.js pelo o que ele √©, mostrar suas virtudes num ambiente Windows, partindo da premissa que h√° muita informa√ß√£o sobre o Node.js na web, mas pouca explicando para n√≥s meros mortais usu√°rios de windows como tirar proveito de seu assincronismo.
+Neste post continuo na saga de explicar o Node.js pelo o que ele È, mostrar suas virtudes num ambiente Windows, partindo da premissa que h· muita informaÁ„o sobre o Node.js na web, mas pouca explicando para nÛs meros mortais usu·rios de windows como tirar proveito de seu assincronismo.
 
-No fim do post eu coloco alguns links com mais informa√ß√µes para aprofundar o estudo, enquanto isso vamos botar o Node.js na web?
+No fim do post eu coloco alguns links com mais informaÁıes para aprofundar o estudo, enquanto isso vamos botar o Node.js na web?
 
-## Relembrando: O que √© Node.js?
+## Relembrando: O que È Node.js?
 
-Node.js √© um ambiente que permite executar arquivos JavaScript, usando a engine V8 do Google Chrome que √© Open Source, acessando recursos externos de forma assincrona, baseado num modelo orientado a eventos, com a finalidade de criar aplica√ß√µes de rede altamente escal√°veis.
+Node.js È um ambiente que permite executar arquivos JavaScript, usando a engine V8 do Google Chrome que È Open Source, acessando recursos externos de forma assincrona, baseado num modelo orientado a eventos, com a finalidade de criar aplicaÁıes de rede altamente escal·veis.
 
-## Um servidor web de 1 linha de c√≥digo
+## Um servidor web de 1 linha de cÛdigo
 
-No arquivo anterior ou mostrei que √© poss√≠vel executar arquivos javascript na sua maquina local, como se fossem execut√°veis. Com o acervo de recursos que o Node.js disponibiliza para acessar recursos externos como rede, filesystem, etc.
+No arquivo anterior ou mostrei que È possÌvel executar arquivos javascript na sua maquina local, como se fossem execut·veis. Com o acervo de recursos que o Node.js disponibiliza para acessar recursos externos como rede, filesystem, etc.
 
 Crie um arquivo server.njs na sua maquina local e coloque a seguinte linha nele.
 
     require("http").createServer(function(rq,rs){rs.end("Hello World!");}).listen(3000); 
 
-Salve e se voc√™ instalou como no post [Node.js no Windows: Parte 1][1] clique duas vezes no arquivo, sen√£o basta executar na linha de comando a instru√ß√£o abaixo:
+Salve e se vocÍ instalou como no post [Node.js no Windows: Parte 1][1] clique duas vezes no arquivo, sen„o basta executar na linha de comando a instruÁ„o abaixo:
 
     node server.njs 
 
-Ao executar abrir√° um terminal console sem cursor, pois √© o Node.js executando a linha de c√≥digo esperando uma requisi√ß√£o para executar.
+Ao executar abrir· um terminal console sem cursor, pois È o Node.js executando a linha de cÛdigo esperando uma requisiÁ„o para executar.
 
-![Console NodeJS executando um servidor de 1 linha de c√≥digo][2]
+![Console NodeJS executando um servidor de 1 linha de cÛdigo][2]
 
-O receber uma requisi√ß√£o o servidor dispara a function que √© passada como argumento da fun√ß√£o createServer. Vamos testar isso? Abra o navegador e digite a url http://localhost:3000 e voc√™ ver√° a imagem abaixo.
+O receber uma requisiÁ„o o servidor dispara a function que È passada como argumento da funÁ„o createServer. Vamos testar isso? Abra o navegador e digite a url http://localhost:3000 e vocÍ ver· a imagem abaixo.
 
 ![Browser mostrando o resultado][3]
 
 ## Integrando com o legado
 
-O c√≥digo legado √© geralmente uma das principais causas de dor de cabe√ßa por desenvolvedores de software, pois sempre quando um desenvolvedor pensa nisso, lembra de acoplamento, c√≥digo macarr√£o, falta de arquitetura, arvore de natal, imposi√ß√£o de limites a serem respeitados, al√©m da integra√ß√£o que existe j√° com outras tecnologias internas e externas ao projeto.
+O cÛdigo legado È geralmente uma das principais causas de dor de cabeÁa por desenvolvedores de software, pois sempre quando um desenvolvedor pensa nisso, lembra de acoplamento, cÛdigo macarr„o, falta de arquitetura, arvore de natal, imposiÁ„o de limites a serem respeitados, alÈm da integraÁ„o que existe j· com outras tecnologias internas e externas ao projeto.
 
-No ambiente Windows o desenvolvimento web √© cercado de tecnologias que concorrem entre si, criando um acoplamento grande, tornando invi√°vel descartar ou mudar alguma delas, por exemplo, temos o IIS ocupando a porta 80, hospedando aplica√ß√µes feitas em ASP, PHP, ColdFusion (?), .NET vers√µes 1.0, 1.1, 2.0, 3.5, 4.0 e 5.0, al√©m do acesso aos mais diversos banco de dados, MySql, MS SqlServer, Oracle, Access (?), etc.
+No ambiente Windows o desenvolvimento web È cercado de tecnologias que concorrem entre si, criando um acoplamento grande, tornando invi·vel descartar ou mudar alguma delas, por exemplo, temos o IIS ocupando a porta 80, hospedando aplicaÁıes feitas em ASP, PHP, ColdFusion (?), .NET versıes 1.0, 1.1, 2.0, 3.5, 4.0 e 5.0, alÈm do acesso aos mais diversos banco de dados, MySql, MS SqlServer, Oracle, Access (?), etc.
 
-O Node.js quando executa um codigo que disponibiliza um servidor ele precisa ocupar alguma porta para estar disponivel tornando a integra√ß√£o com algum recurso mais dolorosa, ou apenas menos elegante, pois seu servidor web utilizar√° a porta 80 e sua aplica√ß√£o ter√° que usar uma outra porta qualquer, configurar firewall para liberar essa porta, esta porta estar√° visivel aos usu√°rios que, dependendo da aplica√ß√£o, pode gerar problemas inconvenientes, entre outros problemas.
+O Node.js quando executa um codigo que disponibiliza um servidor ele precisa ocupar alguma porta para estar disponivel tornando a integraÁ„o com algum recurso mais dolorosa, ou apenas menos elegante, pois seu servidor web utilizar· a porta 80 e sua aplicaÁ„o ter· que usar uma outra porta qualquer, configurar firewall para liberar essa porta, esta porta estar· visivel aos usu·rios que, dependendo da aplicaÁ„o, pode gerar problemas inconvenientes, entre outros problemas.
 
-Usar o Node.js como um servidor web √© possivel, por√©m atualmente n√£o √© recomendado pelo criador dele, pois por mais que essa seja uma das finalidades pelo qual ele foi construido, hoje ele ainda √© muito imaturo como uma solu√ß√£o completa, pois h√° muitas tarefas al√©m de processar dados que um servidor web executa, como servir recursos est√°ticos como imagens, documentos, videos, ele tamb√©m precisa reconhecer todos os verbos do protocolo HTTP, cookies, criptografia, HTTPS, tratar multiplos protocolos, etc.
+Usar o Node.js como um servidor web È possivel, porÈm atualmente n„o È recomendado pelo criador dele, pois por mais que essa seja uma das finalidades pelo qual ele foi construido, hoje ele ainda È muito imaturo como uma soluÁ„o completa, pois h· muitas tarefas alÈm de processar dados que um servidor web executa, como servir recursos est·ticos como imagens, documentos, videos, ele tambÈm precisa reconhecer todos os verbos do protocolo HTTP, cookies, criptografia, HTTPS, tratar multiplos protocolos, etc.
 
-A [recomenda√ß√£o][4] pelo pr√≥prio criador √© ao disponibilizar o Node.js em ambiente de produ√ß√£o, colocar um servidor web na frente do Node.js, enquanto amadurece e surgem mais bibliotecas para suportar tudo que um Web Server precisa, assim o WebServer fica respons√°vel por todo o trabalho pesado e o Node.js fica respons√°vel apenas pelo processamento dos dados e da aplica√ß√£o.
+A [recomendaÁ„o][4] pelo prÛprio criador È ao disponibilizar o Node.js em ambiente de produÁ„o, colocar um servidor web na frente do Node.js, enquanto amadurece e surgem mais bibliotecas para suportar tudo que um Web Server precisa, assim o WebServer fica respons·vel por todo o trabalho pesado e o Node.js fica respons·vel apenas pelo processamento dos dados e da aplicaÁ„o.
 
 ![Infra-estrutura sugerida pelo Ryan][5]
 
-No Windows a infra √© parecida por√©m mudamos o NGINX pelo IIS.
+No Windows a infra È parecida porÈm mudamos o NGINX pelo IIS.
 
 ![Infra-estrutura no Windows][6]
 
-Por√©m ainda falta resolver um problema do Node.js no Windows, que √©: Como o Node.js ir√° se comunicar com o IIS?
+PorÈm ainda falta resolver um problema do Node.js no Windows, que È: Como o Node.js ir· se comunicar com o IIS?
 
-Para realizar essa comunica√ß√£o entre os processos foi criado um projeto chamado [IISNode][7] criado por [Tomasz Janczuk][8]
+Para realizar essa comunicaÁ„o entre os processos foi criado um projeto chamado [IISNode][7] criado por [Tomasz Janczuk][8]
 
 ## Instalando o iisnode
 
-Para instalar o iisnode √© muito f√°cil, h√° os arquivos instaladores que facilitam todos os passos, al√©m de serem √∫teis, adicionam alguns recursos no IIS.
+Para instalar o iisnode È muito f·cil, h· os arquivos instaladores que facilitam todos os passos, alÈm de serem ˙teis, adicionam alguns recursos no IIS.
 
-**Node.js¬ **[(x86)][9]  
-*Instala a ultima vers√£o do Node.js numa pasta ProgramFiles(x86|x64), servindo de base para qualquer applica√ß√£o, caso voc√™ queira usar uma aplica√ß√£o com outra vers√£o do Node.js h√° uma op√ß√£o de configura√ß√£o que apresentarei mais a frente*
+**Node.js **[(x86)][9]  
+*Instala a ultima vers„o do Node.js numa pasta ProgramFiles(x86|x64), servindo de base para qualquer applicaÁ„o, caso vocÍ queira usar uma aplicaÁ„o com outra vers„o do Node.js h· uma opÁ„o de configuraÁ„o que apresentarei mais a frente*
 
-**Microsoft Visual C++ 2010 Redistributable Package**¬ ¬ [(x86)][10] | [(x64)  
-][11]*O instalador do IIS Node n√£o prosseguir√° com a instala√ß√£o caso sua maquina n√£o posua a biblioteca de componentes do C++, se isso ocorrer aqui est√£o os links*
+**Microsoft Visual C++ 2010 Redistributable Package**  [(x86)][10] | [(x64)  
+][11]*O instalador do IIS Node n„o prosseguir· com a instalaÁ„o caso sua maquina n„o posua a biblioteca de componentes do C++, se isso ocorrer aqui est„o os links*
 
-**iisnode for iis7**¬ [(x86)][12] |¬ [(x64)][13]  
-*Aqui est√° o respons√°vel que permitir√° o IIS se comunicar com o Node.js. Voc√™ n√£o precisa realmente instalar pois na arquitetura do IIS bastaria adicionar uma referencia no Web.config da aplica√ß√£o, por√©m com este instalador ele adiciona esta referencia no Web.config global do .NET, facilitando assim o processo em futuras apps, como tamb√©m ele checa os requisitos necess√°rios para a DLL funcionar.*
+**iisnode for iis7** [(x86)][12] | [(x64)][13]  
+*Aqui est· o respons·vel que permitir· o IIS se comunicar com o Node.js. VocÍ n„o precisa realmente instalar pois na arquitetura do IIS bastaria adicionar uma referencia no Web.config da aplicaÁ„o, porÈm com este instalador ele adiciona esta referencia no Web.config global do .NET, facilitando assim o processo em futuras apps, como tambÈm ele checa os requisitos necess·rios para a DLL funcionar.*
 
-**iisnode for iis7 express**¬ [(x86)][14]  
-*Caso use o IIS Express, n√£o testei. Por√©m as referencias que tenho indicam que a instala√ß√£o √© normal e sem maiores percal√ßos*
+**iisnode for iis7 express** [(x86)][14]  
+*Caso use o IIS Express, n„o testei. PorÈm as referencias que tenho indicam que a instalaÁ„o È normal e sem maiores percalÁos*
 
-Ap√≥s instalar os 3 itens acima n√≥s j√° poderemos come√ßar a brincar com o Node.js no IIS, agora fica muito emocionante, pois foi o que eu sempre busquei nos meus ultimos 10 anos de carreira. Rodar Javascript eficientemente no servidor.
+ApÛs instalar os 3 itens acima nÛs j· poderemos comeÁar a brincar com o Node.js no IIS, agora fica muito emocionante, pois foi o que eu sempre busquei nos meus ultimos 10 anos de carreira. Rodar Javascript eficientemente no servidor.
 
-J√° instalado o iisnode s√≥ precisamos agora de 2 coisas: uma arquivo web.config para guardar a configura√ß√µes, o arquivo javascript que o iisnode ir√° chamar com o Node.js.
+J· instalado o iisnode sÛ precisamos agora de 2 coisas: uma arquivo web.config para guardar a configuraÁıes, o arquivo javascript que o iisnode ir· chamar com o Node.js.
 
-![Unicos arquivos necess√°rios para o iisnode][15]
+![Unicos arquivos necess·rios para o iisnode][15]
 
-O conte√∫do do arquivo web.config
+O conte˙do do arquivo web.config
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
@@ -96,7 +96,7 @@ O conte√∫do do arquivo web.config
       </system.webServer>
     </configuration>
 
-O conte√∫do do arquivo server.njs
+O conte˙do do arquivo server.njs
 
     require("http")
     .createServer(function (req, res) {
@@ -104,21 +104,21 @@ O conte√∫do do arquivo server.njs
     })
     .listen(process.env.PORT||3000);
 
-Repare que a unica diferen√ßa desse servidor de 1 linha de c√≥digo para a vers√£o que mostramos antes √© a vari√°vel ‚Äúprocess.env.PORT‚Äù, pois ela √© setada pelo iisnode indicando em qual Named Pipes ele usar√° para realizar a comunica√ß√£o com o Node.js.
+Repare que a unica diferenÁa desse servidor de 1 linha de cÛdigo para a vers„o que mostramos antes È a vari·vel Äúprocess.env.PORTÄù, pois ela È setada pelo iisnode indicando em qual Named Pipes ele usar· para realizar a comunicaÁ„o com o Node.js.
 
-Outro ponto interessante √© que com os passos do [post anterior][1] feitos ent√£o se n√£o quisermos depender do IIS, basta clicar 2x no arquivo server.njs, afinal todo arquivo .njs est√° mapeado para executar com o Node.js, que seu servidor estar√° rodando na porta 3000, pois como ‚Äúprocess.env.PORT‚Äù ser√° undefined, ent√£o o operador ‚Äú||‚Äù indica que se a primeira vari√°vel for undefined ent√£o usa a pr√≥xima que no caso √© 3000.
+Outro ponto interessante È que com os passos do [post anterior][1] feitos ent„o se n„o quisermos depender do IIS, basta clicar 2x no arquivo server.njs, afinal todo arquivo .njs est· mapeado para executar com o Node.js, que seu servidor estar· rodando na porta 3000, pois como Äúprocess.env.PORTÄù ser· undefined, ent„o o operador Äú||Äù indica que se a primeira vari·vel for undefined ent„o usa a prÛxima que no caso È 3000.
 
 ![Resultado do iisnode][16]
 
-Se ap√≥s executar esses passos voc√™ for no navegador e ao digitar http://localhost/server.njs, aparecer um erro 500.19 como na imagem abaixo, isso indica que falta o componente URL Rewrite 2.0
+Se apÛs executar esses passos vocÍ for no navegador e ao digitar http://localhost/server.njs, aparecer um erro 500.19 como na imagem abaixo, isso indica que falta o componente URL Rewrite 2.0
 
 ![Erro 500.19][17]
 
-Para instalar o URL Rewrite 2.0 √© simples usar os instaladores a seguir: [X86][18] | [x64][19]
+Para instalar o URL Rewrite 2.0 È simples usar os instaladores a seguir: [X86][18] | [x64][19]
 
 ## Acaba por aqui?
 
-N√£o. Na pr√≥xima parte mostrarei como montar uma aplica√ß√£o web inteira no Windows usando Node.js atrav√©s do IIS, interagindo com o ASP.NET MVC, al√©m de se aprofundar no IISNode e¬ apresentar um toolkit que o permitir√° criar em quest√£o de minutos uma aplica√ß√£o do zero.
+N„o. Na prÛxima parte mostrarei como montar uma aplicaÁ„o web inteira no Windows usando Node.js atravÈs do IIS, interagindo com o ASP.NET MVC, alÈm de se aprofundar no IISNode e apresentar um toolkit que o permitir· criar em quest„o de minutos uma aplicaÁ„o do zero.
 
 ## Mais Referencias
 

@@ -1,50 +1,50 @@
 ---
 author: Sidney Lima Filho
 title: >
-  DÃ©bito TÃ©cnico ou Vaidade
-  TecnolÃ³gica?
+  Débito Técnico ou Vaidade
+  Tecnológica?
 excerpt:
 layout: post
 published: false
 tags:
   - Agile
-  - DÃ©bito TÃ©cnico
+  - Débito Técnico
 post_format: [ ]
 ---
-O assunto dÃ©bito tÃ©cnico Ã© muito extenso, hÃ¡ inÃºmeras referÃªnciasÂ na internet e nÃ£o pretendo, neste post, me alongar no assunto, explicando Â detalhadamenteÂ o que ele Ã©, vou apenas fazer uma introduÃ§Ã£o e em seguida entro no assunto do  
+O assunto débito técnico é muito extenso, há inúmeras referências na internet e não pretendo, neste post, me alongar no assunto, explicando  detalhadamente o que ele é, vou apenas fazer uma introdução e em seguida entro no assunto do  
 post.
 
-DÃ©bito tÃ©cnico Ã© uma metÃ¡fora criada por Ward Cunningham para nos ajudar a entender o problema que Ã© criado quando adicionamos cÃ³digo a um sistema para resolver um problema pontual e com o efeito colateral de denegrir o design. Mas o que Ã© interessante no assunto Ã© a inflexibilidade que muitas pessoas tem com o termo e sua aplicaÃ§Ã£o, pois acreditam que o dÃ©bito Ã©  
-uma forma elegante de chamar a gambiarra que Ã© feita no cÃ³digo. Para entender melhor o assunto olhem no blog do [Mestre dos Magos][1]
+Débito técnico é uma metáfora criada por Ward Cunningham para nos ajudar a entender o problema que é criado quando adicionamos código a um sistema para resolver um problema pontual e com o efeito colateral de denegrir o design. Mas o que é interessante no assunto é a inflexibilidade que muitas pessoas tem com o termo e sua aplicação, pois acreditam que o débito é  
+uma forma elegante de chamar a gambiarra que é feita no código. Para entender melhor o assunto olhem no blog do [Mestre dos Magos][1]
 
-O cÃ³digo assim como qualquer idioma Ã© um texto que usamos para comunicaÃ§Ã£o, para transmitir conhecimento e delegar tarefas (no caso de software, delegar para o computador executar), entÃ£o quando falamos em dÃ©bito tÃ©cnico estamos dizendo que existem textos mal escritos, nÃ£o em questÃ£o de sintaxe, pois assim como o Word checa a ortografia e semÃ¢ntica dos nossos textos, o compilador checa qualquer erro de digitaÃ§Ã£o e sintaxe, alÃ©m de aperfeiÃ§oar sua saÃ­da em cÃ³digo de maquina.
+O código assim como qualquer idioma é um texto que usamos para comunicação, para transmitir conhecimento e delegar tarefas (no caso de software, delegar para o computador executar), então quando falamos em débito técnico estamos dizendo que existem textos mal escritos, não em questão de sintaxe, pois assim como o Word checa a ortografia e semntica dos nossos textos, o compilador checa qualquer erro de digitação e sintaxe, além de aperfeiçoar sua saída em código de maquina.
 
 ![][2]
 
-*Figura 1: Exemplo de dÃ©bito no Word*
+*Figura 1: Exemplo de débito no Word*
 
-PorÃ©m todo texto, e este post nÃ£o se exclui disso, pode estar perfeitamente escrito, com uma pÃ©ssima redaÃ§Ã£o e comunicaÃ§Ã£o, assim qualquer um que ler este post, pode ter inÃºmeras interpretaÃ§Ãµes. A dubiedade de significados, quebra de padrÃµes, desenquadramento do projeto inicial, sÃ£o formas de dÃ©bito tÃ©cnico.
+Porém todo texto, e este post não se exclui disso, pode estar perfeitamente escrito, com uma péssima redação e comunicação, assim qualquer um que ler este post, pode ter inúmeras interpretações. A dubiedade de significados, quebra de padrões, desenquadramento do projeto inicial, são formas de débito técnico.
 
-Importante neste momento nÃ£o confundir com cÃ³digo legado, pois cÃ³digo legado pode ser tanto um cÃ³digo que Ã© obsoleto, mas totalmente coerente, como pode ser um cÃ³digo atual sem testes como Michael Feathers indica no [seu livro][3].
+Importante neste momento não confundir com código legado, pois código legado pode ser tanto um código que é obsoleto, mas totalmente coerente, como pode ser um código atual sem testes como Michael Feathers indica no [seu livro][3].
 
-**Como identificar um dÃ©bito tÃ©cnico?**
+**Como identificar um débito técnico?**
 
-Neste ponto jÃ¡ entendemos o que Ã© deve ser um dÃ©bito tÃ©cnico, porÃ©m como identificamos um? SerÃ¡ um IF mal colocado? SerÃ¡ o uso de acesso a banco de dados numa rotina? O dÃ©bito pode ser qualquer coisa que VIOLE o principio do projeto. Se uma rotina foi projetada para realizar sua tarefa sem acesso a base de dados e vocÃª coloca, entÃ£o vocÃª adicionou um dÃ©bito, Ã s vezes o dÃ©bito atÃ© se mascara como um design pattern, quando vocÃª adiciona uma estrutura de inversÃ£o de controle apenas para acessar um recurso inacessÃ­vel ou que possui uma referencia circular no projeto.
+Neste ponto já entendemos o que é deve ser um débito técnico, porém como identificamos um? Será um IF mal colocado? Será o uso de acesso a banco de dados numa rotina? O débito pode ser qualquer coisa que VIOLE o principio do projeto. Se uma rotina foi projetada para realizar sua tarefa sem acesso a base de dados e você coloca, então você adicionou um débito, Ã s vezes o débito até se mascara como um design pattern, quando você adiciona uma estrutura de inversão de controle apenas para acessar um recurso inacessível ou que possui uma referencia circular no projeto.
 
-O dÃ©bito como diria o â€œUncle Bobâ€ (e concordo com ele) [nem todo cÃ³digo feito por desenvolvedores iniciantes Ã© necessariamente um cÃ³digo ruim][4], o termo dÃ©bito deve ser reservado somente para casos onde premeditadamente Ã© empregada uma estratÃ©gia de design que nÃ£o Ã© sustentÃ¡vel, mas que tenha benefÃ­cios de Curto prazo, como realizar uma publicaÃ§Ã£o, remover o impeditivo para o desenvolvimento de um Case Story, etc.
+O débito como diria o €œUncle Bob€ (e concordo com ele) [nem todo código feito por desenvolvedores iniciantes é necessariamente um código ruim][4], o termo débito deve ser reservado somente para casos onde premeditadamente é empregada uma estratégia de design que não é sustentável, mas que tenha benefícios de Curto prazo, como realizar uma publicação, remover o impeditivo para o desenvolvimento de um Case Story, etc.
 
-Outro ponto a ser levado em consideraÃ§Ã£o Ã© que o trabalhador do conhecimento aprende TODOS OS DIAS com sua atividade e este aprendizado o leva a compreender melhor o domÃ­nio, a entender melhor o projeto inicial, alem de permitir tomar melhores decisÃµes com relaÃ§Ã£o ao design futuro. Assim sendo, com o aprendizado contÃ­nuo, aquilo que foi um bom design no comeÃ§o do projeto se mostra totalmente limitador para a sua evoluÃ§Ã£o, pode se tornar um dÃ©bito tambÃ©m.
+Outro ponto a ser levado em consideração é que o trabalhador do conhecimento aprende TODOS OS DIAS com sua atividade e este aprendizado o leva a compreender melhor o domínio, a entender melhor o projeto inicial, alem de permitir tomar melhores decisões com relação ao design futuro. Assim sendo, com o aprendizado contínuo, aquilo que foi um bom design no começo do projeto se mostra totalmente limitador para a sua evolução, pode se tornar um débito também.
 
-O termo dÃ©bito tÃ©cnico foi criado para exemplificar para pessoas nÃ£o-tÃ©cnicas um padrÃ£o que ocorre no dia-a-dia do trabalhador do conhecimento, inicialmente apenas com o propÃ³sito de facilitar a comunicaÃ§Ã£o com um agente externo sobre coisas que impactam naquilo que lhes interessam como prazo e custos.
+O termo débito técnico foi criado para exemplificar para pessoas não-técnicas um padrão que ocorre no dia-a-dia do trabalhador do conhecimento, inicialmente apenas com o propósito de facilitar a comunicação com um agente externo sobre coisas que impactam naquilo que lhes interessam como prazo e custos.
 
-O importante para um desenvolvedor de software Ã© se preocupar TODOS OS DIAS no desenvolvimento Ã© diminuir ou atÃ© mesmo eliminar todos os dÃ©bitos que existam no software a ser construÃ­do, porÃ©m lembrando sempre que: Nem todo cÃ³digo legado Ã© dÃ©bito; nem todo cÃ³digo velho Ã© dÃ©bito; nem todo cÃ³digo sem teses Ã© debito; nem todo cÃ³digo feito em tecnologia obsoleta precisa  
+O importante para um desenvolvedor de software é se preocupar TODOS OS DIAS no desenvolvimento é diminuir ou até mesmo eliminar todos os débitos que existam no software a ser construído, porém lembrando sempre que: Nem todo código legado é débito; nem todo código velho é débito; nem todo código sem teses é debito; nem todo código feito em tecnologia obsoleta precisa  
 ser reescrito;
 
 Alguns links interessantes:
 
-*   [Hard Choices][5], um jogo criado pela renomada [SEI][6] para exemplificar os desafios com relaÃ§Ã£o ao dÃ©bito tÃ©cnico;
-*   Um [quadrante][7]Â criado pelo [Mestre dos Magos][8], para orientar quais dÃ©bitos sÃ£o bons e quais sÃ£o ruins;
-*   [Artigo do Robert Martin][4], sobre o que Ã© debito tÃ©cnico;
+*   [Hard Choices][5], um jogo criado pela renomada [SEI][6] para exemplificar os desafios com relação ao débito técnico;
+*   Um [quadrante][7] criado pelo [Mestre dos Magos][8], para orientar quais débitos são bons e quais são ruins;
+*   [Artigo do Robert Martin][4], sobre o que é debito técnico;
 
  [1]: http://martinfowler.com/bliki/TechnicalDebt.html
  [2]: /wp-content/uploads/exemplo%20d%C3%A9bito%20t%C3%A9cnico%20no%20word.png

@@ -1,6 +1,6 @@
 ---
 author: Sidney Lima Filho
-title: ' GestÃ£o OrgÃ¢nica! '
+title: ' Gestão Orgnica! '
 excerpt:
 layout: post
 published: false
@@ -9,15 +9,15 @@ post_format: [ ]
 draft: true
 ---
 
-Hoje em dia muitas pessoas falam em gestÃ£o, de processos, de projetos, de vida, de tempo, de recursos, [et cetera][1], mas pouco se fala em porque gerir. Primeiro que hÃ¡ uma grande diferenÃ§a entre gerir e administrar. AÂ [administraÃ§Ã£o][2] moderna inclina para algumas funÃ§Ãµes norteadoras comoÂ Planejar, Organizar, Dirigir e Controlar. Quando nos remetemos a Gerir temos uma ligaÃ§Ã£o direta com a palavra gerÃªncia,Â que vem do latim â€œgerÃ¨reâ€ = conduzir, levar sobre si, por extensÃ£oÂ comandar, orientar,Â logo nÃ£o hÃ¡ como comandar, orientar, conduzir um estoque, ou logistica, muito menos o dinheiro, portantoÂ **administra-se** papeis, recursos, estoque, produÃ§Ã£o; **gerencia-se** pessoas, orgÃ£os, recursos humanos, criatividade; No dia-a-dia o termo administrar e gerir, se tornaram equivalentes, mas na essÃªncia faz muita diferenÃ§a.
+Hoje em dia muitas pessoas falam em gestão, de processos, de projetos, de vida, de tempo, de recursos, [et cetera][1], mas pouco se fala em porque gerir. Primeiro que há uma grande diferença entre gerir e administrar. A [administração][2] moderna inclina para algumas funções norteadoras como Planejar, Organizar, Dirigir e Controlar. Quando nos remetemos a Gerir temos uma ligação direta com a palavra gerência, que vem do latim €œgerÃ¨re€ = conduzir, levar sobre si, por extensão comandar, orientar, logo não há como comandar, orientar, conduzir um estoque, ou logistica, muito menos o dinheiro, portanto **administra-se** papeis, recursos, estoque, produção; **gerencia-se** pessoas, orgãos, recursos humanos, criatividade; No dia-a-dia o termo administrar e gerir, se tornaram equivalentes, mas na essência faz muita diferença.
 
-NÃ£o hÃ¡ como pensar em empresas, sem pensar numa instituiÃ§Ã£o que se desenvolve, cresce e responde a estimulos externos, que precisam serÂ comandadas,Â orientadas, conduzidas, entÃ£o jÃ¡ partimos do pressuposto que as novas empresas do sÃ©culo 21, 2.0, pÃ³s-modernas nÃ£o sÃ£o mais administradas e sim geridas. Muito mais do que geridas elas se tornaram uma organizaÃ§Ã£o que precisar ter vida prÃ³pria eÂ Â â€œcoincidentementeâ€Â as caracteristicas principaisÂ a vida basicamente sÃ£o:
+Não há como pensar em empresas, sem pensar numa instituição que se desenvolve, cresce e responde a estimulos externos, que precisam ser comandadas, orientadas, conduzidas, então já partimos do pressuposto que as novas empresas do século 21, 2.0, pós-modernas não são mais administradas e sim geridas. Muito mais do que geridas elas se tornaram uma organização que precisar ter vida própria e  €œcoincidentemente€ as caracteristicas principais a vida basicamente são:
 
 *   Desenvolver-se; 
 *   Crescer; 
-*   Ter Sensibilidade (Responde a estÃ­mulos do meio); 
+*   Ter Sensibilidade (Responde a estímulos do meio); 
 
-Logo toda a empresa nÃ£o Ã© mais uma organizaÃ§Ã£o, instituiÃ§Ã£o e/ouÂ estabelecimento, mas subiramÂ ao patamarÂ de umÂ organismo.
+Logo toda a empresa não é mais uma organização, instituição e/ou estabelecimento, mas subiram ao patamar de um organismo.
 
-Quando instituimos que queremos uma empresa que seja uma organizaÃ§Ã£o viva (ou seja, um organismo), logo nÃ£o podemos administrÃ¡-las, temos que geri-las. Qual a diferenÃ§a prÃ¡tica? TODAS, afinal administraÃ§Ã£o tem fim, gerÃªncia nÃ£o. Pensando nisso que cunhei o termo GestÃ£o OrgÃ¢nica. 
+Quando instituimos que queremos uma empresa que seja uma organização viva (ou seja, um organismo), logo não podemos administrá-las, temos que geri-las. Qual a diferença prática? TODAS, afinal administração tem fim, gerência não. Pensando nisso que cunhei o termo Gestão Orgnica. 
 
