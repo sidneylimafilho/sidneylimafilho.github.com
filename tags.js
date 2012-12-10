@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-tag, tags = {};
+tag = {}, tags = {};
 
 {% for post in site.posts %} {% for tag in post.tags %}
 tag = tags["{{tag}}"] = (tags["{{tag}}"] || {count:0, posts:[]});
