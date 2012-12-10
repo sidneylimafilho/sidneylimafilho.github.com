@@ -4,7 +4,7 @@ title: Quem é Sidney?
 excerpt: 'Uma breve descrição de quem é o dono deste blog e <span>porque você deveria acompanhar essa história.</span>'
 layout: default
 ---
-<article>
+
 Olá, me chamo Sidney Lima Filho e abaixo descrevo um pouco sobre quem sou e o que penso.
 
 Pensador, Aprendiz, Desenvolvedor, Gerente, Sonhador, exatamente nessa ordem. Acredita que o software é um produto derivado da sinergia dos sonhos das pessoas, canalizada pela comunicação, materializada em imagens que agregam valor somente a quem sonhou junto. No desenvolvimento de software passou por tanto altos e baixos com os clientes sonhadores, onde aprendeu que responder as mudanças de escopo é mais importante do que entregar o que está escrito.
@@ -73,4 +73,3 @@ Softwares NÃO são soluções para problemas. Eles são automações de padrõe
 
  [1]: http://pt.wikipedia.org/wiki/Pensamento_sist%C3%AAmico
  [2]: http://michaelis.uol.com.br/moderno/portugues/index.php?lingua=portugues-portugues&palavra=desenvolver
-</article>
