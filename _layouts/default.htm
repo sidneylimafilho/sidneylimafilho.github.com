@@ -53,7 +53,7 @@
                     <div class="right-side">
                         <div class="widget">
                             <span class="gravatar">
-                                <img src="" />
+                                <img src="http://1.gravatar.com/avatar/13c12ed8bb09f191876ae217829b15ed?size=64" />
                                 Eu sou Sidney Lima Filho e aqui você saberá sobre quem eu sou e minhas ideias. Abaixo estão as redes sociais que participo e onde você pode me encontrar.
                             </span>
                             <nav>
@@ -199,8 +199,7 @@
         google.setOnLoadCallback(function feeds() {
 
             var user = {
-                name: "sidneylimafilho",
-                gravatar: "13c12ed8bb09f191876ae217829b15ed",
+                name: "sidneylimafilho",                
                 mail: "https://docs.google.com/spreadsheet/viewform?formkey=dEtLSzNWdXlnanJMdTN6WmtQb2VnMlE6MQ",
                 twitter: "sidneylimafilho",
                 facebook: "sidneylimafilho",
@@ -227,10 +226,7 @@
             $('.mail').attr('href', user.mail);
 
 
-            // GRAVATAR
-            $.getJSON("http://gravatar.com/" + user.gravatar + ".json?callback=?", function(json) {
-                $('.gravatar img').attr('src', json.entry[0].thumbnailUrl + '?size=80');
-            });
+
 
             /*
             // TWITTER
