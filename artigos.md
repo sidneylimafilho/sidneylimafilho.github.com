@@ -2,6 +2,7 @@
 author: Sidney Lima Filho
 title: Artigos
 excerpt: 'Os sites que já publicaram conteúdo de minha autoria.'
+categories: 'artigos'
 layout: default
 ---
 
