@@ -289,7 +289,7 @@
 </script>
 
 <script type="text/html" id="tagsTemplate">
-<h2 class="post_title">{{page.title}}
+<h2 class="post_title">{.{page.title}}
 </h2>
 <ul>
 
@@ -299,7 +299,7 @@
     <p class="summary">
        <span>{.{post.summary}}</span>
        <ul class="tag_list">
-          {% for tag in post.tags %}
+          {.% for tag in post.tags %}
           <li class="inline archive_list">
           <a class="tag_list_link" href="/tag/{.{ tag }}">{.{ tag }}</a>
           </li>
