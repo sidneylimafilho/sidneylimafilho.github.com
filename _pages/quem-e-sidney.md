@@ -1,7 +1,7 @@
 ---
 author: Sidney Lima Filho
 title: Quem é Sidney?
-excerpt: 'Uma breve descrição de quem é o dono deste blog e <span>porque você deveria acompanhar essa história.</span>'
+excerpt: 'Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.'
 layout: default
 ---
 
