@@ -21,16 +21,17 @@
                 <menu>
                     <ul>
                         <li>
-                            <a href="/leituras" title="Veja aqui quais livros estão formando minhas idéias e de que fonte minha mente está bebendo.">LEITURAS</a>
+                            <a href="/leituras" {%if page.categories contains 'leituras'%}class="selected"{%endif%}
+                                title="Veja aqui quais livros estão formando minhas idéias e de que fonte minha mente está bebendo.">LEITURAS</a>
                         </li>
                         <li>
-                            <a href="/artigos" title="Os sites que já publicaram conteúdo de minha autoria.">ARTIGOS</a>
+                            <a href="/artigos"  class="{{page.categories}}" title="Os sites que já publicaram conteúdo de minha autoria.">ARTIGOS</a>
                         </li>
                         <li>
-                            <a href="javascript:;" title="Eventos em que participei palestrando.">PALESTRAS</a>
+                            <a href="javascript:;" class="{{page.categories}}" title="Eventos em que participei palestrando.">PALESTRAS</a>
                         </li>
                         <li>
-                            <a href="/quem-e-sidney" title="Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.">QUEM É SIDNEY</a>
+                            <a href="/quem-e-sidney" class="{{page.categories}}" title="Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.">QUEM É SIDNEY</a>
                         </li>
                     </ul>
                 </menu>
