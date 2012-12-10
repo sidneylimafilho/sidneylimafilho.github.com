@@ -1,7 +1,7 @@
 ---
 author: Sidney Lima Filho
 title: Quem é Sidney?
-categories: 'pages quem-e-sidney'
+categories: 'page quem-e-sidney'
 excerpt: 'Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.'
 layout: default
 ---
