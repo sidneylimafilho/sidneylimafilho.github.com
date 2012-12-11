@@ -40,11 +40,11 @@
             <div id="google_translate_element">
             </div>
         </header>
-        <banner>
+        <banner {% if page.categories %} class="{{page.categories}}"{% endif %}>
             <a href="javascript:;" class="arrow-right"></a>
             <a href="javascript:;" class="arrow-left"></a>
             <div class="wrapper">
-                <div class="banner1">
+                <div class="excerpt">
                     <h1>Aprenda como funciona
                     </h1>
                     <h2>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
@@ -57,7 +57,7 @@
             <div class="super">
                 <div class="wrapper">
                     <div class="content left-side">
-                        <article class="{{page.categories}}">{{ content }}
+                        <article {% if page.categories %} class="{{page.categories}}"{% endif %}>{{ content }}
                         </article>
                     </div>
                     <div class="right-side">
