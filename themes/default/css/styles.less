@@ -154,44 +154,47 @@ section {
    .left-side{
       width: 610px;
       float: left;
-      
+           
+      article {
+         padding-right: 24px;  
 
-      .posts{
-         padding: 0px;
+         .post-wall{
+            padding: 0px;
 
-         li{
-            float: left;
-            display: block;
-            width: 280px;
-            height: 280px;
-            margin: 10px;
-            border:1px solid black;
-            position: relative;
+            li{
+               float: left;
+               display: block;
+               width: 280px;
+               height: 280px;
+               margin: 10px;
+               border:1px solid black;
+               position: relative;
 
-            a {             
-               display: block;  
-               position: absolute;
-               bottom:0px;               
-               padding: 5px;
-               width: 270px;               
-               background-color: rgba(0, 0, 0, 0.50);
+               a {             
+                  display: block;  
+                  position: absolute;
+                  text-decoration: none;
+                  bottom:0px;               
+                  padding: 5px;
+                  width: 270px;               
+                  background-color: rgba(0, 0, 0, 0.50);
+                  color: #FFF;
+                  opacity: 0;               
+                  .transition(opacity, 400ms);
+
+                  small{ display: block; }
+               }            
+            }
+
+            li:hover a{            
+               opacity: 1;
                color: #FFF;
-               opacity: 0;               
-               .transition(opacity, 400ms);
-
-               small{ display: block; }
-            }            
-         }
-
-         li:hover a{            
-            opacity: 1;
-            color: #FFF;
-         }
+            }
+         }      
       }
 
-      .page {
-
-          ul {
+      article.page {
+         ul {
             list-style-type: none;
             padding-left: 90px;
             position: relative;
@@ -208,14 +211,8 @@ section {
                   display: block;
                   color:#444;
                }
-            }
-
-            
+            }            
          }
-      }
-
-      article {
-         padding-right: 24px;        
       }
    }
 
