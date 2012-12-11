@@ -40,12 +40,12 @@ header, banner, section, footer {
 header {  
    position:absolute;   
    background-color: rgba(255, 255, 255, 0.75);
-   padding: 10px 0px;
+   padding: 20px 0px;
    z-index: 1000; /* cause banner position relative stay hover on the header */
 
    .signature {
       .text-shadow(0px, 0px, 0px, rgba(255, 255, 255, 0));
-      width: 300px;
+      width: 330px;
       height: 50px;
       float: left;
       color: transparent;
@@ -91,12 +91,14 @@ header {
             a {               
                display:block;
                text-align:center;  
-               font-size:18px;                                             
+               font-size:18px;  
+               color: #999;    
+               .text-shadow(0px, 0px, 0px, rgba(0, 0, 0, 0));                                       
             }
-            a:hover, a.selected{                    
+            /*a:hover, a.selected{                    
                text-decoration: none;
                border-top: 1px solid @primaryColorHover;               
-            }
+            }*/
          }
       }
    }
@@ -270,8 +272,8 @@ section {
         
          .button { 
             display: table-cell; 
-            width: 32px;
-            height: 32px;
+            width: 64px;
+            height: 64px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 76%;
@@ -374,10 +376,17 @@ a {
    color:@primaryColor; 
    text-decoration:none;
    .transition;
-   .text-shadow(0px, 0px, 1px, rgba(0, 0, 0, 0.2));
+   .text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));
+   padding-bottom: 2px;
+   background: url(../img/anchor-bg.png) no-repeat 0px -2px;
 }
 
-a:hover, a.selected{ color:@primaryColorHover; text-decoration:underline; .text-shadow(0px, 0px, 3px, rgba(0, 0, 0, 0.13));}
+a:hover, a.selected{ 
+   color:@primaryColorHover; 
+   text-decoration: none; 
+   .text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));
+   background: url(../img/anchor-bg.png) no-repeat 0px 100%;
+}
 
 b, strong { font-family: "HelveticaNeueMdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
 
