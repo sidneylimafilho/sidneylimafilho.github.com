@@ -8,7 +8,7 @@ layout: default
          {% if post.published %}
         <li style="background:url({{ post.image }}) no-repeat center;">
             <a href="{{ post.url }}">
-                <span>{{ post.title | xml_escape }}</span>
+                <b>{{ post.title | xml_escape }}</b>
                 <small>
                     {{ post.date | date: "%B %d, %Y" }}
                 </small>
