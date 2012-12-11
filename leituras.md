@@ -2,6 +2,7 @@
 author: Sidney Lima Filho
 title: Leituras
 excerpt: 'Veja aqui quais livros estão formando minhas idéias e de que fonte minha mente está bebendo.'
+categories: 'page leituras'
 layout: default
 ---
 <div id="ShelfariWidget231285" class="shelfari">
