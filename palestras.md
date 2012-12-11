@@ -7,7 +7,6 @@ layout: default
 ---
 
 # DNAD 2012
----
 
 +   <a href="http://www.slideshare.net/sidneyfilho/dnad-2012-iis-uma-questo-de-arquitetura-13202632" target="_blank">NodeJS no IIS: Uma questão de arquitetura</a>
     <time>02/06/2012</time>
@@ -16,7 +15,6 @@ layout: default
     </small>
 
 # DNAD 2010
----
 
 +   <a href="http://www.infoq.com/br/presentations/dnadlightningsidney" target="_blank">Client Undertow: Quando boas práticas não são recomendadas</a>
     <time>18/11/2010</time>
