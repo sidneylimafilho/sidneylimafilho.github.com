@@ -19,37 +19,18 @@
 	-moz-text-shadow:  		@x @y @blur @rgba;
 }
 
-.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
-  background: @color;
-  background: -webkit-gradient(linear,
-                               left bottom,
-                               left top,
-                               color-stop(0, @start),
-                               color-stop(1, @stop));
-  background: -ms-linear-gradient(bottom,
-                                  @start,
-                                  @stop);
-  background: -moz-linear-gradient(center bottom,
-                                   @start 0%,
-                                   @stop 100%);
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+.gradient(@vectorStart: left top, @vectorEnd: left bottom, @positionStart: 0, @colorStart: #EEE, @positionEnd: 1, @colorEnd: #FFF) {  
+  background-image: linear-gradient(@vectorStart, @positionStart @colorStart, @positionEnd @colorEnd);  
+  background-image: -ms-linear-gradient(@vectorStart, @positionStart @colorStart, @positionEnd @colorEnd);
+  background-image: -o-linear-gradient(@vectorStart, @positionStart @colorStart, @positionEnd @colorEnd);
+  background-image: -moz-linear-gradient(@vectorStart, @positionStart @colorStart, @positionEnd @colorEnd);
+  background-image: -webkit-linear-gradient(@vectorStart, @colorStart @positionStart, @colorEnd  @positionEnd);
+  background-image: -webkit-gradient(linear, @vectorStart, @vectorEnd, color-stop(@positionStart, @colorStart), color-stop(@positionEnd, @colorEnd));
+
+  /*-webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.36, #A598B2), color-stop(0.69, #C6B7D6));*/
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @colorStart, @colorEnd));
 }
 
-.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
-  background: @color;
-  background: -webkit-gradient(linear,
-                               left bottom,
-                               left top,
-                               color-stop(0, rgb(@start,@start,@start)),
-                               color-stop(1, rgb(@stop,@stop,@stop)));
-  background: -ms-linear-gradient(bottom,
-                                  rgb(@start,@start,@start) 0%,
-                                  rgb(@stop,@stop,@stop) 100%);
-  background: -moz-linear-gradient(center bottom,
-                                   rgb(@start,@start,@start) 0%,
-                                   rgb(@stop,@stop,@stop) 100%);
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",rgb(@stop,@stop,@stop),rgb(@start,@start,@start)));
-}
 
 .bordered(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
   border-top: solid 1px @top-color;
