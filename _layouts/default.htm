@@ -61,7 +61,8 @@
             <div class="super">
                 <div class="wrapper">
                     <div class="content left-side">
-                        <article {% if page.categories %} class="{{page.categories}}" {% endif %}>{{ content }}
+                        <article>
+                            <div {% if page.categories %} class="{{page.categories}}" {% endif %}>{{ content }}</div>
                         </article>
                     </div>
                     <div class="right-side">
