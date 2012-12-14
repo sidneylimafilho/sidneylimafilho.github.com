@@ -6,7 +6,7 @@ categories: 'page palestras'
 layout: default
 ---
 
-# MINHAS PALESTRAS
+# Minhas Palestras
 
 ## DNAD 2012
 

@@ -6,7 +6,7 @@ categories: 'page artigos'
 layout: default
 ---
 
-# MEUS ARTIGOS
+# Meus Artigos
 
 ## INFOQ
 
