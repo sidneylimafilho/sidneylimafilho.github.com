@@ -1,24 +1,19 @@
 ---
 author: Sidney Lima Filho
-title: Quem é Sidney?
+title: Quem é Sidney Lima Filho?
 categories: 'page quem-e-sidney'
 excerpt: 'Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.'
 layout: default
 ---
 
-# Quem é Sidney?
+# Quem é Sidney Lima Filho?
 
-O Sidney Lima Filho é um cara inteligente que sempre foi fascinado por software desde criança, quando ganhou seu primeiro computador (que a mãe dele pagou em 18 vezes) ele não se importava com a máquina em si, apenas queria saber o porquê aquela linha branca piscava na tela (prompt), ficava horas escrevendo qualquer coisa no teclado para ver as letras se formarem na tela, até descobrir que algumas palavras disparavam comandos naquela máquina. Os comandos o fascinavam e o fez buscar incessantemente material para aprender a escrever seus próprios comandos.
+Imagina um cara inteligente que sempre foi fascinado por software desde criança, que quando ganhou seu primeiro computador (que a mãe dele pagou em 18 vezes) ele não se importava com a máquina em si, apenas queria saber o porquê aquela linha branca piscava na tela (prompt), ficava horas escrevendo qualquer coisa no teclado para ver as letras se formarem na tela, até descobrir que algumas palavras disparavam comandos naquela máquina. Os comandos o fascinavam e o fez buscar incessantemente material para aprender a escrever seus próprios comandos.
 
 Sua busca o fez se tornar um desenvolvedor de software aos 16 anos de idade e desde então nunca mais parou.
 
 Após algum tempo e muito estudo depois, ele descobriu algumas formas inovadoras e contra-intuitivas que permitiam as equipes e empresas desenvolverem seus softwares de uma forma mais pragmática, enxuta e clara. Ele acredita que o software é um produto derivado da sinergia dos sonhos das pessoas, canalizada pela comunicação, materializada em imagens e sons que são entendidos apenas por quem é capaz de sonhar junto. 
 
-No desenvolvimento de software passou por tanto altos e baixos com os clientes sonhadores, que aprendeu a se adaptar e guiar pelas novas visões dos clientes e que também essas novas visões são mais importantes do que entregar o que escreveu pela primeira vez.
-
-Um software mal feito, sempre faz o usuário perder tempo com telas enigmáticas, o usuário não sabe como usar e fica perdido, quando ocorria um erro as descrições não faziam nenhum sentido para um ser humano, além de causar muita dor e sofrimento, com sistemas lentos, mal dimensionados, vendo aquela ampulheta que nunca para de girar, a página que imprime errado, o botão que clica e não faz nada ou até faz mas o sistema não informa que ele tá fazendo. Isso é perda de vida. 
-
->   Um software bem feito, leva vida consigo, permite que os usuários maximizem seu tempo, lazer, prazer, conhecimento, experiências e expande sua consciência.
 
 
 ## Minha História
@@ -71,15 +66,23 @@ Resolvi compartilhar todo o software gerado até então. Também precisava compa
 
 Software foi inventado para manipular a informação com o objetivo de permitir fazer mais com menos, mas ultimamente os softwares são construídos iguais uma árvore de natal, cheio de penduricalhos, recursos inúteis e manuais de 1000 páginas. Os responsáveis por esta construção são chamados desenvolvedores de software, esses profissionais já foram comparados a pedreiros, engenheiros, arquitetos, designers, pintores, jardineiros, só não são equiparados como quem desenvolve.
 
-[**Desenvolver**][2]  (*des*+*envolver*) 
+No desenvolvimento de software passou por tanto altos e baixos com os clientes sonhadores, que aprendeu a se adaptar e guiar pelas novas visões dos clientes e que também essas novas visões são mais importantes do que entregar o que escreveu pela primeira vez.
 
-**_vtd_ _1_** **Tirar do invólucro, descobrir o que estava envolvido.**
+Um software mal feito, sempre faz o usuário perder tempo com telas enigmáticas, o usuário não sabe como usar e fica perdido, quando ocorria um erro as descrições não faziam nenhum sentido para um ser humano, além de causar muita dor e sofrimento, com sistemas lentos, mal dimensionados, vendo aquela ampulheta que nunca para de girar, a página que imprime errado, o botão que clica e não faz nada ou até faz mas o sistema não informa que ele tá fazendo. Isso é perda de vida. 
 
-**_vtd_ _2_** **Fazer crescer ou medrar:** _O clima desenvolve as sementes._
+>   Um software bem feito, leva vida consigo, permite que os usuários maximizem seu tempo, lazer, prazer, conhecimento, experiências e expande sua consciência.
 
-**_vpr_ _3_** **Crescer:** _Este menino está se desenvolvendo depressa. Esta planta só se desenvolve bem na sombra_.
+## O que é [**Desenvolver**][2]?  
 
-**_vtd_ _4_** **Adiantar, aumentar, melhorar, aperfeiçoar, fazer progredir:** _Desenvolver os meios de instrução. Desenvolveu os músculos com a ginástica, e a mente com o estudo_.
+(*des*+*envolver*) 
+
+1. **Tirar do invólucro, descobrir o que estava envolvido.**
+
+2. **Crescer:** 
+   _Este menino está se desenvolvendo depressa. Esta planta só se desenvolve bem na sombra. O clima desenvolve as sementes._
+
+3. **Adiantar, aumentar, melhorar, aperfeiçoar, fazer progredir:** 
+   _Desenvolver os meios de instrução. Desenvolveu os músculos com a ginástica, e a mente com o estudo_.
 
 
 >   Regras simples geralmente levam a comportamentos complexos. Regras complexas levam a comportamentos estúpidos!
