@@ -6,7 +6,7 @@ categories: 'page artigos'
 layout: default
 ---
 
-# INFOQ
+## INFOQ
 
 + 	<a href="http://www.infoq.com/br/presentations/dnadlightningsidney" target="_blank">Client Undertow: Quando boas práticas não são recomendadas</a>
 	<time>01/06/2011</time>
@@ -15,7 +15,7 @@ layout: default
 	</small>
 
 
-#IMASTERS
+## IMASTERS
 	
 +	<a href="http://imasters.com.br/artigo/1032/dotnet/anetframework" target="_blank">A .NET Framework</a>
 	<time>16/04/2003</time>
