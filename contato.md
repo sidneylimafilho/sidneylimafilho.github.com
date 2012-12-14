@@ -6,9 +6,9 @@ categories: 'page contato'
 layout: default
 ---
 
-<h2>
-   Utilize os canais abaixo para mandar sua mensagem, prometo responder em até 72 horas.
-</h2>
+# Contato
+
+## Utilize os canais abaixo para mandar sua mensagem, prometo responder em até 72 horas.
 
 <p>
    <a href="sidneylimafilho@outlook.com" target="_blank">sidneylimafilho@outlook.com</a>

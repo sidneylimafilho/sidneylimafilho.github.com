@@ -6,6 +6,8 @@ categories: 'page artigos'
 layout: default
 ---
 
+# MEUS ARTIGOS
+
 ## INFOQ
 
 + 	<a href="http://www.infoq.com/br/presentations/dnadlightningsidney" target="_blank">Client Undertow: Quando boas práticas não são recomendadas</a>
