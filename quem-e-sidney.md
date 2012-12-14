@@ -18,7 +18,7 @@ No desenvolvimento de software passou por tanto altos e baixos com os clientes s
 
 Um software mal feito, sempre faz o usuário perder tempo com telas enigmáticas, o usuário não sabe como usar e fica perdido, quando ocorria um erro as descrições não faziam nenhum sentido para um ser humano, além de causar muita dor e sofrimento, com sistemas lentos, mal dimensionados, vendo aquela ampulheta que nunca para de girar, a página que imprime errado, o botão que clica e não faz nada ou até faz mas o sistema não informa que ele tá fazendo. Isso é perda de vida. 
 
->	Um software bem feito, leva vida consigo, permite que os usuários maximizem seu tempo, lazer, prazer, conhecimento, experiências e expande sua consciência.
+>   Um software bem feito, leva vida consigo, permite que os usuários maximizem seu tempo, lazer, prazer, conhecimento, experiências e expande sua consciência.
 
 
 ## Minha História
@@ -45,7 +45,7 @@ Nesse momento entendi o verdadeiro sentido da palavra Vivina. Ser cheio de vida,
 
 Resolvi compartilhar todo o software gerado até então. Também precisava compartilhar o conhecimento adquirido e ao mesmo tempo precisava de um emprego, então em dezembro de 2009, ingresso na Reserve como supervisor de desenvolvimento, passo a compartilhar minha visão os conhecimentos adquiridos, conselhos, ferramentas e filosofias empregadas, para ajudar os desenvolvedores a criarem seus produtos.
 
->	Entregar menos software e mais produto. Softwares mais úteis, mais inteligentes, com mais luz, mais vida, mais Vivina.
+>   Entregar menos software e mais produto. Softwares mais úteis, mais inteligentes, com mais luz, mais vida, mais Vivina.
 
 
 ## Porque criar um blog como esse?
@@ -82,7 +82,7 @@ Software foi inventado para manipular a informação com o objetivo de permitir 
 **_vtd_ _4_** **Adiantar, aumentar, melhorar, aperfeiçoar, fazer progredir:** _Desenvolver os meios de instrução. Desenvolveu os músculos com a ginástica, e a mente com o estudo_.
 
 
->	Regras simples geralmente levam a comportamentos complexos. Regras complexas levam a comportamentos estúpidos!
+>   Regras simples geralmente levam a comportamentos complexos. Regras complexas levam a comportamentos estúpidos!
 
 Softwares **não** são soluções para problemas. Eles são automações de padrões reconhecidos, logo a capacidade do desenvolvedor de reconhecer padrões determinará a capacidade dele gerar um software que pode ser a solução ou não para um ou mais problemas, que as vezes ninguém enxerga como relevante. Não existe problema 2.0, situação beta, muito menos imbróglio alpha, por isso **não** se cria solução.
 
@@ -101,8 +101,8 @@ Softwares **não** são soluções para problemas. Eles são automações de pad
 5.  **O básico é o suficiente**  
     _Nós sabemos que se você fosse fazer um sistema a primeira coisa que iria pedir é o básico: O básico é o que importa o resto é supérfluo. Bom serviço, facilidade de usar, preço honesto e respeito pelo tempo, dinheiro e confiança._
 
-6.	**Tudo na informática depende do ambiente em que está inserida**
-	_O software nada mais é do que um fruto de sucessivas informações trocadas pelas pessoas envolvidas no processo da sua construção. O ambiente sempre determinará como será o software que você entrega. A hierarquia organizacional, o clima entre as pessoas, a liberdade de expressão, a criatividade coletiva, o bem-estar pessoal, até se o café está quente ou não, pode influenciar no resultado final._
+6.  **Tudo na informática depende do ambiente em que está inserida**
+    _O software nada mais é do que um fruto de sucessivas informações trocadas pelas pessoas envolvidas no processo da sua construção. O ambiente sempre determinará como será o software que você entrega. A hierarquia organizacional, o clima entre as pessoas, a liberdade de expressão, a criatividade coletiva, o bem-estar pessoal, até se o café está quente ou não, pode influenciar no resultado final._
 
 [1]: http://pt.wikipedia.org/wiki/Pensamento_sist%C3%AAmico
 [2]: http://michaelis.uol.com.br/moderno/portugues/index.php?lingua=portugues-portugues&palavra=desenvolver
