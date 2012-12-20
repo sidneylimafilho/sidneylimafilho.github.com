@@ -66,15 +66,13 @@ Resolvi compartilhar todo o software gerado até então. Também precisava compa
 
 Software foi inventado para manipular a informação com o objetivo de permitir fazer mais com menos, mas ultimamente os softwares são construídos iguais uma árvore de natal, cheio de penduricalhos, recursos inúteis e manuais de 1000 páginas. Os responsáveis por esta construção são chamados desenvolvedores de software, esses profissionais já foram comparados a pedreiros, engenheiros, arquitetos, designers, pintores, jardineiros, só não são equiparados como quem desenvolve.
 
-No desenvolvimento de software passou por tanto altos e baixos com os clientes sonhadores, que aprendeu a se adaptar e guiar pelas novas visões dos clientes e que também essas novas visões são mais importantes do que entregar o que escreveu pela primeira vez.
-
 Um software mal feito, sempre faz o usuário perder tempo com telas enigmáticas, o usuário não sabe como usar e fica perdido, quando ocorria um erro as descrições não faziam nenhum sentido para um ser humano, além de causar muita dor e sofrimento, com sistemas lentos, mal dimensionados, vendo aquela ampulheta que nunca para de girar, a página que imprime errado, o botão que clica e não faz nada ou até faz mas o sistema não informa que ele tá fazendo. Isso é perda de vida. 
 
 >   Um software bem feito, leva vida consigo, permite que os usuários maximizem seu tempo, lazer, prazer, conhecimento, experiências e expande sua consciência.
 
-## O que é [**Desenvolver**][2]?  
+## O que é Desenvolver?  
 
-(*des*+*envolver*) 
+[(*des*+*envolver*)][2]
 
 1. **Tirar do invólucro, descobrir o que estava envolvido.**
 
