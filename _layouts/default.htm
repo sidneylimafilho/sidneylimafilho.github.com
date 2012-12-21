@@ -154,27 +154,28 @@
 
         Videos : ko.observableArray([]),
     
-        Initialize : function() {            
+        Initialize : function() {   
+            var it=this;         
 
             // ICONES            
-            $('.twitter').attr('href', 'http://twitter.com/' + this.User.twitter);
-            $('.facebook').attr('href', 'http://facebook.com/' + this.User.facebook);
-            $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + this.User.linkedin);
-            $('.feed').attr('href', this.User.feed);
+            $('.twitter').attr('href', 'http://twitter.com/' + it.User.twitter);
+            $('.facebook').attr('href', 'http://facebook.com/' + it.User.facebook);
+            $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + it.User.linkedin);
+            $('.feed').attr('href', it.User.feed);
 
-            $('.youtube').attr('href', 'http://www.youtube.com/user/' + this.User.youtube);
-            $('.slideshare').attr('href', 'http://slideshare.net/' + this.User.slideshare);
-            $('.github').attr('href', 'http://github.com/' + this.User.github);
-            $('.mail').attr('href', this.User.mail);
+            $('.youtube').attr('href', 'http://www.youtube.com/user/' + it.User.youtube);
+            $('.slideshare').attr('href', 'http://slideshare.net/' + it.User.slideshare);
+            $('.github').attr('href', 'http://github.com/' + it.User.github);
+            $('.mail').attr('href', it.User.mail);
 
 
             // YOUTUBE
-            $.getJSON("http://gdata.youtube.com/feeds/api/users/" + this.User.youtube + "/favorites?alt=jsonc&v=2", function(json) {
-                this.Videos.push(json.data.items);
+            $.getJSON("http://gdata.youtube.com/feeds/api/users/" + it.User.youtube + "/favorites?alt=jsonc&v=2", function(json) {
+                it.Videos.push(json.data.items);
             });
 
 
-            ko.applyBindings(this);
+            ko.applyBindings(it);
         }       
     };
     
