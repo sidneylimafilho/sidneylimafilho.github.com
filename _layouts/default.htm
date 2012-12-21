@@ -171,7 +171,7 @@
 
             // YOUTUBE
             $.getJSON("http://gdata.youtube.com/feeds/api/users/" + it.User.youtube + "/favorites?alt=jsonc&v=2", function(json) {
-                it.Videos.push(json.data.items);
+                it.Videos.concat(json.data.items);
             });
 
 
