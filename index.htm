@@ -23,3 +23,11 @@ layout: default
         {% endif %}
     {% endfor %}
 </ul>
+
+<h1>Videos</h1>
+<div class="youtube" data-bind="foreach: Videos">
+    <iframe width="560" height="315" frameborder="0" allowfullscreen="yes" 
+            data-bind="attr:{visible: video.accessControl.embed ==='allowed' ,src: 'http://www.youtube.com/embed/' + id}" ></iframe>
+</div>
+
+<h1>Rapidinhas</h1>

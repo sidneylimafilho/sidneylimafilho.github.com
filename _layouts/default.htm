@@ -128,240 +128,124 @@
 </script>
 <script src="http://www.google.com/jsapi" type="text/javascript">
 </script>
+<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js" type="text/javascript">
+</script>
 <script src="tags.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-        var metaTags = document.getElementsByTagName('meta');
-        var i;
-        if (navigator.userAgent.match(/iPhone/i)) {
-            for (i = 0; i < metaTags.length; i++) {
-                if (metaTags[i].name == "viewport") {
-                    metaTags[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-                }
-            }
-            document.addEventListener("gesturestart", gestureStart, false);
-        }
 
-        function gestureStart() {
-            for (i = 0; i < metaTags.length; i++) {
-                if (metaTags[i].name == "viewport") {
-                    metaTags[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-                }
-            }
-        }
-
-        google.load("feeds", "1");
-
-        // FEEDS            
-        google.setOnLoadCallback(function feeds() {
-
-            var user = {
+    ViewModel = {
+        
+        User : {
+            name: "sidneylimafilho",
+            mail: "https://docs.google.com/spreadsheet/viewform?formkey=dEtLSzNWdXlnanJMdTN6WmtQb2VnMlE6MQ",
+            twitter: "sidneylimafilho",
+            facebook: "sidneylimafilho",
+            linkedin: "sidneylimafilho",
+            youtube: "TheSidneyLimaFilho",
+            github: "sidneylimafilho",
+            slideshare: "sidneylimafilho",
+            feed: "/rss.xml",
+            delicious: {
                 name: "sidneylimafilho",
-                mail: "https://docs.google.com/spreadsheet/viewform?formkey=dEtLSzNWdXlnanJMdTN6WmtQb2VnMlE6MQ",
-                twitter: "sidneylimafilho",
-                facebook: "sidneylimafilho",
-                linkedin: "sidneylimafilho",
-                youtube: "TheSidneyLimaFilho",
-                github: "sidneylimafilho",
-                slideshare: "sidneylimafilho",
-                feed: "/rss.xml",
-                delicious: {
-                    name: "sidneylimafilho",
-                    tag: "Favorite"
-                }
-            };
+                tag: "Favorite"
+            }
+        },
+
+        Videos : ko.observableArray([]),
+    
+        Initialize : function() {            
 
             // ICONES            
-            $('.twitter').attr('href', 'http://twitter.com/' + user.twitter);
-            $('.facebook').attr('href', 'http://facebook.com/' + user.facebook);
-            $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + user.linkedin);
-            $('.feed').attr('href', user.feed);
+            $('.twitter').attr('href', 'http://twitter.com/' + this.User.twitter);
+            $('.facebook').attr('href', 'http://facebook.com/' + this.User.facebook);
+            $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + this.User.linkedin);
+            $('.feed').attr('href', this.User.feed);
 
-            $('.youtube').attr('href', 'http://www.youtube.com/user/' + user.youtube);
-            $('.slideshare').attr('href', 'http://slideshare.net/' + user.slideshare);
-            $('.github').attr('href', 'http://github.com/' + user.github);
-            $('.mail').attr('href', user.mail);
+            $('.youtube').attr('href', 'http://www.youtube.com/user/' + this.User.youtube);
+            $('.slideshare').attr('href', 'http://slideshare.net/' + this.User.slideshare);
+            $('.github').attr('href', 'http://github.com/' + this.User.github);
+            $('.mail').attr('href', this.User.mail);
 
-
-
-
-/*
-            // TWITTER
-            $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=" + user.twitter + "&callback=?", function(json) {
-                document.title = json[0].user.description + " - " + json[0].user.name;
-                $('#nome').html(json[0].user.name);
-                $('#site').html(json[0].user.url);
-                $('#site').attr('href', json[0].user.url);
-                $('#descricao').html(json[0].user.description);
-                $.each(json, function(i, tweet) {
-                    if (!tweet.text.match("@") && $("#twitter i").html() == "Carregando...") {
-                        $('#twitter i').html('"' + tweet.text + '"');
-                        $('#twitter a').html("@" + tweet.user.screen_name);
-                        $('#twitter a').attr("href", "http://twitter.com/" + user.twitter);
-                    }
-                });
-            });
 
             // YOUTUBE
-            $.getJSON("http://gdata.youtube.com/feeds/api/users/" + user.youtube + "/uploads?v=2&alt=jsonc", function(json) {
-                $("#video").attr("src", json.data.items[0].content[5]);
+            $.getJSON("http://gdata.youtube.com/feeds/api/users/" + this.User.youtube + "/favorites?alt=jsonc&v=2", function(json) {
+                this.Videos.push(json.data.items);
             });
 
-            // GITHUB
-            $.getJSON("http://github.com/api/v2/json/repos/show/" + user.github + "?callback=?", function(json) {
-                $('#projetos > .place').html("");
-                $.each(json.repositories.reverse(), function(i, repository) {
-                    $('#projetos > .place').append('<a class="repository" href="http://github.com/' + repository.owner + '/' + repository.name + '" target="_blank"><h3>' + repository.name + '</h3>' + repository.description.substring(0, 40) + '</a>');
-                });
-                $('#projetos').append('<a class="more" href="http://github.com/' + user.github + '" target="_blank">+ projetos</a>');
-            });
 
-            // DELICIOUS
-            $.getJSON("http://feeds.delicious.com/v2/json/" + user.delicious.self + "/" + user.delicious.tag + "?callback=?", function(json) {
-                $('#sites > .place').html("");
-                $.each(json, function(i, site) {
-                    $('#sites > .place').append('<a class="site" href="' + site.u + '" target="_blank">' + site.d.substring(0, 40) + '</a>');
-                });
-                $('#sites').append('<a class="more" href="http://www.delicious.com/' + user.delicious.self + '/byme" target="_blank">+ sites</a>');
-            });
+            ko.applyBindings(this);
+        }       
+    };
+    
+    google.load("feeds", "1");
 
-            // APRESENTACOES
-            var apresentacoes = new google.feeds.Feed("http://www.slideshare.net/rss/user/" + user.slideshare);
-            apresentacoes.load(function(result) {
-                $('#apresentacoes > .place').html("");
-                $.each(result.feed.entries, function(i, slide) {
-                    $('#apresentacoes > .place').append('<a href="' + slide.link + '" target="_blank">' + slide.title + '</a>');
-                });
-                $('#apresentacoes').append('<a class="more" href="http://www.slideshare.net/' + user.slideshare + '" target="_blank">+ apresentações</a>')
+    // FEEDS            
+    google.setOnLoadCallback(function feeds() {
+
+        
+        ViewModel.Initialize();
+       
+/*
+        // TWITTER
+        $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=" + user.twitter + "&callback=?", function(json) {
+            document.title = json[0].user.description + " - " + json[0].user.name;
+            $('#nome').html(json[0].user.name);
+            $('#site').html(json[0].user.url);
+            $('#site').attr('href', json[0].user.url);
+            $('#descricao').html(json[0].user.description);
+            $.each(json, function(i, tweet) {
+                if (!tweet.text.match("@") && $("#twitter i").html() == "Carregando...") {
+                    $('#twitter i').html('"' + tweet.text + '"');
+                    $('#twitter a').html("@" + tweet.user.screen_name);
+                    $('#twitter a').attr("href", "http://twitter.com/" + user.twitter);
+                }
             });
-            */
         });
+
+
+        // GITHUB
+        $.getJSON("http://github.com/api/v2/json/repos/show/" + user.github + "?callback=?", function(json) {
+            $('#projetos > .place').html("");
+            $.each(json.repositories.reverse(), function(i, repository) {
+                $('#projetos > .place').append('<a class="repository" href="http://github.com/' + repository.owner + '/' + repository.name + '" target="_blank"><h3>' + repository.name + '</h3>' + repository.description.substring(0, 40) + '</a>');
+            });
+            $('#projetos').append('<a class="more" href="http://github.com/' + user.github + '" target="_blank">+ projetos</a>');
+        });
+
+        // DELICIOUS
+        $.getJSON("http://feeds.delicious.com/v2/json/" + user.delicious.self + "/" + user.delicious.tag + "?callback=?", function(json) {
+            $('#sites > .place').html("");
+            $.each(json, function(i, site) {
+                $('#sites > .place').append('<a class="site" href="' + site.u + '" target="_blank">' + site.d.substring(0, 40) + '</a>');
+            });
+            $('#sites').append('<a class="more" href="http://www.delicious.com/' + user.delicious.self + '/byme" target="_blank">+ sites</a>');
+        });
+
+        // APRESENTACOES
+        var apresentacoes = new google.feeds.Feed("http://www.slideshare.net/rss/user/" + user.slideshare);
+        apresentacoes.load(function(result) {
+            $('#apresentacoes > .place').html("");
+            $.each(result.feed.entries, function(i, slide) {
+                $('#apresentacoes > .place').append('<a href="' + slide.link + '" target="_blank">' + slide.title + '</a>');
+            });
+            $('#apresentacoes').append('<a class="more" href="http://www.slideshare.net/' + user.slideshare + '" target="_blank">+ apresentações</a>')
+        });
+        */
+    });
 </script>
 <script type="text/html" id="tagsTemplate">
-< h2 class = "post_title" > {. {
-        page.title
-    }
-} < /h2>
-
-
-
-
-
-<ul>
-
-
-
-
-
-
-
-
-
-
-
- <li class="archive_list">
-
-
-
-
-
-    <time style="color:#666;font-size:11px;" datetime='{.{post.date | date: "%Y-%m-%d"}}'>{.{post.date | date: "%m/ % d / % y "}}</time>
-
-
-
-
-
-    <a class="
-archive_list_article_link " href='{.{post.url}}'>{.{post.title}}</a>
-
-
-
-
-
-    <p class="
-summary ">
-
-
-
-
-
-       <span>{.{post.summary}}</span>
-
-
-
-
-
-       <ul class="
-tag_list ">
-
-
-
-
-
-          {.% for tag in post.tags %}
-
-
-
-
-
-          <li class="
-inline archive_list ">
-
-
-
-
-
-          <a class="
-tag_list_link " href=" / tag / {. {
-        tag
-    }
-}
-">{.{ tag }}</a>
-
-
-
-
-
-          </li>
-
-
-
-
-
-          {.%endfor%}
-
-
-
-
-
-       </ul>
-
-
-
-
-
-    </p>
-
-
-
-
-
- </li>
-
-
-
-
-
-
-
-
-
-
-
-</ul>
-
-
-
-
-
+    <h2 class = "post_title" > {. {page.title } } </h2>
+    <ul>  <li class="archive_list">  <time style="color:#666;font-size:11px;" datetime='{.{post.date | date: "%Y-%m-%d"}}'>{.{post.date | date: "%m/ % d / % y "}}</time>  
+    <a class="archive_list_article_link " href='{.{post.url}}'>{.{post.title}}</a>  
+    <p class="summary ">                     <span>{.{post.summary}}</span>  
+    <ul class="tag_list "> 
+    {.% for tag in post.tags %} 
+    <li class="inline archive_list ">  <a class="tag_list_link " href=" / tag / {. {tag } } ">{.{ tag }}</a> 
+    </li>
+     {.%endfor%} 
+    </ul>  
+    </p>  
+    </li> 
+    </ul>     
 </script>
