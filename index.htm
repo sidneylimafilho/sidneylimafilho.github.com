@@ -27,7 +27,7 @@ layout: default
 <h1>Videos</h1>
 <div class="youtube" data-bind="foreach: Videos">
     <iframe frameborder="0" allowfullscreen="yes" 
-            data-bind="visible: accessControl.embed ==='allowed', attr:{width: ($item==0?560:280), height: ($item==0?315:158), src: 'http://www.youtube.com/embed/' + id}" ></iframe>
+            data-bind="visible: accessControl.embed ==='allowed', attr:{width: ($index==0?560:280), height: ($index==0?315:158), src: 'http://www.youtube.com/embed/' + id}" ></iframe>
 </div>
 
 <h1>Rapidinhas</h1>
