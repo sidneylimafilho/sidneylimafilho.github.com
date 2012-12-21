@@ -22,10 +22,10 @@ Abaixo está aquilo que me dá frio na barriga só de pensar que estarei fazendo
 
 + Pular de Bumgee Jump
 + Saltar de Asa Delta
-+ ~~Saltar de Parapente~~
-+ ~~Casar~~
++ <s>Saltar de Parapente</s>
++ <s>Casar</s>
 + Trocar de carro a cada 2 anos
-+ Conhecer 1 pais de cada região do mundo (~~EUA~~, ~~Um País na Africa~~, ~~Portugal~~, Japão, China, Austrália, Nova Zelândia, Filipinas, Micronésia, Bahamas, Chile, Inglaterra, Rússia, Dinamarca, Noruega, Suécia)
++ Conhecer 1 pais de cada região do mundo (<s>EUA</s>, <s>Um País na Africa</s>, <s>Portugal</s>, Japão, China, Austrália, Nova Zelândia, Filipinas, Micronésia, Bahamas, Chile, Inglaterra, Rússia, Dinamarca, Noruega, Suécia)
 + Ter mais contato com meus 10 melhores amigos
 + Falar fluentemente 3 idiomas (Inglês, Espanhol, a alguma asiática a definir)
 + Doar Sangue 2x por ano
@@ -35,7 +35,7 @@ Abaixo está aquilo que me dá frio na barriga só de pensar que estarei fazendo
 + Praticar as 7 virtudes espirituais (*Castidade* x Luxúria, *Generosidade* x Avareza, *Auto-controle* x Gula, *Presteza* x Preguiça, *Paciência* x Ira, *Caridade* x Inveja, *Humildade* x Soberba)
 + Colocar meu conhecimento a disposição dos mais jovens
 + Aprender a surfar
-+ ~~Fazer Yoga~~
++ <s>Fazer Yoga</s>
 + Voltar a pesar 85Kg :(
 + Praticar Mergulho 2x por ano
 + Ter mais fotos subaquáticas
