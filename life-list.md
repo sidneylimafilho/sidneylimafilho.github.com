@@ -21,28 +21,43 @@ A lista é uma auto-analise que recomendo que todos façam um dia. Pare sua vida
 Abaixo está aquilo que me dá frio na barriga só de pensar que estarei fazendo um dia.
 
 +   Pular de Bumgee Jump
+
 +   Saltar de Asa Delta
-+   <s>Saltar de Parapente</s>
-+   <s>Casar</s>
+
++   -<s>Saltar de Parapente</s>
+
++   -<s>Casar</s>
+
 +   Trocar de carro a cada 2 anos
-+   Conhecer 1 pais de cada região do mundo (<s>EUA</s>, <s>Um País na Africa</s>, <s>Portugal</s>, Japão, China, Austrália, Nova Zelândia, Filipinas, Micronésia, Bahamas, Chile, Inglaterra, Rússia, Dinamarca, Noruega, Suécia)
+
++   Conhecer 1 pais de cada região do mundo (<s>EUA</s>, <s>Um País na Africa: Guiné Bissau</s>, <s>Portugal</s>, Japão, China, Austrália, Nova Zelândia, Filipinas, Micronésia, Bahamas, Chile, Inglaterra, Rússia, Dinamarca, Noruega, Suécia)
+
 +   Ter mais contato com meus 10 melhores amigos
+
 +   Falar fluentemente 3 idiomas (Inglês, Espanhol, a alguma asiática a definir)
+
 +   Doar Sangue 2x por ano
+
 +   Doar Medula 1x na vida
+
 +   Me vestir bem
+
 +   Poder aposentar entre 40-45 anos (acho que mesmo podendo eu não iria, mas quero ter segurança de poder parar)
-+   Praticar as 7 virtudes espirituais (*Castidade* x Luxúria, *Generosidade* x Avareza, *Auto-controle* x Gula, *Presteza* x Preguiça, *Paciência* x Ira, *Caridade* x Inveja, *Humildade* x Soberba)
+
++   Praticar as 7 virtudes espirituais (**Castidade** x Luxúria, **Generosidade** x Avareza, **Auto-controle** x Gula, **Presteza** x Preguiça, **Paciência** x Ira, **Caridade** x Inveja, **Humildade** x Soberba)
+
 +   Colocar meu conhecimento a disposição dos mais jovens
+
 +   Aprender a surfar
-+   <s>Fazer Yoga</s>
+
++   -<s>Fazer Yoga</s>
+
 +   Voltar a pesar 85Kg :(
+
 +   Praticar Mergulho 2x por ano
+
 +   Ter mais fotos subaquáticas
+
 +   Tirar mais fotos
 
-
-
-
-
-
+Essa lista irá crescer portanto não acredite que apenas isso me satisfará. ;)
