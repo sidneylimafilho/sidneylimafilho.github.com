@@ -199,16 +199,19 @@ section {
                   padding: 5px;
                   width: 260px;               
                   background-color: rgba(0, 0, 0, 0.83);
-                  color: #FFF;
-                                
-                  .transition(opacity, 400ms);
+                  color: #FFF;                  
 
-                  small{ opacity: 0; color: #CCC; }
+                  small{ 
+                    display: none; 
+                    opacity: 0; 
+                    color: #CCC; 
+                    .transition(opacity, 400ms);
+                  }
                }            
             }
 
             li:hover{
-               a:hover small{ opacity: 1; }
+               a:hover small{ display: block; opacity: 1; }
             }
          }   
 

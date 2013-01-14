@@ -221,6 +221,11 @@ section .left-side article .post-wall ul li a {
   width: 260px;
   background-color: rgba(0, 0, 0, 0.83);
   color: white;
+}
+section .left-side article .post-wall ul li a small {
+  display: none;
+  opacity: 0;
+  color: #cccccc;
   transition: opacity 400ms ease;
   -moz-transition: opacity 400ms ease;
   -webkit-transition: opacity 400ms ease;
@@ -229,11 +234,8 @@ section .left-side article .post-wall ul li a {
   -moz-transition: all opacity 400ms;
   transition: all opacity 400ms;
 }
-section .left-side article .post-wall ul li a small {
-  opacity: 0;
-  color: #cccccc;
-}
 section .left-side article .post-wall ul li:hover a:hover small {
+  display: block;
   opacity: 1;
 }
 section .left-side article .artigos ul,
