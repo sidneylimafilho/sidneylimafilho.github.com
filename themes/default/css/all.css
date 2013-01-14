@@ -232,7 +232,6 @@ section .left-side article .post-wall ul li a {
 }
 section .left-side article .post-wall ul li a small {
   display: block;
-  color: #dddddd;
 }
 section .left-side article .post-wall ul li:hover a {
   opacity: 1;
