@@ -230,12 +230,10 @@ section .left-side article .post-wall ul li a {
   transition: all opacity 400ms;
 }
 section .left-side article .post-wall ul li a small {
-  display: none;
   opacity: 0;
   color: #cccccc;
 }
 section .left-side article .post-wall ul li:hover a:hover small {
-  display: block;
   opacity: 1;
 }
 section .left-side article .artigos ul,
