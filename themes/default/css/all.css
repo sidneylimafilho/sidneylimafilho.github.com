@@ -208,7 +208,7 @@ section .left-side article .post-wall ul li {
   display: inline-block;
   width: 270px;
   height: 270px;
-  margin: 0px 30px 30px 0px;
+  margin: 0px 18px 10px 0px;
   border: 1px solid black;
   position: relative;
 }
@@ -221,11 +221,7 @@ section .left-side article .post-wall ul li a {
   width: 260px;
   background-color: rgba(0, 0, 0, 0.83);
   color: white;
-}
-section .left-side article .post-wall ul li a small {
-  display: none;
   opacity: 0;
-  color: #cccccc;
   transition: opacity 400ms ease;
   -moz-transition: opacity 400ms ease;
   -webkit-transition: opacity 400ms ease;
@@ -234,8 +230,11 @@ section .left-side article .post-wall ul li a small {
   -moz-transition: all opacity 400ms;
   transition: all opacity 400ms;
 }
-section .left-side article .post-wall ul li:hover a:hover small {
+section .left-side article .post-wall ul li a small {
   display: block;
+  color: #dddddd;
+}
+section .left-side article .post-wall ul li:hover a {
   opacity: 1;
 }
 section .left-side article .artigos ul,
