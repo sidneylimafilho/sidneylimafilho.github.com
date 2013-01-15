@@ -211,11 +211,11 @@ section .left-side .post-wall ul li {
 }
 section .left-side .post-wall ul li a {
   display: block;
-  position: absolute;
+  position: relative;
   text-decoration: none;
-  bottom: 0px;
-  padding: 5px;
   opacity: 0;
+  height: 100%;
+  background: none;
   transition: opacity 400ms ease;
   -moz-transition: opacity 400ms ease;
   -webkit-transition: opacity 400ms ease;
@@ -231,6 +231,8 @@ section .left-side .post-wall ul li a resume {
   display: block;
   background-color: rgba(0, 0, 0, 0.83);
   color: white;
+  bottom: 0px;
+  padding: 5px;
 }
 section .left-side .post-wall ul li:hover a {
   opacity: 1;

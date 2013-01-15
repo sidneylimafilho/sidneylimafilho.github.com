@@ -190,11 +190,11 @@ section {
 
             a {             
                display: block;  
-               position: absolute;
-               text-decoration: none;
-               bottom:0px;               
-               padding: 5px;              
+               position: relative;
+               text-decoration: none;                         
                opacity: 0;
+               height: 100%;
+               background: none;
                .transition(opacity, 400ms);                 
 
                small{ display: block; }
@@ -203,6 +203,8 @@ section {
                   display: block; 
                   background-color: rgba(0, 0, 0, 0.83);
                   color: #FFF; 
+                    bottom:0px;               
+                  padding: 5px;  
                }
             }            
          }
