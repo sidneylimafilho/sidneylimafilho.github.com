@@ -8,16 +8,18 @@ layout: default
              {% if post.published %}
             <li style="background:url({{ post.image }}) no-repeat center;">
                 <a href="{{ post.url }}">
-                    <b>{{ post.title | xml_escape }}</b>
-                    <small>
-                        {{ post.date | date: "%B %d, %Y" }}
-                    </small>
-
-                    {% if post.excerpt %}
-                        <small class="excerpt">
-                            {{ post.excerpt }}
+                    <resume>
+                        <b>{{ post.title | xml_escape }}</b>
+                        <small>
+                            {{ post.date | date: "%B %d, %Y" }}
                         </small>
-                    {% endif %}
+
+                        {% if post.excerpt %}
+                            <small class="excerpt">
+                                {{ post.excerpt }}
+                            </small>
+                        {% endif %}
+                    </resume>
                 </a>
             </li>
             {% endif %}

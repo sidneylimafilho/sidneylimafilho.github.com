@@ -190,7 +190,7 @@ section .super {
   padding-top: 24px;
 }
 section .left-side {
-  width: 610px;
+  width: 586px;
   padding-right: 24px;
   float: left;
   overflow: hidden;
@@ -205,7 +205,7 @@ section .left-side .post-wall ul li {
   display: inline-block;
   width: 270px;
   height: 270px;
-  margin: 0px 18px 10px 0px;
+  margin: 0px 18px 18px 0px;
   border: 1px solid black;
   position: relative;
 }
@@ -215,9 +215,6 @@ section .left-side .post-wall ul li a {
   text-decoration: none;
   bottom: 0px;
   padding: 5px;
-  width: 260px;
-  background-color: rgba(0, 0, 0, 0.83);
-  color: white;
   opacity: 0;
   transition: opacity 400ms ease;
   -moz-transition: opacity 400ms ease;
@@ -229,6 +226,11 @@ section .left-side .post-wall ul li a {
 }
 section .left-side .post-wall ul li a small {
   display: block;
+}
+section .left-side .post-wall ul li a resume {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.83);
+  color: white;
 }
 section .left-side .post-wall ul li:hover a {
   opacity: 1;
