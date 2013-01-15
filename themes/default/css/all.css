@@ -191,20 +191,17 @@ section .super {
 }
 section .left-side {
   width: 610px;
-  float: left;
-  overflow: auto;
-}
-section .left-side article {
   padding-right: 24px;
-  overflow: auto;
+  float: left;
+  overflow: hidden;
 }
-section .left-side article h1 {
+section .left-side h1 {
   border-bottom: 1px solid black;
 }
-section .left-side article .post-wall ul {
+section .left-side .post-wall ul {
   padding: 0px;
 }
-section .left-side article .post-wall ul li {
+section .left-side .post-wall ul li {
   display: inline-block;
   width: 270px;
   height: 270px;
@@ -212,7 +209,7 @@ section .left-side article .post-wall ul li {
   border: 1px solid black;
   position: relative;
 }
-section .left-side article .post-wall ul li a {
+section .left-side .post-wall ul li a {
   display: block;
   position: absolute;
   text-decoration: none;
@@ -230,29 +227,29 @@ section .left-side article .post-wall ul li a {
   -moz-transition: all opacity 400ms;
   transition: all opacity 400ms;
 }
-section .left-side article .post-wall ul li a small {
+section .left-side .post-wall ul li a small {
   display: block;
 }
-section .left-side article .post-wall ul li:hover a {
+section .left-side .post-wall ul li:hover a {
   opacity: 1;
 }
-section .left-side article .artigos ul,
-section .left-side article .palestras ul {
+section .left-side .artigos ul,
+section .left-side .palestras ul {
   list-style-type: none;
   padding-left: 90px;
   position: relative;
 }
-section .left-side article .artigos ul li,
-section .left-side article .palestras ul li {
+section .left-side .artigos ul li,
+section .left-side .palestras ul li {
   padding-right: 10px;
 }
-section .left-side article .artigos ul li time,
-section .left-side article .palestras ul li time {
+section .left-side .artigos ul li time,
+section .left-side .palestras ul li time {
   position: absolute;
   left: 0px;
 }
-section .left-side article .artigos ul li small,
-section .left-side article .palestras ul li small {
+section .left-side .artigos ul li small,
+section .left-side .palestras ul li small {
   display: block;
   color: #444444;
 }
@@ -396,6 +393,7 @@ h6 {
 }
 p,
 ul,
+li,
 ol,
 table,
 h1,
@@ -407,6 +405,10 @@ h6,
 pre,
 dl {
   margin: 0 0 10px;
+}
+ul {
+  padding-left: 2px;
+  list-style-position: inside;
 }
 h1,
 h2,

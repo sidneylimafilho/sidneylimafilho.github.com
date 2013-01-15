@@ -171,70 +171,67 @@ section {
 
    .left-side {
       width: 610px;
+      padding-right: 24px;
       float: left;
-      overflow: auto;
-           
-      article {
-         padding-right: 24px;  
-         overflow: auto;
+      overflow: hidden;      
+                  
+      h1 { border-bottom: 1px solid black; }
 
-         h1 { border-bottom: 1px solid black; }
+      .post-wall ul {
+         padding: 0px;
 
-         .post-wall ul {
-            padding: 0px;
+         li {               
+            display: inline-block;
+            width: 270px;
+            height: 270px;
+            margin: 0px 18px 10px 0px;
+            border:1px solid black;
+            position: relative;
 
-            li {               
-               display: inline-block;
-               width: 270px;
-               height: 270px;
-               margin: 0px 18px 10px 0px;
-               border:1px solid black;
-               position: relative;
+            a {             
+               display: block;  
+               position: absolute;
+               text-decoration: none;
+               bottom:0px;               
+               padding: 5px;
+               width: 260px;               
+               background-color: rgba(0, 0, 0, 0.83);
+               color: #FFF; 
+               opacity: 0;
+               .transition(opacity, 400ms);                 
 
-               a {             
-                  display: block;  
+               small{ display: block; }
+            }            
+         }
+
+         li:hover{
+            a { opacity: 1; }
+         }
+      }   
+
+      .artigos, .palestras {
+         
+         ul {
+            list-style-type: none;
+            padding-left: 90px;
+            position: relative;
+
+            li {                
+               padding-right: 10px; 
+
+               time {
                   position: absolute;
-                  text-decoration: none;
-                  bottom:0px;               
-                  padding: 5px;
-                  width: 260px;               
-                  background-color: rgba(0, 0, 0, 0.83);
-                  color: #FFF; 
-                  opacity: 0;
-                  .transition(opacity, 400ms);                 
+                  left: 0px;
+               }
 
-                  small{ display: block; }
-               }            
-            }
-
-            li:hover{
-               a { opacity: 1; }
-            }
-         }   
-
-         .artigos, .palestras {
+               small{
+                  display: block;
+                  color:#444;
+               }
+            }            
+         }
+      }   
             
-            ul {
-               list-style-type: none;
-               padding-left: 90px;
-               position: relative;
-
-               li {                
-                  padding-right: 10px; 
-
-                  time {
-                     position: absolute;
-                     left: 0px;
-                  }
-
-                  small{
-                     display: block;
-                     color:#444;
-                  }
-               }            
-            }
-         }   
-      }      
    }
 
    .right-side {
@@ -355,9 +352,12 @@ h1, h2, h3, h4, h5, h6 {
    color: #000;
 }
 
-p, ul, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
+p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
   margin:0 0 10px;
 }
+
+ul { padding-left: 2px; list-style-position: inside;}
+
 
 h1, h2, h3 {
   line-height:1.1;
