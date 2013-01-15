@@ -233,6 +233,7 @@ section .left-side .post-wall ul li a resume {
   color: white;
   bottom: 0px;
   padding: 5px;
+  position: absolute;
 }
 section .left-side .post-wall ul li:hover a {
   opacity: 1;
