@@ -62,8 +62,8 @@
 
                 {% for post in site.posts limit:3 %}
                     {% if post.published %}
-                        <div class="post" style="background-image: url({{ post.image }});" title="{{ post.title | xml_escape }}" excerpt="{{ post.excerpt }}">                            
-                        </div>
+                        <a class="post" style="background-image: url({{ post.image }});" title="{{ post.title | xml_escape }}" excerpt="{{ post.excerpt }}" href="{{ post.url }}">                            
+                        </a>
                     {% endif %}
                 {% endfor %}
                 
@@ -197,8 +197,8 @@
 
             var resume = $("banner .resume"); 
             $("banner .post").hover(function(e){                               
-                resume.find("h1").text($(e).attr("title"));
-                resume.find("h2").text($(e).attr("excerpt"));
+                resume.find("h1").text($(this).attr("title"));
+                resume.find("h2").text($(this).attr("excerpt"));
             }, function(){
                 resume.find("h1").text(resume.attr("title"));
                 resume.find("h2").text(resume.attr("excerpt"));
