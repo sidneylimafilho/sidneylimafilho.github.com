@@ -32,7 +32,7 @@ layout: default
     <iframe width="560" height="315" frameborder="0" allowfullscreen="yes" 
                 data-bind="attr:{src: Videos.length > 0?'http://www.youtube.com/embed/' + Videos.shift().id:''}" ></iframe>
     <div class="videos" data-bind="foreach: Videos">
-        <img width="260" data-bind="attr:{src: thumbnail.hqDefault, title:title, click:ShowVideo}" />
+        <img width="260" data-bind="attr:{src: thumbnail.hqDefault, title:title, click:$parent.ShowVideo}" />
     </div>
 </div>
 
