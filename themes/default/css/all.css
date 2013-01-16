@@ -175,8 +175,7 @@ banner .wrapper .post resume small {
   display: block;
 }
 banner .wrapper .post:hover {
-  width: 270px;
-  background-position: 100% 100%;
+  width: 590px;
 }
 banner .wrapper .post:hover resume {
   -moz-opacity: 1;
