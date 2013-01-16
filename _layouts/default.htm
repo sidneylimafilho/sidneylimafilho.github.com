@@ -172,7 +172,7 @@
                 for (var i in json.data.items)
                     if (item = json.data.items[i]) 
                         if (i < 4 && item.video.accessControl.embed === 'allowed') 
-                            if(i === 0) {
+                            if(i === "0") {
                                 it.MostRecentVideo(item.video);
                             } else {
                                 it.Videos.push(item.video);
