@@ -52,7 +52,7 @@
         <banner {% if page.categories %} class="{{page.categories}}" {% endif %}>
             <!-- <a href="javascript:;" class="arrow-right"></a>   <a href="javascript:;" class="arrow-left"></a>   -->
             <div class="wrapper">
-                <div class="excerpt">
+                <div class="resume" title="Aprenda como funciona" excerpt="Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.">
                     <h1>Aprenda como funciona
                     </h1>
                     <h2>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
@@ -62,21 +62,7 @@
 
                 {% for post in site.posts limit:3 %}
                     {% if post.published %}
-                        <div class="post" style="background-image: url({{ post.image }});">
-                            <a href="{{ post.url }}">
-                                <resume>
-                                    <b>{{ post.title | xml_escape }}</b>
-                                    <small>
-                                        {{ post.date | date: "%B %d, %Y" }}
-                                    </small>
-
-                                    {% if post.excerpt %}
-                                        <small class="excerpt">
-                                            {{ post.excerpt }}
-                                        </small>
-                                    {% endif %}
-                                </resume>
-                            </a>
+                        <div class="post" style="background-image: url({{ post.image }});" title="{{ post.title | xml_escape }}" excerpt="{{ post.excerpt }}">                            
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -209,9 +195,13 @@
                         
             });
 
-            $("banner .post").click(function(e){ 
-                $("banner .post").removeClass("show")
-                $(e).parent().addClass("show");
+            var resume = $("banner .resume"); 
+            $("banner .post").hover(function(e){                               
+                resume.find("h1").text($(e).attr("title"));
+                resume.find("h2").text($(e).attr("excerpt"));
+            }, function(){
+                resume.find("h1").text(resume.attr("title"));
+                resume.find("h2").text(resume.attr("excerpt"));
             });
 
 

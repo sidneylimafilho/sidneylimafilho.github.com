@@ -130,7 +130,7 @@ banner .wrapper {
       margin-left: -430px;  .wrapper original width is 860px, then 50% is 430px */
 
 }
-banner .wrapper .excerpt {
+banner .wrapper .resume {
   bottom: 0px;
   position: absolute;
   float: left;
@@ -140,26 +140,19 @@ banner .wrapper .post {
   height: 100%;
   float: right;
   margin-right: 3px;
+  cursor: pointer;
+  transition: background-position 2000ms ease;
+  -moz-transition: background-position 2000ms ease;
+  -webkit-transition: background-position 2000ms ease;
+  -o-transition: background-position 2000ms ease;
+  -webkit-transition: all background-position 2000ms;
+  -moz-transition: all background-position 2000ms;
+  transition: all background-position 2000ms;
 }
-banner .wrapper .post a {
-  display: block;
-  height: 315px;
-  padding: 5px;
-  background: none;
-  color: white;
-  bottom: 0px;
-  position: relative;
-}
-banner .wrapper .post a:hover {
-  background-color: rgba(0, 0, 0, 0.76);
-}
-banner .wrapper .post resume {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.76);
-  display: none;
-}
-banner .wrapper .post.show resume {
-  display: block;
+banner .wrapper .post:hover {
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0.36);
+  background-position: 100% 100%;
 }
 banner h1 {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);

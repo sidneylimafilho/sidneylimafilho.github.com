@@ -127,7 +127,7 @@ banner {
       left: 50%;
       margin-left: -430px;  .wrapper original width is 860px, then 50% is 430px */
 
-      .excerpt {
+      .resume {
          bottom: 0px;
          position: absolute;
          float: left;
@@ -138,23 +138,15 @@ banner {
          height: 100%;
          float: right;
          margin-right: 3px;
-
-         a {
-            display: block;
-            height: 315px;
-            padding: 5px;
-            background: none;                  
-            color: #FFF; 
-            bottom: 0px;               
-            padding: 5px;  
-            position: relative;
-         }
-
-         a:hover {background-color: rgba(0, 0, 0, 0.76);}
-
-         resume { position: absolute; background-color: rgba(0, 0, 0, 0.76); display: none; }         
+         cursor:pointer;  
+         .transition(background-position, 2000ms);                        
       }
-      .post.show resume { display: block; }
+
+      .post:hover {
+         width: 240px;
+         background-color: rgba(0, 0, 0, 0.36);
+         background-position: 100% 100%;
+      }
    }
 
    h1 {
