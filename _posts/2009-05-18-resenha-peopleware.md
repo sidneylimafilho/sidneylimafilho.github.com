@@ -4,7 +4,7 @@ layout: post
 author: 'Sidney Lima Filho'
 title: 'Resenha: Peopleware'
 image: '/files/2009-05-18-PEOPLEWARE.jpg'
-excerpt: 'Um livro fascinante que além de contar sua história no xadrez, ele traça um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e político ativo, num mundo globalizado e irracional.'
+excerpt: 'Um livro sobre gestão e produtividade, sem desumanizar as pessoas.'
 
 published: true
 categories: 'post'
