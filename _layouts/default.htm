@@ -62,7 +62,22 @@
 
                 {% for post in site.posts limit:3 %}
                     {% if post.published %}
-                        <div class="post" style="background-image: url({{ post.image }});"></div>
+                        <div class="post" style="background-image: url({{ post.image }});">
+                            <a href="{{ post.url }}">
+                                <resume>
+                                    <b>{{ post.title | xml_escape }}</b>
+                                    <small>
+                                        {{ post.date | date: "%B %d, %Y" }}
+                                    </small>
+
+                                    {% if post.excerpt %}
+                                        <small class="excerpt">
+                                            {{ post.excerpt }}
+                                        </small>
+                                    {% endif %}
+                                </resume>
+                            </a>
+                        </div>
                     {% endif %}
                 {% endfor %}
                 
@@ -165,6 +180,8 @@
         it.MostRecentVideo = ko.observable({id:''});
         it.Videos= ko.observableArray([]);
 
+
+
         it.Initialize= function() {
 
             // ICONES            
@@ -190,6 +207,11 @@
                                 it.Videos.push(item.video);
                             }
                         
+            });
+
+            $("banner .post").click(function(e){ 
+                $("banner .post").removeClass("show")
+                $(e).parent().addClass("show");
             });
 
 

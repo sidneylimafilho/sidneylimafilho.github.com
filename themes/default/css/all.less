@@ -63,7 +63,7 @@ header {
 
    menu {
       float: right;
-      margin: 0px;
+      margin: 0px 280px 0px 0px;
 
       ul {
          list-style:none;
@@ -138,7 +138,23 @@ banner {
          height: 100%;
          float: right;
          margin-right: 3px;
+
+         a {
+            display: block;
+            height: 315px;
+            padding: 5px;
+            background: none;                  
+            color: #FFF; 
+            bottom: 0px;               
+            padding: 5px;  
+            position: relative;
+         }
+
+         a:hover {background-color: rgba(0, 0, 0, 0.76);}
+
+         resume { position: absolute; background-color: rgba(0, 0, 0, 0.76); display: none; }         
       }
+      .post.show resume { display: block; }
    }
 
    h1 {

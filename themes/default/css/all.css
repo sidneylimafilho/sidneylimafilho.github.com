@@ -68,7 +68,7 @@ header #google_translate_element {
 }
 header menu {
   float: right;
-  margin: 0px;
+  margin: 0px 280px 0px 0px;
 }
 header menu ul {
   list-style: none;
@@ -140,6 +140,26 @@ banner .wrapper .post {
   height: 100%;
   float: right;
   margin-right: 3px;
+}
+banner .wrapper .post a {
+  display: block;
+  height: 315px;
+  padding: 5px;
+  background: none;
+  color: white;
+  bottom: 0px;
+  position: relative;
+}
+banner .wrapper .post a:hover {
+  background-color: rgba(0, 0, 0, 0.76);
+}
+banner .wrapper .post resume {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: none;
+}
+banner .wrapper .post.show resume {
+  display: block;
 }
 banner h1 {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
