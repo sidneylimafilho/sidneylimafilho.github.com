@@ -4,7 +4,7 @@ layout: default
 ---
 <div class="post-wall">
     <ul>
-        {% for post in site.posts limit:11 %}
+        {% for post in site.posts limit:5 %}
              {% if post.published %}
             <li style="background-image:url({{ post.image }});">
                 <a href="{{ post.url }}">
