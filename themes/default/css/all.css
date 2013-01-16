@@ -141,6 +141,7 @@ banner .wrapper .post {
   float: right;
   margin-right: 3px;
   cursor: pointer;
+  background-size: cover;
   transition: background-position 2000ms ease;
   -moz-transition: background-position 2000ms ease;
   -webkit-transition: background-position 2000ms ease;
@@ -149,10 +150,23 @@ banner .wrapper .post {
   -moz-transition: all background-position 2000ms;
   transition: all background-position 2000ms;
 }
+banner .wrapper .post resume {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+}
+banner .wrapper .post resume h1,
+banner .wrapper .post resume h2 {
+  font-size: 16px;
+}
 banner .wrapper .post:hover {
-  width: 240px;
-  background-color: rgba(0, 0, 0, 0.36);
+  width: 270px;
   background-position: 100% 100%;
+}
+banner .wrapper .post:hover resume {
+  display: block;
 }
 banner h1 {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);

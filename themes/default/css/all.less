@@ -139,13 +139,25 @@ banner {
          float: right;
          margin-right: 3px;
          cursor:pointer;  
-         .transition(background-position, 2000ms);                        
+         background-size: cover;
+         .transition(background-position, 2000ms);  
+
+         resume{
+            position: absolute;
+            bottom: 0px;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.76);
+            color:white;
+
+            h1, h2 {font-size: 16px;}
+         }                      
       }
 
       .post:hover {
-         width: 240px;
-         background-color: rgba(0, 0, 0, 0.36);
+         width: 270px;         
          background-position: 100% 100%;
+
+         resume{display: block;}
       }
    }
 
