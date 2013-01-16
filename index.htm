@@ -6,7 +6,7 @@ layout: default
     <ul>
         {% for post in site.posts limit:11 %}
              {% if post.published %}
-            <li style="background:url({{ post.image }}) no-repeat center;">
+            <li style="background-image:url({{ post.image }});">
                 <a href="{{ post.url }}">
                     <resume>
                         <b>{{ post.title | xml_escape }}</b>

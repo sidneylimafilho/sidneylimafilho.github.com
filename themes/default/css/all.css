@@ -208,6 +208,15 @@ section .left-side .post-wall ul li {
   margin: 0px 18px 18px 0px;
   border: 1px solid black;
   position: relative;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  transition: background-position 2000ms ease;
+  -moz-transition: background-position 2000ms ease;
+  -webkit-transition: background-position 2000ms ease;
+  -o-transition: background-position 2000ms ease;
+  -webkit-transition: all background-position 2000ms;
+  -moz-transition: all background-position 2000ms;
+  transition: all background-position 2000ms;
 }
 section .left-side .post-wall ul li a {
   display: block;
@@ -234,6 +243,9 @@ section .left-side .post-wall ul li a resume {
   bottom: 0px;
   padding: 5px;
   position: absolute;
+}
+section .left-side .post-wall ul li:hover {
+  background-position: 100% 100%;
 }
 section .left-side .post-wall ul li:hover a {
   opacity: 1;
