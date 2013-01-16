@@ -27,7 +27,7 @@ layout: default
     </ul>
 </div>
 
-<div class="youtube">
+<div class="youtube" data-bind="visible: Videos.length > 0">
     <h1>Videos</h1>
     <iframe width="560" height="315" frameborder="0" allowfullscreen="yes" 
                 data-bind="attr:{src: 'http://www.youtube.com/embed/' + Videos.shift().id}" ></iframe>
