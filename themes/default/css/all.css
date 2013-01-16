@@ -142,13 +142,13 @@ banner .wrapper .post {
   margin-right: 3px;
   cursor: pointer;
   background-size: cover;
-  transition: background-position 2000ms ease;
-  -moz-transition: background-position 2000ms ease;
-  -webkit-transition: background-position 2000ms ease;
-  -o-transition: background-position 2000ms ease;
-  -webkit-transition: all background-position 2000ms;
-  -moz-transition: all background-position 2000ms;
-  transition: all background-position 2000ms;
+  transition: width 1000ms ease;
+  -moz-transition: width 1000ms ease;
+  -webkit-transition: width 1000ms ease;
+  -o-transition: width 1000ms ease;
+  -webkit-transition: all width 1000ms;
+  -moz-transition: all width 1000ms;
+  transition: all width 1000ms;
 }
 banner .wrapper .post resume {
   position: absolute;

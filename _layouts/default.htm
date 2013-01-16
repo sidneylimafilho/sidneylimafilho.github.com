@@ -64,8 +64,8 @@
                     {% if post.published %}
                         <a class="post" style="background-image: url({{ post.image }});" href="{{ post.url }}"> 
                             <resume>
-                                <h1>{{ post.title | xml_escape }}</h1>
-                                <h2>{{ post.excerpt }}</h2>
+                                <b>{{ post.title | xml_escape }}</b>
+                                <small>{{ post.excerpt }}</small>
                             </resume>                           
                         </a>
                     {% endif %}
