@@ -39,7 +39,7 @@ header, banner, section, footer {
 
 header {  
    position:absolute;   
-   background-color: rgba(255, 255, 255, 0.65);
+   background-color: rgba(255, 255, 255, 0.88);
    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
    /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
    padding: 4px 0px;
@@ -109,8 +109,7 @@ header {
 
 banner {
    position: relative;
-   z-index: 1;
-   padding-top:  70px;
+   z-index: 1;   
    display: block;
    height: 330px;
    background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
@@ -120,10 +119,24 @@ banner {
    vertical-align: bottom;
 
    .wrapper{
-      position: absolute;
-      bottom: 0px;
+      position: relative;
+      height: 100%;
+      /*bottom: 0px;
       left: 50%;
-      margin-left: -430px; /* .wrapper original width is 860px, then 50% is 430px */
+      margin-left: -430px;  .wrapper original width is 860px, then 50% is 430px */
+
+      .excerpt {
+         bottom: 0px;
+         position: absolute;
+         float: left;
+      }
+
+      .post {
+         width: 80px;
+         height: 100%;
+         float: right;
+         margin-right: 3px;
+      }
    }
 
    h1 {
