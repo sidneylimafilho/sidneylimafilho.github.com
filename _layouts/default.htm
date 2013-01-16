@@ -30,6 +30,8 @@
                         <li>
                             <a href="/artigos" {%if page.categories contains 'artigos'%}class="selected" {%endif%} title="Os sites que já publicaram conteúdo de minha autoria.">ARTIGOS</a>
                         </li>
+                    </ul>
+                    <ul>
                         <li>
                             <a href="/palestras" {%if page.categories contains 'palestras'%}class="selected" {%endif%}
                             title="Eventos em que participei palestrando.">PALESTRAS</a>
@@ -57,7 +59,7 @@
                         através de mãos distintas.
                     </h2>
                 </div>
-                
+
                 {% for post in site.posts limit:3 %}
                     {% if post.published %}
                         <div class="post" style="background-image: url({{ post.image }});"></div>
