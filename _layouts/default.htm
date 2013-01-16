@@ -141,7 +141,8 @@
             linkedin: "sidneylimafilho",
             youtube: {
                 name:"TheSidneyLimaFilho",
-                embedUrl:"http://www.youtube.com/embed/"
+                embedUrl:"http://www.youtube.com/embed/",
+                userUrl: "http://www.youtube.com/user/"
             },
             github: "sidneylimafilho",
             slideshare: "sidneylimafilho",
@@ -163,7 +164,7 @@
             $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + it.User.linkedin);
             $('.feed').attr('href', it.User.feed);
 
-            $('.youtube').attr('href', 'http://www.youtube.com/user/' + it.User.youtube);
+            $('.youtube').attr('href', it.User.youtube.userUrl + it.User.youtube.name);
             $('.slideshare').attr('href', 'http://slideshare.net/' + it.User.slideshare);
             $('.github').attr('href', 'http://github.com/' + it.User.github);
             $('.mail').attr('href', it.User.mail);
