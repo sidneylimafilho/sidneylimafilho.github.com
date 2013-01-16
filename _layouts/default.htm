@@ -169,9 +169,11 @@
 
             // YOUTUBE
             $.getJSON("http://gdata.youtube.com/feeds/api/users/" + it.User.youtube + "/favorites?alt=jsonc&v=2", function(json) {
-                for (var i in json.data.items) if (item = json.data.items[i] && i < 3) if (item.video.accessControl.embed ==='allowed'){
-                    it.Videos.push(item.video);                
-                }
+                for (var i in json.data.items) 
+                    if (item = json.data.items[i] && i < 3) 
+                        if (item.video.accessControl.embed ==='allowed'){
+                            it.Videos.push(item.video);                
+                        }
             });
 
 
