@@ -141,6 +141,7 @@ banner {
          cursor:pointer;  
          background-size: cover;
          position: relative;
+         .opacity(0.88);
          .transition(width, 500ms);  
 
          resume{
@@ -149,7 +150,7 @@ banner {
             .opacity(0);
             background-color: rgba(0, 0, 0, 0.76);
             color:white;
-            padding: 6px;
+            padding: 5px;
             .transition(opacity, 1000ms);  
 
             small {display:block;}
@@ -157,8 +158,12 @@ banner {
       }
 
       .post:hover {
-         width: 590px;         
-         resume{.opacity(1);}
+         width: 590px;    
+         .opacity(1);     
+         resume{
+            .opacity(1);
+            width: 580px;
+         }
       }
    }
 
