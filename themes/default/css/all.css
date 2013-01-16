@@ -142,21 +142,34 @@ banner .wrapper .post {
   margin-right: 3px;
   cursor: pointer;
   background-size: cover;
-  transition: width 1000ms ease;
-  -moz-transition: width 1000ms ease;
-  -webkit-transition: width 1000ms ease;
-  -o-transition: width 1000ms ease;
-  -webkit-transition: all width 1000ms;
-  -moz-transition: all width 1000ms;
-  transition: all width 1000ms;
+  position: relative;
+  transition: width 500ms ease;
+  -moz-transition: width 500ms ease;
+  -webkit-transition: width 500ms ease;
+  -o-transition: width 500ms ease;
+  -webkit-transition: all width 500ms;
+  -moz-transition: all width 500ms;
+  transition: all width 500ms;
 }
 banner .wrapper .post resume {
   position: absolute;
   bottom: 0px;
-  display: none;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
   background-color: rgba(0, 0, 0, 0.76);
   color: white;
   padding: 6px;
+  transition: opacity 1000ms ease;
+  -moz-transition: opacity 1000ms ease;
+  -webkit-transition: opacity 1000ms ease;
+  -o-transition: opacity 1000ms ease;
+  -webkit-transition: all opacity 1000ms;
+  -moz-transition: all opacity 1000ms;
+  transition: all opacity 1000ms;
 }
 banner .wrapper .post resume small {
   display: block;
@@ -166,7 +179,12 @@ banner .wrapper .post:hover {
   background-position: 100% 100%;
 }
 banner .wrapper .post:hover resume {
-  display: block;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
 }
 banner h1 {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);

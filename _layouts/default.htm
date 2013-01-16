@@ -62,12 +62,12 @@
 
                 {% for post in site.posts limit:3 %}
                     {% if post.published %}
-                        <a class="post" style="background-image: url({{ post.image }});" href="{{ post.url }}"> 
+                        <div class="post" style="background-image: url({{ post.image }});" href="{{ post.url }}"> 
                             <resume>
                                 <b>{{ post.title | xml_escape }}</b>
                                 <small>{{ post.excerpt }}</small>
                             </resume>                           
-                        </a>
+                        </div>
                     {% endif %}
                 {% endfor %}
                 

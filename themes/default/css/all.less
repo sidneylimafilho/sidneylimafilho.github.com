@@ -140,15 +140,17 @@ banner {
          margin-right: 3px;
          cursor:pointer;  
          background-size: cover;
-         .transition(width, 1000ms);  
+         position: relative;
+         .transition(width, 500ms);  
 
          resume{
             position: absolute;
             bottom: 0px;
-            display: none;
+            .opacity(0);
             background-color: rgba(0, 0, 0, 0.76);
             color:white;
             padding: 6px;
+            .transition(opacity, 1000ms);  
 
             small {display:block;}
          }                      
@@ -158,7 +160,7 @@ banner {
          width: 270px;         
          background-position: 100% 100%;
 
-         resume{display: block;}
+         resume{.opacity(1);}
       }
    }
 
