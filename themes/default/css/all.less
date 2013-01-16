@@ -187,6 +187,9 @@ section {
             margin: 0px 18px 18px 0px;
             border:1px solid black;
             position: relative;
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            .transition(background-position, 2000ms);
 
             a {             
                display: block;  
@@ -201,7 +204,7 @@ section {
 
                resume { 
                   display: block; 
-                  background-color: rgba(0, 0, 0, 0.83);
+                  background-color: rgba(0, 0, 0, 0.76);
                   color: #FFF; 
                   bottom: 0px;               
                   padding: 5px;  
@@ -212,6 +215,7 @@ section {
 
          li:hover{
             a { opacity: 1; }
+            background-position: 100% 100%;
          }
       }   
 
