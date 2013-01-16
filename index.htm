@@ -32,7 +32,7 @@ layout: default
     <iframe width="570" height="315" frameborder="0" allowfullscreen="yes" 
                 data-bind="attr:{src: User.youtube.embedUrl + MostRecentVideo().id}" ></iframe>
     <div class="videos" data-bind="foreach: Videos">
-        <img width="187" data-bind="attr:{src: thumbnail.hqDefault, title:title}, click:$parent.ShowVideo" />
+        <img width="187" data-bind="attr:{src: thumbnail.hqDefault, title:title}, click:$parent.ShowVideo($element)" />
     </div>
 </div>
 

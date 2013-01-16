@@ -186,8 +186,13 @@
             ko.applyBindings(it);            
         }   
 
-        it.ShowVideo = function() {
-            $(".youtube iframe").attr("src", it.User.youtube.embedUrl + this.id);
+        it.ShowVideo = function(elem) {
+            return function(){
+                var temp = it.Videos();
+                temp[temp.indexOf(this)] = it.MostRecentVideo();
+                it.Videos(temp);
+                it.MostRecentVideo(this);
+            }
         }    
 
     };
