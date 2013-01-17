@@ -39,8 +39,8 @@ header, banner, section, footer {
 
 header {  
    position:absolute;   
-   background-color: rgba(255, 255, 255, 0.73);
-   border-bottom: 1px solid rgba(255, 255, 255, 1);
+   background-color: rgba(255, 255, 255, 0.65);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.80);
    /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
    padding: 4px 0px;
    z-index: 1000; /* cause banner position relative stay hover on the header */
@@ -63,14 +63,12 @@ header {
 
    menu {
       float: right;
-      margin: 0px 280px 0px 0px;
+      margin: 0px;
 
       ul {
          list-style:none;
          padding:0px;
          margin: 0px;
-         display: table-row;
-         width: 100%;
 
         /* background: #eee;
          background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
@@ -86,11 +84,11 @@ header {
          
 
          li {
-            padding: 5px 10px;
+            padding: 0px 10px;
             display: table-cell;
-            /*border-right:1px solid #d2d2d2;
+            /*border-right:1px solid #d2d2d2;*/
             height:70px;
-            vertical-align: middle;*/
+            vertical-align: middle;
 
             a {               
                display:block;
@@ -111,7 +109,8 @@ header {
 
 banner {
    position: relative;
-   z-index: 1;   
+   z-index: 1;
+   padding-top:  70px;
    display: block;
    height: 330px;
    background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
@@ -121,50 +120,10 @@ banner {
    vertical-align: bottom;
 
    .wrapper{
-      position: relative;
-      height: 100%;
-      /*bottom: 0px;
+      position: absolute;
+      bottom: 0px;
       left: 50%;
-      margin-left: -430px;  .wrapper original width is 860px, then 50% is 430px */
-
-      .resume {
-         bottom: 0px;
-         position: absolute;
-         float: left;
-      }
-
-      .post {
-         width: 80px;
-         height: 100%;
-         float: right;
-         margin-right: 3px;
-         cursor:pointer;  
-         background-size: cover;
-         position: relative;
-         .opacity(0.73);
-         .transition(width, 500ms);  
-
-         resume{
-            position: absolute;
-            bottom: 0px;
-            .opacity(0);
-            background-color: rgba(0, 0, 0, 0.76);
-            color:white;
-            padding: 5px;
-            .transition(opacity, 1000ms);  
-
-            small {display:block;}
-         }                      
-      }
-
-      .post:hover {
-         width: 590px;    
-         .opacity(1);     
-         resume{
-            .opacity(1);
-            width: 580px;
-         }
-      }
+      margin-left: -430px; /* .wrapper original width is 860px, then 50% is 430px */
    }
 
    h1 {
