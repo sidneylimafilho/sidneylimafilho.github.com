@@ -8,6 +8,9 @@ layout: default
 
 # Meus Artigos
 
+## <a href="historico.html">Blog</a>
+
+
 ## INFOQ
 
 + 	<a href="http://www.infoq.com/br/presentations/dnadlightningsidney" target="_blank">Client Undertow: Quando boas práticas não são recomendadas</a>
