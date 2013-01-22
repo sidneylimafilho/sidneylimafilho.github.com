@@ -6,10 +6,7 @@ categories: 'page artigos'
 layout: default
 ---
 
-# Meus Artigos
-
-## <a href="historico.html">Blog</a>
-
+# Meus Artigos <small style="float: right;padding-top: 11px;font-size: 60%;"><a href="historico.html">ver todos do blog</a></small>
 
 ## INFOQ
 
