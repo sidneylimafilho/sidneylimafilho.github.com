@@ -1,5 +1,6 @@
 url: http://localhost
 name: O blog do Sidney Filho
 description: A página pessoal do Sidney
+destination: _site
 permalink: /:categories/:title
 exclude: [make.bat, .nojekyll]
