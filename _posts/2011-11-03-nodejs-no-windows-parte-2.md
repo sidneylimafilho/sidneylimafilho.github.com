@@ -1,15 +1,17 @@
 ---
-layout: post
+layout:     post
 
-author: 'Sidney Lima Filho'
-title: 'Node.js no Windows (Parte 2)'
-image: '/files/2011-10-20-WindowsLovesNode.jpg'
-excerpt: 'Você não sabe o que é o Node.js? Este artigo além de explicar como usar, também explica o que é e sua história.'
+title:      Node.js no Windows (Parte 2)
+author:     Sidney Lima Filho
+image:      /post/nodejs-no-windows/WindowsLovesNode.jpg
+excerpt:    Você não sabe o que é o Node.js? Este artigo além de explicar como usar, também explica o que é e sua história.
 
-published: true
-categories: 'post'
-tags: [Javascript, Node.js, IIS]
+published:  true
+categories: post
+tags:       [Javascript, Node.js, IIS]
 ---
+
+
 [Para entender esse post recomendo a leitura da Parte I][1]
 
 Neste post continuo na saga de explicar o Node.js pelo o que ele é, mostrar suas virtudes num ambiente Windows, partindo da premissa que há muita informação sobre o Node.js na web, mas pouca explicando para nós meros mortais usuários de windows como tirar proveito de seu assincronismo.
@@ -127,12 +129,12 @@ Não. Na próxima parte mostrarei como montar uma aplicação web inteira no Win
 
 [Node.js no Windows: Parte I][1]
 
- [1]: /nodejs-no-windows/
- [2]: /files/2011-11-03-node_server_1_line.png
- [3]: /files/2011-11-03-node_server_1_line_result.png
+ [1]: /post/nodejs-no-windows/
+ [2]: node_server_1_line.png
+ [3]: node_server_1_line_result.png
  [4]: http://nodejs.org/cinco_de_node.pdf
- [5]: /files/2011-11-03-node_sugest_infra.png
- [6]: /files/2011-11-03-node_sugest_infra_windows.png
+ [5]: node_sugest_infra.png
+ [6]: node_sugest_infra_windows.png
  [7]: https://github.com/tjanczuk/iisnode
  [8]: http://tomasz.janczuk.org
  [9]: http://go.microsoft.com/?linkid=9784334
@@ -141,9 +143,9 @@ Não. Na próxima parte mostrarei como montar uma aplicação web inteira no Win
  [12]: http://go.microsoft.com/?linkid=9784330
  [13]: http://go.microsoft.com/?linkid=9784331
  [14]: http://go.microsoft.com/?linkid=9784329
- [15]: /files/2011-11-03-iisnode_sample_files.png
- [16]: /files/2011-11-03-iisnode_server_1_line_result.jpg
- [17]: /files/2011-11-03-erro500.19.png
+ [15]: iisnode_sample_files.png
+ [16]: iisnode_server_1_line_result.jpg
+ [17]: erro500.19.png
  [18]: http://go.microsoft.com/?linkid=9722533
  [19]: http://go.microsoft.com/?linkid=9722532
  [20]: http://radar.oreilly.com/2011/06/time-to-learn-javascript.html

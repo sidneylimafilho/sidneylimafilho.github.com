@@ -1,17 +1,19 @@
 ---
-layout: post
+layout:     post
 
-author: 'Sidney Lima Filho'
-title: ' Resumo: Xeque-Mate, a vida é um jogo de xadrez!'
-image: '/files/2009-11-05-xeque-mate-a-vida-e-um-jogo-de-xadrez.jpg'
-excerpt: 'Um livro fascinante que além de contar sua história no xadrez, ele traça um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e político ativo, num mundo globalizado e irracional.'
+title:      'Resumo: Xeque-Mate, a vida é um jogo de xadrez!'
+author:     Sidney Lima Filho
+image:      /post/resumo-xeque-mate-a-vida-e-um-jogo-de-xadrez/capa.jpg
+excerpt:    >
+            Um livro fascinante que além de contar sua história no xadrez, ele traça um paralelo entre o mais antigo e famoso 
+            jogo e sua vida de esportista e político ativo, num mundo globalizado e irracional.
 
-published: true
-categories: 'post'
-tags: [Resenha, Xadrez, Estratégia]
+published:  true
+categories: post
+tags:       [Resenha, Xadrez, Estratégia]
 
 ---
-<img src="/files/2009-11-05-xeque-mate-a-vida-e-um-jogo-de-xadrez.jpg" style="float:right; margin: 0px 0px 20px 20px;" />
+<img src="capa.jpg" style="float:right; margin: 0px 0px 20px 20px;" />
 Um livro fascinante, muito bem fundamentado na história de um dos maiores vencedores da história do xadrez, logo merece atenção e destaque, pois além de contar sua história no xadrez, ele traça um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e político ativo, num mundo globalizado e irracional.
 
 Sua vida nunca foi um exemplo a ser seguido, mas isso não indica que devemos ignorar suas experiências, na verdade muito pelo contrário. [Garry Kasparov][1] nos presenteia com um livro rico em comparações, tanto com o mundo dos negócios quanto com filosofias e metodologias que foram implacáveis nas mesas de xadrez e de negociações.

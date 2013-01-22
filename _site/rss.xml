@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>functionn.com</title>
+    <link>http://functionn.github.com/</link>
+    <atom:link href="http://functionn.github.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>stuff from functionn.github.com</description>
+    <language>en-us</language>
+    <pubDate>Tue, 22 Jan 2013 20:50:13 -0200</pubDate>
+    <lastBuildDate>Tue, 22 Jan 2013 20:50:13 -0200</lastBuildDate>
+ 
+    
+    <item>
+      <title>O que é REST - Parte 1</title>
+      <link>http://functionn.github.com/post/rest-parte-1</link>
+      <pubDate>Wed, 02 May 2012 00:00:00 -0300</pubDate>
+      <author>functionn.github@functionn.github.com (Functionn)</author>
+      <guid>http://functionn.github.com/post/rest-parte-1</guid>
+      <description>&lt;h2 id='conceito'&gt;Conceito&lt;/h2&gt;
+
+&lt;p&gt;REST é uma sigla para Representational State Transfer, que em bom português significa Transferência Representacional de Estados, um padrão de arquitetura para serviços distribuidos (A Web é um bom exemplo de serviço distribuido). O ato de transferir uma representação de estados é uma forma de permitir que o servidor não gerencie estado e a cada requisição o estado seja enviado. Os serviços estão distribuidos então cada serviço, precisa se comunicar com o outro de alguma forma. Se o estado do ambiente (e veremos mais adiante que ao invés de ambiente podem ser aplicações) é gerenciado pelo serviço então o ambiente é Stateful, caso o estado seja gerenciado pelo cliente então é Stateless. REST é um exemplo de arquitetura Stateless.&lt;/p&gt;
+
+&lt;p&gt;Ultimamente muitas pessoas tem dado maior atenção ao padrão de arquitetura REST, principalmente para a construção de API’s via URI, então este cenário surge um grande dilema pois na documentação original do REST a descrição de como usar REST via URI é bem sucinta, levando as pessoas a gerarem suas próprias aberrações.&lt;/p&gt;
+
+&lt;p&gt;Tudo isso você encontra aos montes na internet explicando o que é REST, mas o grande ponto a ser destacado não é o como fazer REST e sim como essa arquitetura funciona. Primeiramente essa arquitetura foi projetada para redes, juntamente com o protocolo HTTP, pelo seu criador Roy Fielding na sua tese de doutorado, logo usar essa arquitetura para construção de API’s via URI exige um entendimento completo para que ao modelar não danifique a arquitetura sem perceber.&lt;/p&gt;
+
+&lt;p&gt;REST foi inicialmente descrito como uma forma de arquitetura para o protocolo HTTP, mas não está limitado a este protocolo. O padrão REST pode ser baseado em outros protocolos de aplicações desde que haja um vocabulário uniforme e rico para indicar a transferência de estado, porém há condições conceituais que devem seguidas para que possa maximizar a abstração, manter o alto nivel de desacoplamento entre as camadas de aplicação, minimizar os roundtrips entre cliente/servidor, etc.&lt;/p&gt;
+
+&lt;h2 id='condies_para_ser_rest'&gt;Condições para ser REST&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Interface Uniforme&lt;br /&gt;Uma interface uniforme simplifica a interação e desacopla a arquitetura, permitindo as partes envolvidas ter independência na comunicação. Com isso podemos ter clientes e servidores, que é a próxima condição.&lt;/li&gt;
+
+&lt;li&gt;Cliente – Servidor&lt;br /&gt;REST é uma arquitetura baseada em cliente/servidor, se a arquitetura é cliente/cliente ou servidor/servidor ela não é REST. Servidores e clientes são intercambiáveis e independentes, podendo ser trocados a qualquer momento sem prejuízo para o funcionamento da aplicação. Se os servidores e clientes podem ser trocados a qualquer momento então temos que ser Stateless, que é nossa próxima condição.&lt;/li&gt;
+
+&lt;li&gt;Stateless&lt;br /&gt;Stateless significa que o estado é gerenciado pelo cliente, sendo de total responsabilidade do cliente enviar o estado atual da aplicação a cada requisição. Logo se o servidor não mantem estado então permite que o cliente faça cache de recursos, que é a nossa próxima condição.&lt;/li&gt;
+
+&lt;li&gt;Permitir separação em camadas&lt;br /&gt;Uma aplicação que usa a arquitetura REST deve permitir a separação por camadas sem que o cliente possua dependência do endereço de origem do servidor, pois isso impede a introdução de camadas entre o servidor e o cliente, para aumentar a escalabilidade, segurança, performance, e cache que é nossa próxima condição.&lt;/li&gt;
+
+&lt;li&gt;Permitir cache sem efeitos colaterais&lt;br /&gt;A possibilidade de permitir realizar cache é fundamental numa arquitetura REST, pois elimina roundtrips entre cliente e servidor. As respostas nessa arquitetura devem definir se o cliente pode fazer cache ou não de seus recursos, aumentando assim a escalabilidade e a performance.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id='ponto_chave_sobre_o_rest'&gt;Ponto Chave sobre o REST&lt;/h2&gt;
+
+&lt;p&gt;O ponto principal sobre REST é a existencia de recursos, onde cada recurso é identificado através de uma interface uniforme. O servidor fornece os recursos e os clientes negocia com o servidor o formato que deseja receber dos recursos, consomem os recursos, manipula seus valores, tudo isso transferindo uma representação do estado atual do sistema. Um numero infinito de camadas podem estar entre o cliente e o servidor sem afetar o conteúdo dos recursos e nem o estado transferido.&lt;/p&gt;
+
+&lt;h2 id='rest_vs_crud'&gt;REST vs CRUD&lt;/h2&gt;
+
+&lt;p&gt;Na wikipedia há referências para uma relação entre os verbos do protocolo HTTP e as ações de CRUD, porém essa relação inicialmente não existe na tese do Roy Fielding, mas foi introduzida por um livro de Ruby onde o autor faz essa relação para explicar como projetar um scafolding. Mas aplicações complexas não são scaffolding.&lt;/p&gt;
+
+&lt;p&gt;Para realizar uma construção de REST API via URI, deve sempre se lembrar que REST é hypertext sendo servido via hypermedia. Hypertext é um texto que possui nele mesmo as referências ligadas e/ou ações que ele permite realizar. Hypermedia é uma ambiente de acessos a medias de forma não linear, em contraste com Multimedia.&lt;/p&gt;
+
+&lt;p&gt;Há um artigo em que o próprio Roy Fielding explica que as restrições impostas ao padrão REST devem ser respeitadas para não mudar a abstração, explicando que muitas das API’s hoje em dia se proclamam como REST e não são.&lt;/p&gt;
+
+&lt;p&gt;Uma grande equivoco de usar REST como CRUD é que no protocolo HTTP os verbos GET (Read), PUT (Update) e DELETE (Adivinha?) são idempotentes, ou seja, não importa quantas vezes você executa com os mesmos parametros, deve sempre retornar o mesmo resultado. Já no CRUD o Update e Delete não são idempotentes, eles alteram o estado do recurso criando efeitos colaterais.&lt;/p&gt;
+
+&lt;p&gt;Acho que isso vai virar uma série sobre REST, pois ainda tenho MUITA coisa para falar.&lt;/p&gt;
+
+&lt;p&gt;Até.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resumo: Xeque-Mate, a vida é um jogo de xadrez!</title>
+      <link>http://functionn.github.com/post/resumo-xeque-mate-a-vida-e-um-jogo-de-xadrez</link>
+      <pubDate>Sat, 05 Nov 2011 00:00:00 -0200</pubDate>
+      <author>functionn.github@functionn.github.com (Functionn)</author>
+      <guid>http://functionn.github.com/post/resumo-xeque-mate-a-vida-e-um-jogo-de-xadrez</guid>
+      <description>&lt;img src='capa.jpg' style='float:right; margin: 0px 0px 20px 20px;' /&gt;
+&lt;p&gt;Um livro fascinante, muito bem fundamentado na história de um dos maiores vencedores da história do xadrez, logo merece atenção e destaque, pois além de contar sua história no xadrez, ele traça um paralelo entre o mais antigo e famoso jogo e sua vida de esportista e político ativo, num mundo globalizado e irracional.&lt;/p&gt;
+
+&lt;p&gt;Sua vida nunca foi um exemplo a ser seguido, mas isso não indica que devemos ignorar suas experiências, na verdade muito pelo contrário. &lt;a href='http://en.wikipedia.org/wiki/Garry_Kasparov'&gt;Garry Kasparov&lt;/a&gt; nos presenteia com um livro rico em comparações, tanto com o mundo dos negócios quanto com filosofias e metodologias que foram implacáveis nas mesas de xadrez e de negociações.&lt;/p&gt;
+
+&lt;p&gt;O mundo é um tabuleiro? A vida é um jogo de xadrez? Essas comparações seriam muito simplistas, se fossem uma forma de exemplificar sua complexidade, mas quando falamos de estratégias, negócios, política, influências, gestão do tempo, vida em sociedade, competição, os paralelos se tornam praticamente um pleonasmo.&lt;/p&gt;
+
+&lt;p&gt;No livro &lt;a href='http://en.wikipedia.org/wiki/Garry_Kasparov'&gt;Garry Kasparov&lt;/a&gt; responde, com sua própria vida cheia de erros e acertos, a perguntas tão cotidianas no mundo empresarial moderno, onde a internet nos invade de informação, ele cita tópicos que são extremamente pertinentes e aprofundados por outros autores como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;#8220;Sucesso a qualquer velocidade&amp;#8221; - Sucesso na velocidade da luz, Neil Weinbraun&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Não vigie mais a concorrência do que a si próprio&amp;#8221; - Arte da Guerra, Sun Tzu&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;A fantasia consegue atravessar a neblina&amp;#8221; - Pensamento Lateral, Edward de Bono&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Inteire-se de suas rotinas e depois quebre-as&amp;#8221; - Manual da Criatividade&lt;/li&gt;
+
+&lt;li&gt;Qual a quantidade de informação suficiente?&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;1 hora de talento é construída, com 8 horas de esforço continuo“ - Outliers, Malcolm Gladwell&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Nunca tome uma decisão até que seja necessário“ - Margareth Thatcher&lt;/li&gt;
+
+&lt;li&gt;&amp;#8220;Saber não basta, devemos aplicar. Desejar não basta, devemos fazer&amp;#8221; - Goethe&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Além de tornar conteúdos complexos em simples, ele também nos traz pérolas que nos fazem pensar, como:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tudo na vida se resume em Material, Tempo e Qualidade;&lt;/li&gt;
+
+&lt;li&gt;Tática é aquilo que você faz quando sabe o que fazer; Estratégia é aquilo que você faz quando não sabe o que fazer;&lt;/li&gt;
+
+&lt;li&gt;Jogue sempre o seu próprio jogo, nunca o do mercado; (Ele mostra que se você não for autentico com seu jogo, o mercado saberá que você é apenas mais um player, ao invés de reconhecer você como O player. Siga aquilo que acredita para se tornar referencia.)&lt;/li&gt;
+
+&lt;li&gt;Adaptabilidade, requer conhecer bem suas opções (Ele mostra que vocÊ não conseguirá se adaptar no mercado, se não conhece bem sobre o como se adaptar, hoje em dia as empresas apenas &amp;#8220;se posicionam&amp;#8221;, mas não mudam realmente;&lt;/li&gt;
+
+&lt;li&gt;A estratégia só pode mudar se o ambiente mudar, caso contrário, nunca saberá se tomou a decisão certa.&lt;/li&gt;
+
+&lt;li&gt;Saber o porquê vencemos é tão importante quanto saber o porquê perdemos;&lt;/li&gt;
+
+&lt;li&gt;Homem + Máquina é melhor que 2 Homens e ainda melhor que 2 máquinas;&lt;/li&gt;
+
+&lt;li&gt;Use sempre sua intuição, mas certifique-se de que eliminou todas as possibilidades;&lt;/li&gt;
+
+&lt;li&gt;O fim do dia indica fim dos trabalhos, inicio do processo de avaliação;&lt;/li&gt;
+
+&lt;li&gt;Saiba com antecedência o que fará com suas horas;&lt;/li&gt;
+
+&lt;li&gt;Uma troca sempre tem inconveniência mesmo que seja de pior para melhor;&lt;/li&gt;
+
+&lt;li&gt;Todos os inovadores precisam dos imitadores;&lt;/li&gt;
+
+&lt;li&gt;A sabedoria (?) popular diz que é melhor e mais confortável um mal conhecido do que um bem desconhecido;&lt;/li&gt;
+
+&lt;li&gt;Comece com pelo menos duas opções e tempo suficiente para avaliar ambas;&lt;/li&gt;
+
+&lt;li&gt;Nunca ignore a concorrência, o Diário de George III em 04/07/1776: &amp;#8220;Nada de Importante aconteceu hoje&amp;#8221;&lt;/li&gt;
+
+&lt;li&gt;Desde que o mundo é mundo, há competição. Ninguém treina e se dedica para chegar em segundo;&lt;/li&gt;
+
+&lt;li&gt;O que nos interessa é desenvolver um sistema de agressividade controlada a fim de nos aprimorarmos no que fazemos; Agressividade nesse contexto, significa, dinamismo, inovação, mudança, coragem, risco e disposição para agir;&lt;/li&gt;
+
+&lt;li&gt;Medo de mudar é pior que mudar rápido demais;&lt;/li&gt;
+
+&lt;li&gt;Percepção de qualidade já é qualidade;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Node.js no Windows (Parte 2)</title>
+      <link>http://functionn.github.com/post/nodejs-no-windows-parte-2</link>
+      <pubDate>Thu, 03 Nov 2011 00:00:00 -0200</pubDate>
+      <author>functionn.github@functionn.github.com (Functionn)</author>
+      <guid>http://functionn.github.com/post/nodejs-no-windows-parte-2</guid>
+      <description>&lt;p&gt;&lt;a href='/post/nodejs-no-windows/'&gt;Para entender esse post recomendo a leitura da Parte I&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Neste post continuo na saga de explicar o Node.js pelo o que ele é, mostrar suas virtudes num ambiente Windows, partindo da premissa que há muita informação sobre o Node.js na web, mas pouca explicando para nós meros mortais usuários de windows como tirar proveito de seu assincronismo.&lt;/p&gt;
+
+&lt;p&gt;No fim do post eu coloco alguns links com mais informações para aprofundar o estudo, enquanto isso vamos botar o Node.js na web?&lt;/p&gt;
+
+&lt;h2 id='relembrando_o_que__nodejs'&gt;Relembrando: O que é Node.js?&lt;/h2&gt;
+
+&lt;p&gt;Node.js é um ambiente que permite executar arquivos JavaScript, usando a engine V8 do Google Chrome que é Open Source, acessando recursos externos de forma assincrona, baseado num modelo orientado a eventos, com a finalidade de criar aplicações de rede altamente escaláveis.&lt;/p&gt;
+
+&lt;h2 id='um_servidor_web_de_1_linha_de_cdigo'&gt;Um servidor web de 1 linha de código&lt;/h2&gt;
+
+&lt;p&gt;No arquivo anterior ou mostrei que é possível executar arquivos javascript na sua maquina local, como se fossem executáveis. Com o acervo de recursos que o Node.js disponibiliza para acessar recursos externos como rede, filesystem, etc.&lt;/p&gt;
+
+&lt;p&gt;Crie um arquivo server.njs na sua maquina local e coloque a seguinte linha nele.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require(&amp;quot;http&amp;quot;).createServer(function(rq,rs){rs.end(&amp;quot;Hello World!&amp;quot;);}).listen(3000); &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Salve e se você instalou como no post &lt;a href='/post/nodejs-no-windows/'&gt;Node.js no Windows: Parte 1&lt;/a&gt; clique duas vezes no arquivo, senão basta executar na linha de comando a instrução abaixo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;node server.njs &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ao executar abrirá um terminal console sem cursor, pois é o Node.js executando a linha de código esperando uma requisição para executar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Console NodeJS executando um servidor de 1 linha de código' src='node_server_1_line.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;O receber uma requisição o servidor dispara a function que é passada como argumento da função createServer. Vamos testar isso? Abra o navegador e digite a url http://localhost:3000 e você verá a imagem abaixo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Browser mostrando o resultado' src='node_server_1_line_result.png' /&gt;&lt;/p&gt;
+
+&lt;h2 id='integrando_com_o_legado'&gt;Integrando com o legado&lt;/h2&gt;
+
+&lt;p&gt;O código legado é geralmente uma das principais causas de dor de cabeça por desenvolvedores de software, pois sempre quando um desenvolvedor pensa nisso, lembra de acoplamento, código macarrão, falta de arquitetura, arvore de natal, imposição de limites a serem respeitados, além da integração que existe já com outras tecnologias internas e externas ao projeto.&lt;/p&gt;
+
+&lt;p&gt;No ambiente Windows o desenvolvimento web é cercado de tecnologias que concorrem entre si, criando um acoplamento grande, tornando inviável descartar ou mudar alguma delas, por exemplo, temos o IIS ocupando a porta 80, hospedando aplicações feitas em ASP, PHP, ColdFusion (?), .NET versões 1.0, 1.1, 2.0, 3.5, 4.0 e 5.0, além do acesso aos mais diversos banco de dados, MySql, MS SqlServer, Oracle, Access (?), etc.&lt;/p&gt;
+
+&lt;p&gt;O Node.js quando executa um codigo que disponibiliza um servidor ele precisa ocupar alguma porta para estar disponivel tornando a integração com algum recurso mais dolorosa, ou apenas menos elegante, pois seu servidor web utilizará a porta 80 e sua aplicação terá que usar uma outra porta qualquer, configurar firewall para liberar essa porta, esta porta estará visivel aos usuários que, dependendo da aplicação, pode gerar problemas inconvenientes, entre outros problemas.&lt;/p&gt;
+
+&lt;p&gt;Usar o Node.js como um servidor web é possivel, porém atualmente não é recomendado pelo criador dele, pois por mais que essa seja uma das finalidades pelo qual ele foi construido, hoje ele ainda é muito imaturo como uma solução completa, pois há muitas tarefas além de processar dados que um servidor web executa, como servir recursos estáticos como imagens, documentos, videos, ele também precisa reconhecer todos os verbos do protocolo HTTP, cookies, criptografia, HTTPS, tratar multiplos protocolos, etc.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href='http://nodejs.org/cinco_de_node.pdf'&gt;recomendação&lt;/a&gt; pelo próprio criador é ao disponibilizar o Node.js em ambiente de produção, colocar um servidor web na frente do Node.js, enquanto amadurece e surgem mais bibliotecas para suportar tudo que um Web Server precisa, assim o WebServer fica responsável por todo o trabalho pesado e o Node.js fica responsável apenas pelo processamento dos dados e da aplicação.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Infra-estrutura sugerida pelo Ryan' src='node_sugest_infra.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;No Windows a infra é parecida porém mudamos o NGINX pelo IIS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Infra-estrutura no Windows' src='node_sugest_infra_windows.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Porém ainda falta resolver um problema do Node.js no Windows, que é: Como o Node.js irá se comunicar com o IIS?&lt;/p&gt;
+
+&lt;p&gt;Para realizar essa comunicação entre os processos foi criado um projeto chamado &lt;a href='https://github.com/tjanczuk/iisnode'&gt;IISNode&lt;/a&gt; criado por &lt;a href='http://tomasz.janczuk.org'&gt;Tomasz Janczuk&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='instalando_o_iisnode'&gt;Instalando o iisnode&lt;/h2&gt;
+
+&lt;p&gt;Para instalar o iisnode é muito fácil, há os arquivos instaladores que facilitam todos os passos, além de serem úteis, adicionam alguns recursos no IIS.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Node.js&lt;/strong&gt;&lt;a href='http://go.microsoft.com/?linkid=9784334'&gt;(x86)&lt;/a&gt;&lt;br /&gt;&lt;em&gt;Instala a ultima versão do Node.js numa pasta ProgramFiles(x86|x64), servindo de base para qualquer applicação, caso você queira usar uma aplicação com outra versão do Node.js há uma opção de configuração que apresentarei mais a frente&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Microsoft Visual C++ 2010 Redistributable Package&lt;/strong&gt; &lt;a href='http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;amp;id=5555'&gt;(x86)&lt;/a&gt; | &lt;a href='http://www.microsoft.com/download/en/details.aspx?id=14632'&gt;(x64)&lt;br /&gt;&lt;/a&gt;&lt;em&gt;O instalador do IIS Node não prosseguirá com a instalação caso sua maquina não posua a biblioteca de componentes do C++, se isso ocorrer aqui estão os links&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;iisnode for iis7&lt;/strong&gt; &lt;a href='http://go.microsoft.com/?linkid=9784330'&gt;(x86)&lt;/a&gt; | &lt;a href='http://go.microsoft.com/?linkid=9784331'&gt;(x64)&lt;/a&gt;&lt;br /&gt;&lt;em&gt;Aqui está o responsável que permitirá o IIS se comunicar com o Node.js. Você não precisa realmente instalar pois na arquitetura do IIS bastaria adicionar uma referencia no Web.config da aplicação, porém com este instalador ele adiciona esta referencia no Web.config global do .NET, facilitando assim o processo em futuras apps, como também ele checa os requisitos necessários para a DLL funcionar.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;iisnode for iis7 express&lt;/strong&gt; &lt;a href='http://go.microsoft.com/?linkid=9784329'&gt;(x86)&lt;/a&gt;&lt;br /&gt;&lt;em&gt;Caso use o IIS Express, não testei. Porém as referencias que tenho indicam que a instalação é normal e sem maiores percalços&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Após instalar os 3 itens acima nós já poderemos começar a brincar com o Node.js no IIS, agora fica muito emocionante, pois foi o que eu sempre busquei nos meus ultimos 10 anos de carreira. Rodar Javascript eficientemente no servidor.&lt;/p&gt;
+
+&lt;p&gt;Já instalado o iisnode só precisamos agora de 2 coisas: uma arquivo web.config para guardar a configurações, o arquivo javascript que o iisnode irá chamar com o Node.js.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Unicos arquivos necessários para o iisnode' src='iisnode_sample_files.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;O conteúdo do arquivo web.config&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;configuration&amp;gt;
+  &amp;lt;system.webServer&amp;gt;
+    &amp;lt;handlers&amp;gt;
+      &amp;lt;add name=&amp;quot;iisnode&amp;quot; path=&amp;quot;server.njs&amp;quot; verb=&amp;quot;*&amp;quot; modules=&amp;quot;iisnode&amp;quot; /&amp;gt;
+    &amp;lt;/handlers&amp;gt;
+  &amp;lt;/system.webServer&amp;gt;
+&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O conteúdo do arquivo server.njs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require(&amp;quot;http&amp;quot;)
+.createServer(function (req, res) {
+	res.end(&amp;quot;Hello, world! Estou na porta: &amp;quot; + process.env.PORT);
+})
+.listen(process.env.PORT||3000);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Repare que a unica diferença desse servidor de 1 linha de código para a versão que mostramos antes é a variável €œprocess.env.PORT€, pois ela é setada pelo iisnode indicando em qual Named Pipes ele usará para realizar a comunicação com o Node.js.&lt;/p&gt;
+
+&lt;p&gt;Outro ponto interessante é que com os passos do &lt;a href='/post/nodejs-no-windows/'&gt;post anterior&lt;/a&gt; feitos então se não quisermos depender do IIS, basta clicar 2x no arquivo server.njs, afinal todo arquivo .njs está mapeado para executar com o Node.js, que seu servidor estará rodando na porta 3000, pois como €œprocess.env.PORT€ será undefined, então o operador €œ||€ indica que se a primeira variável for undefined então usa a próxima que no caso é 3000.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Resultado do iisnode' src='iisnode_server_1_line_result.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se após executar esses passos você for no navegador e ao digitar http://localhost/server.njs, aparecer um erro 500.19 como na imagem abaixo, isso indica que falta o componente URL Rewrite 2.0&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Erro 500.19' src='erro500.19.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para instalar o URL Rewrite 2.0 é simples usar os instaladores a seguir: &lt;a href='http://go.microsoft.com/?linkid=9722533'&gt;X86&lt;/a&gt; | &lt;a href='http://go.microsoft.com/?linkid=9722532'&gt;x64&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='acaba_por_aqui'&gt;Acaba por aqui?&lt;/h2&gt;
+
+&lt;p&gt;Não. Na próxima parte mostrarei como montar uma aplicação web inteira no Windows usando Node.js através do IIS, interagindo com o ASP.NET MVC, além de se aprofundar no IISNode e apresentar um toolkit que o permitirá criar em questão de minutos uma aplicação do zero.&lt;/p&gt;
+
+&lt;h2 id='mais_referencias'&gt;Mais Referencias&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href='http://radar.oreilly.com/2011/06/time-to-learn-javascript.html'&gt;Porque aprender Javascript no ano que vem?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://radar.oreilly.com/2011/06/node-javascript-success.html'&gt;Porque Node.js faz tanto sucesso?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='/post/nodejs-no-windows/'&gt;Node.js no Windows: Parte I&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resenha: Peopleware</title>
+      <link>http://functionn.github.com/post/resenha-peopleware</link>
+      <pubDate>Thu, 20 Oct 2011 00:00:00 -0200</pubDate>
+      <author>functionn.github@functionn.github.com (Functionn)</author>
+      <guid>http://functionn.github.com/post/resenha-peopleware</guid>
+      <description>&lt;img src='PEOPLEWARE.jpg' style='float:right; margin: 0px 0px 20px 20px;' /&gt;
+&lt;p&gt;A muito tempo que eu não leio um bom livro, apesar de sempre buscar indicações eu não encontrava um livro que realmente mexesse com meus brios e fizesse minha sede de conhecimento aflorar, porém como a vida é uma caixinha de surpresas, um &lt;a href='http://www.higorcesar.com.br/'&gt;GRANDE colaborador&lt;/a&gt; me indicou este livro &lt;a href='http://www.estantevirtual.com.br/livro/17190718/Tom_de_Marco_People_Ware__Como_Gerenciar_Equipes_e____.html'&gt;Peopleware: Como tornar equipes e projetos mais produtivos&lt;/a&gt;. Quando ele deu exemplos sobre o que o livro tratava, começou a me dar um comichão que a tempos não sentia.&lt;/p&gt;
+
+&lt;p&gt;Imediatamente iniciei sua leitura e percebi que o livro não só era destinado aos Gerentes de Projetos, mas também a todos que lidam com pessoas, coordenam atividades, delegam tarefas e esperam resultados, principalmente em software. Logo não vou ficar falando das coisas técnicas de gerência, mas vou focar naquilo que fez esse livro se tornar especial.&lt;/p&gt;
+
+&lt;h2 id='qualidade'&gt;Qualidade&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Qualidade é o que você tem, Valor é o que você VENDE!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Incrível como o mundo mudou, o mundo gira gira gira e sempre acaba na mesma coisa, desde quando qualidade não era exigida? Sempre foi, mas quem compra &amp;#8220;qualidade&amp;#8221;? Os nossos clientes não sabem o que a palavra qualidade significa, mas eles entendem valor, logo num processo de persuasão use Valor, num processo de instrução use Qualidade, porém não foi só nisso que o livro busca definir a qualidade.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quanto maior a qualidade, mais produtivo você se torna, logo mais valor você pode agregar!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hum, tá ficando interessante, o livro não fica no blá blá blá dos ISO-9000, ele fala exatamente isso, busque a qualidade para você conseguir aumentar sua margem de lucro e não para vender mais.&lt;/p&gt;
+
+&lt;p&gt;Algumas frases sobre Qualidade e Produtividade para vocês refletirem:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Qualidade MUITO acima da exigida pelo cliente é a forma mais SÓLIDA de elevar a produtividade&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;A qualidade é grátis, porém apenas para aqueles que estão dispostos a pagar pesadamente por ela.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Saindo um pouco do binômio Qualidade e Produtividade, vamos a outro binômio, Produtividade e Trabalho&lt;/p&gt;
+
+&lt;p&gt;Os autores foram muito felizes na busca de informações para embasar seu livro, senão fica aquelas dicas de experiência, achismos, etc. Eles fizeram uma pesquisa com mais 8000 empresas e constataram alguns dados que realmente nos fazem pensar bastante quando vamos falar de produtividade nas nossas empresas. Nessas pesquisas eles fizeram alguns experimentos, criando 2 equipes em cada empresa onde competiam entre si, logo foram 16000 equipes com atividades iguais para serem desenvolvidas e abaixo o livro apresenta alguns dados interessantes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A diferença entre a melhor equipe e a pior equipe foi de 10:1, ou seja, 1000%;&lt;/li&gt;
+
+&lt;li&gt;A diferença entre as equipes de uma mesma empresa não passa de 10%, que faz a distinção entre equipes e empresas, irrelevante com relação a produtividade;&lt;/li&gt;
+
+&lt;li&gt;A diferença de salário entre as melhores equipes e as piores é de 30%;&lt;/li&gt;
+
+&lt;li&gt;A diferença de experiência entre as melhores equipes e a pior não teve impacto relevante;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O autor desmistifica a relação entre experiência e salário com produtividade.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Produtividade está tão ligado a salário e experiência, quanto um carro mais velho de tanque cheio ir mais longe!&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='medio'&gt;Medição&lt;/h2&gt;
+
+&lt;p&gt;Aqui aquela velha frase vem a tona: &amp;#8220;quem não mede, não gere, morre&amp;#8221;. O imensurável não existe (ou você não quer ver) pois tudo aquilo que não pode ser medido, não pode ser gerido.&lt;/p&gt;
+
+&lt;p&gt;Em resumo como principais fatores de produtividade&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ambiente de trabalho;&lt;/li&gt;
+
+&lt;li&gt;Ausência de Interrupções;&lt;/li&gt;
+
+&lt;li&gt;Privacidade;&lt;/li&gt;
+
+&lt;li&gt;Metodologia;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Node.js no Windows</title>
+      <link>http://functionn.github.com/post/nodejs-no-windows</link>
+      <pubDate>Wed, 18 May 2011 00:00:00 -0300</pubDate>
+      <author>functionn.github@functionn.github.com (Functionn)</author>
+      <guid>http://functionn.github.com/post/nodejs-no-windows</guid>
+      <description>&lt;h2 id='o_que_o_javascript_'&gt;O que o Javascript é?&lt;/h2&gt;
+
+&lt;p&gt;Antes de começar a contar uma breve história do Javascript, um ponto a observar é que o Javascript não é uma linguagem puramente da web como muitos imaginam, ela roda localmente como qualquer linguagem script, se você usa Windows no dia-a-dia, assim como eu, noterá que ele esteve sempre ao seu lado e você nem sabia.&lt;/p&gt;
+
+&lt;p&gt;Exemplo. Você pode criar um arquivo .js, clicar duas vezes nele que ele executará. Claro, quando se escreve um javascript dessa forma o paradigma de programação é outro. Você não tem window, document, DOM, alert, o JQuery não funciona, nem as coisas de HTML em geral, você passa a ter acesso a funções que normalmente você não usaria como CreateObject, MsgBox, WScript, que por sua vez não funciona nos browsers, mas a linguagem é a mesma, o mesmo FOR, IF, WHILE, EVAL, FUNCTION, etc. Se quiser mais informações de quais opções estão disponíveis para desenvolver em javascript no Windows você pode acessar o site do MSDN&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='wscript.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Guia Referencia &lt;a href='http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=VS.85).aspx'&gt;http://msdn.microsoft.com/en-us/library/9bbdkx3k(v=VS.85).aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;JScript on Windows &lt;a href='http://msdn.microsoft.com/en-us/library/xazzc41b(v=VS.85).aspx'&gt;http://msdn.microsoft.com/en-us/library/xazzc41b(v=VS.85).aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Manipulando Arquivos e Diretorios &lt;a href='http://msdn.microsoft.com/en-us/library/ch28h2s7(v=VS.85).aspx'&gt;http://msdn.microsoft.com/en-us/library/ch28h2s7(v=VS.85).aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='um_breve_histrico'&gt;Um Breve Histórico&lt;/h2&gt;
+
+&lt;p&gt;Agora que você já sabe que Javascript não é uma linguagem só de navegador, já sabe que ela serve para mais coisas inclusive para realizar tarefas no Windows, então vamos a outra aplicabilidade dela, que é o lado server-side, isso mesmo, usar o javascript para processar nossas páginas HTML do lado do servidor.&lt;/p&gt;
+
+&lt;p&gt;O javascript no lado servidor não é algo novo, muito menos uma façanha e nem revolucionário como muitos imaginam. A Netscape, empresa que contratou &lt;a href='http://brendaneich.com/'&gt;Brendan Eich&lt;/a&gt;, para desenvolver uma linguagem para tudo relacionado a Web (note que Web é tanto o lado cliente, com os browsers, como também é o lado servidor) sabia que a Web necessitava de:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linguagem dinâmica&lt;/strong&gt;, pois cada pagina poderia ter estruturas diferentes;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Fracamente tipada&lt;/strong&gt;, pois os dados principais na Web são texto e haveria conversão o tempo todo;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Conversão implícita&lt;/strong&gt;, pois além do motivo acima, o desenvolvimento deveria ser focado na utilização dos recursos ao invés do conteúdo deles;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Derivar de uma linguagem conhecida&lt;/strong&gt;, com o objetivo de facilitar a migração dos desenvolvedores nativos para a programação Web;&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Script&lt;/strong&gt;, pois cada página tem lógica própria, portanto não faria sentido ter um executável por página do lado servidor e do lado cliente fosse facilmente acoplado as estruturas HTML existentes;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nesta época, &lt;a href='http://en.wikipedia.org/wiki/Timeline_of_programming_languages#1990s'&gt;em torno de 1995&lt;/a&gt;, a Netscape junto com &lt;a href='http://brendaneich.com/'&gt;Brendan Eich&lt;/a&gt;, criaram o Livescript que no ano seguinte, com a junção e aprovação da SUN incluindo-a no processo, pois a Netscape queria dar suporte a Java Applets no seu revolucionário &lt;a href='http://en.wikipedia.org/wiki/Netscape_Navigator'&gt;Netscape Navigator&lt;/a&gt;, passou a se chamar de JavaScript, numa referencia explicita a linguagem que derivou seu estilo de codificação. (Esta referencia nota-se até hoje, na equipe da Mozila, desenvolvendo a nova &lt;a href='http://wiki.ecmascript.org/doku.php?id=harmony:proposals'&gt;especificação da evolução&lt;/a&gt; da linguagem, &lt;a href='https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words'&gt;várias palavras reservadas do Java vão aparecer no Javascript&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Neste momento a própria Netscape viu que a linguagem era muito interessante e já começava a criar seu próprio servidor web, para rodar seu &amp;#8220;LiveScript&amp;#8221; que se chamava &lt;a href='http://pt.wikipedia.org/wiki/Netscape_Enterprise_Server'&gt;Netscape Enterprise Server&lt;/a&gt;, através do Netscape LiveWire, que rodava &lt;a href='http://en.wikipedia.org/wiki/Server-side_JavaScript'&gt;SSJS (Server Side Javascript)&lt;/a&gt;, olha um &lt;a href='http://www.datacraft.com/livewire.html'&gt;exemplo de código&lt;/a&gt; da época.&lt;/p&gt;
+
+&lt;p&gt;A Microsoft em 1997 (ou em 1998, não lembro bem agora) também se interessou pela tecnologia e adotou-a em seus ambientes, porém após uma briga com a SUN, pois usava a marca Java, ela foi judicialmente obrigada a mudar o nome da linguagem Javascript que ela usava, então ou ela continuava a usar uma linguagem chamada Javascript e pagava os royalties ou usava outra linguagem, nesse ínterim ela tentou emplacar um VBScript, sem sucesso e acabou &amp;#8220;inventando&amp;#8221; uma nova linguagem o JScript, que é praticamente igual ao Javascript, só diferenciou naquilo que um juiz federal entende, ou seja, quase nada.&lt;/p&gt;
+
+&lt;p&gt;Não se importando se era Javascript ou JScript, a Microsoft também ofereceu suporte tanto do lado cliente com seu maravilhoso Internet Explorer (sic) e do lado servidor com as poderosas Active Server Pages (essas sim eram realmente eram poderosas).&lt;/p&gt;
+
+&lt;h2 id='se_tudo_isso_j_existia_qual_a_vantagem_do_nodejs'&gt;Se tudo isso já existia, qual a vantagem do Node.JS?&lt;/h2&gt;
+
+&lt;p&gt;Como você já sabe o principal objetivo do Node.JS é permitir criar aplicações de rede &lt;a href='http://en.wikipedia.org/wiki/Scalability#Scale_horizontally_.28scale_out.29'&gt;altamente escaláveis&lt;/a&gt;, isso signfica que há alguns &lt;a href='http://bulk.fefe.de/scalable-networking.pdf'&gt;desafios&lt;/a&gt; &lt;a href='http://en.wikipedia.org/wiki/CAP_theorem'&gt;físicos&lt;/a&gt; a serem vencidos, como por exemplo o problema das &lt;a href='http://www.kegel.com/c10k.html'&gt;10000 conexões&lt;/a&gt; simultâneas. Além disso, outra grande vantagem é usar o motor V8, que o pessoal do Google criou para o Javascript (os compiladores e VM&amp;#8217;s da época eram lentas e buguentas), para dar uma turbinada na linguagem tornando-a muito mais eficiente e equivalente em performance a linguagens de peso como C#, PHP, Python, Ruby e Java.&lt;/p&gt;
+
+&lt;h2 id='t_mas_e_o_titulo_do_post'&gt;Tá mas e o titulo do post?&lt;/h2&gt;
+
+&lt;p&gt;OK, eu precisava contar um pouco de história para que as coisas, que virão pela frente, façam sentido. Agora vamos ao que interessa. O Node.js foi um projeto que começou no Linux com a galera do mundo open source (novidade?), porem mais uma vez a Microsoft viu e se interessou pelo projeto, assim destacou 2 profissionais para colaborar ativamente a tornar o Node.js rodando no Windows (afinal ela vende Windows e já estava de olho na sua plataform-as-a-service Azure, certo?), ajudou com conhecimento, recursos, acesso a informações privilegiadas e assim removeu-se os acoplamentos ao kernel do Linux, &lt;a href='http://twitter.com/#!/ryah/status/106123259908599808'&gt;sem perder sua performance&lt;/a&gt; que é muito importante, promovendo uma maior adaptabilidade aos usuários Windows.&lt;/p&gt;
+
+&lt;p&gt;Com isso existe duas formas de se instalar o Node.js no Windows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Baixa o código fonte, descobre que precisa de um emulador POSIX (msys ou cygwin), tenta compilar, descobre que precisa baixar uma parafernália que você não faz idéia para que serve, tenta de novo, a compilação falha pela falta de alguma variável de ambiente, tenta de novo, assim sucessivamente.&lt;/li&gt;
+
+&lt;li&gt;Estilo WIN: Baixa o arquivo executável, clica duas vezes e funciona.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Na primeira opção, uma vez conseguindo, ela te abre mais opções de plugins / ferramentas / frameworks desenvolvidos pela comunidade, &lt;a href='https://groups.google.com/d/topic/nodejs-dev/1z4PTv7fHro/discussion'&gt;mas isso já está mudando&lt;/a&gt;, como o NPM que só funciona no estilo UNIX.&lt;/p&gt;
+
+&lt;p&gt;Como a maioria das coisas que realmente importam, estão funcionando para os dois modos, então vou começar pela segunda opção e que mais se aproxima da nossa realidade.&lt;/p&gt;
+
+&lt;h2 id='passoapasso'&gt;Passo-a-Passo&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Acesse o seguinte endereço &lt;a href='http://nodejs.org/#download'&gt;http://nodejs.org/#download&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Baixe o executável para Windows&lt;/li&gt;
+
+&lt;li&gt;Clique 2x no arquivo node.exe&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt='' src='download_node.js.png' /&gt;&lt;/p&gt;
+
+&lt;h2 id='no_acredito_que_voc_me_fez_ler_isso_tudo_para_apenas_trs_passos'&gt;Não acredito que você me fez ler isso tudo para apenas três passos&lt;/h2&gt;
+
+&lt;p&gt;Não, esses 3 passos foram apenas para mostrar funcionando, porém para executar arquivos com código javascript e integrar ao ambiente são necessários mais passos, que explicarei mais adiante.&lt;/p&gt;
+
+&lt;p&gt;Quando você clica 2x no arquivo node.exe, ele abre um console e coloca um cursor piscando, este console é o REPL (Read-Eval-Print-Loop), ou seja, ele lê o que você escreve, avalia se é um javascript válido, imprime o resultado caso haja e começa tudo de novo, esperando você escrever a próxima instrução. Isso nos permite programar e ver o resultado na tela, semelhante ao que algumas IDE&amp;#8217;s fazem, por exemplo, o Visual Studio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='repl.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='repl_vs2008.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mas e se quisermos executar um arquivo? Não tem problema entra no console e digita &amp;#8220;node exemplo.js&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='node-no-console.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tem como eu não depender do console?&lt;/p&gt;
+
+&lt;p&gt;Claro, essa é a finalidade do artigo, mas primeiro vamos voltar ao conceito. Se lembra que no começo desse artigo eu falei sobre o paradigma de desenvolvimento local é diferente de desenvolver para web? Então com o Node.js é a mesma coisa, existem keywords que tem no Node.js que não terão no browser, o código é javascript mas os ambientes não são os mesmos. Veja na imagem do REPL que eu escrevi propositalmente um &amp;#8220;alert&amp;#8221; e ele retornou que era &amp;#8220;undefined&amp;#8221;, porem escrevi &amp;#8220;process.versions.node&amp;#8221; e retornou &amp;#8220;0.5.8&amp;#8221;, já que a palavra &amp;#8220;process&amp;#8221; é uma variável reservada no Node.js, que declara informações do processo que está em execução.&lt;/p&gt;
+
+&lt;p&gt;Então para facilitar o reconhecimento desses arquivos Node.js, eu passo a nomeá-los com a extensão &amp;#8220;njs&amp;#8221;, isso não é obrigatório, porém mais na frente quando você tiver inúmeros arquivos &amp;#8220;js&amp;#8221;, não saberá reconhecer facilmente no seu projeto se aquele &amp;#8220;common.js&amp;#8221; é um arquivo com funções para o browser, ou para suas páginas no servidor, ou são funções matemáticas e de manipulação de string, genéricas que servem para os dois ambientes.&lt;/p&gt;
+
+&lt;p&gt;Os arquivos javascript que são usados nos projetos web, usados no HTML e browser eu continuo usando a extensão &amp;#8220;js&amp;#8221;, até mesmo por causa dos arquivos já existentes, porém a partir deste momento os arquivos que uso através do Node.js eu uso a extensão &amp;#8220;njs&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Com essa convenção criada, fica mais fácil integrar ao ambiente, pois bastará associar esta extensão ao Node.js, que o Windows reconhecerá quando eu clicar 2x no arquivo NJS, ele executará usando o Node.js. Para associar a extensão basta executar no console do windows (CMD), as duas linhas abaixo, prestando a atenção para mudar o caminho do executável para onde você colocou o arquivo original.&lt;/p&gt;
+
+&lt;p&gt;REG ADD &amp;#8220;HKEY_CURRENT_USER\Software\Classes\joyent.node.js\shell\open\command&amp;#8221; /ve /d &amp;#8220;c:\node\node.exe %1&amp;#8221; /f&lt;/p&gt;
+
+&lt;p&gt;REG ADD &amp;#8220;HKEY_CURRENT_USER\Software\Classes.njs&amp;#8221; /ve /d &amp;#8220;joyent.node.js&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Prontinho agora seus scripts executam no Windows perfeitamente.&lt;/p&gt;
+
+&lt;p&gt;Em breve, publicarei a segunda parte deste post explicando como usar o Node.js como um servidor web.&lt;/p&gt;</description>
+    </item>
+    
+ 
+  </channel>
+</rss>

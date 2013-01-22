@@ -1,14 +1,14 @@
 ---
-layout: post
+layout:     post
 
-author: Sidney Lima Filho
-title: 'Node.js no Windows'
-image: '/files/2011-10-20-WindowsLovesNode.jpg'
-excerpt: 'Você não sabe o que é o Node.js? Este artigo além de explicar como usar, também explica o que é e sua história.'
+author:     Sidney Lima Filho
+title:      Node.js no Windows
+image:      /post/nodejs-no-windows/WindowsLovesNode.jpg
+excerpt:    Você não sabe o que é o Node.js? Este artigo além de explicar como usar, também explica o que é e sua história.
 
-published: true
-categories: 'post'
-tags: [Javascript, Node.js]
+published:  true
+categories: post
+tags:       [Javascript, Node.js]
 ---
 
 ##  O que o Javascript é?
@@ -102,7 +102,7 @@ Prontinho agora seus scripts executam no Windows perfeitamente.
 
 Em breve, publicarei a segunda parte deste post explicando como usar o Node.js como um servidor web.
 
- [1]: /files/2011-10-20-wscript.png
+ [1]: wscript.png
  [2]: http://brendaneich.com/
  [3]: http://en.wikipedia.org/wiki/Timeline_of_programming_languages#1990s
  [4]: http://en.wikipedia.org/wiki/Netscape_Navigator
@@ -117,7 +117,7 @@ Em breve, publicarei a segunda parte deste post explicando como usar o Node.js c
  [13]: http://www.kegel.com/c10k.html
  [14]: http://twitter.com/#!/ryah/status/106123259908599808
  [15]: https://groups.google.com/d/topic/nodejs-dev/1z4PTv7fHro/discussion
- [16]: /files/2011-10-20-download_node.js.png
- [17]: /files/2011-10-20-repl.png
- [18]: /files/2011-10-20-repl_vs2008.png
- [19]: /files/2011-10-20-node-no-console.png
+ [16]: download_node.js.png
+ [17]: repl.png
+ [18]: repl_vs2008.png
+ [19]: node-no-console.png

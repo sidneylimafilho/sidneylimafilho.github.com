@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Sidney Lima Filho - O que é REST - Parte 1
+        </title>
+        <link href="/themes/default/css/all.css" rel="stylesheet" />
+        <link href="/rss.xml" class="feed" rel="alternate" type="application/rss+xml" title="sidneylimafilho.com.br"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="google-translate-customization" content="6b8d269fcbc1b6d5-0fa0d030d26cbeaf-ga791899a89db06bb-16"
+        />
+    </head>
+    
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="/"><h1 class="signature">Sidney Lima Filho</h1></a>
+                <menu>
+                    <ul>
+                        <li>
+                            <a href="/quem-e-sidney" 
+                            title="Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.">QUEM É SIDNEY</a>
+                        </li>
+                        <li>
+                            <a href="/leituras"  title="Veja aqui quais livros estão formando minhas idéias e de que fonte minha mente está bebendo.">LEITURAS</a>
+                        </li>
+                        <li>
+                            <a href="/artigos"  title="Os sites que já publicaram conteúdo de minha autoria.">ARTIGOS</a>
+                        </li>
+                        <li>
+                            <a href="/palestras" 
+                            title="Eventos em que participei palestrando.">PALESTRAS</a>
+                        </li>
+                        <li>
+                            <a href="/life-list" 
+                            title="Uma lista de coisas que acho imprescindível realizar antes de morrer.">LIFE LIST</a>
+                        </li>
+                        <li>
+                            <a href="/contato"  title="O canal mais rápido para falar comigo depois do telefone.">CONTATO</a>
+                        </li>
+                    </ul>
+                </menu>
+            </div>
+            <div id="google_translate_element">
+            </div>
+        </header>
+        <banner  class="post" >
+            <!-- <a href="javascript:;" class="arrow-right"></a>   <a href="javascript:;" class="arrow-left"></a>   -->
+            <div class="wrapper">
+                <div class="excerpt">
+                    <h1>Aprenda como funciona
+                    </h1>
+                    <h2>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
+                        através de mãos distintas.
+                    </h2>
+                </div>
+            </div>
+        </banner>
+        <section>
+            <div class="super">
+                <div class="wrapper">
+                    <div class="content left-side">
+                        <div  class="post" ><article>
+
+  <h1>O que é REST - Parte 1</h1>
+  
+  <h4 class="large-bottom">
+    Posted on 2012-05-02 00:00:00 -0300
+   <!-- -->
+  </h4>
+  
+  
+  <div class="content">
+    <h2 id='conceito'>Conceito</h2>
+
+<p>REST é uma sigla para Representational State Transfer, que em bom português significa Transferência Representacional de Estados, um padrão de arquitetura para serviços distribuidos (A Web é um bom exemplo de serviço distribuido). O ato de transferir uma representação de estados é uma forma de permitir que o servidor não gerencie estado e a cada requisição o estado seja enviado. Os serviços estão distribuidos então cada serviço, precisa se comunicar com o outro de alguma forma. Se o estado do ambiente (e veremos mais adiante que ao invés de ambiente podem ser aplicações) é gerenciado pelo serviço então o ambiente é Stateful, caso o estado seja gerenciado pelo cliente então é Stateless. REST é um exemplo de arquitetura Stateless.</p>
+
+<p>Ultimamente muitas pessoas tem dado maior atenção ao padrão de arquitetura REST, principalmente para a construção de API’s via URI, então este cenário surge um grande dilema pois na documentação original do REST a descrição de como usar REST via URI é bem sucinta, levando as pessoas a gerarem suas próprias aberrações.</p>
+
+<p>Tudo isso você encontra aos montes na internet explicando o que é REST, mas o grande ponto a ser destacado não é o como fazer REST e sim como essa arquitetura funciona. Primeiramente essa arquitetura foi projetada para redes, juntamente com o protocolo HTTP, pelo seu criador Roy Fielding na sua tese de doutorado, logo usar essa arquitetura para construção de API’s via URI exige um entendimento completo para que ao modelar não danifique a arquitetura sem perceber.</p>
+
+<p>REST foi inicialmente descrito como uma forma de arquitetura para o protocolo HTTP, mas não está limitado a este protocolo. O padrão REST pode ser baseado em outros protocolos de aplicações desde que haja um vocabulário uniforme e rico para indicar a transferência de estado, porém há condições conceituais que devem seguidas para que possa maximizar a abstração, manter o alto nivel de desacoplamento entre as camadas de aplicação, minimizar os roundtrips entre cliente/servidor, etc.</p>
+
+<h2 id='condies_para_ser_rest'>Condições para ser REST</h2>
+
+<ol>
+<li>Interface Uniforme<br />Uma interface uniforme simplifica a interação e desacopla a arquitetura, permitindo as partes envolvidas ter independência na comunicação. Com isso podemos ter clientes e servidores, que é a próxima condição.</li>
+
+<li>Cliente – Servidor<br />REST é uma arquitetura baseada em cliente/servidor, se a arquitetura é cliente/cliente ou servidor/servidor ela não é REST. Servidores e clientes são intercambiáveis e independentes, podendo ser trocados a qualquer momento sem prejuízo para o funcionamento da aplicação. Se os servidores e clientes podem ser trocados a qualquer momento então temos que ser Stateless, que é nossa próxima condição.</li>
+
+<li>Stateless<br />Stateless significa que o estado é gerenciado pelo cliente, sendo de total responsabilidade do cliente enviar o estado atual da aplicação a cada requisição. Logo se o servidor não mantem estado então permite que o cliente faça cache de recursos, que é a nossa próxima condição.</li>
+
+<li>Permitir separação em camadas<br />Uma aplicação que usa a arquitetura REST deve permitir a separação por camadas sem que o cliente possua dependência do endereço de origem do servidor, pois isso impede a introdução de camadas entre o servidor e o cliente, para aumentar a escalabilidade, segurança, performance, e cache que é nossa próxima condição.</li>
+
+<li>Permitir cache sem efeitos colaterais<br />A possibilidade de permitir realizar cache é fundamental numa arquitetura REST, pois elimina roundtrips entre cliente e servidor. As respostas nessa arquitetura devem definir se o cliente pode fazer cache ou não de seus recursos, aumentando assim a escalabilidade e a performance.</li>
+</ol>
+
+<h2 id='ponto_chave_sobre_o_rest'>Ponto Chave sobre o REST</h2>
+
+<p>O ponto principal sobre REST é a existencia de recursos, onde cada recurso é identificado através de uma interface uniforme. O servidor fornece os recursos e os clientes negocia com o servidor o formato que deseja receber dos recursos, consomem os recursos, manipula seus valores, tudo isso transferindo uma representação do estado atual do sistema. Um numero infinito de camadas podem estar entre o cliente e o servidor sem afetar o conteúdo dos recursos e nem o estado transferido.</p>
+
+<h2 id='rest_vs_crud'>REST vs CRUD</h2>
+
+<p>Na wikipedia há referências para uma relação entre os verbos do protocolo HTTP e as ações de CRUD, porém essa relação inicialmente não existe na tese do Roy Fielding, mas foi introduzida por um livro de Ruby onde o autor faz essa relação para explicar como projetar um scafolding. Mas aplicações complexas não são scaffolding.</p>
+
+<p>Para realizar uma construção de REST API via URI, deve sempre se lembrar que REST é hypertext sendo servido via hypermedia. Hypertext é um texto que possui nele mesmo as referências ligadas e/ou ações que ele permite realizar. Hypermedia é uma ambiente de acessos a medias de forma não linear, em contraste com Multimedia.</p>
+
+<p>Há um artigo em que o próprio Roy Fielding explica que as restrições impostas ao padrão REST devem ser respeitadas para não mudar a abstração, explicando que muitas das API’s hoje em dia se proclamam como REST e não são.</p>
+
+<p>Uma grande equivoco de usar REST como CRUD é que no protocolo HTTP os verbos GET (Read), PUT (Update) e DELETE (Adivinha?) são idempotentes, ou seja, não importa quantas vezes você executa com os mesmos parametros, deve sempre retornar o mesmo resultado. Já no CRUD o Update e Delete não são idempotentes, eles alteram o estado do recurso criando efeitos colaterais.</p>
+
+<p>Acho que isso vai virar uma série sobre REST, pois ainda tenho MUITA coisa para falar.</p>
+
+<p>Até.</p>
+  </div>
+  
+  <!--
+  <hr />
+  
+  
+    
+      Tagged in
+      <strong><a href="/tags/Arquitetura">Arquitetura</a></strong>, 
+      
+    
+      
+      <strong><a href="/tags/REST">REST</a></strong>
+      <br />
+    
+  
+  
+  <div class="next-prev-nav low-top">
+    
+      &laquo;&nbsp;<a href="/post/resumo-xeque-mate-a-vida-e-um-jogo-de-xadrez" rel="previous" title="Resumo: Xeque-Mate, a vida é um jogo de xadrez!">Resumo: Xeque-Mate, a vida é um jogo de xadrez!</a>
+    
+  
+    
+      
+    
+    
+  
+    
+  
+    <br />
+  </div>
+  -->
+</article>
+
+
+  <a name="respond"></a> <!-- For backwards compatibility -->
+  <div id="disqus_thread"></div>
+
+  <script type="text/javascript">
+      var disqus_shortname = 'novafusion';
+      var disqus_identifier = '/post/rest-parte-1';
+      var disqus_url = 'http://localhost/post/rest-parte-1';
+      
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="widget">
+                            <span class="gravatar">
+                                <img src="http://1.gravatar.com/avatar/13c12ed8bb09f191876ae217829b15ed?size=96" />Eu sou Sidney Lima Filho e aqui você saberá sobre quem eu sou e minhas ideias. Abaixo estão
+                                as redes sociais que participo e onde você pode me encontrar.
+                            </span>
+                            <nav>
+                                <a href="javascript:;" target="_blank" class="button twitter" title="Pensamentos rápidos via Twitter."></a>
+                                <a href="javascript:;" target="_blank" class="button facebook" title="Minha vida social no Facebook."></a>
+                                <a href="javascript:;" target="_blank" class="button linkedin" title="Minha rede profissional no Linkedin."></a>
+                                <a href="javascript:;" target="_blank" class="button feed" title="Assine meus posts com o RSS."></a>
+                            </nav>
+                            <nav>
+                                <a href="javascript:;" target="_blank" class="button slideshare" title="Veja meus slides no Slideshare."></a>
+                                <a href="javascript:;" target="_blank" class="button github" title="O que desenvolvo e coloco no Github."></a>
+                                <a href="javascript:;" target="_blank" class="button youtube" title="Filmes que assisto via Youtube."></a>
+                                <a href="javascript:;" target="_blank" class="button mail" title="Clique aqui para me enviar uma mensagem."></a>
+                            </nav>
+                        </div>
+                        <div class="widget bookmarks">
+                            <h2>Li e Gostei
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="http://www.bizrevolution.com.br/bizrevolution/2011/01/casamento-e-empreendedorismo-.html"
+                                    title="Casamento e Empreendedorismo." class="i">Casamento e Empreendedorismo.</a>
+                                    <small>fonte:
+                                        <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://feedproxy.google.com/~r/insistimento/~3/xsDfjzmhv7k/" title="Deus dará?" class="i">Deus dará?</a>
+                                    <small>fonte:
+                                        <a href="http://www.insistimento.com.br">Insistimento</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://www.lucianolima.com.br/post.aspx?id=0d238960-1eeb-42a7-be91-b83dd016978e"
+                                    title="Empregabilidade, você vem cuidando da sua?" class="i">Empregabilidade, você vem cuidando da sua?</a>
+                                    <small>fonte:
+                                        <a href="http://www.lucianolima.com.br/">Luciano Lima</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://www.israelaece.com/post.aspx?id=b8ece558-f6c8-41c1-9a8e-4303fe72a11c" title="Conte�do de WCF para estudo"
+                                    class="i">Conteúdo de WCF para estudo</a>
+                                    <small>fonte:
+                                        <a href="http://www.israelaece.com/">Israel Aece</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://blogs.msdn.com/b/otavio/archive/2010/09/18/paradoxo-de-schrodinger-e-projetos-de-software.aspx"
+                                    title="Paradoxo de Schrodinger e Projetos de Software" class="i">Paradoxo de Schrodinger e Projetos de Software</a>
+                                    <small>fonte:
+                                        <a href="http://blogs.msdn.com/b/otavio/">Arquitetura em Pauta</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://www.bizrevolution.com.br/bizrevolution/2010/12/o-sistema-é-foda.html" title="O Sistema é Foda!"
+                                    class="i">O Sistema é Foda!</a>
+                                    <small>fonte:
+                                        <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://feedproxy.google.com/~r/PapodehomemLifestyleMagazine/~3/3LZTE0r07o4/story01.htm"
+                                    title="O líder ensina pelas costas" class="i">O líder ensina pelas costas</a>
+                                    <small>fonte:
+                                        <a href="http://papodehomem.com.br">Papo de Homem - Lifestyle Magazine</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://feedproxy.google.com/~r/DotNetUnplugged/~3/A_f6q0ntlwo/post.aspx" title="Senior tem cicatriz"
+                                    class="i">Senior tem cicatriz</a>
+                                    <small>fonte:
+                                        <a href="http://blog.lambda3.com.br">Blog Lambda3</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://www.papodeempreendedor.com.br/marketing/o-segredo-de-um-bom-nome/" title="O segredo de um bom nome"
+                                    class="i">O segredo de um bom nome</a>
+                                    <small>fonte:
+                                        <a href="http://www.papodeempreendedor.com.br">Papo de Empreendedor</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://feedproxy.google.com/~r/feedburner/KMzJ/~3/1NlzRGQj1Is/" title="As tr�s perguntas"
+                                    class="i">As três perguntas</a>
+                                    <small>fonte:
+                                        <a href="http://www.insistimento.com.br">Insistimento</a>
+                                    </small>
+                                </li>
+                                <li>
+                                    <a href="http://feedproxy.google.com/~r/typepad/sethsmainblog/~3/Y5nO__SHQO4/sprezzatura.html"
+                                    title="Sprezzatura" class="i">Sprezzatura</a>
+                                    <small>fonte:
+                                        <a href="http://sethgodin.typepad.com/seths_blog/">Seth's Blog</a>
+                                    </small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <p>
+                    <small>Hosted on GitHub Pages &mdash; Theme by
+                        <a href="https://github.com/orderedlist">orderedlist</a>
+                    </small>
+                </p>
+            </div>
+        </footer>
+    </body>
+
+</html>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'pt',
+            includedLanguages: 'en',
+            layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">    
+    </script>
+<![endif]-->
+<!--[if IE]>
+    <script type="text/javascript" src="http://fast.fonts.com/jsapi/d34e3f76-678a-447e-a024-f6b2e5185713.js">    
+    </script>
+<![endif]-->
+<script src="http://code.jquery.com/jquery-1.8.0.min.js" type="text/javascript">
+</script>
+<script src="http://www.google.com/jsapi" type="text/javascript">
+</script>
+<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js" type="text/javascript">
+</script>
+<script src="tags.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+    function ViewModel() {
+        var it = this;
+        it.User = {
+            name: "sidneylimafilho",
+            mail: "https://docs.google.com/spreadsheet/viewform?formkey=dEtLSzNWdXlnanJMdTN6WmtQb2VnMlE6MQ",
+            twitter: "sidneylimafilho",
+            facebook: "sidneylimafilho",
+            linkedin: "sidneylimafilho",
+            youtube: {
+                name: "TheSidneyLimaFilho",
+                embedUrl: "http://www.youtube.com/embed/",
+                userUrl: "http://www.youtube.com/user/"
+            },
+            github: "sidneylimafilho",
+            slideshare: "sidneylimafilho",
+            feed: "/rss.xml",
+            delicious: {
+                name: "sidneylimafilho",
+                tag: "Favorite"
+            }
+        };
+
+        it.MostRecentVideo = ko.observable({
+            id: ''
+        });
+        it.Videos = ko.observableArray([]);
+
+        it.Initialize = function() {
+
+            // ICONES            
+            $('.twitter').attr('href', 'http://twitter.com/' + it.User.twitter);
+            $('.facebook').attr('href', 'http://facebook.com/' + it.User.facebook);
+            $('.linkedin').attr('href', 'http://br.linkedin.com/in/' + it.User.linkedin);
+            $('.feed').attr('href', it.User.feed);
+
+            $('.youtube').attr('href', it.User.youtube.userUrl + it.User.youtube.name);
+            $('.slideshare').attr('href', 'http://slideshare.net/' + it.User.slideshare);
+            $('.github').attr('href', 'http://github.com/' + it.User.github);
+            $('.mail').attr('href', it.User.mail);
+
+
+            // YOUTUBE
+            $.getJSON("http://gdata.youtube.com/feeds/api/users/" + it.User.youtube.name + "/favorites?alt=jsonc&v=2", function(json) {
+                for (var i in json.data.items)
+                if (item = json.data.items[i]) if (i < 4 && item.video.accessControl.embed === 'allowed') if (i === "0") {
+                    it.MostRecentVideo(item.video);
+                } else {
+                    it.Videos.push(item.video);
+                }
+
+            });
+
+
+            ko.applyBindings(it);
+        }
+
+        it.ShowVideo = function(elem) {
+            return function() {
+                var temp = it.Videos();
+                temp[temp.indexOf(this)] = it.MostRecentVideo();
+                it.Videos(temp);
+                it.MostRecentVideo(this);
+            }
+        }
+
+    };
+
+    (vm = new ViewModel()).Initialize();
+/*  
+    google.load("feeds", "1");
+
+    // FEEDS            
+    google.setOnLoadCallback(function feeds() {
+
+        // TWITTER
+        $.getJSON("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=" + user.twitter + "&callback=?", function(json) {
+            document.title = json[0].user.description + " - " + json[0].user.name;
+            $('#nome').html(json[0].user.name);
+            $('#site').html(json[0].user.url);
+            $('#site').attr('href', json[0].user.url);
+            $('#descricao').html(json[0].user.description);
+            $.each(json, function(i, tweet) {
+                if (!tweet.text.match("@") && $("#twitter i").html() == "Carregando...") {
+                    $('#twitter i').html('"' + tweet.text + '"');
+                    $('#twitter a').html("@" + tweet.user.screen_name);
+                    $('#twitter a').attr("href", "http://twitter.com/" + user.twitter);
+                }
+            });
+        });
+
+
+        // GITHUB
+        $.getJSON("http://github.com/api/v2/json/repos/show/" + user.github + "?callback=?", function(json) {
+            $('#projetos > .place').html("");
+            $.each(json.repositories.reverse(), function(i, repository) {
+                $('#projetos > .place').append('<a class="repository" href="http://github.com/' + repository.owner + '/' + repository.name + '" target="_blank"><h3>' + repository.name + '</h3>' + repository.description.substring(0, 40) + '</a>');
+            });
+            $('#projetos').append('<a class="more" href="http://github.com/' + user.github + '" target="_blank">+ projetos</a>');
+        });
+
+        // DELICIOUS
+        $.getJSON("http://feeds.delicious.com/v2/json/" + user.delicious.self + "/" + user.delicious.tag + "?callback=?", function(json) {
+            $('#sites > .place').html("");
+            $.each(json, function(i, site) {
+                $('#sites > .place').append('<a class="site" href="' + site.u + '" target="_blank">' + site.d.substring(0, 40) + '</a>');
+            });
+            $('#sites').append('<a class="more" href="http://www.delicious.com/' + user.delicious.self + '/byme" target="_blank">+ sites</a>');
+        });
+
+        // APRESENTACOES
+        var apresentacoes = new google.feeds.Feed("http://www.slideshare.net/rss/user/" + user.slideshare);
+        apresentacoes.load(function(result) {
+            $('#apresentacoes > .place').html("");
+            $.each(result.feed.entries, function(i, slide) {
+                $('#apresentacoes > .place').append('<a href="' + slide.link + '" target="_blank">' + slide.title + '</a>');
+            });
+            $('#apresentacoes').append('<a class="more" href="http://www.slideshare.net/' + user.slideshare + '" target="_blank">+ apresentações</a>')
+        });
+        
+    });
+*/
+</script>
+<script type="text/html" id="tagsTemplate">
+    < h2 class = "post_title" > {. {
+            page.title
+        }
+    } < /h2>
+
+
+
+
+
+    <ul>
+
+
+
+
+
+ 
+
+
+
+
+
+ <li class="archive_list">
+
+
+
+
+
+ 
+
+
+
+
+
+ <time style="color:#666;font-size:11px;" datetime='{.{post.date | date: "%Y-%m-%d"}}'>{.{post.date | date: "%m/ % d / % y "}}</time>
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+    <a class="
+    archive_list_article_link " href='{.{post.url}}'>{.{post.title}}</a>
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+    <p class="
+    summary ">
+
+
+
+
+
+                    
+
+
+
+
+
+ <span>{.{post.summary}}</span>
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+    <ul class="
+    tag_list ">
+
+
+
+
+
+ 
+
+
+
+
+
+    {.% for tag in post.tags %}
+
+
+
+
+
+ 
+
+
+
+
+
+    <li class="
+    inline archive_list ">
+
+
+
+
+
+ 
+
+
+
+
+
+ <a class="
+    tag_list_link " href=" / tag / {. {
+            tag
+        }
+    }
+    ">{.{ tag }}</a>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+     {.%endfor%}
+
+
+
+
+
+ 
+
+
+
+
+
+    </ul>
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+    </p>
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+    </li>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+</script>
