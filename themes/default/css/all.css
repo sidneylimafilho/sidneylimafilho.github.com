@@ -68,13 +68,34 @@ section,
 footer {
   width: 100%;
 }
+overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.88);
+  margin: 0 auto;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  z-index: 20;
+  padding-top: 80px;
+}
+overlay div {
+  width: 860px;
+  height: 510px;
+  margin: 0px auto;
+}
 header {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.65);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
   padding: 4px 0px;
-  z-index: 1000;
+  z-index: 10;
   /* cause banner position relative stay hover on the header */
 
 }
@@ -272,6 +293,51 @@ section .post-wall a resume {
   position: absolute;
   width: 250px;
 }
+section .post-wall a resume time {
+  width: 24px;
+  text-align: left;
+  float: left;
+  font-size: 16px;
+  padding-right: 20px;
+  margin-top: -2px;
+}
+section .post-wall a resume day {
+  font-size: 26px;
+  height: 24px;
+  display: block;
+  color: orange;
+}
+section .post-wall a resume month {
+  font-size: 16px;
+  color: #fcd389;
+}
+section .post-wall a resume year {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  display: block;
+  position: absolute;
+  top: 15px;
+  font-size: 18px;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity=30);
+  margin-left: 15px;
+  color: #fcd389;
+}
+section .post-wall a resume .title {
+  min-height: 44px;
+}
+section .post-wall a resume .excerpt {
+  display: none;
+}
+section .post-wall a:hover .excerpt {
+  display: block;
+}
 section .post-wall .twitter table {
   height: 100%;
 }
@@ -466,9 +532,7 @@ a {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  text-shadow: 0px 0px 2px rgba(255, 200, 0, 0.7);
-  -webkit-text-shadow: 0px 0px 2px rgba(255, 200, 0, 0.7);
-  -moz-text-shadow: 0px 0px 2px rgba(255, 200, 0, 0.7);
+  /*.text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));*/
   padding-bottom: 2px;
   background: url(../img/anchor-bg.png) no-repeat 0px -2px;
 }
