@@ -17,7 +17,7 @@
         <script src="/themes/default/js/linq.js" type="text/javascript">        
         </script>
         <script src="/themes/default/js/tags.js" type="text/javascript">        
-        </script>
+        </script>        
         <script src="/themes/default/js/moment/moment.min.js" type="text/javascript">        
         </script>
         <script type="text/javascript">moment.lang('pt-br');</script>
@@ -32,6 +32,24 @@
         <script src="http://www.google.com/jsapi" type="text/javascript">        
         </script>
         <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js" type="text/javascript">        
+        </script>
+        <script src="/themes/default/js/quotes.js" type="text/javascript">        
+        </script>
+        <script type="text/javascript">
+        $(function(){            
+            var q = quotes[~~(Math.random() * quotes.length)];
+            var $banner = $("banner");
+            $banner.find(".excerpt h1").text(q.author);
+            $banner.find(".excerpt h2").text(q.text);
+            $banner.css({background: 'url(/themes/default/img/banner/'+ q.banner +')'});
+
+            
+            var html = "";
+            for(var i in tags) if(tag=tags[i]){
+                html += "<span>"+ i + " (" + tag.posts.length +")</span>";
+            }
+            $(".tag-cloud").html(html);
+        })            
         </script>
     </head>
     
@@ -97,10 +115,10 @@
         </section>
         <footer>
             <div class="wrapper">
+
+                <div class="tag-cloud"></div>
                 <p>
-                    <small>Hosted on GitHub Pages &mdash; Theme by
-                        <a href="https://github.com/orderedlist">orderedlist</a>
-                    </small>
+                    <small>Este site possui todo seu conteúdo aberto e disponível em um <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com" target="_blank">repositório público</a>. </small>
                 </p>
             </div>
         </footer>

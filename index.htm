@@ -45,13 +45,22 @@ layout: default
 
 <div id="tweetTemplate" style="display:none">
     <div class="widget twitter">
-        <table>
-            <tr><td data-bind="text: object.text"></td></tr>
-            <tr><td data-bind="text: moment(date).format('DD/MM/YYYY')"></td></tr>
-        </table>
+        <a href="javascript:;">
+            <table><tr><td data-bind="text: object.text"></td></tr></table>
+             <resume>
+                <time>
+                    <day data-bind="text: moment(date).format('DD')"></day>
+                    <month data-bind="text: moment(date).format('MMM').toUpperCase()"></month>
+                    <year data-bind="text: moment(date).format('YYYY').toUpperCase()"></year>
+                </time>
+                <div class="title" data-bind="text: type">Últimas do Twitter</div>                                        
+            </resume>
+        </a>
         
-        <a target="_blank" data-bind="attr:{class: 'button ' + type, href: $root.User[type].getUrl(), title: $root.User[type].title}"></a>
+        <a target="_blank" data-bind="attr:{class: 'button twitter', href: $root.User.twitter.getUrl(), title: $root.User.twitter.title}"></a>
     </div>
+
+
 </div>
 
 <div id="bookmarkTemplate" style="display:none">
@@ -116,9 +125,7 @@ layout: default
                         var temp;
                         Enumerable.From(result.feed.entries).Take(6)
                         .ForEach(function(slide, index){
-                            var temp = Enumerable.From(it.Items()).Where(function($){ 
-                                return $.date < new Date(slide.publishedDate);
-                            }).First();
+                            var temp = Enumerable.From(it.Items()).Where("$.date < new Date('"+ slide.publishedDate +"')").First();
                             var start = Enumerable.From(it.Items()).IndexOf(temp);
                             
                             it.Items.splice(start, 0, {
@@ -140,22 +147,36 @@ layout: default
                 title: "Pensamentos rápidos via Twitter.",
                 getUrl: function(){ return "http://twitter.com/" + this.name; },
                 getApiFeedUrl: function(){ return "http://api.twitter.com/1/statuses/user_timeline.json?screen_name=" + this.name + "&callback=?";},
-                loadItems : function(){                                   
-                    $.getJSON(this.getApiFeedUrl(), function(json) {                        
-                        Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(6)
-                        .ForEach(function(tweet, index){                           
-                            var start = Math.random() * it.Items().length; // coloca em ordem aleatória
-                            
+                getApiFavoritesUrl: function(){ return "http://api.twitter.com/1/favorites.json?screen_name=" + this.name + "&callback=?";},
+                loadItems : function(){   
+
+                    $.getJSON(this.getApiFeedUrl(), function(json) {                                          
+                        Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(2)
+                        .ForEach(function(tweet, index){   
+                            var temp = Enumerable.From(it.Items()).Where("$.date < new Date('"+tweet.created_at+"')").First();
+                            var start = Enumerable.From(it.Items()).IndexOf(temp);                                                    
                             it.Items.splice(start, 0, {
                                 template: "tweetTemplate", 
-                                type: "twitter", 
-                                date: new Date(new Date().getYear(), Math.random() * 12, 1),
+                                type: "Ultimas no Twitter", 
+                                date: new Date(tweet.created_at),
                                 object: tweet
                             });
-                        });
-                        
-                        
+                        });                        
                     });
+
+                    $.getJSON(this.getApiFavoritesUrl(), function(json) {                                          
+                        Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(2)
+                        .ForEach(function(tweet, index){   
+                            var temp = Enumerable.From(it.Items()).Where("$.date < new Date('"+tweet.created_at+"')").First();
+                            var start = Enumerable.From(it.Items()).IndexOf(temp);                                                     
+                            it.Items.splice(start, 0, {
+                                template: "tweetTemplate", 
+                                type: "Favoritei no Twitter", 
+                                date: new Date(tweet.created_at),
+                                object: tweet
+                            });
+                        });                        
+                    });                    
                 }
             },      
             youtube: {
@@ -183,9 +204,7 @@ layout: default
                         // bubble sort
                         Enumerable.From(json.data.items).Where("$.video.accessControl.embed === 'allowed'").Take(6)
                         .ForEach(function(value, index){
-                            var temp = Enumerable.From(it.Items()).Where(function($){ 
-                                return $.date < new Date(value.created);
-                            }).First();
+                            var temp = Enumerable.From(it.Items()).Where("$.date < new Date('"+ value.created +"')").First();
                             var start = Enumerable.From(it.Items()).IndexOf(temp);
                             
                             it.Items.splice(start, 0, {
@@ -222,9 +241,7 @@ layout: default
                     $.getJSON(this.getApiFeedUrl(), function(json) {
                         Enumerable.From(json).Take(6)
                         .ForEach(function(value, index){
-                            var temp = Enumerable.From(it.Items()).Where(function($){ 
-                                return $.date < new Date(value.dt);
-                            }).First();
+                            var temp = Enumerable.From(it.Items()).Where("$.date < new Date('"+ value.dt +"')").First();
                             var start = Enumerable.From(it.Items()).IndexOf(temp);
                             
                             it.Items.splice(start, 0, {
@@ -247,17 +264,20 @@ layout: default
     ViewModel.prototype.getTemplate = function(item) {return item.template;}
     ViewModel.prototype.Initialize = function() {
         var it = this;
-        it.User.socialMediaLoaded = 0;
+        
         it.User.feed.loadItems();
-        it.User.youtube.loadItems();
-        it.User.twitter.loadItems();  
-        it.User.delicious.loadItems();                 
+                        
         google.load("feeds", "1");
-        google.setOnLoadCallback(function feeds() { it.User.slideshare.loadItems(); });            
-
-        ko.applyBindings(it);
-    };
-   
+        $(function(){
+            google.setOnLoadCallback(function () { 
+                it.User.youtube.loadItems();
+                it.User.twitter.loadItems();  
+                it.User.delicious.loadItems(); 
+                it.User.slideshare.loadItems(); 
+            });
+            ko.applyBindings(it);
+        });            
+    };   
 
     (vm = new ViewModel()).Initialize();
 
