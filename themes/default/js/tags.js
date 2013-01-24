@@ -1,15 +1,15 @@
 ---
 layout: nil
 ---
-tag = {}, tags = {};
+var tag = {}, tags = {}, posts = [];
 
-{% for post in site.posts %} {% for tag in post.tags %}
-tag = tags["{{tag}}"] = (tags["{{tag}}"] || {count:0, posts:[]});
-tag.count++;
-tag.posts.push({
-	title: "{{post.title}}",
-	excerpt: "{{post.excerpt}}",
-	date: Date.parse("{{post.date}}"),
-	tags:[ {% for posttag in post.tags %}"{{posttag}}",{% endfor %}	false]
-});
-{% endfor %} {% endfor %}
+{% for post in site.posts %} 
+posts.unshift({ 
+    title: "{{post.title | strip_newlines}}", 
+    image: "{{post.image | strip_newlines}}", 
+    url: "{{post.url | strip_newlines}}", 
+    excerpt: "{{post.excerpt | strip_newlines}}", 
+    date: Date.parse("{{post.date}}") 
+}); 
+{% for tag in post.tags %} (tags["{{tag}}"] || (tags["{{tag}}"] = {posts:[]})).posts.push(posts[0]); {% endfor %}
+{% endfor %}

@@ -28,6 +28,48 @@
 }
 
 
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.eot');
+    src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.woff') format('woff'),
+         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.ttf') format('truetype'),
+         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('../fonts/source-sans-pro/Svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.eot');
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('../fonts/source-sans-pro/Svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.eot');
+    src: url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'),
+         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('../fonts/source-sans-pro/Svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.eot');
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.woff') format('woff'),
+         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('../fonts/source-sans-pro/Svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 
 /* -------------------------------- */
 /* Structure                        */
@@ -87,7 +129,7 @@ header {
             padding: 0px 10px;
             display: table-cell;
             /*border-right:1px solid #d2d2d2;*/
-            height:70px;
+            height: 70px;
             vertical-align: middle;
 
             a {               
@@ -104,6 +146,8 @@ header {
          }
       }
    }
+
+
 }
 
 
@@ -160,14 +204,103 @@ banner {
 section {
    
    background: url(../img/corner-shadow-top-left.png) #FFF no-repeat top left;   
-   overflow:auto; /* fix bug background-color dont work */
+   /* overflow:auto; fix bug background-color dont work */
+
+   a:hover, a.selected{ }
 
    .super {
       background: url(../img/corner-shadow-top-right.png) no-repeat top right;   
-      overflow:auto; /* fix bug background-color dont work */
+       /*overflow:auto; fix bug background-color dont work */
       width: 100%;
       padding-top: 24px;
    }
+
+   .post-wall{
+  
+      .widget {
+         border: 1px solid #E5E5E5;
+         background-color: white;
+         position: relative;
+         width: 260px;
+         float: left;
+         height: 260px; 
+         margin: 0px 24px 24px 0px;  
+         background-position: 0% 0%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         .transition(background-position, 2000ms);       
+      }
+
+      .widget:hover{         
+         background-position: 100% 100%;
+      }
+
+      .widget::after {
+         content: '';
+         position: absolute;
+         height: 7px;
+         bottom: -7px;
+         left: 0;
+         background: url(../img/shadow2.png) no-repeat top center;
+         width: 100%;
+      }
+
+      a {             
+         display: block;  
+         position: relative;
+         text-decoration: none;                                  
+         height: 100%;
+         background: none;
+         .transition(opacity, 400ms);                 
+
+         small{ display: block; }
+
+         resume { 
+            display: block; 
+            background-color: rgba(0, 0, 0, 0.76);
+            color: #FFF; 
+            bottom: 0px;               
+            padding: 5px;  
+            position: absolute;
+            width: 250px;
+         }
+      } 
+
+      .twitter table{
+         height: 100%;
+      }
+      
+
+      a.button { 
+         display: table-cell; 
+         width: 36px;
+         height: 36px;
+         background-repeat: no-repeat;         
+         background-size: 100%;
+         background-image: none;
+         position: absolute;
+         top: -18px;
+         left: 45%;
+         .opacity(0.4);
+      }
+
+      a.button:hover, a.button:active {
+         .opacity(1);         
+      }
+      a.twitter { background-image: url(../img/twitter.png);  }
+      a.facebook { background-image: url(../img/facebook.png);  }
+      a.linkedin { background-image: url(../img/linkedin.png);  }
+      a.feed { background-image: url(../img/feed.png);  }
+      a.slideshare { background-image: url(../img/slideshare.png);  }
+      a.github { background-image: url(../img/github.png);  }
+      a.youtube { background-image: url(../img/youtube.png);  }
+      a.delicious { background-image: url(../img/delicious.png);  }
+      a.mail { background-image: url(../img/mail.png);  }
+   }
+
+   nav {float: right;}
+
+   
 
    .left-side {
       width: 586px;
@@ -180,43 +313,7 @@ section {
       .post-wall ul {
          padding: 0px;
 
-         li {               
-            display: inline-block;
-            width: 270px;
-            height: 270px;
-            margin: 0px 18px 18px 0px;
-            border:1px solid black;
-            position: relative;
-            background-position: 0% 0%;
-            background-repeat: no-repeat;
-            .transition(background-position, 2000ms);
-
-            a {             
-               display: block;  
-               position: relative;
-               text-decoration: none;                         
-               opacity: 0;
-               height: 100%;
-               background: none;
-               .transition(opacity, 400ms);                 
-
-               small{ display: block; }
-
-               resume { 
-                  display: block; 
-                  background-color: rgba(0, 0, 0, 0.76);
-                  color: #FFF; 
-                  bottom: 0px;               
-                  padding: 5px;  
-                  position: absolute;
-               }
-            }            
-         }
-
-         li:hover{
-            a { opacity: 1; }
-            background-position: 100% 100%;
-         }
+         
       }   
 
       .artigos, .palestras {
@@ -249,69 +346,7 @@ section {
       float: right;      
       overflow: auto; /* fix bug height or boxing dont work */
 
-      .widget {
-         border: 1px solid #E5E5E5;
-         background-color: white;
-         position: relative;
-         margin-bottom: 30px;   
 
-         .gravatar {
-            display: block;
-            padding: 4px;
-            font-size: 14px;
-            line-height: 16px;
-            text-align: justify;
-
-            img {
-               float: left;
-               margin-right: 4px;               
-            }
-         }      
-
-         h2 {
-            margin: 0px;
-            padding: 12px 12px;
-            background-color: #DDD;
-         }
-
-         ul {
-            padding: 0px 12px;
-         }
-
-        
-         .button { 
-            display: table-cell; 
-            width: 64px;
-            height: 64px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 76%;
-            .opacity(0.5);
-         }
-
-         .button:hover, .button:active {
-            .opacity(1);
-         }
-
-         .twitter { background-image: url(../img/twitter.png);  }
-         .facebook { background-image: url(../img/facebook.png);  }
-         .linkedin { background-image: url(../img/linkedin.png);  }
-         .feed { background-image: url(../img/feed.png);  }
-         .slideshare { background-image: url(../img/slideshare.png);  }
-         .github { background-image: url(../img/github.png);  }
-         .youtube { background-image: url(../img/youtube.png);  }
-         .mail { background-image: url(../img/mail.png);  }
-      }
-
-      .widget::after {
-         content: '';
-         position: absolute;
-         height: 7px;
-         bottom: -7px;
-         left: 0;
-         background: url(../img/shadow2.png) no-repeat top center;
-         width: 100%;
-      }
 
 
       ul {
@@ -325,6 +360,8 @@ section {
          small { display: block; }         
       }
    }
+
+  
 }
 
 footer {
@@ -335,7 +372,9 @@ footer {
 .wrapper {
   width:860px;
   margin:0 auto;
+  position: relative;
 }
+
 
 
 /* -------------------------------- */
@@ -401,7 +440,7 @@ a:hover, a.selected{
    color:@primaryColorHover; 
    text-decoration: none; 
    .text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));
-   background: url(../img/anchor-bg.png) no-repeat 0px 100%;
+   background-position: 0px 100%;
 }
 
 b, strong { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
@@ -453,76 +492,13 @@ img {
 
 
 
-@media print, screen and (max-width: 960px) {
-  
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-  
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-  
-  header {
-    padding-right:320px;
-  }
-  
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
-  
-  header a small {
-    display:inline;
-  }
-  
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
-}
+@media print, screen and (max-width: 960px) { }
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-  
-  header {
-    padding:0;
-  }
-  
-  header ul, header p.view {
-    position:static;
-  }
-  
-  pre, code {
-    word-wrap:normal;
-  }
-}
+@media print, screen and (max-width: 720px) { }
 
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-  
-  header ul {
-    display:none;
-  }
-}
+@media print, screen and (max-width: 480px) { }
 
-@media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
-}
+@media print { }
 
 
 
