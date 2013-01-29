@@ -1,0 +1,914 @@
+/* Color palette */
+/* crimson: #DC143C */
+/* purple: #800080 */
+/*---------------------------------------------------
+    LESS Elements 0.7
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* -------------------------------- */
+
+/* Font Definitions                 */
+
+/* -------------------------------- */
+
+@font-face {
+  font-family: "HelveticaNeueThCn";
+  src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
+}
+@font-face {
+  font-family: "HelveticaNeueLtCn";
+  src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
+}
+@font-face {
+  font-family: "HelveticaNeueMdCn";
+  src: url('../fonts/HelveticaNeueLTCom-MdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-MdCn.woff') format('woff');
+}
+@font-face {
+  font-family: "HelveticaNeueBdCn";
+  src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
+}
+/* -------------------------------- */
+
+/* Structure                        */
+
+/* -------------------------------- */
+
+header,
+banner,
+section,
+footer {
+  width: 100%;
+}
+overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.88);
+  margin: 0 auto;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  z-index: 20;
+  padding-top: 80px;
+}
+overlay div {
+  width: 860px;
+  height: 510px;
+  margin: 0px auto;
+}
+header {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid white;
+  /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
+  padding: 4px 0px;
+  z-index: 10;
+  /* cause banner position relative stay hover on the header */
+
+}
+header .signature {
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  -webkit-text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  -moz-text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  width: 230px;
+  height: 70px;
+  float: left;
+  color: transparent;
+  background: url(../img/signature-logo.png) no-repeat left center;
+  margin: 0px;
+}
+header #google_translate_element {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+header menu {
+  float: right;
+  margin: 0px;
+}
+header menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  /* background: #eee;
+         background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+         background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+         background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+
+         border-radius:5px;
+         border:1px solid #d2d2d2;
+         box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
+
+}
+header menu ul li {
+  padding: 0px 10px;
+  display: table-cell;
+  /*border-right:1px solid #d2d2d2;*/
+  height: 70px;
+  vertical-align: middle;
+  /*a:hover, a.selected{                    
+               text-decoration: none;
+               border-top: 1px solid @linkColorHover;               
+            }*/
+
+}
+header menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #696b33;
+  text-shadow: 0px 0px 0px transparent;
+  -webkit-text-shadow: 0px 0px 0px transparent;
+  -moz-text-shadow: 0px 0px 0px transparent;
+}
+banner {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  display: block;
+  height: 330px;
+  background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  vertical-align: bottom;
+}
+banner .wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -430px;
+  /* .wrapper original width is 860px, then 50% is 430px */
+
+}
+banner h1 {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  -webkit-text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  -moz-text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  width: 600px;
+}
+banner h2 {
+  text-shadow: 0px 0px 8px black;
+  -webkit-text-shadow: 0px 0px 8px black;
+  -moz-text-shadow: 0px 0px 8px black;
+  color: white;
+  font-size: 32px;
+  line-height: 30px;
+  width: 600px;
+}
+banner .arrow-left,
+banner .arrow-right {
+  position: absolute;
+  height: 330px;
+  width: 66px;
+  display: block;
+  overflow: auto;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  filter: alpha(opacity=60);
+}
+banner .arrow-left:hover,
+banner .arrow-right:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+banner .arrow-left {
+  background: url(../img/arrow-left.png) no-repeat center;
+  right: 0px;
+}
+banner .arrow-right {
+  background: url(../img/arrow-right.png) no-repeat center;
+}
+section {
+  background: url(../img/corner-shadow-top-left.png) no-repeat top left;
+  /* overflow:auto; fix bug background-color dont work */
+
+}
+section .super {
+  background: url(../img/corner-shadow-top-right.png) no-repeat top right;
+  /*overflow:auto; fix bug background-color dont work */
+  width: 100%;
+  padding-top: 24px;
+}
+section .post-wall .widget {
+  border: 1px solid #c4be9c;
+  background-color: white;
+  position: relative;
+  width: 260px;
+  float: left;
+  height: 260px;
+  margin: 0px 24px 24px 0px;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-position 2000ms ease;
+  -moz-transition: background-position 2000ms ease;
+  -webkit-transition: background-position 2000ms ease;
+  -o-transition: background-position 2000ms ease;
+  -webkit-transition: all background-position 2000ms;
+  -moz-transition: all background-position 2000ms;
+  transition: all background-position 2000ms;
+}
+section .post-wall .widget:hover {
+  background-position: 100% 100%;
+}
+section .post-wall .widget::after {
+  content: '';
+  position: absolute;
+  height: 7px;
+  bottom: -7px;
+  left: 0;
+  background: url(../img/shadow2.png) no-repeat top center;
+  width: 100%;
+}
+section .post-wall a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  height: 100%;
+  background: none;
+  transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -webkit-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  -webkit-transition: all opacity 400ms;
+  -moz-transition: all opacity 400ms;
+  transition: all opacity 400ms;
+}
+section .post-wall a small {
+  display: block;
+}
+section .post-wall a resume {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+  bottom: 0px;
+  padding: 5px;
+  position: absolute;
+  width: 250px;
+}
+section .post-wall a resume time {
+  width: 24px;
+  text-align: left;
+  float: left;
+  font-size: 16px;
+  padding-right: 20px;
+  margin-top: -2px;
+}
+section .post-wall a resume day {
+  font-size: 26px;
+  height: 24px;
+  display: block;
+  color: orange;
+}
+section .post-wall a resume month {
+  font-size: 16px;
+  color: #fcd389;
+}
+section .post-wall a resume year {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  display: block;
+  position: absolute;
+  top: 15px;
+  font-size: 18px;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity=30);
+  margin-left: 15px;
+  color: #fcd389;
+}
+section .post-wall a resume .title {
+  min-height: 44px;
+}
+section .post-wall a resume .excerpt {
+  display: none;
+}
+section .post-wall a:hover .excerpt {
+  display: block;
+}
+section .post-wall .twitter table {
+  height: 210px;
+}
+section .post-wall a.button {
+  display: table-cell;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: none;
+  position: absolute;
+  top: -18px;
+  left: 45%;
+  /*.opacity(0.4);*/
+
+}
+section .post-wall a.twitter {
+  background-image: url(../img/twitter.png);
+}
+section .post-wall a.facebook {
+  background-image: url(../img/facebook.png);
+}
+section .post-wall a.linkedin {
+  background-image: url(../img/linkedin.png);
+}
+section .post-wall a.feed {
+  background-image: url(../img/feed.png);
+}
+section .post-wall a.slideshare {
+  background-image: url(../img/slideshare.png);
+}
+section .post-wall a.github {
+  background-image: url(../img/github.png);
+}
+section .post-wall a.youtube {
+  background-image: url(../img/youtube.png);
+}
+section .post-wall a.delicious {
+  background-image: url(../img/delicious.png);
+}
+section .post-wall a.mail {
+  background-image: url(../img/mail.png);
+}
+section nav {
+  float: right;
+}
+section .left-side {
+  width: 586px;
+  padding-right: 24px;
+  float: left;
+  overflow: hidden;
+}
+section .left-side h1 {
+  border-bottom: 1px solid black;
+}
+section .left-side .post-wall ul {
+  padding: 0px;
+}
+section .left-side .artigos ul,
+section .left-side .palestras ul {
+  list-style-type: none;
+  padding-left: 90px;
+  position: relative;
+}
+section .left-side .artigos ul li,
+section .left-side .palestras ul li {
+  padding-right: 10px;
+}
+section .left-side .artigos ul li time,
+section .left-side .palestras ul li time {
+  position: absolute;
+  left: 0px;
+}
+section .left-side .artigos ul li small,
+section .left-side .palestras ul li small {
+  display: block;
+  color: #444444;
+}
+section .right-side {
+  width: 250px;
+  float: right;
+  overflow: auto;
+  /* fix bug height or boxing dont work */
+
+}
+section .right-side ul {
+  list-style-type: none;
+  padding: 0px;
+}
+section .right-side ul li {
+  padding: 3px 0px 7px 0px;
+}
+section .right-side ul small {
+  display: block;
+}
+footer {
+  clear: both;
+  display: block;
+  padding: 30px 0px;
+  background-color: #3f081c;
+  color: white;
+}
+footer .tag-cloud span {
+  padding: 3px;
+  display: inline-block;
+  background-color: #85315c;
+  border-radius: 4px;
+  margin: 5px;
+}
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+/* -------------------------------- */
+
+/* Generics                         */
+
+/* -------------------------------- */
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
+  color: #666666;
+  background-color: #ede9cc;
+}
+small {
+  font-size: 80%;
+}
+p {
+  text-align: justify;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
+  font-weight: normal;
+  text-shadow: 0px 0px 8px transparent;
+  -webkit-text-shadow: 0px 0px 8px transparent;
+  -moz-text-shadow: 0px 0px 8px transparent;
+  color: black;
+}
+p,
+ul,
+li,
+ol,
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+dl {
+  margin: 0 0 10px;
+}
+ul {
+  padding-left: 2px;
+  list-style-position: inside;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+h1 {
+  font-size: 40px;
+  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 24px;
+}
+a {
+  color: #85315c;
+  text-decoration: none;
+  transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  /*.text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));*/
+  padding-bottom: 2px;
+  background: url(../img/anchor-bg.png) no-repeat 0px -2px;
+}
+a:hover,
+a.selected {
+  color: #e74545;
+  text-decoration: none;
+  /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
+  background-position: 0px 100%;
+}
+b,
+strong {
+  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
+}
+blockquote {
+  border-left: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+code,
+pre {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color: #333333;
+  font-size: 12px;
+}
+pre {
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+dt {
+  color: #444444;
+  font-weight: 700;
+}
+th {
+  color: #444444;
+}
+img {
+  max-width: 100%;
+}
+@media print, screen and (max-width: 960px) {
+  
+}
+@media print, screen and (max-width: 720px) {
+  
+}
+@media print, screen and (max-width: 480px) {
+  
+}
+@media print {
+  
+}
+.highlight {
+  background: white;
+}
+.highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+/* Comment */
+
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+/* Error */
+
+.highlight .k {
+  font-weight: bold;
+}
+/* Keyword */
+
+.highlight .o {
+  font-weight: bold;
+}
+/* Operator */
+
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+/* Comment.Multiline */
+
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+/* Comment.Preproc */
+
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+/* Comment.Single */
+
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comment.Special */
+
+.highlight .gd {
+  color: black;
+  background-color: #ffdddd;
+}
+/* Generic.Deleted */
+
+.highlight .gd .x {
+  color: black;
+  background-color: #ffaaaa;
+}
+/* Generic.Deleted.Specific */
+
+.highlight .ge {
+  font-style: italic;
+}
+/* Generic.Emph */
+
+.highlight .gr {
+  color: #aa0000;
+}
+/* Generic.Error */
+
+.highlight .gh {
+  color: #999999;
+}
+/* Generic.Heading */
+
+.highlight .gi {
+  color: black;
+  background-color: #ddffdd;
+}
+/* Generic.Inserted */
+
+.highlight .gi .x {
+  color: black;
+  background-color: #aaffaa;
+}
+/* Generic.Inserted.Specific */
+
+.highlight .go {
+  color: #888888;
+}
+/* Generic.Output */
+
+.highlight .gp {
+  color: #555555;
+}
+/* Generic.Prompt */
+
+.highlight .gs {
+  font-weight: bold;
+}
+/* Generic.Strong */
+
+.highlight .gu {
+  color: purple;
+  font-weight: bold;
+}
+/* Generic.Subheading */
+
+.highlight .gt {
+  color: #aa0000;
+}
+/* Generic.Traceback */
+
+.highlight .kc {
+  font-weight: bold;
+}
+/* Keyword.Constant */
+
+.highlight .kd {
+  font-weight: bold;
+}
+/* Keyword.Declaration */
+
+.highlight .kn {
+  font-weight: bold;
+}
+/* Keyword.Namespace */
+
+.highlight .kp {
+  font-weight: bold;
+}
+/* Keyword.Pseudo */
+
+.highlight .kr {
+  font-weight: bold;
+}
+/* Keyword.Reserved */
+
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+/* Keyword.Type */
+
+.highlight .m {
+  color: #009999;
+}
+/* Literal.Number */
+
+.highlight .s {
+  color: #dd1144;
+}
+/* Literal.String */
+
+.highlight .na {
+  color: teal;
+}
+/* Name.Attribute */
+
+.highlight .nb {
+  color: #0086b3;
+}
+/* Name.Builtin */
+
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+/* Name.Class */
+
+.highlight .no {
+  color: teal;
+}
+/* Name.Constant */
+
+.highlight .ni {
+  color: purple;
+}
+/* Name.Entity */
+
+.highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+/* Name.Exception */
+
+.highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+/* Name.Function */
+
+.highlight .nn {
+  color: #555555;
+}
+/* Name.Namespace */
+
+.highlight .nt {
+  color: navy;
+}
+/* Name.Tag */
+
+.highlight .nv {
+  color: teal;
+}
+/* Name.Variable */
+
+.highlight .ow {
+  font-weight: bold;
+}
+/* Operator.Word */
+
+.highlight .w {
+  color: #bbbbbb;
+}
+/* Text.Whitespace */
+
+.highlight .mf {
+  color: #009999;
+}
+/* Literal.Number.Float */
+
+.highlight .mh {
+  color: #009999;
+}
+/* Literal.Number.Hex */
+
+.highlight .mi {
+  color: #009999;
+}
+/* Literal.Number.Integer */
+
+.highlight .mo {
+  color: #009999;
+}
+/* Literal.Number.Oct */
+
+.highlight .sb {
+  color: #dd1144;
+}
+/* Literal.String.Backtick */
+
+.highlight .sc {
+  color: #dd1144;
+}
+/* Literal.String.Char */
+
+.highlight .sd {
+  color: #dd1144;
+}
+/* Literal.String.Doc */
+
+.highlight .s2 {
+  color: #dd1144;
+}
+/* Literal.String.Double */
+
+.highlight .se {
+  color: #dd1144;
+}
+/* Literal.String.Escape */
+
+.highlight .sh {
+  color: #dd1144;
+}
+/* Literal.String.Heredoc */
+
+.highlight .si {
+  color: #dd1144;
+}
+/* Literal.String.Interpol */
+
+.highlight .sx {
+  color: #dd1144;
+}
+/* Literal.String.Other */
+
+.highlight .sr {
+  color: #009926;
+}
+/* Literal.String.Regex */
+
+.highlight .s1 {
+  color: #dd1144;
+}
+/* Literal.String.Single */
+
+.highlight .ss {
+  color: #990073;
+}
+/* Literal.String.Symbol */
+
+.highlight .bp {
+  color: #999999;
+}
+/* Name.Builtin.Pseudo */
+
+.highlight .vc {
+  color: teal;
+}
+/* Name.Variable.Class */
+
+.highlight .vg {
+  color: teal;
+}
+/* Name.Variable.Global */
+
+.highlight .vi {
+  color: teal;
+}
+/* Name.Variable.Instance */
+
+.highlight .il {
+  color: #009999;
+}
+/* Literal.Number.Integer.Long */
+
+.type-csharp .highlight .k {
+  color: blue;
+}
+.type-csharp .highlight .kt {
+  color: blue;
+}
+.type-csharp .highlight .nf {
+  color: black;
+  font-weight: normal;
+}
+.type-csharp .highlight .nc {
+  color: #2b91af;
+}
+.type-csharp .highlight .nn {
+  color: black;
+}
+.type-csharp .highlight .s {
+  color: #a31515;
+}
+.type-csharp .highlight .sc {
+  color: #a31515;
+}
