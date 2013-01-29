@@ -28,46 +28,6 @@
 }
 
 
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.eot');
-    src: url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.woff') format('woff'),
-         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.ttf') format('truetype'),
-         url('../fonts/source-sans-pro/SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('../fonts/source-sans-pro/Svg');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.eot');
-    src: url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.woff') format('woff'),
-         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('../fonts/source-sans-pro/Svg');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.eot');
-    src: url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'),
-         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('../fonts/source-sans-pro/Svg');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.eot');
-    src: url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.woff') format('woff'),
-         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/source-sans-pro/SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('../fonts/source-sans-pro/Svg');
-    font-weight: 500;
-    font-style: normal;
-}
 
 
 
@@ -155,7 +115,7 @@ header {
             }
             /*a:hover, a.selected{                    
                text-decoration: none;
-               border-top: 1px solid @primaryColorHover;               
+               border-top: 1px solid @linkColorHover;               
             }*/
          }
       }
@@ -218,7 +178,7 @@ banner {
 
 section {
    
-   background: url(../img/corner-shadow-top-left.png) #FFF no-repeat top left;   
+   background: url(../img/corner-shadow-top-left.png) no-repeat top left;   
    /* overflow:auto; fix bug background-color dont work */
 
    a:hover, a.selected{ }
@@ -323,11 +283,11 @@ section {
          position: absolute;
          top: -18px;
          left: 45%;
-         .opacity(0.4);
+         /*.opacity(0.4);*/
       }
 
       a.button:hover, a.button:active {
-         .opacity(1);         
+         /*.opacity(1);         */
       }
       a.twitter { background-image: url(../img/twitter.png);  }
       a.facebook { background-image: url(../img/facebook.png);  }
@@ -410,14 +370,14 @@ footer {
    clear: both; 
    display: block;  
    padding: 30px 0px;
-   background-color: rgb(126, 0, 57);
+   background-color: @background-dark;
    color: white;   
 
    .tag-cloud{
       span {
          padding: 3px;
          display: inline-block;
-         background-color: rgba(0, 233, 253, 0.56);
+         background-color: @background-dark2;
          border-radius: 4px;
          margin: 5px;         
       }
@@ -440,6 +400,7 @@ html, body {
   padding: 0px;
   font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
   color: #666;
+  background-color: @background-light;
 }
 
 small {
@@ -483,7 +444,7 @@ h3 {
 h3, h4, h5, h6 {}
 
 a {      
-   color:@primaryColor; 
+   color:@linkColor; 
    text-decoration:none;
    .transition;
    /*.text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));*/
@@ -492,9 +453,9 @@ a {
 }
 
 a:hover, a.selected{ 
-   color:@primaryColorHover; 
+   color:@linkColorHover; 
    text-decoration: none; 
-   .text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));
+   /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
    background-position: 0px 100%;
 }
 
