@@ -211,7 +211,7 @@ section .super {
   padding-top: 24px;
 }
 section .post-wall .widget {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #c4be9c;
   background-color: white;
   position: relative;
   width: 260px;
