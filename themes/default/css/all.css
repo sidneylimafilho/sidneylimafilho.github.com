@@ -211,7 +211,7 @@ section .super {
   padding-top: 24px;
 }
 section .widget {
-  border: 1px solid #c4be9c;
+  border: 1px solid lightgray;
   background-color: white;
   position: relative;
   width: 260px;
@@ -266,42 +266,6 @@ section .post-wall a resume {
   position: absolute;
   width: 250px;
 }
-section .post-wall a resume time {
-  width: 24px;
-  text-align: left;
-  float: left;
-  font-size: 16px;
-  padding-right: 20px;
-  margin-top: -2px;
-}
-section .post-wall a resume day {
-  font-size: 26px;
-  height: 24px;
-  display: block;
-  color: orange;
-}
-section .post-wall a resume month {
-  font-size: 16px;
-  color: #fcd389;
-}
-section .post-wall a resume year {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  display: block;
-  position: absolute;
-  top: 15px;
-  font-size: 18px;
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  -webkit-opacity: 0.3;
-  opacity: 0.3;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-  filter: alpha(opacity=30);
-  margin-left: 15px;
-  color: #fcd389;
-}
 section .post-wall a resume .title {
   min-height: 44px;
 }
@@ -321,6 +285,42 @@ section .post-wall a.button {
   margin-left: -18px;
   /*.opacity(0.4);*/
 
+}
+section time {
+  width: 24px;
+  text-align: left;
+  float: left;
+  font-size: 16px;
+  padding-right: 20px;
+  margin-top: -2px;
+}
+section day {
+  font-size: 26px;
+  height: 24px;
+  display: block;
+  color: orange;
+}
+section month {
+  font-size: 16px;
+  color: #fcd389;
+}
+section year {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  display: block;
+  position: absolute;
+  top: 15px;
+  font-size: 18px;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity=30);
+  margin-left: 15px;
+  color: #fcd389;
 }
 section .myinfo .gravatar,
 section .myinfo nav {
@@ -405,6 +405,19 @@ section .left-side .palestras ul li small {
 section .left-side .post {
   margin-right: 18px;
 }
+section .left-side .post time {
+  float: right;
+  padding-right: 0px;
+}
+section .left-side .post day,
+section .left-side .post month,
+section .left-side .post year {
+  color: black;
+}
+section .left-side .post year {
+  top: 9px;
+  margin-left: -28px;
+}
 section .right-side {
   width: 260px;
   float: right;
@@ -425,13 +438,13 @@ footer {
   clear: both;
   display: block;
   padding: 30px 0px;
-  background-color: #3f081c;
+  background-color: #3d171a;
   color: white;
 }
 footer .tag-cloud span {
   padding: 3px;
   display: inline-block;
-  background-color: #85315c;
+  background-color: #b31b27;
   border-radius: 4px;
   margin: 5px;
 }
@@ -451,8 +464,8 @@ body {
   margin: 0px;
   padding: 0px;
   font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
-  color: #666666;
-  background-color: #ede9cc;
+  color: #333333;
+  background-color: #ffffeb;
 }
 small {
   font-size: 80%;
@@ -509,7 +522,7 @@ h3 {
   font-size: 24px;
 }
 a {
-  color: #85315c;
+  color: #ff9600;
   text-decoration: none;
   transition: all 400ms ease;
   -moz-transition: all 400ms ease;
@@ -524,7 +537,7 @@ a {
 }
 a:hover,
 a.selected {
-  color: #e74545;
+  color: red;
   text-decoration: none;
   /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
   background-position: 0px 100%;

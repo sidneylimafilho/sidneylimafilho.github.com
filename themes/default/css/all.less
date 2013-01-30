@@ -192,7 +192,7 @@ section {
     
 
     .widget {
-        border: 1px solid @background-light2;
+        border: 1px solid lightgray;
         background-color: white;
         position: relative;
         width: 260px;
@@ -240,27 +240,7 @@ section {
                 position: absolute;
                 width: 250px;
                 
-                time{
-                    width: 24px;
-                    text-align: left;
-                    float: left;
-                    font-size: 16px;
-                    padding-right: 20px;
-                    margin-top: -2px;
-                }
-                
-                day{ font-size: 26px; height: 24px; display: block; color: orange;}
-                month{ font-size: 16px; color: rgb(252, 211, 137);}
-                year{
-                    .rotation(270deg);
-                    display: block;
-                    position: absolute;
-                    top: 15px;
-                    font-size: 18px;
-                    .opacity(0.3);
-                    margin-left: 15px;
-                    color: rgb(252, 211, 137);
-                }
+             
                 
                 .title{min-height: 44px;}
                 .excerpt{display: none}
@@ -280,6 +260,28 @@ section {
             margin-left: -18px;            
             /*.opacity(0.4);*/
         } 
+    }
+
+   time{
+        width: 24px;
+        text-align: left;
+        float: left;
+        font-size: 16px;
+        padding-right: 20px;
+        margin-top: -2px;
+    }
+    
+    day{ font-size: 26px; height: 24px; display: block; color: orange;}
+    month{ font-size: 16px; color: rgb(252, 211, 137);}
+    year{
+        .rotation(270deg);
+        display: block;
+        position: absolute;
+        top: 15px;
+        font-size: 18px;
+        .opacity(0.3);
+        margin-left: 15px;
+        color: rgb(252, 211, 137);
     }
 
     .myinfo{
@@ -353,7 +355,14 @@ section {
             }
         }
 
-        .post{ margin-right: 18px;}
+        .post{ 
+            margin-right: 18px;
+
+            time {float:right; padding-right:0px;}
+            day, month, year{ color: black;}
+            year {top:9px; margin-left: -28px}
+
+        }
         
     }
     
@@ -413,7 +422,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
-    color: #666;
+    color: #333;
     background-color: @background-light;
 }
 
