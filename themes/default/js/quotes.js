@@ -1,3 +1,4 @@
+
 quotes = [{
     author: "Sidney Lima Filho",
     title: "APRENDA COMO FUNCIONA",
@@ -52,3 +53,14 @@ quotes = [{
     text: "Quando as mentes brilhantes tornam-se especialistas, a liderança é relegado as mentes mais fracas.",
     banner: "nurture_seedling_in_hands_low_level.jpg"
 }];
+
+
+$(function() {
+    var q = quotes[~~ (Math.random() * quotes.length)];
+    var $banner = $("banner");
+    $banner.find(".excerpt h1").text(q.author);
+    $banner.find(".excerpt h2").text(q.text);
+    $banner.css({
+        background: 'url(/themes/default/img/banner/' + q.banner + ')'
+    });
+})

@@ -13,3 +13,11 @@ posts.unshift({
 }); 
 {% for tag in post.tags %} (tags["{{tag}}"] || (tags["{{tag}}"] = {posts:[]})).posts.push(posts[0]); {% endfor %}
 {% endfor %}
+
+$(function() {
+    var html = "";
+    for (var i in tags) if (tag = tags[i]) {
+        html += "<span>" + i + " (" + tag.posts.length + ")</span>";
+    }
+    $(".tag-cloud").html(html);
+})

@@ -16,11 +16,8 @@
         </script>
         <script src="/themes/default/js/linq.js" type="text/javascript">        
         </script>
-        <script src="/themes/default/js/tags.js" type="text/javascript">        
-        </script>        
         <script src="/themes/default/js/moment/moment.min.js" type="text/javascript">        
         </script>
-        <script type="text/javascript">moment.lang('pt-br');</script>
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">            
             </script>
@@ -33,29 +30,18 @@
         </script>
         <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js" type="text/javascript">        
         </script>
+        <script src="/themes/default/js/tags.js" type="text/javascript">        
+        </script>
         <script src="/themes/default/js/quotes.js" type="text/javascript">        
         </script>
-        <script type="text/javascript">
-        $(function(){            
-            var q = quotes[~~(Math.random() * quotes.length)];
-            var $banner = $("banner");
-            $banner.find(".excerpt h1").text(q.author);
-            $banner.find(".excerpt h2").text(q.text);
-            $banner.css({background: 'url(/themes/default/img/banner/'+ q.banner +')'});
-
-            
-            var html = "";
-            for(var i in tags) if(tag=tags[i]){
-                html += "<span>"+ i + " (" + tag.posts.length +")</span>";
-            }
-            $(".tag-cloud").html(html);
-        })            
+        <script src="/themes/default/js/user.js" type="text/javascript">        
         </script>
     </head>
     
     <body>
-        <overlay>            
-            <div></div>
+        <overlay>
+            <div>
+            </div>
         </overlay>
         <header>
             <div class="wrapper">
@@ -107,34 +93,56 @@
         <section>
             <div class="super">
                 <div class="wrapper">
-                    <div {% if page.categories %} class="{{page.categories}}" {% endif %}>{{ content }}
+                    <div class="left-side">
+                        <div {% if page.categories %} class="{{page.categories}}" {% endif %}>{{ content }}
+                        </div>
                     </div>
-                    <!-- <div class="widget bookmarks"> <h2>Li e Gostei</h2> <ul> <li> <a href="http://www.bizrevolution.com.br/bizrevolution/2011/01/casamento-e-empreendedorismo-.html"title="Casamento e Empreendedorismo." class="i">Casamento e Empreendedorismo.</a> <small> fonte: <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/insistimento/~3/xsDfjzmhv7k/" title="Deus dará?" class="i">Deus dará?</a> <small> fonte: <a href="http://www.insistimento.com.br">Insistimento</a> </small> </li> <li> <a href="http://www.lucianolima.com.br/post.aspx?id=0d238960-1eeb-42a7-be91-b83dd016978e"title="Empregabilidade, você vem cuidando da sua?" class="i">Empregabilidade, você vem cuidando da sua?</a> <small> fonte: <a href="http://www.lucianolima.com.br/">Luciano Lima</a> </small> </li> <li> <a href="http://www.israelaece.com/post.aspx?id=b8ece558-f6c8-41c1-9a8e-4303fe72a11c" title="Conte�do de WCF para estudo"class="i">Conteúdo de WCF para estudo</a> <small> fonte: <a href="http://www.israelaece.com/">Israel Aece</a> </small> </li> <li> <a href="http://blogs.msdn.com/b/otavio/archive/2010/09/18/paradoxo-de-schrodinger-e-projetos-de-software.aspx"title="Paradoxo de Schrodinger e Projetos de Software" class="i">Paradoxo de Schrodinger e Projetos de Software</a> <small> fonte: <a href="http://blogs.msdn.com/b/otavio/">Arquitetura em Pauta</a> </small> </li> <li> <a href="http://www.bizrevolution.com.br/bizrevolution/2010/12/o-sistema-é-foda.html" title="O Sistema é Foda!"class="i">O Sistema é Foda!</a> <small> fonte: <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/PapodehomemLifestyleMagazine/~3/3LZTE0r07o4/story01.htm"title="O líder ensina pelas costas" class="i">O líder ensina pelas costas</a> <small> fonte: <a href="http://papodehomem.com.br">Papo de Homem - Lifestyle Magazine</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/DotNetUnplugged/~3/A_f6q0ntlwo/post.aspx" title="Senior tem cicatriz"class="i">Senior tem cicatriz</a> <small> fonte: <a href="http://blog.lambda3.com.br">Blog Lambda3</a> </small> </li> <li> <a href="http://www.papodeempreendedor.com.br/marketing/o-segredo-de-um-bom-nome/" title="O segredo de um bom nome"class="i">O segredo de um bom nome</a> <small> fonte: <a href="http://www.papodeempreendedor.com.br">Papo de Empreendedor</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/feedburner/KMzJ/~3/1NlzRGQj1Is/" title="As tr�s perguntas"class="i">As três perguntas</a> <small> fonte: <a href="http://www.insistimento.com.br">Insistimento</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/typepad/sethsmainblog/~3/Y5nO__SHQO4/sprezzatura.html"title="Sprezzatura" class="i">Sprezzatura</a> <small> fonte: <a href="http://sethgodin.typepad.com/seths_blog/">Seth's Blog</a> </small> </li> </ul> </div> -->
+                    <div class="right-side">
+                        <div class="widget myinfo">
+                            <div class="gravatar">
+                                <img src="http://1.gravatar.com/avatar/13c12ed8bb09f191876ae217829b15ed?size=96" />Eu sou Sidney Lima Filho e aqui você saberá sobre quem eu sou e minhas ideias. Abaixo estão
+                                as redes sociais que participo e onde você pode me encontrar.
+                            </div>
+                            <nav>
+                                <a href="javascript:;" target="_blank" class="button twitter" title="Pensamentos rápidos via Twitter."></a>
+                                <a href="javascript:;" target="_blank" class="button facebook" title="Minha vida social no Facebook."></a>
+                                <a href="javascript:;" target="_blank" class="button linkedin" title="Minha rede profissional no Linkedin."></a>
+                                <a href="javascript:;" target="_blank" class="button feed" title="Assine meus posts com o RSS."></a>
+                                <a href="javascript:;" target="_blank" class="button slideshare" title="Veja meus slides no Slideshare."></a>
+                                <a href="javascript:;" target="_blank" class="button github" title="O que desenvolvo e coloco no Github."></a>
+                                <a href="javascript:;" target="_blank" class="button youtube" title="Filmes que assisto via Youtube."></a>
+                                <a href="javascript:;" target="_blank" class="button mail" title="Clique aqui para me enviar uma mensagem."></a>
+                            </nav>
+                        </div>
+                        <!-- <div class="widget bookmarks"> <h2>Li e Gostei</h2> <ul> <li> <a href="http://www.bizrevolution.com.br/bizrevolution/2011/01/casamento-e-empreendedorismo-.html"title="Casamento e Empreendedorismo." class="i">Casamento e Empreendedorismo.</a> <small> fonte: <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/insistimento/~3/xsDfjzmhv7k/" title="Deus dará?" class="i">Deus dará?</a> <small> fonte: <a href="http://www.insistimento.com.br">Insistimento</a> </small> </li> <li> <a href="http://www.lucianolima.com.br/post.aspx?id=0d238960-1eeb-42a7-be91-b83dd016978e"title="Empregabilidade, você vem cuidando da sua?" class="i">Empregabilidade, você vem cuidando da sua?</a> <small> fonte: <a href="http://www.lucianolima.com.br/">Luciano Lima</a> </small> </li> <li> <a href="http://www.israelaece.com/post.aspx?id=b8ece558-f6c8-41c1-9a8e-4303fe72a11c" title="Conte�do de WCF para estudo"class="i">Conteúdo de WCF para estudo</a> <small> fonte: <a href="http://www.israelaece.com/">Israel Aece</a> </small> </li> <li> <a href="http://blogs.msdn.com/b/otavio/archive/2010/09/18/paradoxo-de-schrodinger-e-projetos-de-software.aspx"title="Paradoxo de Schrodinger e Projetos de Software" class="i">Paradoxo de Schrodinger e Projetos de Software</a> <small> fonte: <a href="http://blogs.msdn.com/b/otavio/">Arquitetura em Pauta</a> </small> </li> <li> <a href="http://www.bizrevolution.com.br/bizrevolution/2010/12/o-sistema-é-foda.html" title="O Sistema é Foda!"class="i">O Sistema é Foda!</a> <small> fonte: <a href="http://www.bizrevolution.com.br/bizrevolution/">BizRevolution</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/PapodehomemLifestyleMagazine/~3/3LZTE0r07o4/story01.htm"title="O líder ensina pelas costas" class="i">O líder ensina pelas costas</a> <small> fonte: <a href="http://papodehomem.com.br">Papo de Homem - Lifestyle Magazine</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/DotNetUnplugged/~3/A_f6q0ntlwo/post.aspx" title="Senior tem cicatriz"class="i">Senior tem cicatriz</a> <small> fonte: <a href="http://blog.lambda3.com.br">Blog Lambda3</a> </small> </li> <li> <a href="http://www.papodeempreendedor.com.br/marketing/o-segredo-de-um-bom-nome/" title="O segredo de um bom nome"class="i">O segredo de um bom nome</a> <small> fonte: <a href="http://www.papodeempreendedor.com.br">Papo de Empreendedor</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/feedburner/KMzJ/~3/1NlzRGQj1Is/" title="As tr�s perguntas"class="i">As três perguntas</a> <small> fonte: <a href="http://www.insistimento.com.br">Insistimento</a> </small> </li> <li> <a href="http://feedproxy.google.com/~r/typepad/sethsmainblog/~3/Y5nO__SHQO4/sprezzatura.html"title="Sprezzatura" class="i">Sprezzatura</a> <small> fonte: <a href="http://sethgodin.typepad.com/seths_blog/">Seth's Blog</a> </small> </li> </ul> </div> -->
+                    </div>
                 </div>
             </div>
         </section>
         <footer>
             <div class="wrapper">
-
-                <div class="tag-cloud"></div>
+                <div class="tag-cloud">
+                </div>
                 <p>
-                    <small>Este site possui todo seu conteúdo aberto e disponível em um <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com" target="_blank">repositório público</a>. </small>
+                    <small>Este site possui todo seu conteúdo aberto e disponível em um
+                        <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com"
+                        target="_blank">repositório público</a>.
+                    </small>
                 </p>
             </div>
         </footer>
     </body>
 
 </html>
-<!--
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'pt',
-            includedLanguages: 'en',
-            layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT
-        }, 'google_translate_element');
+for (var key in User) {
+    if (User[key].getUrl) {
+        $("." + key).attr({
+            "target":"_blank",
+            "href": User[key].getUrl(),
+            "title": User[key].title
+        });
     }
+}
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
--->
+<!-- <script type="text/javascript"> function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT }, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script> -->

@@ -97,16 +97,16 @@ header menu ul {
   padding: 0px;
   margin: 0px;
   /* background: #eee;
-         background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-         background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-
-         border-radius:5px;
-         border:1px solid #d2d2d2;
-         box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
+            background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+            background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            
+            border-radius:5px;
+            border:1px solid #d2d2d2;
+            box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
 
 }
 header menu ul li {
@@ -115,10 +115,10 @@ header menu ul li {
   /*border-right:1px solid #d2d2d2;*/
   height: 70px;
   vertical-align: middle;
-  /*a:hover, a.selected{                    
-               text-decoration: none;
-               border-top: 1px solid @linkColorHover;               
-            }*/
+  /*a:hover, a.selected{
+                    text-decoration: none;
+                    border-top: 1px solid @linkColorHover;
+                }*/
 
 }
 header menu ul li a {
@@ -210,17 +210,16 @@ section .super {
   width: 100%;
   padding-top: 24px;
 }
-section .post-wall .widget {
+section .widget {
   border: 1px solid #c4be9c;
   background-color: white;
   position: relative;
   width: 260px;
   float: left;
   height: 260px;
-  margin: 0px 24px 24px 0px;
-  background-position: 0% 0%;
+  margin: 20px 38px 20px 0px;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   transition: background-position 2000ms ease;
   -moz-transition: background-position 2000ms ease;
   -webkit-transition: background-position 2000ms ease;
@@ -229,10 +228,10 @@ section .post-wall .widget {
   -moz-transition: all background-position 2000ms;
   transition: all background-position 2000ms;
 }
-section .post-wall .widget:hover {
-  background-position: 100% 100%;
+section .widget:hover {
+  background-position: 100% 50%;
 }
-section .post-wall .widget::after {
+section .widget::after {
   content: '';
   position: absolute;
   height: 7px;
@@ -316,59 +315,72 @@ section .post-wall .twitter table {
   height: 210px;
 }
 section .post-wall a.button {
-  display: table-cell;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  margin-left: -18px;
+  /*.opacity(0.4);*/
+
+}
+section .myinfo .gravatar,
+section .myinfo nav {
+  margin: 8px;
+  text-align: justify;
+}
+section .myinfo img {
+  float: left;
+  margin-right: 8px;
+}
+section .myinfo a.button {
+  width: 27px;
+  height: 27px;
+}
+section a.button {
+  display: inline-block;
   width: 36px;
   height: 36px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: none;
-  position: absolute;
-  top: -18px;
-  left: 45%;
-  /*.opacity(0.4);*/
-
+  background-position: 0px 100%;
 }
-section .post-wall a.twitter {
+section a.twitter {
   background-image: url(../img/twitter.png);
 }
-section .post-wall a.facebook {
+section a.facebook {
   background-image: url(../img/facebook.png);
 }
-section .post-wall a.linkedin {
+section a.linkedin {
   background-image: url(../img/linkedin.png);
 }
-section .post-wall a.feed {
+section a.feed {
   background-image: url(../img/feed.png);
 }
-section .post-wall a.slideshare {
+section a.slideshare {
   background-image: url(../img/slideshare.png);
 }
-section .post-wall a.github {
+section a.github {
   background-image: url(../img/github.png);
 }
-section .post-wall a.youtube {
+section a.youtube {
   background-image: url(../img/youtube.png);
 }
-section .post-wall a.delicious {
+section a.delicious {
   background-image: url(../img/delicious.png);
 }
-section .post-wall a.mail {
+section a.mail {
   background-image: url(../img/mail.png);
 }
 section nav {
   float: right;
 }
 section .left-side {
-  width: 586px;
-  padding-right: 24px;
+  width: 600px;
+  /*padding-right: 24px;*/
   float: left;
   overflow: hidden;
 }
 section .left-side h1 {
   border-bottom: 1px solid black;
-}
-section .left-side .post-wall ul {
-  padding: 0px;
 }
 section .left-side .artigos ul,
 section .left-side .palestras ul {
@@ -390,11 +402,13 @@ section .left-side .palestras ul li small {
   display: block;
   color: #444444;
 }
+section .left-side .post {
+  margin-right: 18px;
+}
 section .right-side {
-  width: 250px;
+  width: 260px;
   float: right;
-  overflow: auto;
-  /* fix bug height or boxing dont work */
+  /*overflow: auto;  fix bug height or boxing dont work */
 
 }
 section .right-side ul {

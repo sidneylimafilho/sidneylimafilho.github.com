@@ -4,27 +4,27 @@
 /* Font Definitions                 */
 /* -------------------------------- */
 @font-face {
-  font-family: "HelveticaNeueThCn";
-  src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'),  
-       url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
+    font-family: "HelveticaNeueThCn";
+    src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
 }
 
 @font-face {
-  font-family: "HelveticaNeueLtCn";
-  src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'),  
-       url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
+    font-family: "HelveticaNeueLtCn";
+    src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
 }
 
 @font-face {
-  font-family: "HelveticaNeueMdCn";
-  src: url('../fonts/HelveticaNeueLTCom-MdCn.ttf') format('truetype'),  
-       url('../fonts/HelveticaNeueLTCom-MdCn.woff') format('woff');
+    font-family: "HelveticaNeueMdCn";
+    src: url('../fonts/HelveticaNeueLTCom-MdCn.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueLTCom-MdCn.woff') format('woff');
 }
 
 @font-face {
-  font-family: "HelveticaNeueBdCn";
-  src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'),  
-       url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
+    font-family: "HelveticaNeueBdCn";
+    src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
 }
 
 
@@ -36,358 +36,372 @@
 /* -------------------------------- */
 
 header, banner, section, footer {
-  width:100%;  
+    width:100%;
 }
 
-overlay{ 
-   display: none; 
-   position: fixed; 
-   width: 100%; 
-   height: 100%;   
-   background-color: rgba(0,0,0,0.88);
-   margin: 0 auto;
-   .opacity(0);
-   z-index: 20;
-   padding-top: 80px;   
-
-   div{ width: 860px; height: 510px; margin:0px auto;}
+overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.88);
+    margin: 0 auto;
+    .opacity(0);
+    z-index: 20;
+    padding-top: 80px;
+    
+    div{ width: 860px; height: 510px; margin:0px auto;}
 }
 
-header {  
-   position:absolute;   
-   background-color: rgba(255, 255, 255, 0.82);
-   border-bottom: 1px solid rgba(255, 255, 255, 1);
-   /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
-   padding: 4px 0px;
-   z-index: 10; /* cause banner position relative stay hover on the header */
-
-   .signature {
-      .text-shadow(0px, 0px, 0px, rgba(255, 255, 255, 0));
-      width: 230px;
-      height: 70px;
-      float: left;
-      color: transparent;
-      background: url(../img/signature-logo.png) no-repeat left center;
-      margin: 0px;      
-   }
-
-   #google_translate_element {
-      position: absolute;
-      top:0px;
-      right:0px;
-   }
-
-   menu {
-      float: right;
-      margin: 0px;
-
-      ul {
-         list-style:none;
-         padding:0px;
-         margin: 0px;
-
-        /* background: #eee;
-         background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-         background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-         background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-
-         border-radius:5px;
-         border:1px solid #d2d2d2;
-         box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
-         
-
-         li {
-            padding: 0px 10px;
-            display: table-cell;
-            /*border-right:1px solid #d2d2d2;*/
-            height: 70px;
-            vertical-align: middle;
-
-            a {               
-               display:block;
-               text-align:center;  
-               font-size:18px;  
-               color: #696B33;    
-               .text-shadow(0px, 0px, 0px, rgba(0, 0, 0, 0));                                       
+header {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.82);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
+    padding: 4px 0px;
+    z-index: 10; /* cause banner position relative stay hover on the header */
+    
+    .signature {
+        .text-shadow(0px, 0px, 0px, rgba(255, 255, 255, 0));
+        width: 230px;
+        height: 70px;
+        float: left;
+        color: transparent;
+        background: url(../img/signature-logo.png) no-repeat left center;
+        margin: 0px;
+    }
+    
+    #google_translate_element {
+        position: absolute;
+        top:0px;
+        right:0px;
+    }
+    
+    menu {
+        float: right;
+        margin: 0px;
+        
+        ul {
+            list-style:none;
+            padding:0px;
+            margin: 0px;
+            
+            /* background: #eee;
+            background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+            background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+            
+            border-radius:5px;
+            border:1px solid #d2d2d2;
+            box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;*/
+            
+            
+            li {
+                padding: 0px 10px;
+                display: table-cell;
+                /*border-right:1px solid #d2d2d2;*/
+                height: 70px;
+                vertical-align: middle;
+                
+                a {
+                    display:block;
+                    text-align:center;
+                    font-size:18px;
+                    color: #696B33;
+                    .text-shadow(0px, 0px, 0px, rgba(0, 0, 0, 0));
+                }
+                /*a:hover, a.selected{
+                    text-decoration: none;
+                    border-top: 1px solid @linkColorHover;
+                }*/
             }
-            /*a:hover, a.selected{                    
-               text-decoration: none;
-               border-top: 1px solid @linkColorHover;               
-            }*/
-         }
-      }
-   }
-
-
+        }
+    }
+    
+    
 }
 
 
 banner {
-   position: relative;
-   z-index: 1;
-   padding-top:  70px;
-   display: block;
-   height: 330px;
-   background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   vertical-align: bottom;
-
-   .wrapper{
-      position: absolute;
-      bottom: 0px;
-      left: 50%;
-      margin-left: -430px; /* .wrapper original width is 860px, then 50% is 430px */
-   }
-
-   h1 {
-      .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.5));      
-      font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
-      font-size: 18px;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-      width: 600px;
-   }
-   h2 {
-      .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1));
-      color: white;      
-      font-size: 32px;
-      line-height: 30px;
-      width: 600px;
-   }
-
-   .arrow-left, .arrow-right {
-      position: absolute;
-      height: 330px;
-      width: 66px;
-      display: block;
-      overflow: auto;
-      .opacity(0.6);
-   }
-
-   .arrow-left:hover, .arrow-right:hover{ .opacity(1); }
-
-   .arrow-left { background: url(../img/arrow-left.png) no-repeat center; right: 0px; }
-
-   .arrow-right{ background: url(../img/arrow-right.png) no-repeat center; }
+    position: relative;
+    z-index: 1;
+    padding-top:  70px;
+    display: block;
+    height: 330px;
+    background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: bottom;
+    
+    .wrapper{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -430px; /* .wrapper original width is 860px, then 50% is 430px */
+    }
+    
+    h1 {
+        .text-shadow(0px, 0px, 8px, rgba(255, 255, 255, 0.5));
+        font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        width: 600px;
+    }
+    h2 {
+        .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 1));
+        color: white;
+        font-size: 32px;
+        line-height: 30px;
+        width: 600px;
+    }
+    
+    .arrow-left, .arrow-right {
+        position: absolute;
+        height: 330px;
+        width: 66px;
+        display: block;
+        overflow: auto;
+        .opacity(0.6);
+    }
+    
+    .arrow-left:hover, .arrow-right:hover{ .opacity(1); }
+    
+    .arrow-left { background: url(../img/arrow-left.png) no-repeat center; right: 0px; }
+    
+    .arrow-right{ background: url(../img/arrow-right.png) no-repeat center; }
 }
 
 section {
-   
-   background: url(../img/corner-shadow-top-left.png) no-repeat top left;   
-   /* overflow:auto; fix bug background-color dont work */
+    
+    background: url(../img/corner-shadow-top-left.png) no-repeat top left;
+    /* overflow:auto; fix bug background-color dont work */
+    
+    a:hover, a.selected{ }
+    
+    .super {
+        background: url(../img/corner-shadow-top-right.png) no-repeat top right;
+        /*overflow:auto; fix bug background-color dont work */
+        width: 100%;
+        padding-top: 24px;
+    }
+    
 
-   a:hover, a.selected{ }
+    .widget {
+        border: 1px solid @background-light2;
+        background-color: white;
+        position: relative;
+        width: 260px;
+        float: left;
+        height: 260px;
+        margin: 20px 38px 20px 0px;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        
+        .transition(background-position, 2000ms);
+    }
+    
+    .widget:hover{
+        background-position: 100% 50%;
+    }
+    
+    .widget::after {
+        content: '';
+        position: absolute;
+        height: 7px;
+        bottom: -7px;
+        left: 0;
+        background: url(../img/shadow2.png) no-repeat top center;
+        width: 100%;
+    }
+    
+    .post-wall{
 
-   .super {
-      background: url(../img/corner-shadow-top-right.png) no-repeat top right;   
-       /*overflow:auto; fix bug background-color dont work */
-      width: 100%;
-      padding-top: 24px;
-   }
-
-   .post-wall{
-  
-      .widget {
-         border: 1px solid @background-light2;
-         background-color: white;
-         position: relative;
-         width: 260px;
-         float: left;
-         height: 260px; 
-         margin: 0px 24px 24px 0px;  
-         background-position: 0% 0%;
-         background-repeat: no-repeat;
-         background-size: cover;
-         .transition(background-position, 2000ms);       
-      }
-
-      .widget:hover{         
-         background-position: 100% 100%;
-      }
-
-      .widget::after {
-         content: '';
-         position: absolute;
-         height: 7px;
-         bottom: -7px;
-         left: 0;
-         background: url(../img/shadow2.png) no-repeat top center;
-         width: 100%;
-      }
-
-      a {             
-         display: block;  
-         position: relative;
-         text-decoration: none;                                  
-         height: 100%;
-         background: none;
-         .transition(opacity, 400ms);                 
-
-         small{ display: block; }
-
-         resume { 
-            display: block; 
-            background-color: rgba(0, 0, 0, 0.76);
-            color: #FFF; 
-            bottom: 0px;               
-            padding: 5px;  
-            position: absolute;
-            width: 250px;
-
-            time{
-               width: 24px;
-               text-align: left;
-               float: left;
-               font-size: 16px;
-               padding-right: 20px;
-               margin-top: -2px;
-            }
-
-            day{ font-size: 26px; height: 24px; display: block; color: orange;}
-            month{ font-size: 16px; color: rgb(252, 211, 137);}
-            year{
-               .rotation(270deg);
-               display: block;
-               position: absolute;
-               top: 15px;
-               font-size: 18px;
-               .opacity(0.3);
-               margin-left: 15px;
-               color: rgb(252, 211, 137);
-            }
-
-            .title{min-height: 44px;}
-            .excerpt{display: none}
-         }
-      } 
-
-      a:hover .excerpt{display: block}
-
-      .twitter table{
-         height: 210px;
-      }
-      
-
-      a.button { 
-         display: table-cell; 
-         width: 36px;
-         height: 36px;
-         background-repeat: no-repeat;         
-         background-size: 100%;
-         background-image: none;
-         position: absolute;
-         top: -18px;
-         left: 45%;
-         /*.opacity(0.4);*/
-      }
-
-      a.button:hover, a.button:active {
-         /*.opacity(1);         */
-      }
-      a.twitter { background-image: url(../img/twitter.png);  }
-      a.facebook { background-image: url(../img/facebook.png);  }
-      a.linkedin { background-image: url(../img/linkedin.png);  }
-      a.feed { background-image: url(../img/feed.png);  }
-      a.slideshare { background-image: url(../img/slideshare.png);  }
-      a.github { background-image: url(../img/github.png);  }
-      a.youtube { background-image: url(../img/youtube.png);  }
-      a.delicious { background-image: url(../img/delicious.png);  }
-      a.mail { background-image: url(../img/mail.png);  }
-   }
-
-   nav {float: right;}
-
-   
-
-   .left-side {
-      width: 586px;
-      padding-right: 24px;
-      float: left;
-      overflow: hidden;      
-                  
-      h1 { border-bottom: 1px solid black; }
-
-      .post-wall ul {
-         padding: 0px;
-
-         
-      }   
-
-      .artigos, .palestras {
-         
-         ul {
-            list-style-type: none;
-            padding-left: 90px;
+        a {
+            display: block;
             position: relative;
-
-            li {                
-               padding-right: 10px; 
-
-               time {
-                  position: absolute;
-                  left: 0px;
-               }
-
-               small{
-                  display: block;
-                  color:#444;
-               }
-            }            
-         }
-      }   
+            text-decoration: none;
+            height: 100%;
+            background: none;
+            .transition(opacity, 400ms);
             
-   }
+            small{ display: block; }
+            
+            resume {
+                display: block;
+                background-color: rgba(0, 0, 0, 0.76);
+                color: #FFF;
+                bottom: 0px;
+                padding: 5px;
+                position: absolute;
+                width: 250px;
+                
+                time{
+                    width: 24px;
+                    text-align: left;
+                    float: left;
+                    font-size: 16px;
+                    padding-right: 20px;
+                    margin-top: -2px;
+                }
+                
+                day{ font-size: 26px; height: 24px; display: block; color: orange;}
+                month{ font-size: 16px; color: rgb(252, 211, 137);}
+                year{
+                    .rotation(270deg);
+                    display: block;
+                    position: absolute;
+                    top: 15px;
+                    font-size: 18px;
+                    .opacity(0.3);
+                    margin-left: 15px;
+                    color: rgb(252, 211, 137);
+                }
+                
+                .title{min-height: 44px;}
+                .excerpt{display: none}
+            }
+        }
+        
+        a:hover .excerpt{display: block}
+        
+        .twitter table{
+            height: 210px;
+        }
 
-   .right-side {
-      width:250px;
-      float: right;      
-      overflow: auto; /* fix bug height or boxing dont work */
+        a.button {                                  
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            margin-left: -18px;            
+            /*.opacity(0.4);*/
+        } 
+    }
 
+    .myinfo{
+        .gravatar, nav{ 
+            margin: 8px;
+            text-align: justify;           
+        }
 
+        img{
+            float: left;
+            margin-right: 8px;
+        }
 
+        a.button {            
+            width: 27px;
+            height: 27px;                                 
+        }
+    }
 
-      ul {
-         list-style-type: none;
-         padding: 0px;
+    a.button {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-repeat: no-repeat;
+        background-size: 100%;   
+        background-position: 0px 100%;                        
+    }    
+    
+    a.twitter { background-image: url(../img/twitter.png);  }
+    a.facebook { background-image: url(../img/facebook.png);  }
+    a.linkedin { background-image: url(../img/linkedin.png);  }
+    a.feed { background-image: url(../img/feed.png);  }
+    a.slideshare { background-image: url(../img/slideshare.png);  }
+    a.github { background-image: url(../img/github.png);  }
+    a.youtube { background-image: url(../img/youtube.png);  }
+    a.delicious { background-image: url(../img/delicious.png);  }
+    a.mail { background-image: url(../img/mail.png);  }
+    
+    nav {float: right;}
+        
+    
+    .left-side {
+        width: 600px;
+        /*padding-right: 24px;*/
+        float: left;
+        overflow: hidden;
+        
+        h1 { border-bottom: 1px solid black; }
+        
+           
+        .artigos, .palestras {
+            
+            ul {
+                list-style-type: none;
+                padding-left: 90px;
+                position: relative;
+                
+                li {
+                    padding-right: 10px;
+                    
+                    time {
+                        position: absolute;
+                        left: 0px;
+                    }
+                    
+                    small{
+                        display: block;
+                        color:#444;
+                    }
+                }
+            }
+        }
 
-         li {
-            padding: 3px 0px 7px 0px;
-         }
-
-         small { display: block; }         
-      }
-   }
-
-  
+        .post{ margin-right: 18px;}
+        
+    }
+    
+    .right-side {
+        width:260px;
+        float: right;
+        /*overflow: auto;  fix bug height or boxing dont work */
+        
+        
+        
+        
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            
+            li {
+                padding: 3px 0px 7px 0px;
+            }
+            
+            small { display: block; }
+        }
+    }
+    
+    
 }
 
 footer {
-   clear: both; 
-   display: block;  
-   padding: 30px 0px;
-   background-color: @background-dark;
-   color: white;   
-
-   .tag-cloud{
-      span {
-         padding: 3px;
-         display: inline-block;
-         background-color: @background-dark2;
-         border-radius: 4px;
-         margin: 5px;         
-      }
-   }
+    clear: both;
+    display: block;
+    padding: 30px 0px;
+    background-color: @background-dark;
+    color: white;
+    
+    .tag-cloud{
+        span {
+            padding: 3px;
+            display: inline-block;
+            background-color: @background-dark2;
+            border-radius: 4px;
+            margin: 5px;
+        }
+    }
 }
 
 .wrapper {
-  width:860px;
-  margin:0 auto;
-  position: relative;
+    width:860px;
+    margin:0 auto;
+    position: relative;
 }
 
 
@@ -396,114 +410,114 @@ footer {
 /* Generics                         */
 /* -------------------------------- */
 html, body {
-  margin: 0px;
-  padding: 0px;
-  font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
-  color: #666;
-  background-color: @background-light;
+    margin: 0px;
+    padding: 0px;
+    font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
+    color: #666;
+    background-color: @background-light;
 }
 
 small {
-  font-size:80%;
+    font-size:80%;
 }
 
 
 p { text-align: justify; }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
-   font-weight: normal;  
-   .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
-   color: #000;
+    font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
+    font-weight: normal;
+    .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
+    color: #000;
 }
 
 p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
-  margin:0 0 10px;
+    margin:0 0 10px;
 }
 
 ul { padding-left: 2px; list-style-position: inside;}
 
 
 h1, h2, h3 {
-  line-height:1.1;
+    line-height:1.1;
 }
 
 h1 {
-   font-size: 40px; 
-   font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal;  
+    font-size: 40px;
+    font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal;
 }
 
 h2 {
-   font-size: 34px;   
+    font-size: 34px;
 }
 
 h3 {
-   font-size: 24px;   
+    font-size: 24px;
 }
 
 h3, h4, h5, h6 {}
 
-a {      
-   color:@linkColor; 
-   text-decoration:none;
-   .transition;
-   /*.text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));*/
-   padding-bottom: 2px;
-   background: url(../img/anchor-bg.png) no-repeat 0px -2px;
+a {
+    color:@linkColor;
+    text-decoration:none;
+    .transition;
+    /*.text-shadow(0px, 0px, 2px, rgba(255, 200, 0, 0.7));*/
+    padding-bottom: 2px;
+    background: url(../img/anchor-bg.png) no-repeat 0px -2px;
 }
 
-a:hover, a.selected{ 
-   color:@linkColorHover; 
-   text-decoration: none; 
-   /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
-   background-position: 0px 100%;
+a:hover, a.selected{
+    color:@linkColorHover;
+    text-decoration: none;
+    /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
+    background-position: 0px 100%;
 }
 
 b, strong { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
 
 blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
+    border-left:1px solid #e5e5e5;
+    margin:0;
+    padding:0 0 0 20px;
+    font-style:italic;
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
+    font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    color:#333;
+    font-size:12px;
 }
 
 pre {
-  padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
+    padding:8px 15px;
+    background: #f8f8f8;
+    border-radius:5px;
+    border:1px solid #e5e5e5;
+    overflow-x: auto;
 }
 
 table {
-  width:100%;
-  border-collapse:collapse;
+    width:100%;
+    border-collapse:collapse;
 }
 
 th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+    text-align:left;
+    padding:5px 10px;
+    border-bottom:1px solid #e5e5e5;
 }
 
 dt {
-  color:#444;
-  font-weight:700;
+    color:#444;
+    font-weight:700;
 }
 
 th {
-  color:#444;
+    color:#444;
 }
 
 img {
-  max-width:100%;
+    max-width:100%;
 }
 
 
