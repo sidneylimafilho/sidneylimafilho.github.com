@@ -381,6 +381,8 @@ section .left-side {
 }
 section .left-side h1 {
   border-bottom: 1px solid black;
+  padding-right: 40px;
+  position: relative;
 }
 section .left-side .artigos ul,
 section .left-side .palestras ul {
@@ -406,7 +408,9 @@ section .left-side .post {
   margin-right: 18px;
 }
 section .left-side .post time {
-  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   padding-right: 0px;
 }
 section .left-side .post day,
