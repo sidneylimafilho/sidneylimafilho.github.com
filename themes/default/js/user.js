@@ -109,8 +109,8 @@ User = {
                 opacity: 1
             }, 1000, function() {
                 $(this).click(function() {
-                    it.User.youtube.closeVideo();
-                }).find("div").html('<iframe width="854" height="510" src="' + it.User.youtube.embedUrl + video.object.id + '" frameborder="0" allowfullscreen></iframe>');
+                    User.youtube.closeVideo();
+                }).find("div").html('<iframe width="854" height="510" src="' + User.youtube.embedUrl + video.object.id + '" frameborder="0" allowfullscreen></iframe>');
             });
         },
         closeVideo: function() {
