@@ -110,7 +110,7 @@ User = {
             }, 1000, function() {
                 $(this).click(function() {
                     User.youtube.closeVideo();
-                }).find("div").html('<iframe width="854" height="510" src="' + User.youtube.embedUrl + video.object.id + '" frameborder="0" allowfullscreen></iframe>');
+                }).find("div").html('<iframe width="854" height="510" src="' + User.youtube.embedUrl + video.item.id + '" frameborder="0" allowfullscreen></iframe>');
             });
         },
         closeVideo: function() {
