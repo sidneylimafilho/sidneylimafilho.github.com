@@ -26,10 +26,10 @@ User = {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
                 Enumerable.From(result.feed.entries).Take(4).ForEach(function(slide, index) {
-                    var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
-                    var start = Enumerable.From(User.items()).IndexOf(temp);
+                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
+                    //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.splice(start, 0, {
+                    User.items.push({
                         template: "slideTemplate",
                         type: "slideshare",
                         date: new Date(slide.publishedDate),
@@ -69,9 +69,9 @@ User = {
 
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(1).ForEach(function(tweet, index) {
-                    var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
-                    var start = Enumerable.From(User.items()).IndexOf(temp);
-                    User.items.splice(start, 0, {
+                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
+                    //var start = Enumerable.From(User.items()).IndexOf(temp);
+                    User.items.push({
                         template: "tweetTemplate",
                         type: "Ultimas no Twitter",
                         date: new Date(tweet.created_at),
@@ -82,9 +82,9 @@ User = {
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
                 Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(3).ForEach(function(tweet, index) {
-                    var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
-                    var start = Enumerable.From(User.items()).IndexOf(temp);
-                    User.items.splice(start, 0, {
+                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
+                    //var start = Enumerable.From(User.items()).IndexOf(temp);
+                    User.items.push({
                         template: "tweetTemplate",
                         type: "Favoritei no Twitter",
                         date: new Date(tweet.created_at),
@@ -124,10 +124,10 @@ User = {
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 // bubble sort
                 Enumerable.From(json.data.items).Where("$.video.accessControl.embed === 'allowed'").Take(4).ForEach(function(value, index) {
-                    var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
-                    var start = Enumerable.From(User.items()).IndexOf(temp);
+                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
+                    //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.splice(start, 0, {
+                    User.items.push({
                         template: "videoTemplate",
                         date: new Date(value.created),
                         item: value.video
@@ -142,7 +142,7 @@ User = {
             return "/rss.xml";
         },
         loadItems: function() {
-            Enumerable.From(posts).OrderByDescending("$.date").Take(10).ForEach(function(post, index) {
+            Enumerable.From(posts).OrderByDescending("$.date").Take(4).ForEach(function(post, index) {
                 User.items.push({
                     template: "postTemplate",
                     date: new Date(post.date),
@@ -165,10 +165,10 @@ User = {
             return false; // temporariamente cancelado pois será feito no layout            
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 Enumerable.From(json).Take(4).ForEach(function(value, index) {
-                    var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
-                    var start = Enumerable.From(User.items()).IndexOf(temp);
+                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
+                    //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.splice(start, 0, {
+                    User.items.push({
                         template: "bookmarkTemplate",
                         date: new Date(value.dt),
                         type: "delicious",
