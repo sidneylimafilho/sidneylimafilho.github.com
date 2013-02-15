@@ -18,7 +18,7 @@ A verdade seja dita, ninguém gosta de ser rotulado, por outro lado, também exi
 > "Ninguém é igual a ninguém. Todo o ser humano é um estranho ímpar." 
 >           - Carlos de Andrade Drummond
 
-O ano era 2013 e estava apenas no inicio, as festas passaram e o trabalho volta com suas alegrias, energias renovadas e suas promessas de uma vida melhor reafirmadas. Provavelmente uma dessas promessas é de um futuro profissional melhor para muitas pessoas e uma delas veio me perguntar: "Como faço para me tornar Sênior?", nem precisar respirar para responder "Viva", claro que uma palavra tão curta e carregada de significados merecia uma explicação maior, 
+O ano era 2013 e estava apenas no inicio, as festas passaram e o trabalho volta com suas alegrias, energias renovadas e suas promessas de uma vida melhor reafirmadas. Provavelmente uma dessas promessas é de um futuro profissional melhor para muitas pessoas e uma delas veio me perguntar: "Como faço para me tornar Sênior?", nem precisava respirar para responder "Viva", claro que uma palavra tão curta e carregada de significados merecia uma explicação maior, 
 a pergunta era mais profunda do que parecia e merecia uma resposta completa, então resolvi colocar os pensamentos aqui para compartilhar com outras pessoas meu ponto de vista.
 
 <img src="escada.jpg" style="float:right; margin: 0px 0px 20px 20px;" /> 
