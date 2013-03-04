@@ -91,6 +91,7 @@ header #google_translate_element {
 header menu {
   float: right;
   margin: 0px;
+  padding: 25px 0px 0px;
 }
 header menu ul {
   list-style: none;
@@ -111,9 +112,9 @@ header menu ul {
 }
 header menu ul li {
   padding: 0px 10px;
-  display: table-cell;
-  /*border-right:1px solid #d2d2d2;*/
-  height: 70px;
+  display: inline-block;
+  /*border-right:1px solid #d2d2d2;
+                height: 70px;*/
   vertical-align: middle;
   /*a:hover, a.selected{
                     text-decoration: none;
@@ -143,31 +144,31 @@ banner {
   vertical-align: bottom;
 }
 banner .wrapper {
+  height: 100%;
+}
+banner .excerpt {
   position: absolute;
   bottom: 0px;
-  left: 50%;
-  margin-left: -430px;
-  /* .wrapper original width is 860px, then 50% is 430px */
-
 }
 banner h1 {
-  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
-  -webkit-text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
-  -moz-text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 0px 4px black;
+  -webkit-text-shadow: 0px 0px 4px black;
+  -moz-text-shadow: 0px 0px 4px black;
   font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 4px;
-  width: 600px;
+  max-width: 600px;
+  color: white;
 }
 banner h2 {
-  text-shadow: 0px 0px 8px black;
-  -webkit-text-shadow: 0px 0px 8px black;
-  -moz-text-shadow: 0px 0px 8px black;
+  text-shadow: 0px 0px 4px black;
+  -webkit-text-shadow: 0px 0px 4px black;
+  -moz-text-shadow: 0px 0px 4px black;
   color: white;
   font-size: 32px;
   line-height: 30px;
-  width: 600px;
+  max-width: 600px;
 }
 banner .arrow-left,
 banner .arrow-right {
@@ -453,8 +454,9 @@ footer .tag-cloud span {
   margin: 5px;
 }
 .wrapper {
-  width: 860px;
+  max-width: 860px;
   margin: 0 auto;
+  padding: 0px 4px;
   position: relative;
 }
 /* -------------------------------- */
