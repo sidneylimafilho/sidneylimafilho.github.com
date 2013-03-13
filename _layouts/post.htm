@@ -1,75 +1,91 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
 <article>
-
-    <h1>        
+    <h1>
         {{ page.title }}
-        
         <time>
             <year>{{ page.date | date: "%Y" }}</year>
             <day>{{ page.date | date: "%d" }}</day>
-            <month>{{ page.date | date: "%b" | upcase }}</month>            
+            <month>{{ page.date | date: "%b" | upcase }}</month>
         </time>
     </h1>
 
+    <center class="social-buttons">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span class='st_googleplus_hcount' displayText='Google +'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+    </center>
+
+    <div class="content">{{ content }}</div>
+
     
 
-
-    <div class="content">
-    {{ content }}
-    </div>
-
-    <!-- 
-    <hr />
-
-    {% if page.tags %}
-    {% for tag in page.tags %}
-      {% if forloop.first %}Tagged in{% endif %}
-      <strong><a href="/tags/{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %}
-      {% if forloop.last %}<br />{% endif %}
-    {% endfor %}
-    {% endif %}
-
-    <div class="next-prev-nav low-top">
-    {% if page.previous.url %}
-      &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
-    {% endif %}
-
-    {% if page.previous.url %}
-      {% if page.next.url %}
-        |
-      {% endif %}
-    {% endif %}
+    <center class="social-buttons">
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span class='st_googleplus_hcount' displayText='Google +'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+    </center>
 
 
-    {% if page.next.url %}
-      <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;
-    {% endif %}
+    
+    <div class="nav-next-prev">
+        <h2>Você pode gostar também ...</h2>
+        <div class="previous">
+            {% if page.previous.url %} 
+            <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a> 
+            &laquo;&nbsp;
+            {% endif %}
+        </div>
+        <div class="next">
+            {% if page.next.url %}
+            &nbsp;&raquo; 
+            <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
+            {% endif %}
+        </div>   
 
-    <br />
-    </div>
-    -->
+        <div class="tags">
+            {% if page.tags %} 
+            Conheça minhas idéias sobre:  {% for tag in page.tags %}
+                <strong><a href="#{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %} 
+            {% endfor %} 
+            {% endif %}
+        </div>      
+    </div>   
 </article>
 
 {% unless page.no_comments %}
-  <a name="respond"></a> <!-- For backwards compatibility -->
-  <div id="disqus_thread"></div>
-
-  <div id="disqus_thread"></div>
+<div class="comments">
+    <h2>O que você achou?</h2>
+    <a name="respond"></a>
+    <!-- For backwards compatibility -->
+    <div id="disqus_thread"></div>
+    <div id="disqus_thread"></div>
     <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'sidneyfilho'; // required: replace example with your forum shortname
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'sidneyfilho'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+             /* * * DON'T EDIT BELOW THIS LINE * * */
+             (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+    <noscript>
+        Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">
+        comments powered by
+        <span class="logo-disqus">Disqus</span>
+    </a>
+</div>
 {% endunless %}

@@ -22,6 +22,11 @@ User = {
         getApiFeedUrl: function() {
             return "http://www.slideshare.net/rss/user/" + this.name;
         },
+        getImageUrl: function(url){
+            return url.replace("http:", "")
+                     .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
+                     .replace("-thumbnail-2", "/95/slide-1-638");
+        },
         loadItems: function() {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
@@ -179,10 +184,7 @@ User = {
                         }
                     });
                 });
-
-
             });
-
         }
     }
 };

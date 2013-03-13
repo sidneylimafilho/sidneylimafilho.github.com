@@ -17,7 +17,7 @@ layout: default
                 </time>
                 <div class="title" data-bind="text: item.title"></div>
                 
-                <small class="excerpt" data-bind="text: item.excerpt"></small>                
+                <small class="excerpt" data-bind="text: item.excerpt.substr(0, 300)"></small>                
             </resume>
         </a>
         <a target="_blank" class="button feed" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>
@@ -36,7 +36,7 @@ layout: default
                     <year data-bind="text: moment(date).format('YYYY').toUpperCase()"></year>
                 </time>
                 <div class="title" data-bind="text: item.title"></div>  
-                <small class="excerpt" data-bind="text: item.description"></small>                          
+                <small class="excerpt" data-bind="text: item.description.substr(0, 300)"></small>                          
             </resume>
         </a>
         <a target="_blank" class="button youtube" data-bind="attr:{href: $root.user.youtube.getUrl(), title: $root.user.youtube.title}"></a>       
@@ -76,7 +76,7 @@ layout: default
 </div>
 
 <div id="slideTemplate" style="display:none">
-    <div class="widget" data-bind="attr:{style:'background-image:url('+ item.mediaGroups[0].contents[0].thumbnails[0].url +');'}">        
+    <div class="widget" data-bind="attr:{style:'background-image:url('+ $root.user[type].getImageUrl(item.mediaGroups[0].contents[0].thumbnails[0].url) +');'}">        
         <!-- <iframe width="600" height="300" frameborder="0" allowfullscreen="yes" ></iframe> 
         <img width="300" data-bind="attr:{src: item.thumbnail.hqDefault, title: item.title}" /> -->
         <a data-bind="attr:{href: item.link}">
@@ -86,7 +86,8 @@ layout: default
                     <month data-bind="text: moment(date).format('MMM').toUpperCase()"></month>
                     <year data-bind="text: moment(date).format('YYYY').toUpperCase()"></year>
                 </time>
-                <div class="title" data-bind="text: item.title"></div>                        
+                <div class="title" data-bind="text: item.title"></div>     
+                <small class="excerpt" data-bind="text: item.mediaGroups[0].contents[0].description.substr(0, 300)"></small>                                             
             </resume>
         </a>
         <a target="_blank" class="button slideshare" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>       
@@ -95,15 +96,17 @@ layout: default
 
 
 
-<script type="text/javascript">
+<script type="text/javascript">    
     function ViewModel(user) {        
         this.user = user;
         user.items = this.items;
     }
 
     ViewModel.prototype.items = ko.observableArray();
-    ViewModel.prototype.getTemplate = function(item) {return item.template;}
-    ViewModel.prototype.Initialize = function(node) {
+    ViewModel.prototype.getTemplate = function(item) {
+        return item.template;
+    }
+    ViewModel.prototype.initialize = function(node) {
         var it = this;
         
         it.user.feed.loadItems();
@@ -122,7 +125,6 @@ layout: default
         ko.applyBindings(it, node);           
     };   
 
-    (vm = new ViewModel(User)).Initialize($(".post-wall").get(0));
-
+    (vm = new ViewModel(User)).initialize($(".post-wall").get(0));    
 </script>
 

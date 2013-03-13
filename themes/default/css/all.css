@@ -374,6 +374,23 @@ section a.mail {
 section nav {
   float: right;
 }
+section .social-buttons {
+  padding: 10px 0px 20px;
+}
+section .nav-next-prev {
+  padding: 10px 0px;
+}
+section .nav-next-prev .next {
+  text-align: right;
+  padding: 0px 0px 10px;
+}
+section .nav-next-prev .previous {
+  text-align: left;
+  padding: 0px 0px 10px;
+}
+section .comments {
+  padding: 20px 0px 0px 0px;
+}
 section .left-side {
   width: 600px;
   /*padding-right: 24px;*/
