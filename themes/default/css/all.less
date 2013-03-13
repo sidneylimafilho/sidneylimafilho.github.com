@@ -55,7 +55,7 @@ overlay{
 
 header {
     position:absolute;
-    background-color: rgba(255, 255, 255, 0.82);
+    background-color: @glass;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
     padding: 4px 0px;
@@ -333,6 +333,14 @@ section {
 
     .comments{ padding: 20px 0px 0px 0px }
     
+    .tag-list div{
+        padding: 10px;
+        margin: 0px 10px 10px 0px;
+    }
+    .tag-list div:target{
+        background-color: rgba(255, 224, 0, 0.13);
+    }
+    
     .left-side {
         width: 600px;
         /*padding-right: 24px;*/
@@ -400,24 +408,28 @@ section {
 
 footer {
     clear: both;
-    display: block;
-    padding: 30px 0px;
-    background-color: @background-dark;
+    display: block;        
     color: white;
+
+    a {color: yellow;}
+
+    .super{padding: 30px 0px; background-color: @smoke; }
+
+    .hosting {text-align: center; padding: 30px 0px 0px;}
     
     .tag-cloud{
         span {
             padding: 3px;
             display: inline-block;
-            background-color: @background-dark2;
-            border-radius: 4px;
+           /* background-color: @background-dark2;
+            border-radius: 4px;*/
             margin: 5px;
         }
     }
 }
 
 .wrapper {
-    max-width:860px;
+    max-width:870px;
     margin:0 auto;
     padding: 0px 4px;
     position: relative;
@@ -433,7 +445,7 @@ html, body {
     padding: 0px;
     font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
     color: #333;
-    background-color: @background-light;
+    /*background-color: @background-light;*/
 }
 
 small {

@@ -60,7 +60,7 @@ $(function() {
     var $banner = $("banner");
     $banner.find(".excerpt h1").text(q.author);
     $banner.find(".excerpt h2").text(q.text);
-    $banner.css({
+    $("banner, footer").css({
         background: 'url(/themes/default/img/banner/' + q.banner + ')'
     });
 })

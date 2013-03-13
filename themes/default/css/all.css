@@ -391,6 +391,13 @@ section .nav-next-prev .previous {
 section .comments {
   padding: 20px 0px 0px 0px;
 }
+section .tag-list div {
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+}
+section .tag-list div:target {
+  background-color: rgba(255, 224, 0, 0.13);
+}
 section .left-side {
   width: 600px;
   /*padding-right: 24px;*/
@@ -459,19 +466,28 @@ section .right-side ul small {
 footer {
   clear: both;
   display: block;
-  padding: 30px 0px;
-  background-color: #3d171a;
   color: white;
+}
+footer a {
+  color: yellow;
+}
+footer .super {
+  padding: 30px 0px;
+  background-color: rgba(0, 0, 0, 0.82);
+}
+footer .hosting {
+  text-align: center;
+  padding: 30px 0px 0px;
 }
 footer .tag-cloud span {
   padding: 3px;
   display: inline-block;
-  background-color: #b31b27;
-  border-radius: 4px;
+  /* background-color: @background-dark2;
+            border-radius: 4px;*/
   margin: 5px;
 }
 .wrapper {
-  max-width: 860px;
+  max-width: 870px;
   margin: 0 auto;
   padding: 0px 4px;
   position: relative;
@@ -488,7 +504,8 @@ body {
   padding: 0px;
   font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
   color: #333333;
-  background-color: #ffffeb;
+  /*background-color: @background-light;*/
+
 }
 small {
   font-size: 80%;

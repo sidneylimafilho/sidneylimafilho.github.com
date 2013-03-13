@@ -24,8 +24,7 @@
         <script src="http://www.google.com/jsapi" type="text/javascript"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js" type="text/javascript"></script>
         <script src="/themes/default/js/linq.js" type="text/javascript"></script>
-        <script src="/themes/default/js/moment/moment.min.js" type="text/javascript"></script>             
-        <script src="/themes/default/js/tags.js" type="text/javascript"></script>
+        <script src="/themes/default/js/moment/moment.min.js" type="text/javascript"></script>                     
         <script src="/themes/default/js/quotes.js" type="text/javascript"></script>
         <script src="/themes/default/js/user.js" type="text/javascript"></script>
     </head>
@@ -112,15 +111,22 @@
             </div>
         </section>
         <footer>
-            <div class="wrapper">
-                <div class="tag-cloud">
+            <div class="super">
+                <div class="wrapper">
+                    <div class="tag-cloud">
+                        {% for t in site.tags %} {% capture tag %}{{t | first}}{% endcapture %}
+                            <span>
+                                <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}">{{tag}} ({{site.tags[tag] | size}})</a>
+                            </span>
+                        {% endfor %}                       
+                    </div>
+                    <p class="hosting">
+                        <small>Este site possui todo seu conteúdo aberto e disponível em um
+                            <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com"
+                            target="_blank">repositório público</a>.
+                        </small>
+                    </p>
                 </div>
-                <p>
-                    <small>Este site possui todo seu conteúdo aberto e disponível em um
-                        <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com"
-                        target="_blank">repositório público</a>.
-                    </small>
-                </p>
             </div>
         </footer>      
     </body>

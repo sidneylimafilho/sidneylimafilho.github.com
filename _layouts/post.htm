@@ -52,7 +52,7 @@ layout: default
         <div class="tags">
             {% if page.tags %} 
             Conheça minhas idéias sobre:  {% for tag in page.tags %}
-                <strong><a href="#{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %} 
+                <strong><a href="/tags.html#{{ tag | downcase | replace:" ","-" | replace:".","" }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %} 
             {% endfor %} 
             {% endif %}
         </div>      
