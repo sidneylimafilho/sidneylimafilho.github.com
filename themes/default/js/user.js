@@ -1,3 +1,8 @@
+---
+layout: nil
+---
+
+
 User = {
     items: [],
     name: "sidneylimafilho",
@@ -147,6 +152,19 @@ User = {
             return "/rss.xml";
         },
         loadItems: function() {
+            
+            var posts = [];
+
+            {% for post in site.posts limit:4 %} 
+            posts.unshift({ 
+                title: "{{post.title | strip_newlines}}", 
+                image: "{{post.image | strip_newlines}}", 
+                url: "{{post.url | strip_newlines}}", 
+                excerpt: "{{post.excerpt | strip_newlines}}", 
+                date: Date.parse("{{post.date}}") 
+            }); 
+            {% endfor %}
+
             Enumerable.From(posts).OrderByDescending("$.date").Take(4).ForEach(function(post, index) {
                 User.items.push({
                     template: "postTemplate",
@@ -155,6 +173,7 @@ User = {
                     item: post
                 });
             });
+            
         }
     },
     delicious: {

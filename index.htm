@@ -107,13 +107,12 @@ layout: default
         return item.template;
     }
     ViewModel.prototype.initialize = function(node) {
-        var it = this;
-        
-        it.user.feed.loadItems();
+        var it = this;        
                         
         google.load("feeds", "1");
         $(function(){
             google.setOnLoadCallback(function () {                
+                it.user.feed.loadItems();
                 it.user.youtube.loadItems();
                 it.user.twitter.loadItems();  
                 it.user.delicious.loadItems(); 
