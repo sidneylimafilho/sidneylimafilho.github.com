@@ -149,7 +149,7 @@ User = {
     feed: {
         title: "Assine meus posts com o RSS.",
         getUrl: function() {
-            return "/rss.xml";
+            return "http://feeds.feedburner.com/sidneyfilho/";
         },
         loadItems: function() {
             
