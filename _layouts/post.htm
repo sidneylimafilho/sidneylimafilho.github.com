@@ -34,29 +34,7 @@ layout: default
 
 
     
-    <div class="nav-next-prev">
-        <h2>Você pode gostar também ...</h2>
-        <div class="previous">
-            {% if page.previous.url %} 
-            <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a> 
-            &laquo;&nbsp;
-            {% endif %}
-        </div>
-        <div class="next">
-            {% if page.next.url %}
-            &nbsp;&raquo; 
-            <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
-            {% endif %}
-        </div>   
-
-        <div class="tags">
-            {% if page.tags %} 
-            Conheça minhas idéias sobre:  {% for tag in page.tags %}
-                <strong><a href="/tags.html#{{ tag | downcase | replace:" ","-" | replace:".","" }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %} 
-            {% endfor %} 
-            {% endif %}
-        </div>      
-    </div>   
+   
 </article>
 
 {% unless page.no_comments %}
@@ -89,3 +67,27 @@ layout: default
     </a>
 </div>
 {% endunless %}
+
+ <div class="nav-next-prev">
+    <h2>Você pode gostar também ...</h2>
+    <div class="previous">
+        {% if page.previous.url %} 
+        <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a> 
+        &laquo;&nbsp;
+        {% endif %}
+    </div>
+    <div class="next">
+        {% if page.next.url %}
+        &nbsp;&raquo; 
+        <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
+        {% endif %}
+    </div>   
+
+    <div class="tags">
+        {% if page.tags %} 
+        Conheça outros artigos relacionados com:  {% for tag in page.tags %}
+            <strong><a href="/tags.html#{{ tag | downcase | replace:" ","-" | replace:".","" }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %} 
+        {% endfor %} 
+        {% endif %}
+    </div>      
+</div>   
