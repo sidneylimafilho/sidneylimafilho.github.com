@@ -8,6 +8,14 @@ layout: default
 
 # Minhas Palestras
 
+## RioAgile Talks 2013
+
++   <a href="http://www.slideshare.net/sidneyfilho/dnad-2012-iis-uma-questo-de-arquitetura-13202632" target="_blank">Barreiras para uma transicao ágil</a>
+    <time>09/03/2013</time>
+    <small>
+        Os desafios e obstáculos num processo de transformação nem sempre são tão adaptáveis quanto se precisa, portanto estes desafios se iniciam com o agente de mudança de dentro para fora, do meio para os extremos. Nesta apresentação compartilho minha experiência num processo de transição onde o maior desafio é adaptar aquilo que não se muda.
+    </small>
+
 ## DNAD 2012
 
 +   <a href="http://www.slideshare.net/sidneyfilho/dnad-2012-iis-uma-questo-de-arquitetura-13202632" target="_blank">NodeJS no IIS: Uma questão de arquitetura</a>
