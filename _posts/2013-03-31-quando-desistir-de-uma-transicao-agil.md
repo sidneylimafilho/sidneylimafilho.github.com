@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags: [Carreira]
+tags: [Carreira, Agilidade, Transição Ágil]
 ---
 
 <img src="trocaremprego.jpg" style="float:right; margin: 0px 0px 20px 20px;" />

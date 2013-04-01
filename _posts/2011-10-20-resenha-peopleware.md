@@ -8,7 +8,7 @@ excerpt:    Um livro sobre gestão e produtividade, sem desumanizar as pessoas.
 
 published:  true
 categories: post
-tags:       [Resenha, Qualidade, Produtividade, Métricas, Ambiente de Trabalho]
+tags:       [Resenha, Qualidade, Produtividade, Métricas, Ambiente de Trabalho, Agilidade]
 ---
 
 <img src="PEOPLEWARE.jpg" style="float:right; margin: 0px 0px 20px 20px;" /> 
