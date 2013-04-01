@@ -49,7 +49,7 @@ quotes = [{
     text: "Uma ameaça geralmente é tão forte quanto sua execução.",
     banner: "nurture_seedling_in_hands_low_level.jpg"
 }, {
-    author: "Sidney Lima Filho",
+    author: "Margaret Thatcher",
     text: "Quando as mentes brilhantes tornam-se especialistas, a liderança é relegado as mentes mais fracas.",
     banner: "nurture_seedling_in_hands_low_level.jpg"
 }];

@@ -22,10 +22,6 @@
   src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
 }
 @font-face {
-  font-family: "HelveticaNeueMdCn";
-  src: url('../fonts/HelveticaNeueLTCom-MdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-MdCn.woff') format('woff');
-}
-@font-face {
   font-family: "HelveticaNeueBdCn";
   src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
 }
@@ -588,10 +584,14 @@ strong {
   font-weight: normal;
 }
 blockquote {
-  border-left: 1px solid #e5e5e5;
-  margin: 0;
-  padding: 0 0 0 20px;
+  border-left: 4px solid #a5a5a5;
+  margin: 0px 0px 10px;
+  padding: 9px 9px 1px 9px;
   font-style: italic;
+  background-color: #f2f2e2;
+}
+blockquote p {
+  text-align: justify;
 }
 code,
 pre {
