@@ -28,7 +28,7 @@ Sempre que uma pessoa está cansada e frustrada em tentar realizar uma transiç�
 
 A carga emocional deve ser abandonada neste primeiro instante, portanto apenas continue esta leitura se estiver disposto, ou já estiver pronto para abandonar <del>um pouco</del> TOTALMENTE a emoção, pois a resposta desta pergunta tem que seguir um processo racional e linear, sem espaço para o exterior, apenas importa o seu interior.
 
-O [processo de transição ágil][1] é muito doloroso, instável, sem referências claras e com muita navegação sob instrumentos e instintos. Ele desafia o tempo todo seu lado mais humano de relacionamento inter-pessoal e provocará sem dúvidas esta pergunta muitas vezes durante a caminhada e este post serve apenas como mais um "instrumento" durante o processo. Toda vez você se fizer esta pergunta, volte a este post, leia cuidadosamente e faça a auto-análise.
+O [processo de transição ágil][1]{:target="_blank"} é muito doloroso, instável, sem referências claras e com muita navegação sob instrumentos e instintos. Ele desafia o tempo todo seu lado mais humano de relacionamento inter-pessoal e provocará sem dúvidas esta pergunta muitas vezes durante a caminhada e este post serve apenas como mais um "instrumento" durante o processo. Toda vez você se fizer esta pergunta, volte a este post, leia cuidadosamente e faça a auto-análise.
 
 Abaixo listo algumas perguntas que ajudam a refletir em cada etapa do processo de autoconhecimento. 
 
@@ -38,7 +38,7 @@ Quando eu fiz essa pergunta a mim mesmo pela primeira vez, eu fiquei estarrecido
 
 Os valores que estão no manifesto ágil referem-se exclusivamente ao processo de trabalho, mas na minha jornada com transições (até agora 3) o maior obstáculo são os valores pessoais e não os do manifesto. Todo relato que escuto sobre suas dificuldades com uma transição, 99% discorrem sobre problemas de relacionamento, comunicação e valores pessoais, ou seja, esqueça as metodologias, siglas, práticas, etc. **O problema pode ser você.**
 
-Faça uma lista de valores pessoais separadas em 3 partes; Escolha **10** valores que você considera como **Essenciais**, **10** valores como **Descartáveis** e coloque o resto como **Importantes**. Abaixo segue uma breve lista, mas há [outra bem completa][2]  para facilitar sua escolha com as palavras e também lembrar outras. 
+Faça uma lista de valores pessoais separadas em 3 partes; Escolha **10** valores que você considera como **Essenciais**, **10** valores como **Descartáveis** e coloque o resto como **Importantes**. Abaixo segue uma breve lista, mas há [outra bem completa][2]{:target="_blank"}  para facilitar sua escolha com as palavras e também lembrar outras. 
 
 <table style="width:100%;border-collapse:collapse;border:1px solid black;" cellpadding="5px">    
     <tbody>
@@ -126,12 +126,12 @@ Ganhar dinheiro fazendo o que se ama tem 3 possibilidades:
 
 *   Você faz o seu próprio dinheiro usando o seu conhecimento. Empreendedorismo meu caro. Use todo o seu conhecimento para fazer um dinheiro novo, escreva um livro, faça consultorias, freelancer, note e seja notado.
 
-Repare que nenhuma das alternativas é algo maravilhoso, até porque se tivesse formula mágica eu não estaria escrevendo este post, mas é importante conscientizá-lo de que as alternativas existentes são muito mais claras e simples do que se imagina, nem sempre é melhor ou pior. Apenas entenda que o tempo todo falo de fazer dinheiro, ao invés de ganhar dinheiro. [Profissionais competentes][4] são capazes de mostrar resultado usando suas técnicas e talentos, dando a certeza ao contratante de trabalho bem executado, logo o **dinheiro não é ganho, é feito.**
+Repare que nenhuma das alternativas é algo maravilhoso, até porque se tivesse formula mágica eu não estaria escrevendo este post, mas é importante conscientizá-lo de que as alternativas existentes são muito mais claras e simples do que se imagina, nem sempre é melhor ou pior. Apenas entenda que o tempo todo falo de fazer dinheiro, ao invés de ganhar dinheiro. [Profissionais competentes][4]{:target="_blank"} são capazes de mostrar resultado usando suas técnicas e talentos, dando a certeza ao contratante de trabalho bem executado, logo o **dinheiro não é ganho, é feito.**
 
 
 ### 4) Elabore um plano detalhado de transição 
 
-Na [minha palestra][1] no [RioAgile Talks][3], eu falei sobre todo um processo de transição ágil e os 2 primeiros passos são: Busque a resposta para a pergunta; Porque você quer mudar algo que ninguém quer mudar? Elabore um plano B.
+Na [minha palestra][1]{:target="_blank"} no [RioAgile Talks][3]{:target="_blank"}, eu falei sobre todo um processo de transição ágil e os 2 primeiros passos são: Busque a resposta para a pergunta; Porque você quer mudar algo que ninguém quer mudar? Elabore um plano B.
 
 O processo é árduo e iniciar isso tem que ter um BOM motivo, depois você precisa de um plano B afinal sua vida está em risco, sua saúde está em risco, não há nada mais valioso do que seu tempo, para se dedicar a mudar alguém só para provar que você é bom mesmo em algo. Uma vez quando eu tomei a decisão de fazer uma transição ágil, eu percebi que se eu **não** fizesse, corria o risco de nos próximos 3 a 5 anos a empresa não ser mais competitiva e entrar em decadência. Eu coloquei na minha cabeça que o emprego de algumas pessoas estava comprometido no longo prazo e que era necessário mudar.
 
@@ -152,8 +152,8 @@ Deixar uma carreira consolidada e partir para um novo desafio requer coragem e p
 
 
 
-[1]: http://www.slideshare.net/sidneylimafilho/barreiras-para-uma-transicao-gil
-[2]: http://www.abubakarjamil.com/values-list/
-[3]: http://rioagile.com.br/agiletalks_2013_03.html
-[4]: http://elemarjr.net/2013/03/30/sobre-competencia-saber-e-querer-fazer/
+[1]: http://www.slideshare.net/sidneylimafilho/barreiras-para-uma-transicao-gil     
+[2]: http://www.abubakarjamil.com/values-list/                                      
+[3]: http://rioagile.com.br/agiletalks_2013_03.html                                 
+[4]: http://elemarjr.net/2013/03/30/sobre-competencia-saber-e-querer-fazer/         
 
