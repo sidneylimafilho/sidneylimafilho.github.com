@@ -463,6 +463,7 @@ footer {
   clear: both;
   display: block;
   color: white;
+  background: url(/themes/default/img/banner/sidney-meditation.jpg);
 }
 footer a {
   color: yellow;
