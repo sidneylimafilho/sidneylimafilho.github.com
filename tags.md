@@ -12,9 +12,7 @@ layout: default
                 {% if post.published %}
                     <li>
                         <a href="{{ post.url }}">                   
-                            <small>
-                                {{ post.date | date: "%d/%m/%Y" }}
-                            </small>                                       
+                            <small>{{ post.date | date: "%d/%m/%Y" }}</small>                                       
                             <b>{{ post.title | xml_escape }}</b>                    
                         </a>                        
                     </li>
