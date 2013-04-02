@@ -97,33 +97,32 @@ layout: default
 
 
 <script type="text/javascript">    
-    function ViewModel(user) {        
+    function ViewModel(user) {  
+        /* Constructor */      
         this.user = user;
-        user.items = this.items;
-    }
+        user.items = this.items = ko.observableArray();
 
-    ViewModel.prototype.items = ko.observableArray();
-    ViewModel.prototype.getTemplate = function(item) {
-        return item.template;
-    }
-    ViewModel.prototype.initialize = function(node) {
-        var it = this;        
-                        
-        google.load("feeds", "1");
-        $(function(){
-            google.setOnLoadCallback(function () {                
+        /* Methods */
+        this.getTemplate = function(item) {
+            return item.template;
+        }
+
+        this.initialize = function(node) {
+            var it = this;                                              
+
+            google.load("feeds", "1");            
+            google.setOnLoadCallback(function () {                     
                 it.user.feed.loadItems();
                 it.user.youtube.loadItems();
-                it.user.twitter.loadItems();  
-                it.user.delicious.loadItems(); 
+                it.user.twitter.loadItems(); 
                 it.user.slideshare.loadItems(); 
             });
-            
-        });  
+                
+            ko.applyBindings(it, node);           
+        };  
+    }
 
-        ko.applyBindings(it, node);           
-    };   
-
-    (vm = new ViewModel(User)).initialize($(".post-wall").get(0));    
+    (vm = new ViewModel(User)).initialize($(".post-wall").get(0)); 
+    
 </script>
 
