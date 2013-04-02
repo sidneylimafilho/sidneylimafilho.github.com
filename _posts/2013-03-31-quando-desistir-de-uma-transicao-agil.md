@@ -24,7 +24,7 @@ Essas perguntas rondam a cabeça de todo profissional pelo menos uma vez na vida
 
 Sempre que uma pessoa está cansada e frustrada em tentar realizar uma transição ágil, reflete sobre uma possível mudança de emprego, há uma carga emocional forte impactando diretamente seus valores, crenças, anseios e experiência construído, com muito tempo de dedicação e energia entregue para a organização, porém na prática isso não importa muito e acaba ferindo ainda mais o pobre ser humano trabalhador.
 
->   "Nunca tome uma decisão até que ela seja necessária" - Margaret Thatcher
+>   "Nunca tome uma decisão até que ela seja necessária." - Margaret Thatcher
 
 A carga emocional deve ser abandonada neste primeiro instante, portanto apenas continue esta leitura se estiver disposto, ou já estiver pronto para abandonar <del>um pouco</del> TOTALMENTE a emoção, pois a resposta desta pergunta tem que seguir um processo racional e linear, sem espaço para o exterior, apenas importa o seu interior.
 
@@ -35,6 +35,8 @@ Abaixo listo algumas perguntas que ajudam a refletir em cada etapa do processo d
 ### 1) Quais são seu valores pessoais?
 
 Quando eu fiz essa pergunta a mim mesmo pela primeira vez, eu fiquei estarrecido por não conseguir responder rápido e com exatidão, isso me deixou com mais dúvidas na cabeça principalmente com relação as minhas metas, afinal se eu não podia responder com precisão quais eram meus valores pessoais, o que me garantiria que minhas decisões não eram emocionais? Em tempo, lembro que não há problema nenhum em decisões emocionais, elas apenas retiram a certeza de controle do caminho traçado. Eu sou do tipo de pessoa que prefiro ter o controle do que acontece com a minha vida, não preciso ter controle de tudo, mas com certeza da direção que estou caminhando eu quero ter.
+
+>   "É muito melhor ser o condutor do carro da vida do que ser passageiro." - Abílio Diniz
 
 Os valores que estão no manifesto ágil referem-se exclusivamente ao processo de trabalho, mas na minha jornada com transições (até agora 3) o maior obstáculo são os valores pessoais e não os do manifesto. Todo relato que escuto sobre suas dificuldades com uma transição, 99% discorrem sobre problemas de relacionamento, comunicação e valores pessoais, ou seja, esqueça as metodologias, siglas, práticas, etc. **O problema pode ser você.**
 
