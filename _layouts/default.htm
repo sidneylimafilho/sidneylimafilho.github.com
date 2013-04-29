@@ -129,7 +129,7 @@
             <div class="super">
                 <div class="wrapper">
                     <div class="tag-cloud">
-                        {% for t in site.tags %} {% capture tag %}{{t | first}}{% endcapture %}
+                        {% for t in site.tags.sort %} {% capture tag %}{{t | first}}{% endcapture %}
                             <span>
                                 <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}">{{tag}} ({{site.tags[tag] | size}})</a>
                             </span>
