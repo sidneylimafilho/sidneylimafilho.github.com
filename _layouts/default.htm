@@ -132,7 +132,7 @@
                         {% for t in site.tags %} {% capture tag %}{{t | first}}{% endcapture %}
                             <span>
                                 <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}"
-                                   style="font-size:{{site.tags[tag] | size | times:100 | divided_by:site.tags.size | plus:100}}" >{{tag}} ({{site.tags[tag] | size}})</a>
+                                   style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%" >{{tag}} ({{site.tags[tag] | size}})</a>
                             </span>
                         {% endfor %}                       
                     </div>
