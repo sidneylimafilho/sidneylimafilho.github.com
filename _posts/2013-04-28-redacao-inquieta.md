@@ -6,7 +6,7 @@ author:     Sidney Lima Filho
 image:      /post/redacao-inquieta/capa.jpg
 
 excerpt:    > 
-            Numa fase particular da minha vida me peguei refletindo sobre o porquê ter uma necessidade intensa de ler sobre tudo, porém eu escrevia sobre nada, preguiça, procrastinação, abdicação, tudo o que pode ser feito para não escrever eu fiz, porém foi quando me deparei com uma indicação do livro Redação Inquieta, que segundo ele é uma leitura indispensável para quem quer entender a informação e retê-la da sua maneira.
+            Numa fase particular da minha vida me peguei refletindo sobre o porquê ter uma necessidade intensa de ler sobre tudo, porém eu escrevia sobre nada, preguiça, procrastinação, abdicação, tudo o que pode ser feito para não escrever eu fiz, porém foi quando me deparei com uma indicação de um livro.
 
 published:  true
 categories: post
