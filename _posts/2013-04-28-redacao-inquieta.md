@@ -26,7 +26,7 @@ Este não é um livro para quem quer um tutorial, pois ele é um livro vivo, 99%
 
 Quer afirmação mais empreendedora que esta? Ela acabou de definir que empreendedor tem que escrever. Leia para entender o mundo, escreva para transformá-lo. 
 
->   "Uma teoria, uma dissertação (um blog), não é diretamente oposta a um diário ou a uma carta. Ao contrário, traz consigo as funções do diário (autoconhecimento e autoafirmação) e as funções da carta (procura de alguém, procura de espelho, ouvido e reflexo)"
+>   "Uma teoria, uma dissertação (um blog), não é diretamente oposta a um diário ou a uma carta. Ao contrário, traz consigo as funções do diário (autoconhecimento e auto-afirmação) e as funções da carta (procura de alguém, procura de espelho, ouvido e reflexo)"
 
 Leia para saber onde inserir-se, escreva para que os outros se insiram.
 
@@ -36,7 +36,9 @@ Leia para lembrar, escreva para ser lembrado.
 
 >   "Quem quiser nascer, tem que destruir um mundo" – Herman Hesse
 
-O ato de ler é uma busca incessante de entender, obter respostas para suas dúvidas no mundo. O ato de escrever é responder suas dúvidas, autoafirmando-se, logo criando novas dúvidas, destruindo o seu mundo anterior e criando um novo mundo. 
+O ato de ler é uma busca incessante de entender, obter respostas para suas dúvidas no mundo. O ato de escrever é responder suas dúvidas, se auto-afirmando, logo criando novas dúvidas, destruindo o seu mundo anterior e criando um novo mundo. 
 
 [1]:    http://nepo.com.br/
 [2]:    http://www.estantevirtual.com.br/mod_perl/busca.cgi?pchave=Reda%E7%E3o+Inquieta&tipo=simples&estante=%28todas+estantes%29&alvo=autor+ou+titulo
+
+
