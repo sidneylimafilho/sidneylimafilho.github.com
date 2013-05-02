@@ -14,9 +14,9 @@ tags:       [Informação, Sistemas, Empreendedorismo, Resenha, Escrever, Filoso
 ---
 
 <img src="capa.jpg" style="float:right; margin: 0px 0px 20px 20px;" />
-Numa fase particular da minha vida me peguei refletindo sobre o porquê ter uma necessidade intensa de ler sobre tudo, porém eu escrevia sobre nada, preguiça, procrastinação, abdicação, tudo o que pode ser feito para não escrever eu fiz, porém foi quando me deparei com uma indicação do [Mestre Nepô][1] sobre blog, o livro Redação Inquieta, que segundo ele é uma leitura indispensável para quem quer entender a informação e retê-la da sua maneira.
+Numa fase particular da minha vida me peguei refletindo sobre o porquê ter uma necessidade intensa de ler sobre tudo, porém eu escrevia sobre nada, preguiça, procrastinação, abdicação, tudo o que pode ser feito para não escrever eu fiz, porém foi quando me deparei com uma indicação do [Mestre Nepô][1]{:target="_blank"} sobre blog, o livro Redação Inquieta, que segundo ele é uma leitura indispensável para quem quer entender a informação e retê-la da sua maneira.
 
-Imediatamente [adquiri por R$10,00][2] meio desconfiado, pois percebi que o livro era de 1985, achei muito estranho um livro para blogueiros lançado em 85? Era um preconceito idiota e geek, achando que livro para web tem que ser recente. 
+Imediatamente [adquiri por R$10,00][2]{:target="_blank"} meio desconfiado, pois percebi que o livro era de 1985, achei muito estranho um livro para blogueiros lançado em 85? Era um preconceito idiota e geek, achando que livro para web tem que ser recente. 
 
 Comecei a ler e achei o livro uma merda, muita filosofia e pouca prática, sinceramente não estava com saco de ler um livro filosofal, eu só queria ter saco para escrever e aprender cada vez mais. Dei uma pausa no ritmo, voltei a ler outro dia mais calmo e paciente, então comecei novamente e quando cheguei no meio do livro estava totalmente absorto, envolvido, não queria parar, muita informação, muito raciocínio, muito GENIAL, me identifiquei muito com o livro pois ele utiliza exatamente os conceitos filosóficos para mostrar que antes de escrever devemos ter a mente aberta e clara, para ter a mente aberta e clara, devemos pensar e como pensar dói, dói muito. 
 
