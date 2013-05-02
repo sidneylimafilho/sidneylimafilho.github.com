@@ -8,7 +8,7 @@ image:      /post/25-passos-para-uma-transicao-agil/capa.jpg
 excerpt:    > 
             Inicio de uma série de posts sobre o caminho a ser percorrido numa Transição Ágil. Uma série semanal, baseado numa palestra do Rio Agile agora compartilhada em texto.
 
-published:  true
+published:  false
 categories: post
 tags:       [Processos, Cliente, Performance, Agilidade, Transição Ágil]
 ---
