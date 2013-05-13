@@ -60,7 +60,7 @@ overlay div {
 }
 header {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.76);
   border-bottom: 1px solid white;
   /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
   padding: 4px 0px 0px;
@@ -135,8 +135,11 @@ banner .wrapper {
 banner .excerpt {
   position: absolute;
   bottom: 0px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.26);
+  margin: 10px;
 }
-banner h1 {
+banner author {
   text-shadow: 0px 0px 4px black;
   -webkit-text-shadow: 0px 0px 4px black;
   -moz-text-shadow: 0px 0px 4px black;
@@ -144,17 +147,18 @@ banner h1 {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 4px;
-  max-width: 600px;
   color: white;
+  float: right;
+  display: block;
 }
-banner h2 {
+banner quote {
   text-shadow: 0px 0px 4px black;
   -webkit-text-shadow: 0px 0px 4px black;
   -moz-text-shadow: 0px 0px 4px black;
   color: white;
   font-size: 32px;
   line-height: 30px;
-  max-width: 600px;
+  display: block;
 }
 banner .arrow-left,
 banner .arrow-right {
@@ -381,8 +385,17 @@ section .tag-list div {
   padding: 10px;
   margin: 0px 10px 10px 0px;
 }
+section blockquote,
 section .tag-list div:target {
-  background-color: rgba(255, 224, 0, 0.13);
+  border-left: 2px solid rgba(255, 66, 66, 0.81);
+  margin: 0px 0px 10px;
+  padding: 1px 9px 1px 9px;
+  /*font-style:italic;*/
+  background-color: rgba(255, 245, 0, 0.09);
+}
+section blockquote p,
+section .tag-list div:target p {
+  text-align: justify;
 }
 section .left-side {
   width: 600px;
@@ -460,7 +473,7 @@ footer a {
 }
 footer .super {
   padding: 30px 0px;
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 footer .hosting {
   text-align: center;
@@ -509,7 +522,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+quote {
   font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
   font-weight: normal;
   text-shadow: 0px 0px 8px transparent;
@@ -530,10 +544,10 @@ h5,
 h6,
 pre,
 dl {
-  margin: 0 0 10px;
+  margin: 5px 0 5px;
 }
 ul {
-  padding-left: 2px;
+  padding-left: 17px;
   list-style-position: inside;
 }
 h1,
@@ -578,16 +592,6 @@ strong {
   font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
   font-weight: normal;
 }
-blockquote {
-  border-left: 4px solid #a5a5a5;
-  margin: 0px 0px 10px;
-  padding: 9px 9px 1px 9px;
-  font-style: italic;
-  background-color: #f2f2e2;
-}
-blockquote p {
-  text-align: justify;
-}
 code,
 pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
@@ -615,9 +619,6 @@ dt {
 }
 th {
   color: #444444;
-}
-img {
-  max-width: 100%;
 }
 @media print, screen and (max-width: 960px) {
   

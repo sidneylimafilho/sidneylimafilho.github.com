@@ -123,24 +123,25 @@ banner {
     
     .wrapper{ height:100%; }
 
-    .excerpt { position: absolute; bottom: 0px; }
+    .excerpt { position: absolute; bottom: 0px; padding: 10px; background-color: rgba(0, 0, 0, 0.26); margin: 10px;}
     
     
-    h1 {
+    author {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
         font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
         font-size: 18px;
         text-transform: uppercase;
-        margin-bottom: 4px;
-        max-width: 600px;
+        margin-bottom: 4px;        
         color: white;
+        float:right; 
+        display: block;
     }
-    h2 {
+    quote {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
         color: white;
         font-size: 32px;
-        line-height: 30px;
-        max-width: 600px;
+        line-height: 30px; 
+        display: block;             
     }
     
     .arrow-left, .arrow-right {
@@ -216,7 +217,7 @@ section {
             
             resume {
                 display: block;
-                background-color: rgba(0, 0, 0, 0.76);
+                background-color: @smoke;
                 color: #FFF;
                 bottom: 0px;
                 padding: 5px;
@@ -319,8 +320,15 @@ section {
         padding: 10px;
         margin: 0px 10px 10px 0px;
     }
-    .tag-list div:target{
-        background-color: rgba(255, 224, 0, 0.13);
+
+    blockquote, .tag-list div:target {
+        border-left:2px solid rgba(255, 66, 66, 0.81);
+        margin: 0px 0px 10px;
+        padding: 1px 9px 1px 9px;
+        /*font-style:italic;*/
+        background-color: rgba(255, 245, 0, 0.09);
+
+        p { text-align: justify; }
     }
     
     .left-side {
@@ -440,7 +448,7 @@ small {
 
 p { text-align: justify; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, quote {
     font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
     font-weight: normal;
     .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
@@ -448,10 +456,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
-    margin:0 0 10px;
+    margin:5px 0 5px;
 }
 
-ul { padding-left: 2px; list-style-position: inside;}
+ul { padding-left: 17px; list-style-position: inside;}
 
 
 h1, h2, h3 {
@@ -491,16 +499,6 @@ a:hover, a.selected{
 
 b, strong { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
 
-blockquote {
-    border-left:4px solid #A5A5A5;
-    margin: 0px 0px 10px;
-    padding: 9px 9px 1px 9px;
-    font-style:italic;
-    background-color: #F2F2E2;
-
-    p { text-align: justify; }
-}
-
 code, pre {
     font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
     color:#333;
@@ -532,10 +530,6 @@ dt {
 
 th {
     color:#444;
-}
-
-img {
-    max-width:100%;
 }
 
 

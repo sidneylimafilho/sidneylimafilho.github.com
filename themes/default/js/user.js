@@ -7,8 +7,7 @@ User = {
     items: [],
     name: "sidneylimafilho",
     quotes : [{
-        author: "Sidney Lima Filho",
-        title: "APRENDA COMO FUNCIONA",
+        author: "Sidney Lima Filho",        
         text: "Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.",
         banner: "craftsmanship-cover.jpg"
     }, {
@@ -37,7 +36,7 @@ User = {
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }, {
         author: "Sidney Lima Filho",
-        text: "Uma troca sempre tem inconveniência, mesmo que seja de pior para melhor.",
+        text: "Uma troca sempre tem inconveniências, mesmo que seja de pior para melhor.",
         banner: "sidney-meditation.jpg"
     }, {
         author: "Garry Kasparov",
@@ -49,17 +48,28 @@ User = {
         banner: "road.jpg"
     }, {
         author: "Garry Kasparov",
-        text: "A maioria das pessoas só aprende o suficiente para usar. As outras usa suficientemente o que aprendeu.",
+        text: "A maioria das pessoas só aprende o suficiente para usar. As outras usam suficientemente o que aprendeu.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }, {
         author: "Garry Kasparov",
         text: "Uma ameaça geralmente é tão forte quanto sua execução.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }, {
+        author: "Leonardo Boff",
+        text: "O cuidado previne danos futuros, ao mesmo tempo que repara danos passados. Quando amamos cuidamos e quando cuidamos amamos",
+        banner: "nurture_seedling_in_hands_low_level.jpg"
+    }, {
+        author: "Savielly Grigoryevich Tartakower",
+        text: "Tática é saber o que fazer quando há o que fazer; Estratégia é saber o que fazer quando não há nada a fazer.",
+        banner: "nurture_seedling_in_hands_low_level.jpg"
+    }, {
         author: "Margaret Thatcher",
         text: "Quando as mentes brilhantes tornam-se especialistas, a liderança é relegado as mentes mais fracas.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }],
+    getRandomQuote: function(){
+        return this.quotes[~~(Math.random() * this.quotes.length)];
+    },
     mail: {
         name: "sidneylimafilho",
         getUrl: function() {
@@ -68,9 +78,7 @@ User = {
     },
     github: {
         name: "sidneylimafilho",
-        getUrl: function() {
-            return "http://www.github.com/" + this.name;
-        }
+        getUrl: function() { return "http://www.github.com/" + this.name; }
     },
     slideshare: {
         name: "sidneylimafilho",

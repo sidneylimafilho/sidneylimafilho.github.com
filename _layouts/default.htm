@@ -70,12 +70,12 @@
         <banner {% if page.categories %} class="{{page.categories}}" {% endif %}>
             <!-- <a href="javascript:;" class="arrow-right"></a><a href="javascript:;" class="arrow-left"></a>-->
             <div class="wrapper">
-                <div class="excerpt">
-                    <h1>Aprenda como funciona
-                    </h1>
-                    <h2>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
+                <div class="excerpt">                    
+                    <quote>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
                         através de mãos distintas.
-                    </h2>
+                    </quote>
+                    <author>Aprenda como funciona
+                    </author>
                 </div>
             </div>
         </banner>
@@ -155,6 +155,14 @@
         if (media.getUrl) {        
             $("." + key).attr({ "target":"_blank", "href": User[key].getUrl(), "title": User[key].title });        
         }
+
+    
+    var q = User.getRandomQuote();
+    var $banner = $("banner");
+    $banner.find(".excerpt author").text(q.author);
+    $banner.find(".excerpt quote").text(q.text);
+    $banner.css({ background: 'url(/themes/default/img/banner/' + q.banner + ')' });
+    
     </script>
     <!-- Share buttons in posts  -->
     <script type="text/javascript">var switchTo5x=true;</script>

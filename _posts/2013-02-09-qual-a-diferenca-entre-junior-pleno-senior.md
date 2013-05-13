@@ -10,7 +10,7 @@ excerpt:    > A verdade seja dita, ninguém gosta de ser rotulado, por outro lad
 
 published:  true
 categories: post
-tags: [Carreira, Agilidade]
+tags: [Carreira, Agilidade, CLT, Filosofia, Psicologia]
 ---
 
 A verdade seja dita, ninguém gosta de ser rotulado, por outro lado, também existe uma diferenciação entre os profissionais, que precisa de uma qualificação, como fazer? 
