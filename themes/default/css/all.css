@@ -89,7 +89,7 @@ header #google_translate_element {
 header menu {
   float: right;
   margin: 0px;
-  padding: 24px 0px 0px;
+  padding: 18px 0px 0px;
 }
 header menu ul {
   list-style: none;
@@ -385,7 +385,6 @@ section .tag-list div {
   padding: 10px;
   margin: 0px 10px 10px 0px;
 }
-section blockquote,
 section .tag-list div:target {
   border-left: 2px solid rgba(255, 66, 66, 0.81);
   margin: 0px 0px 10px;
@@ -393,7 +392,6 @@ section .tag-list div:target {
   /*font-style:italic;*/
   background-color: rgba(255, 245, 0, 0.09);
 }
-section blockquote p,
 section .tag-list div:target p {
   text-align: justify;
 }
@@ -530,6 +528,7 @@ quote {
   -webkit-text-shadow: 0px 0px 8px transparent;
   -moz-text-shadow: 0px 0px 8px transparent;
   color: black;
+  clear: both;
 }
 p,
 ul,
@@ -548,23 +547,41 @@ dl {
 }
 ul {
   padding-left: 17px;
-  list-style-position: inside;
+  list-style-position: outside;
 }
-h1,
-h2,
-h3 {
-  line-height: 1.1;
+blockquote {
+  background-image: url(/themes/default/img/big_quote_icon.png);
+  background-repeat: no-repeat;
+  color: #0070ff;
+  background-position: 0px 10px;
+  margin: 0px 0px 10px;
+  padding: 1px 9px 1px 42px;
+  min-height: 45px;
 }
 h1 {
   font-size: 40px;
-  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
-  font-weight: normal;
 }
 h2 {
-  font-size: 34px;
+  font-size: 32px;
 }
 h3 {
+  font-size: 32px;
+}
+h4 {
   font-size: 24px;
+}
+h1,
+h2 {
+  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaNeueThCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
 }
 a {
   color: #ff9600;
