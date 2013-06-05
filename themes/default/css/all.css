@@ -367,6 +367,9 @@ section nav {
 section .social-buttons {
   padding: 10px 0px 20px;
 }
+section .social-buttons a {
+  background-image: none;
+}
 section .nav-next-prev {
   padding: 10px 0px;
 }
