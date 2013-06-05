@@ -130,7 +130,7 @@ Antes de todo o blá blá blá que vou falar, responda intimamente porque você 
 
 Se tudo estivesse lindo você não estaria lendo este post, então vamos ao que interessa. Tudo pode ser bem diferente e você sabe disso, leu em blogs, livros, cursos, certificações, palestras e eventos, que é possível ser diferente, é possível ser melhor. Atente-se que muito do que você já ouviu até agora pode ser uma isca para algo que você não vai realizar, então cuidado com a frustração.
 
-Já que temos de considerar a possibilidade de não dar certo, recomendo você dar uma lida em [outro post meu](../quando-desistir-de-uma-transicao-agil/){target="_blank"} onde eu mostro um passo a passo de quando se deve desistir ou não, inclusive recomendo você ler agora, pois ao final da leitura talvez você consiga responder essa pergunta. Porque você quer mudar a cultura da empresa?
+Já que temos de considerar a possibilidade de não dar certo, recomendo você dar uma lida em [outro post meu](../quando-desistir-de-uma-transicao-agil/){:target="_blank"} onde eu mostro um passo a passo de quando se deve desistir ou não, inclusive recomendo você ler agora, pois ao final da leitura talvez você consiga responder essa pergunta. Porque você quer mudar a cultura da empresa?
 
 >   "Um sistema ruim vai vencer um cara bom sempre" [@rodrigoy](http://twitter.com/rodrigoy)
 
@@ -171,7 +171,7 @@ Com toda a base teórica exposta vamos ao que interessa, de nada adianta você q
 
 >   Antes de tentar arrumar o mundo tente arrumar seu próprio quarto. - Bill Gates
 
-O cérebro humano possui um conjunto de neurônios que sua única função é [reproduzir comportamentos ou imitar](http://www2.uol.com.br/vivermente/reportagens/a_imitacao_pode_curar.html){target="_blank"}, são os [neurônios espelho](http://en.wikipedia.org/wiki/Mirror_neuron){target="_blank"}. Nós somos maquinas de repetir comportamentos, detectar padrões e aprender com eles, da mesma forma que também temos detectores de fraudes, ou seja, quando uma pessoa prega um comportamento que a própria não segue o cérebro envia sinais de bloqueio e repulsa ao padrão. Genial.
+O cérebro humano possui um conjunto de neurônios que sua única função é [reproduzir comportamentos ou imitar](http://www2.uol.com.br/vivermente/reportagens/a_imitacao_pode_curar.html){:target="_blank"}, são os [neurônios espelho](http://en.wikipedia.org/wiki/Mirror_neuron){:target="_blank"}. Nós somos maquinas de repetir comportamentos, detectar padrões e aprender com eles, da mesma forma que também temos detectores de fraudes, ou seja, quando uma pessoa prega um comportamento que a própria não segue o cérebro envia sinais de bloqueio e repulsa ao padrão. Genial.
 
 Nós temos um mecanismo biológico para detectar hipocrisias, olha que legal. Sabe aquela famosa frase "Faça o que eu digo, mas não faça o que eu faço", então nem precisamos pensar muito o cérebro mesmo não absorve isso. 
 
@@ -229,7 +229,7 @@ Sempre há um problema quando algumas das questões da gestão 1.0 começam a ap
 
 Qual é o prazo para você fazer o item? Quais recursos ficarão alocados? Quem fará a analise do projeto? Quanto tempo para elaborar a Arquitetura do projeto?
 
-Quando isso acontece você precisa pegar uma dessas frases e apenas UMA delas, fazendo perguntas "Por quê?" até encontrar a [causa raiz](http://en.wikipedia.org/wiki/Root_cause_analysis){target="_blank"} deste problema, uma vez encontrado você pode sugerir mudanças que as vezes é simples, mas geralmente implicam em novas perguntas. Uma vez realizado este processo você encontrará a solução ideal para seu universo, que talvez a mesma pergunta em outro time possa levar a outra solução.
+Quando isso acontece você precisa pegar uma dessas frases e apenas UMA delas, fazendo perguntas "Por quê?" até encontrar a [causa raiz](http://en.wikipedia.org/wiki/Root_cause_analysis){:target="_blank"} deste problema, uma vez encontrado você pode sugerir mudanças que as vezes é simples, mas geralmente implicam em novas perguntas. Uma vez realizado este processo você encontrará a solução ideal para seu universo, que talvez a mesma pergunta em outro time possa levar a outra solução.
 
 ## DO - Fazendo Acontecer #############################################################################################################################
 
@@ -430,7 +430,7 @@ Você chegou longe, a equipe está focada na mudança, mas não consegue nem faz
 
 Tudo irá conspirar para te desmotivar, te colocar para baixo, dizer que não adianta, que não vai dar certo, seus esforços não resultarão em nada, as coisas parecem não evoluirem.
 
-Bateu o desespero? Volte ao [tópico 0](#porque-voc-quer-mudar-a-cultura-da-empresa) ou este [outro post meu](../quando-desistir-de-uma-transicao-agil/){target="_blank"}
+Bateu o desespero? Volte ao [tópico 0](#porque-voc-quer-mudar-a-cultura-da-empresa) ou este [outro post meu](../quando-desistir-de-uma-transicao-agil/){:target="_blank"}
 
 
 ## Agradecimentos
