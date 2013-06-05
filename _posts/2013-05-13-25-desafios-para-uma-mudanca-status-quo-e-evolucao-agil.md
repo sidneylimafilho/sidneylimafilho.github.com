@@ -1,16 +1,16 @@
 ---
 layout:     post
 
-title:      '25 passos para uma mudança de status quo ou transição ágil'
+title:      '25 desafios para uma mudança de status quo ou evolução ágil'
 author:     Sidney Lima Filho
-image:      /post/25-passos-para-uma-transicao-agil/capa.jpg
+image:      /post/25-desafios-para-uma-mudanca-status-quo-e-evolucao-agil/capa.jpg
 
 excerpt:    > 
             O caminho a ser percorrido numa mudança de status quo é tortuoso e varia para cada contexto, este post foi baseado numa coletânea de experiências compartilhadas através da palestra no Rio Agile Talks, agora materializada em texto.
 
 published:  true
 categories: post
-tags:       [Processos, Cliente, Performance, Lean, Agilidade, Transição Ágil, Planejamento, Execução, Excelência Técnica, Kaizen, Melhoria Continua, Kanban]
+tags:       [Processos, Cliente, Performance, Lean, Agilidade, Evolução Ágil, Planejamento, Execução, Excelência Técnica, Kaizen, Melhoria Continua, Kanban]
 ---
 
 <img src="capa.jpg" style="float:right; margin: 0px 0px 20px 20px;" />
@@ -56,7 +56,7 @@ tags:       [Processos, Cliente, Performance, Lean, Agilidade, Transição Ágil
 
 ### Introdução ########################################################################################################################################
 
-Esse post eu comecei a escrever no inicio de março de 2013, com intuito de explicar os passos que eu atravessei numa transição ágil que implementei no [Reserve](http://reserve.com.br){:target="_blank"}, mas como este post ficou congelado deu tempo para refletir que muitos dos passos que segui não tem a ver com Agilidade somente, mas com qualquer alteração de status quo, percebo inclusive que se eu quisesse fazer o caminho inverso, ou seja mudar de Agile para Waterfall enfrentaria os mesmos desafios.
+Esse post eu comecei a escrever no inicio de março de 2013, com intuito de explicar os desafios em que estou atravessando numa evolução ágil do [Reserve](http://reserve.com.br){:target="_blank"}, mas como este post ficou congelado deu tempo para refletir que muitos dos passos que segui não tem a ver com Agilidade somente, mas com qualquer alteração de status quo, percebo inclusive que se eu quisesse fazer o caminho inverso, ou seja mudar de Agile para Waterfall enfrentaria os mesmos desafios.
 
 O post é baseado numa palestra que apresentei no [RioAgile Talks](http://rioagile.com.br/agiletalks_2013_03.html){:target="_blank"} onde apresento 25 desafios que continuamente necessito passar num processo de <del>transição</del> evolução ágil. As etapas não são verdades absolutas e refletem um pouco das carências na construção do Sidney como Gestor, porém acredito que vale a pena revisitar sempre que iniciar este processo, afinal até as coisas simples esquecemos de vez em quando.
 
@@ -117,7 +117,7 @@ Hoje já é possivel atingirmos um novo patamar de performance (que é diferente
 
 A minhas piores experiências, nas tentativas de mudar o modelo de gestão de desenvolvimento de software, foram nos lugares onde eu não elaborei um planejamento preciso sobre onde eu queria chegar. Um caminho muito natural para os gestores é começar a mudar algo por conhecimento, por necessidade, por aventura, por desejo, por prazer, mas nenhuma das tentativas foi com um objetivo estratégico planejado e estudado para alcançar um fim claro e preciso.
 
-O planejamento por incrível que pareça é uma etapa que ajuda a nos entendermos melhor, o auto-conhecimento será o maior aliado na jornada da transição, porque tudo apontará para a sua desistência e sem auto-conhecimento isso acontecerá.
+O planejamento por incrível que pareça é uma etapa que ajuda a nos entendermos melhor, o auto-conhecimento será o maior aliado na jornada da evolução, porque tudo apontará para a sua desistência e sem auto-conhecimento isso acontecerá.
 
 >   Você terá todos os motivos para desistir e você estará certo. A partir deste ponto a realidade se funde com a loucura e coisas maravilhosas acontecem
 
