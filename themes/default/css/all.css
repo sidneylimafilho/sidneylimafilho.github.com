@@ -207,7 +207,7 @@ section .widget {
   position: relative;
   width: 260px;
   float: left;
-  height: 260px;
+  min-height: 200px;
   margin: 12px 0px 12px 24px;
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -234,7 +234,6 @@ section .widget::after {
 section .searchbox {
   width: 260px;
   float: left;
-  height: 260px;
   margin: 12px 0px 12px 24px;
 }
 section .post-wall a {
@@ -258,7 +257,7 @@ section .post-wall a resume {
   display: block;
   background-color: rgba(0, 0, 0, 0.76);
   color: white;
-  bottom: 0px;
+  bottom: 24px;
   padding: 5px;
   position: absolute;
   width: 250px;
