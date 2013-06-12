@@ -66,7 +66,7 @@ header {
         float: left;
         color: transparent;
         background: url(../img/signature-logo.png) no-repeat left center;
-        margin: 0px;
+        margin-left: 5px;
     }
     
     #google_translate_element {
@@ -78,7 +78,7 @@ header {
     menu {
         float: right;
         margin: 0px;
-        padding: 18px 0px 0px;
+        padding: 18px 0px 0px 10px;
         
         ul {
             list-style:none;
@@ -182,7 +182,7 @@ section {
         width: 260px;
         float: left;
         height: 260px;
-        margin: 20px 38px 20px 0px;
+        margin: 12px 0px 12px 24px;
         background-position: 0% 100%;
         background-repeat: no-repeat;
         
@@ -201,6 +201,13 @@ section {
         left: 0;
         background: url(../img/shadow2.png) no-repeat top center;
         width: 100%;
+    }
+
+    .searchbox{
+        width: 260px;
+        float: left;
+        height: 260px;
+        margin: 12px 0px 12px 24px;
     }
     
     .post-wall{
@@ -334,8 +341,8 @@ section {
     }
     
     .left-side {
-        width: 600px;
-        /*padding-right: 24px;*/
+        max-width: 600px;
+        
         float: left;
         overflow: hidden;
         
@@ -377,7 +384,8 @@ section {
     
     .right-side {
         width:260px;
-        float: right;
+        float: left;
+        
         /*overflow: auto;  fix bug height or boxing dont work */
         
         
@@ -404,7 +412,7 @@ footer {
 
     a {color: yellow;}
 
-    .super{padding: 30px 0px; background-color: @smoke; }
+    .super{padding: 30px 20px; background-color: @smoke; }
 
     .hosting {text-align: center; padding: 30px 0px 0px;}
     
