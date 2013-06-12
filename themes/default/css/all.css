@@ -90,6 +90,8 @@ header menu {
   float: right;
   margin: 0px;
   padding: 24px 0px 0px 0px;
+  text-align: center;
+  width: 300px;
 }
 header menu ul {
   list-style: none;
