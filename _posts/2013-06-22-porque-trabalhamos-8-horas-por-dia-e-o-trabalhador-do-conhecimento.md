@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      'Porque trabalhamos 8 horas por dia e o trabalhador do conhecimento'
+title:      'Porque trabalhamos 8h/dia e o trabalhador do conhecimento'
 author:     Sidney Lima Filho
 image:      /post/porque-trabalhamos-8-horas-por-dia-e-o-trabalhador-do-conhecimento/capa.jpg
 
@@ -10,14 +10,14 @@ excerpt:    >
            
 published:  true
 categories: post
-tags:       [CLT, Trabalhador do conhecimento]
+tags:       [Trabalhador do conhecimento, Produtividade, Ultradian Cycle, Cultura]
 ---
 
 ## Porque trabalhamos 8 horas por dia?
 
 A regra de que devemos trabalhar 8 horas [nasceu na revolução industrial](http://www.todayifoundout.com/index.php/2011/05/why-a-typical-work-day-is-eight-hours-long/){:target='_blank'}, mas nem sempre foi assim. Na época da revolução industrial trabalhar de 10 a 16 horas por dia era uma coisa normal, então as empresas querendo maximizar a produtividade e com isso alcançar resultados inéditos para os acionistas. As coisas começaram a mudar quando um homem chamado Robert Owen, resolveu lutar pelo direito de trabalhar menos, o protesto dele tinha um argumento claro e conciso: 8 horas de trabalho, 8 horas de diversão e 8 horas de descanso.
 
-<img src="8x8x8.jpg" />
+<center><img src="8x8x8.jpg" /></center>
 
 Em 1914 a revolução industrial estava a pleno vapor e os profissionais estavam começando a se tornar especialistas, as maquinas de produção em massa exigiam conhecimento sobre seu funcionamento e com isso os profissionais eram mais intelectuais do que braçais, o [trabalhador do conhecimento](http://pt.wikipedia.org/wiki/Trabalhador_do_conhecimento){:target=_blank} começava a surgir como padrão nas massas e perder profissionais era caro para a empresa. A mudança somente virou realidade com a Ford e suas políticas de RH agressivas, afinal repor profissionais era caro, então pioneiramente ela decidiu por em pratica a reivindicação de Owen.
 
@@ -36,7 +36,7 @@ A primeira coisa que precisamos entender, para termos um dia de trabalho produti
 
 O principio é que nossa mente pode se focar a gerar conhecimento apenas de 90 a 120 minutos, após isso é necessário uma pausa de 20 a 30 minutos para não estressar as conexões sinapticas e não degradar a performance mental. Abaixo segue uma imagem que representa o fluxo mental de trabalho durante um dia.
 
-<img src="ultradian-cycle.jpg" />
+<center><img src="ultradian-cycle.jpg" /></center>
 
 Ao invés de pegarmos tarefas que duram 8 horas por dia, devemos dividir nosso dia em pequenas atividades de 1 hora e meia aproximadamente.
 
