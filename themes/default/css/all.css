@@ -60,7 +60,7 @@ overlay div {
 }
 header {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.76);
   border-bottom: 1px solid white;
   /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
   padding: 4px 0px 0px;
@@ -79,7 +79,7 @@ header .signature {
   float: left;
   color: transparent;
   background: url(../img/signature-logo.png) no-repeat left center;
-  margin: 0px;
+  margin-left: 5px;
 }
 header #google_translate_element {
   position: absolute;
@@ -89,7 +89,9 @@ header #google_translate_element {
 header menu {
   float: right;
   margin: 0px;
-  padding: 18px 0px 0px;
+  padding: 8px 0px 0px 0px;
+  text-align: center;
+  width: 300px;
 }
 header menu ul {
   list-style: none;
@@ -135,8 +137,11 @@ banner .wrapper {
 banner .excerpt {
   position: absolute;
   bottom: 0px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.26);
+  margin: 10px;
 }
-banner h1 {
+banner author {
   text-shadow: 0px 0px 4px black;
   -webkit-text-shadow: 0px 0px 4px black;
   -moz-text-shadow: 0px 0px 4px black;
@@ -144,17 +149,18 @@ banner h1 {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 4px;
-  max-width: 600px;
   color: white;
+  float: right;
+  display: block;
 }
-banner h2 {
+banner quote {
   text-shadow: 0px 0px 4px black;
   -webkit-text-shadow: 0px 0px 4px black;
   -moz-text-shadow: 0px 0px 4px black;
   color: white;
   font-size: 32px;
   line-height: 30px;
-  max-width: 600px;
+  display: block;
 }
 banner .arrow-left,
 banner .arrow-right {
@@ -203,8 +209,8 @@ section .widget {
   position: relative;
   width: 260px;
   float: left;
-  height: 260px;
-  margin: 20px 38px 20px 0px;
+  min-height: 200px;
+  margin: 12px 0px 12px 24px;
   background-position: 0% 100%;
   background-repeat: no-repeat;
   transition: background-position 2000ms ease;
@@ -227,9 +233,13 @@ section .widget::after {
   background: url(../img/shadow2.png) no-repeat top center;
   width: 100%;
 }
+section .searchbox {
+  width: 260px;
+  float: left;
+  margin: 12px 0px 12px 24px;
+}
 section .post-wall a {
   display: block;
-  position: relative;
   text-decoration: none;
   height: 100%;
   background: none;
@@ -363,6 +373,9 @@ section nav {
 section .social-buttons {
   padding: 10px 0px 20px;
 }
+section .social-buttons a {
+  background-image: none;
+}
 section .nav-next-prev {
   padding: 10px 0px;
 }
@@ -382,11 +395,17 @@ section .tag-list div {
   margin: 0px 10px 10px 0px;
 }
 section .tag-list div:target {
-  background-color: rgba(255, 224, 0, 0.13);
+  border-left: 2px solid rgba(255, 66, 66, 0.81);
+  margin: 0px 0px 10px;
+  padding: 1px 9px 1px 9px;
+  /*font-style:italic;*/
+  background-color: rgba(255, 245, 0, 0.09);
+}
+section .tag-list div:target p {
+  text-align: justify;
 }
 section .left-side {
-  width: 600px;
-  /*padding-right: 24px;*/
+  max-width: 572px;
   float: left;
   overflow: hidden;
 }
@@ -435,7 +454,7 @@ section .left-side .post year {
 }
 section .right-side {
   width: 260px;
-  float: right;
+  float: left;
   /*overflow: auto;  fix bug height or boxing dont work */
 
 }
@@ -459,8 +478,8 @@ footer a {
   color: yellow;
 }
 footer .super {
-  padding: 30px 0px;
-  background-color: rgba(0, 0, 0, 0.82);
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.76);
 }
 footer .hosting {
   text-align: center;
@@ -497,6 +516,10 @@ body {
 small {
   font-size: 80%;
 }
+::selection {
+  background: #ff9900;
+  color: white;
+}
 p {
   text-align: justify;
 }
@@ -505,13 +528,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+quote {
   font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
   font-weight: normal;
   text-shadow: 0px 0px 8px transparent;
   -webkit-text-shadow: 0px 0px 8px transparent;
   -moz-text-shadow: 0px 0px 8px transparent;
   color: black;
+  clear: both;
 }
 p,
 ul,
@@ -526,27 +551,45 @@ h5,
 h6,
 pre,
 dl {
-  margin: 0 0 10px;
+  margin: 5px 0 5px;
 }
 ul {
-  padding-left: 2px;
-  list-style-position: inside;
+  padding-left: 17px;
+  list-style-position: outside;
 }
-h1,
-h2,
-h3 {
-  line-height: 1.1;
+blockquote {
+  background-image: url(/themes/default/img/big_quote_icon.png);
+  background-repeat: no-repeat;
+  color: #0070ff;
+  background-position: 0px 10px;
+  margin: 0px 0px 10px;
+  padding: 1px 9px 1px 42px;
+  min-height: 45px;
 }
 h1 {
   font-size: 40px;
-  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
-  font-weight: normal;
 }
 h2 {
-  font-size: 34px;
+  font-size: 32px;
 }
 h3 {
+  font-size: 32px;
+}
+h4 {
   font-size: 24px;
+}
+h1,
+h2 {
+  font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaNeueThCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+  font-weight: normal;
 }
 a {
   color: #ff9600;
@@ -573,16 +616,6 @@ b,
 strong {
   font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
   font-weight: normal;
-}
-blockquote {
-  border-left: 4px solid #a5a5a5;
-  margin: 0px 0px 10px;
-  padding: 9px 9px 1px 9px;
-  font-style: italic;
-  background-color: #f2f2e2;
-}
-blockquote p {
-  text-align: justify;
 }
 code,
 pre {
@@ -611,9 +644,6 @@ dt {
 }
 th {
   color: #444444;
-}
-img {
-  max-width: 100%;
 }
 @media print, screen and (max-width: 960px) {
   

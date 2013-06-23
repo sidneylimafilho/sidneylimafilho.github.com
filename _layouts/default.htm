@@ -6,7 +6,7 @@
         <link href="/themes/default/css/all.css" rel="stylesheet" />
         <link href="http://feeds.feedburner.com/sidneyfilho/" class="feed" rel="alternate" type="application/rss+xml" title="sidneylimafilho.com.br"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <meta name="google-translate-customization" content="6b8d269fcbc1b6d5-0fa0d030d26cbeaf-ga791899a89db06bb-16"
@@ -70,12 +70,12 @@
         <banner {% if page.categories %} class="{{page.categories}}" {% endif %}>
             <!-- <a href="javascript:;" class="arrow-right"></a><a href="javascript:;" class="arrow-left"></a>-->
             <div class="wrapper">
-                <div class="excerpt">
-                    <h1>Aprenda como funciona
-                    </h1>
-                    <h2>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
+                <div class="excerpt">                    
+                    <quote>Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente
                         através de mãos distintas.
-                    </h2>
+                    </quote>
+                    <author>Aprenda como funciona
+                    </author>
                 </div>
             </div>
         </banner>
@@ -155,13 +155,19 @@
         if (media.getUrl) {        
             $("." + key).attr({ "target":"_blank", "href": User[key].getUrl(), "title": User[key].title });        
         }
+
+    
+    var q = User.getRandomQuote();
+    var $banner = $("banner");
+    $banner.find(".excerpt author").text(q.author);
+    $banner.find(".excerpt quote").text(q.text);
+    $banner.css({ background: 'url(/themes/default/img/banner/' + q.banner + ')' });
+    
     </script>
+    
     <!-- Share buttons in posts  -->
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">
-        stLight.options({publisher: "ed98425d-33e8-4e66-a1e2-aa565f8ef166", doNotHash: true, doNotCopy: true, hashAddressBar: false});
-    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script>
+
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

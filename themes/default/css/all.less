@@ -47,6 +47,7 @@ overlay{
     div{ width: 860px; height: 510px; margin:0px auto;}
 }
 
+
 header {
     position:absolute;
     background-color: @glass;
@@ -65,7 +66,7 @@ header {
         float: left;
         color: transparent;
         background: url(../img/signature-logo.png) no-repeat left center;
-        margin: 0px;
+        margin-left: 5px;
     }
     
     #google_translate_element {
@@ -77,7 +78,9 @@ header {
     menu {
         float: right;
         margin: 0px;
-        padding: 18px 0px 0px;
+        padding: 8px 0px 0px 0px;
+        text-align: center;
+        width:300px;
         
         ul {
             list-style:none;
@@ -105,10 +108,7 @@ header {
             }*/
         }
     }
-    
-    
 }
-
 
 banner {
     position: relative;
@@ -125,24 +125,25 @@ banner {
     
     .wrapper{ height:100%; }
 
-    .excerpt { position: absolute; bottom: 0px; }
+    .excerpt { position: absolute; bottom: 0px; padding: 10px; background-color: rgba(0, 0, 0, 0.26); margin: 10px;}
     
     
-    h1 {
+    author {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
         font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
         font-size: 18px;
         text-transform: uppercase;
-        margin-bottom: 4px;
-        max-width: 600px;
+        margin-bottom: 4px;        
         color: white;
+        float:right; 
+        display: block;
     }
-    h2 {
+    quote {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
         color: white;
         font-size: 32px;
-        line-height: 30px;
-        max-width: 600px;
+        line-height: 30px; 
+        display: block;             
     }
     
     .arrow-left, .arrow-right {
@@ -182,8 +183,8 @@ section {
         position: relative;
         width: 260px;
         float: left;
-        height: 260px;
-        margin: 20px 38px 20px 0px;
+        min-height: 200px;
+        margin: 12px 0px 12px 24px;
         background-position: 0% 100%;
         background-repeat: no-repeat;
         
@@ -203,12 +204,17 @@ section {
         background: url(../img/shadow2.png) no-repeat top center;
         width: 100%;
     }
+
+    .searchbox{
+        width: 260px;
+        float: left;        
+        margin: 12px 0px 12px 24px;
+    }
     
     .post-wall{
 
         a {
-            display: block;
-            position: relative;
+            display: block;            
             text-decoration: none;
             height: 100%;
             background: none;
@@ -218,7 +224,7 @@ section {
             
             resume {
                 display: block;
-                background-color: rgba(0, 0, 0, 0.76);
+                background-color: @smoke;
                 color: #FFF;
                 bottom: 0px;
                 padding: 5px;
@@ -307,7 +313,9 @@ section {
     
     nav {float: right;}
         
-    .social-buttons{ padding:10px 0px 20px; }
+    .social-buttons{ padding:10px 0px 20px; 
+        a { background-image: none; }
+    }
 
     .nav-next-prev { 
         padding: 10px 0px;
@@ -321,13 +329,20 @@ section {
         padding: 10px;
         margin: 0px 10px 10px 0px;
     }
-    .tag-list div:target{
-        background-color: rgba(255, 224, 0, 0.13);
+
+    .tag-list div:target {
+        border-left:2px solid rgba(255, 66, 66, 0.81);
+        margin: 0px 0px 10px;
+        padding: 1px 9px 1px 9px;
+        /*font-style:italic;*/
+        background-color: rgba(255, 245, 0, 0.09);
+
+        p { text-align: justify; }
     }
     
     .left-side {
-        width: 600px;
-        /*padding-right: 24px;*/
+        max-width: 572px;
+        
         float: left;
         overflow: hidden;
         
@@ -369,7 +384,8 @@ section {
     
     .right-side {
         width:260px;
-        float: right;
+        float: left;
+        
         /*overflow: auto;  fix bug height or boxing dont work */
         
         
@@ -386,8 +402,6 @@ section {
             small { display: block; }
         }
     }
-    
-    
 }
 
 footer {
@@ -398,7 +412,7 @@ footer {
 
     a {color: yellow;}
 
-    .super{padding: 30px 0px; background-color: @smoke; }
+    .super{padding: 30px 20px; background-color: @smoke; }
 
     .hosting {text-align: center; padding: 30px 0px 0px;}
     
@@ -437,41 +451,50 @@ small {
     font-size:80%;
 }
 
+::selection {
+    background: rgb(255, 153, 0);
+    color: rgb(255, 255, 255);
+}
 
 p { text-align: justify; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, quote {
     font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
     font-weight: normal;
     .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
     color: #000;
+    clear:both;
 }
 
 p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
-    margin:0 0 10px;
+    margin:5px 0 5px;
 }
 
-ul { padding-left: 2px; list-style-position: inside;}
+ul { padding-left: 17px; list-style-position: outside; }
 
+blockquote{
+    background-image: url(/themes/default/img/big_quote_icon.png);
+    background-repeat: no-repeat;
+    color: rgb(0, 112, 255);
+    background-position: 0px 10px;
+    margin: 0px 0px 10px;
+    padding: 1px 9px 1px 42px;
+    min-height: 45px;
+}
 
-h1, h2, h3 {
+h1 { font-size: 40px; }
+
+h2 { font-size: 32px; }
+
+h3 { font-size: 32px; }
+
+h4 { font-size: 24px; }
+
+h1, h2 { 
+    font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; 
     line-height:1.1;
 }
-
-h1 {
-    font-size: 40px;
-    font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal;
-}
-
-h2 {
-    font-size: 34px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h3, h4, h5, h6 {}
+h3, h4, h5, h6 {font-family: "HelveticaNeueThCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal;}
 
 a {
     color:@linkColor;
@@ -490,16 +513,6 @@ a:hover, a.selected{
 }
 
 b, strong { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
-
-blockquote {
-    border-left:4px solid #A5A5A5;
-    margin: 0px 0px 10px;
-    padding: 9px 9px 1px 9px;
-    font-style:italic;
-    background-color: #F2F2E2;
-
-    p { text-align: justify; }
-}
 
 code, pre {
     font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
@@ -532,10 +545,6 @@ dt {
 
 th {
     color:#444;
-}
-
-img {
-    max-width:100%;
 }
 
 
