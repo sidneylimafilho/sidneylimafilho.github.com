@@ -80,6 +80,7 @@ header .signature {
   color: transparent;
   background: url(../img/signature-logo.png) no-repeat left center;
   margin-left: 5px;
+  margin-bottom: 0px;
 }
 header #google_translate_element {
   position: absolute;
@@ -100,6 +101,7 @@ header menu ul {
 }
 header menu li {
   padding: 0px 10px;
+  margin-bottom: 0px;
   display: inline-block;
   /*border-right:1px solid #d2d2d2;
             height: 70px;*/
