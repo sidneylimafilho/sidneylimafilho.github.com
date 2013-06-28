@@ -195,7 +195,7 @@ User = {
                 image: "{{post.image | strip_newlines}}", 
                 url: "{{post.url | strip_newlines}}", 
                 excerpt: "{{post.excerpt | strip_newlines}}", 
-                date: Date.parse("{{post.date}}") 
+                date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}") 
             }); 
             {% endfor %}
 
