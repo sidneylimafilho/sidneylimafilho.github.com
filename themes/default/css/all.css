@@ -92,7 +92,8 @@ header menu {
   margin: 0px;
   padding: 8px 0px 0px 0px;
   text-align: center;
-  width: 300px;
+  /*width:300px;*/
+
 }
 header menu ul {
   list-style: none;
