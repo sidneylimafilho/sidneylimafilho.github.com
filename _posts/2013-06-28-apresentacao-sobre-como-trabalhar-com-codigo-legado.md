@@ -8,7 +8,7 @@ image:      /post/apresentacao-sobre-como-trabalhar-com-codigo-legado/capa.jpg
 excerpt:    > 
             Você quer que seu funcionário faça rápido e do seu jeito, mas você se preocupa em ensinar o que espera da sua equipe? 
 
-published:  false
+published:  true
 categories: post
 tags:       [Desenvolvimento, Código, Linguagens de Programação, Software Legado, Maturidade Profissional, Testes Unitários]
 ---
