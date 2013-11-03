@@ -60,7 +60,7 @@ overlay div {
 }
 header {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.76);
+  background-color: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid white;
   /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
   padding: 4px 0px 0px;
@@ -79,7 +79,8 @@ header .signature {
   float: left;
   color: transparent;
   background: url(../img/signature-logo.png) no-repeat left center;
-  margin-left: 5px;
+  margin-left: 30px;
+  margin-bottom: 0px;
 }
 header #google_translate_element {
   position: absolute;
@@ -89,9 +90,10 @@ header #google_translate_element {
 header menu {
   float: right;
   margin: 0px;
-  padding: 8px 0px 0px 0px;
+  padding: 2.5% 0px 2% 0px;
   text-align: center;
-  width: 300px;
+  /*width:300px;*/
+
 }
 header menu ul {
   list-style: none;
@@ -100,6 +102,7 @@ header menu ul {
 }
 header menu li {
   padding: 0px 10px;
+  margin-bottom: 0px;
   display: inline-block;
   /*border-right:1px solid #d2d2d2;
             height: 70px;*/
@@ -210,7 +213,7 @@ section .widget {
   width: 260px;
   float: left;
   min-height: 200px;
-  margin: 12px 0px 12px 24px;
+  margin: 16px 0px 12px 24px;
   background-position: 0% 100%;
   background-repeat: no-repeat;
   transition: background-position 2000ms ease;
@@ -551,7 +554,7 @@ h5,
 h6,
 pre,
 dl {
-  margin: 5px 0 5px;
+  margin: 5px 0px 15px;
 }
 ul {
   padding-left: 17px;
