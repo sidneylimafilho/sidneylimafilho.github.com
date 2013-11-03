@@ -1,64 +1,57 @@
 @import url(base.less);
 
 /* -------------------------------- */
+
 /* Font Definitions                 */
-/* -------------------------------- */
-@font-face {
-    font-family: "HelveticaNeueThCn";
-    src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'),
-    url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
-}
-
-@font-face {
-    font-family: "HelveticaNeueLtCn";
-    src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'),
-    url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
-}
-
-@font-face {
-    font-family: "HelveticaNeueBdCn";
-    src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'),
-    url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
-}
-
-
-
-
 
 /* -------------------------------- */
+ @font-face {
+    font-family:"HelveticaNeueThCn";
+    src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
+}
+@font-face {
+    font-family:"HelveticaNeueLtCn";
+    src: url('../fonts/HelveticaNeueLTCom-LtCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-LtCn.woff') format('woff');
+}
+@font-face {
+    font-family:"HelveticaNeueBdCn";
+    src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
+}
+/* -------------------------------- */
+
 /* Structure                        */
-/* -------------------------------- */
 
-header, banner, section, footer {
+/* -------------------------------- */
+ header, banner, section, footer {
     width:100%;
 }
-
-overlay{
+overlay {
     display: none;
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.88);
+    background-color: rgba(0, 0, 0, 0.88);
     margin: 0 auto;
     .opacity(0);
     z-index: 20;
     padding-top: 80px;
-    
-    div{ width: 860px; height: 510px; margin:0px auto;}
+    div {
+        width: 860px;
+        height: 510px;
+        margin:0px auto;
+    }
 }
-
-
 header {
     position:absolute;
     background-color: @glass;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     /*.gradient(left top, left bottom, 0.95, rgba(255, 255, 255, 0.75), 1,  rgba(255, 255, 255, 0));*/
     padding: 4px 0px 0px;
-    z-index: 10; /* cause banner position relative stay hover on the header */
+    z-index: 10;
+    /* cause banner position relative stay hover on the header */
     background-image: url(../img/anchor-bg.png);
     background-repeat: no-repeat;
     background-size: 200%;
-    
     .signature {
         .text-shadow(0px, 0px, 0px, rgba(255, 255, 255, 0));
         width: 230px;
@@ -69,26 +62,22 @@ header {
         margin-left: 30px;
         margin-bottom: 0px;
     }
-    
     #google_translate_element {
         position: absolute;
-        top:0px; 
+        top:0px;
         right:0px;
     }
-    
     menu {
         float: right;
         margin: 0px;
-        padding: 2.5% 0px 2% 0px;
+        padding: 1% 0px 0.5% 0px;
         text-align: center;
         /*width:300px;*/
-        
         ul {
             list-style:none;
             padding:0px;
-            margin: 0px;         
+            margin: 0px;
         }
-
         li {
             padding: 0px 10px;
             margin-bottom: 0px;
@@ -96,7 +85,6 @@ header {
             /*border-right:1px solid #d2d2d2;
             height: 70px;*/
             vertical-align: middle;
-            
             a {
                 display:block;
                 text-align:center;
@@ -111,11 +99,10 @@ header {
         }
     }
 }
-
 banner {
     position: relative;
     z-index: 1;
-    padding-top:  70px;
+    padding-top: 70px;
     display: block;
     height: 330px;
     background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
@@ -123,31 +110,33 @@ banner {
     background-size: cover;
     background-position: center;
     vertical-align: bottom;
-    
-    
-    .wrapper{ height:100%; }
-
-    .excerpt { position: absolute; bottom: 0px; padding: 10px; background-color: rgba(0, 0, 0, 0.26); margin: 10px;}
-    
-    
+    .wrapper {
+        height:100%;
+    }
+    .excerpt {
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.26);
+        margin: 10px;
+    }
     author {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
-        font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+        font-family:"HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
         font-size: 18px;
         text-transform: uppercase;
-        margin-bottom: 4px;        
+        margin-bottom: 4px;
         color: white;
-        float:right; 
+        float:right;
         display: block;
     }
     quote {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
         color: white;
         font-size: 32px;
-        line-height: 30px; 
-        display: block;             
+        line-height: 30px;
+        display: block;
     }
-    
     .arrow-left, .arrow-right {
         position: absolute;
         height: 330px;
@@ -156,29 +145,28 @@ banner {
         overflow: auto;
         .opacity(0.6);
     }
-    
-    .arrow-left:hover, .arrow-right:hover{ .opacity(1); }
-    
-    .arrow-left { background: url(../img/arrow-left.png) no-repeat center; right: 0px; }
-    
-    .arrow-right{ background: url(../img/arrow-right.png) no-repeat center; }
+    .arrow-left:hover, .arrow-right:hover {
+        .opacity(1);
+    }
+    .arrow-left {
+        background: url(../img/arrow-left.png) no-repeat center;
+        right: 0px;
+    }
+    .arrow-right {
+        background: url(../img/arrow-right.png) no-repeat center;
+    }
 }
-
 section {
-    
     background: url(../img/corner-shadow-top-left.png) no-repeat top left;
     /* overflow:auto; fix bug background-color dont work */
-    
-    a:hover, a.selected{ }
-    
+    a:hover, a.selected {
+    }
     .super {
         background: url(../img/corner-shadow-top-right.png) no-repeat top right;
         /*overflow:auto; fix bug background-color dont work */
         width: 100%;
         padding-top: 24px;
     }
-    
-
     .widget {
         border: 1px solid lightgray;
         background-color: white;
@@ -189,16 +177,13 @@ section {
         margin: 16px 0px 12px 24px;
         background-position: 0% 100%;
         background-repeat: no-repeat;
-        
         .transition(background-position, 2000ms);
     }
-    
-    .widget:hover{
+    .widget:hover {
         background-position: 100% 50%;
     }
-    
     .widget::after {
-        content: '';
+        content:'';
         position: absolute;
         height: 7px;
         bottom: -7px;
@@ -206,24 +191,21 @@ section {
         background: url(../img/shadow2.png) no-repeat top center;
         width: 100%;
     }
-
-    .searchbox{
+    .searchbox {
         width: 260px;
-        float: left;        
+        float: left;
         margin: 12px 0px 12px 24px;
     }
-    
-    .post-wall{
-
+    .post-wall {
         a {
-            display: block;            
+            display: block;
             text-decoration: none;
             height: 100%;
             background: none;
             .transition(opacity, 400ms);
-            
-            small{ display: block; }
-            
+            small {
+                display: block;
+            }
             resume {
                 display: block;
                 background-color: @smoke;
@@ -232,30 +214,29 @@ section {
                 padding: 5px;
                 position: absolute;
                 width: 250px;
-                
-             
-                
-                .title{min-height: 44px;}
-                .excerpt{display: none}
+                .title {
+                    min-height: 44px;
+                }
+                .excerpt {
+                    display: none
+                }
             }
         }
-        
-        a:hover .excerpt{display: block}
-        
-        .twitter table{
+        a:hover .excerpt {
+            display: block
+        }
+        .twitter table {
             height: 210px;
         }
-
-        a.button {                                  
+        a.button {
             position: absolute;
             top: -18px;
             left: 50%;
-            margin-left: -18px;            
+            margin-left: -18px;
             /*.opacity(0.4);*/
-        } 
+        }
     }
-
-    time{
+    time {
         width: 24px;
         text-align: left;
         float: left;
@@ -263,10 +244,17 @@ section {
         padding-right: 20px;
         margin-top: -2px;
     }
-    
-    day{ font-size: 26px; height: 24px; display: block; color: orange;}
-    month{ font-size: 16px; color: rgb(252, 211, 137);}
-    year{
+    day {
+        font-size: 26px;
+        height: 24px;
+        display: block;
+        color: orange;
+    }
+    month {
+        font-size: 16px;
+        color: rgb(252, 211, 137);
+    }
+    year {
         .rotation(270deg);
         display: block;
         position: absolute;
@@ -276,205 +264,221 @@ section {
         margin-left: 15px;
         color: rgb(252, 211, 137);
     }
-
-    .myinfo{
-        .gravatar, nav{ 
+    .myinfo {
+        .gravatar, nav {
             margin: 8px;
-            text-align: justify;           
+            text-align: justify;
         }
-
-        img{
+        img {
             float: left;
             margin-right: 8px;
         }
-
-        a.button {            
+        a.button {
             width: 27px;
-            height: 27px;                                 
+            height: 27px;
         }
     }
-
     a.button {
         display: inline-block;
         width: 36px;
         height: 36px;
         background-repeat: no-repeat;
-        background-size: 100%;   
-        background-position: 0px 100%;                        
-    }    
-    
-    a.twitter { background-image: url(../img/twitter.png);  }
-    a.facebook { background-image: url(../img/facebook.png);  }
-    a.linkedin { background-image: url(../img/linkedin.png);  }
-    a.feed { background-image: url(../img/feed.png);  }
-    a.slideshare { background-image: url(../img/slideshare.png);  }
-    a.github { background-image: url(../img/github.png);  }
-    a.youtube { background-image: url(../img/youtube.png);  }
-    a.delicious { background-image: url(../img/delicious.png);  }
-    a.mail { background-image: url(../img/mail.png);  }
-    
-    nav {float: right;}
-        
-    .social-buttons{ padding:10px 0px 20px; 
-        a { background-image: none; }
+        background-size: 100%;
+        background-position: 0px 100%;
     }
-
-    .nav-next-prev { 
+    a.twitter {
+        background-image: url(../img/twitter.png);
+    }
+    a.facebook {
+        background-image: url(../img/facebook.png);
+    }
+    a.linkedin {
+        background-image: url(../img/linkedin.png);
+    }
+    a.feed {
+        background-image: url(../img/feed.png);
+    }
+    a.slideshare {
+        background-image: url(../img/slideshare.png);
+    }
+    a.github {
+        background-image: url(../img/github.png);
+    }
+    a.youtube {
+        background-image: url(../img/youtube.png);
+    }
+    a.delicious {
+        background-image: url(../img/delicious.png);
+    }
+    a.mail {
+        background-image: url(../img/mail.png);
+    }
+    nav {
+        float: right;
+    }
+    .social-buttons {
+        padding:10px 0px 20px;
+        a {
+            background-image: none;
+        }
+    }
+    .nav-next-prev {
         padding: 10px 0px;
-        .next{text-align: right; padding: 0px 0px 10px;}
-        .previous{ text-align: left; padding: 0px 0px 10px;}
+        .next {
+            text-align: right;
+            padding: 0px 0px 10px;
+        }
+        .previous {
+            text-align: left;
+            padding: 0px 0px 10px;
+        }
     }
-
-    .comments{ padding: 20px 0px 0px 0px }
-    
-    .tag-list div{
+    .comments {
+        padding: 20px 0px 0px 0px
+    }
+    .tag-list div {
         padding: 10px;
         margin: 0px 10px 10px 0px;
     }
-
     .tag-list div:target {
         border-left:2px solid rgba(255, 66, 66, 0.81);
         margin: 0px 0px 10px;
         padding: 1px 9px 1px 9px;
         /*font-style:italic;*/
         background-color: rgba(255, 245, 0, 0.09);
-
-        p { text-align: justify; }
+        p {
+            text-align: justify;
+        }
     }
-    
     .left-side {
         max-width: 572px;
-        
         float: left;
         overflow: hidden;
-        
-        h1 { border-bottom: 1px solid black; padding-right: 40px; position: relative;}
-        
-           
+        h1 {
+            border-bottom: 1px solid black;
+            padding-right: 40px;
+            position: relative;
+        }
         .artigos, .palestras {
-            
             ul {
                 list-style-type: none;
                 padding-left: 90px;
                 position: relative;
-                
                 li {
                     padding-right: 10px;
-                    
                     time {
                         position: absolute;
                         left: 0px;
                     }
-                    
-                    small{
+                    small {
                         display: block;
                         color:#444;
                     }
                 }
             }
         }
-
-        .post{ 
+        .post {
             margin-right: 18px;
-
-            time {position: absolute;top: 0px;right: 0px;padding-right:0px;}
-            day, month, year{ color: black;}
-            year {top:9px; margin-left: -28px}
+            time {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                padding-right:0px;
+            }
+            day, month, year {
+                color: black;
+            }
+            year {
+                top:9px;
+                margin-left: -28px
+            }
         }
-        
     }
-    
     .right-side {
         width:260px;
         float: left;
-        
         /*overflow: auto;  fix bug height or boxing dont work */
-        
-        
-        
-        
         ul {
             list-style-type: none;
             padding: 0px;
-            
             li {
                 padding: 3px 0px 7px 0px;
             }
-            
-            small { display: block; }
+            small {
+                display: block;
+            }
         }
     }
 }
-
 footer {
     clear: both;
-    display: block;        
+    display: block;
     color: white;
     background: url(/themes/default/img/banner/sidney-meditation.jpg);
-
-    a {color: yellow;}
-
-    .super{padding: 30px 20px; background-color: @smoke; }
-
-    .hosting {text-align: center; padding: 30px 0px 0px;}
-    
-    .tag-cloud{
+    a {
+        color: yellow;
+    }
+    .super {
+        padding: 30px 20px;
+        background-color: @smoke;
+    }
+    .hosting {
+        text-align: center;
+        padding: 30px 0px 0px;
+    }
+    .tag-cloud {
         span {
             padding: 3px;
             display: inline-block;
-           /* background-color: @background-dark2;
+            /* background-color: @background-dark2;
             border-radius: 4px;*/
             margin: 5px;
         }
     }
 }
-
 .wrapper {
     max-width:870px;
     margin:0 auto;
     padding: 0px 4px;
     position: relative;
 }
-
-
-
 /* -------------------------------- */
+
 /* Generics                         */
+
 /* -------------------------------- */
-html, body {
+ html, body {
     margin: 0px;
     padding: 0px;
-    font: 16px "HelveticaNeueLtCn", Arial, sans-serif;
+    font: 16px"HelveticaNeueLtCn", Arial, sans-serif;
     color: #333;
     /*background-color: @background-light;*/
 }
-
 small {
     font-size:80%;
 }
-
 ::selection {
     background: rgb(255, 153, 0);
     color: rgb(255, 255, 255);
 }
-
-p { text-align: justify; }
-
+p {
+    text-align: justify;
+}
 h1, h2, h3, h4, h5, h6, quote {
-    font-family: "HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
+    font-family:"HelveticaNeueThCn", "HelveticaNeueW01-ThinCn 673383", Arial, sans-serif;
     font-weight: normal;
     .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
     color: #000;
     clear:both;
 }
-
 p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
     margin:5px 0px 15px;
 }
-
-ul { padding-left: 17px; list-style-position: outside; }
-
-blockquote{
+ul {
+    padding-left: 17px;
+    list-style-position: outside;
+}
+blockquote {
     background-image: url(/themes/default/img/big_quote_icon.png);
     background-repeat: no-repeat;
     color: rgb(0, 112, 255);
@@ -483,21 +487,27 @@ blockquote{
     padding: 1px 9px 1px 42px;
     min-height: 45px;
 }
-
-h1 { font-size: 40px; }
-
-h2 { font-size: 32px; }
-
-h3 { font-size: 32px; }
-
-h4 { font-size: 24px; }
-
-h1, h2 { 
-    font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; 
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 24px;
+}
+h1, h2 {
+    font-family:"HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+    font-weight: normal;
     line-height:1.1;
 }
-h3, h4, h5, h6 {font-family: "HelveticaNeueThCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal;}
-
+h3, h4, h5, h6 {
+    font-family:"HelveticaNeueThCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+    font-weight: normal;
+}
 a {
     color:@linkColor;
     text-decoration:none;
@@ -506,22 +516,21 @@ a {
     padding-bottom: 2px;
     background: url(../img/anchor-bg.png) no-repeat 0px -2px;
 }
-
-a:hover, a.selected{
+a:hover, a.selected {
     color:@linkColorHover;
     text-decoration: none;
     /*.text-shadow(0px, 0px, 2px, rgba(255, 0, 200, 0.3));*/
     background-position: 0px 100%;
 }
-
-b, strong { font-family: "HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif; font-weight: normal; }
-
+b, strong {
+    font-family:"HelveticaNeueBdCn", "HelveticaNeueW01-77BdCn 692722", Helvetica, sans-serif;
+    font-weight: normal;
+}
 code, pre {
     font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
     color:#333;
     font-size:12px;
 }
-
 pre {
     padding:8px 15px;
     background: #f8f8f8;
@@ -529,39 +538,27 @@ pre {
     border:1px solid #e5e5e5;
     overflow-x: auto;
 }
-
 table {
     width:100%;
     border-collapse:collapse;
 }
-
 th, td {
     text-align:left;
-    
 }
-
 dt {
     color:#444;
     font-weight:700;
 }
-
 th {
     color:#444;
 }
-
-
-
-@media print, screen and (max-width: 960px) { }
-
-@media print, screen and (max-width: 720px) { }
-
-@media print, screen and (max-width: 480px) { }
-
-@media print { }
-
-
-
-
+@media print, screen and (max-width: 960px) {
+}
+@media print, screen and (max-width: 720px) {
+}
+@media print, screen and (max-width: 480px) {
+}
+@media print {
+}
 @import url(pygment_trac.less);
-
-@import url(google-searchbox.less);
+ @import url(google-searchbox.less);
