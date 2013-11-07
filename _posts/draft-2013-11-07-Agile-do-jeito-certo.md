@@ -22,3 +22,14 @@ Se você ainda insiste em por práticas ágeis na sua equipe, então saiba que v
 
 A Complexidade nos apresenta que o mundo não é mais tão simples quanto era na época de Ford, onde uma metodologia nova resolvia algum problema, não adianta mais apenas colocar CMMI, Balanced Scorecard, PMI, ISO, Six Sigma, Agile, XP, Kanban, etc.
 
+Atualmente como um Diretor de uma empresa de ponta, vejo que a direção que quero para a empresa é de um ambiente agradável para trabalhar, desafiador e que permita entregar valor consistente para os usuários, mas só nessa frase tem várias afirmações que precisam ser detalhadas.
+
++	
++	Ambiente Agradável
++	Desaafiador
++ 	Valor Consistente
++	
+
+
+
+
