@@ -10,8 +10,8 @@ User = {
         author: "Sidney Lima Filho",        
         text: "Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.",
         banner: "craftsmanship-cover.jpg"
-    }, {
-        author: "Garry Kasparov",
+    },{
+        author: "Henrique Bastos,
         text: "O que interessa é desenvolver um sistema de agressividade controlada, a fim de nos separarmos dos inertes. Agressividade, nesse contexto, significa dinamismo, coragem e muita vontade de agir.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }, {
