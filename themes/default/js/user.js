@@ -125,7 +125,7 @@ User = {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
                         var i = 0, length = User.items().length, items = User.items();
-                        while (items[i--].date <= new Date(tweet.created_at) && i < length) i++;
+                        while (items[i].date <= new Date(tweet.created_at) && i < length) i++;
 
                         User.items.splice(i, 0, {
                             template: "tweetTemplate",
@@ -145,7 +145,7 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
                     var i = 0, length = User.items().length, items = User.items();
-                    while (items[i--].date <= new Date(tweet.created_at) && i < length) i++;
+                    while (items[i].date <= new Date(tweet.created_at) && i < length) i++;
 
                     User.items.splice(i, 0, {
                         template: "tweetTemplate",
@@ -194,7 +194,7 @@ User = {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
                         var i = 0, length = User.items().length, items = User.items();
-                        while (items[i--].date <= new Date(value.created) && i < length) i++;
+                        while (items[i].date <= new Date(value.created) && i < length) i++;
 
                         User.items.splice(i, 0, {
                             template: "videoTemplate",
@@ -255,7 +255,7 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
                     var i = 0, length = User.items().length, items = User.items();
-                    while (items[i--].date <= new Date(value.dt) && i < length) i++;
+                    while (items[i].date <= new Date(value.dt) && i < length) i++;
                     
                     User.items.splice(i, 0, {
                         template: "bookmarkTemplate",
