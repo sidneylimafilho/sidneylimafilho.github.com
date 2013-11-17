@@ -71,7 +71,8 @@ User = {
         loadItems: function() {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
-                Enumerable.From(result.feed.entries).Take(4).ForEach(function(slide, index) {
+                var i = 0;
+                Enumerable.From(result.feed.entries).Take(6).ForEach(function(slide, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
@@ -135,7 +136,11 @@ User = {
             });
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
-                Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(3).ForEach(function(tweet, index) {
+                var i = 0;
+                Enumerable.From(json)
+                .Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id")
+                .Take(6)
+                .ForEach(function(tweet, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
                     while (User.items()[i].date < new Date(tweet.created_at) && i++);
@@ -179,9 +184,10 @@ User = {
         loadItems: function() {
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 // bubble sort
+                var i = 0;
                 Enumerable.From(json.data.items)
                     .Where("$.video.accessControl.embed === 'allowed'")
-                    .Take(4)
+                    .Take(6)
                     .ForEach(function(value, index) {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
@@ -206,7 +212,7 @@ User = {
 
             var posts = [];
 
-            {% for post in site.posts limit: 4 %}
+            {% for post in site.posts limit: 6 %}
             posts.unshift({
                 title: "{{post.title | strip_newlines}}",
                 image: "{{post.image | strip_newlines}}",
@@ -242,7 +248,8 @@ User = {
         loadItems: function() {
             return false; // temporariamente cancelado pois será feito no layout            
             $.getJSON(this.getApiFeedUrl(), function(json) {
-                Enumerable.From(json).Take(4).ForEach(function(value, index) {
+                var i = 0;
+                Enumerable.From(json).Take(6).ForEach(function(value, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
