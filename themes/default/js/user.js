@@ -76,7 +76,7 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    while (User.items()[i].date < new Date(slide.publishedDate) && i++);
+                    while (User.items()[i++].date < new Date(slide.publishedDate));
 
                     User.items.splice(i, 0, {
                         template: "slideTemplate",
@@ -124,7 +124,7 @@ User = {
                     .ForEach(function(tweet, index) {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
-                        while (User.items()[i].date < new Date(tweet.created_at) && i++);
+                        while (User.items()[i++].date < new Date(tweet.created_at));
 
                         User.items.splice(i, 0, {
                             template: "tweetTemplate",
@@ -143,7 +143,7 @@ User = {
                 .ForEach(function(tweet, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
-                    while (User.items()[i].date < new Date(tweet.created_at) && i++);
+                    while (User.items()[i++].date < new Date(tweet.created_at));
 
                     User.items.splice(i, 0, {
                         template: "tweetTemplate",
@@ -192,7 +192,7 @@ User = {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                        while (User.items()[i].date < new Date(value.created) && i++);
+                        while (User.items()[i++].date < new Date(value.created));
 
                         User.items.splice(i, 0, {
                             template: "videoTemplate",
@@ -253,7 +253,7 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    while (User.items()[i].date < new Date(value.dt) && i++);
+                    while (User.items()[i++].date >= new Date(value.dt));
 
                     User.items.splice(i, 0, {
                         template: "bookmarkTemplate",
