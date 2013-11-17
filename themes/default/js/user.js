@@ -6,12 +6,12 @@ layout: nil
 User = {
     items: [],
     name: "sidneylimafilho",
-    quotes : [{
-        author: "Sidney Lima Filho",        
+    quotes: [{
+        author: "Sidney Lima Filho",
         text: "Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.",
         banner: "craftsmanship-cover.jpg"
-    },{
-        author: "Henrique Bastos,
+    }, {
+        author: "Garry Kasparov",
         text: "O que interessa é desenvolver um sistema de agressividade controlada, a fim de nos separarmos dos inertes. Agressividade, nesse contexto, significa dinamismo, coragem e muita vontade de agir.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }, {
@@ -39,8 +39,8 @@ User = {
         text: "Tática é saber o que fazer quando há o que fazer; Estratégia é saber o que fazer quando não há nada a fazer.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
     }],
-    getRandomQuote: function(){
-        return this.quotes[~~(Math.random() * this.quotes.length)];
+    getRandomQuote: function() {
+        return this.quotes[Math.floor(Math.random() * this.quotes.length)];
     },
     mail: {
         name: "sidneylimafilho",
@@ -50,7 +50,9 @@ User = {
     },
     github: {
         name: "sidneylimafilho",
-        getUrl: function() { return "http://www.github.com/" + this.name; }
+        getUrl: function() {
+            return "http://www.github.com/" + this.name;
+        }
     },
     slideshare: {
         name: "sidneylimafilho",
@@ -61,10 +63,10 @@ User = {
         getApiFeedUrl: function() {
             return "http://www.slideshare.net/rss/user/" + this.name;
         },
-        getImageUrl: function(url){
+        getImageUrl: function(url) {
             return url.replace("http:", "")
-                     .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
-                     .replace("-thumbnail-2", "/95/slide-1-638");
+                .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
+                .replace("-thumbnail-2", "/95/slide-1-638");
         },
         loadItems: function() {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
@@ -73,7 +75,9 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.push({
+                    while (User.items()[i].date < new Date(slide.publishedDate) && i++);
+
+                    User.items.splice(i, 0, {
                         template: "slideTemplate",
                         type: "slideshare",
                         date: new Date(slide.publishedDate),
@@ -112,23 +116,31 @@ User = {
         loadItems: function() {
 
             $.getJSON(this.getApiFeedUrl(), function(json) {
-                Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(1).ForEach(function(tweet, index) {
-                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
-                    //var start = Enumerable.From(User.items()).IndexOf(temp);
-                    User.items.push({
-                        template: "tweetTemplate",
-                        type: "Ultimas no Twitter",
-                        date: new Date(tweet.created_at),
-                        item: tweet
+                var i = 0;
+                Enumerable.From(json)
+                    .Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id")
+                    .Take(1)
+                    .ForEach(function(tweet, index) {
+                        //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
+                        //var start = Enumerable.From(User.items()).IndexOf(temp);
+                        while (User.items()[i].date < new Date(tweet.created_at) && i++);
+
+                        User.items.splice(i, 0, {
+                            template: "tweetTemplate",
+                            type: "Ultimas no Twitter",
+                            date: new Date(tweet.created_at),
+                            item: tweet
+                        });
                     });
-                });
             });
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
                 Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(3).ForEach(function(tweet, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
-                    User.items.push({
+                    while (User.items()[i].date < new Date(tweet.created_at) && i++);
+
+                    User.items.splice(i, 0, {
                         template: "tweetTemplate",
                         type: "Favoritei no Twitter",
                         date: new Date(tweet.created_at),
@@ -167,16 +179,21 @@ User = {
         loadItems: function() {
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 // bubble sort
-                Enumerable.From(json.data.items).Where("$.video.accessControl.embed === 'allowed'").Take(4).ForEach(function(value, index) {
-                    //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
-                    //var start = Enumerable.From(User.items()).IndexOf(temp);
+                Enumerable.From(json.data.items)
+                    .Where("$.video.accessControl.embed === 'allowed'")
+                    .Take(4)
+                    .ForEach(function(value, index) {
+                        //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
+                        //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.push({
-                        template: "videoTemplate",
-                        date: new Date(value.created),
-                        item: value.video
+                        while (User.items()[i].date < new Date(value.created) && i++);
+
+                        User.items.splice(i, 0, {
+                            template: "videoTemplate",
+                            date: new Date(value.created),
+                            item: value.video
+                        });
                     });
-                });
             });
         }
     },
@@ -186,28 +203,33 @@ User = {
             return "http://feeds.feedburner.com/sidneyfilho/";
         },
         loadItems: function() {
-            
+
             var posts = [];
 
-            {% for post in site.posts limit:4 %} 
-            posts.unshift({ 
-                title: "{{post.title | strip_newlines}}", 
-                image: "{{post.image | strip_newlines}}", 
-                url: "{{post.url | strip_newlines}}", 
-                excerpt: "{{post.excerpt | strip_newlines}}", 
-                date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}") 
-            }); 
-            {% endfor %}
+            { %
+                for post in site.posts limit: 4 %
+            }
+            posts.unshift({
+                title: "{{post.title | strip_newlines}}",
+                image: "{{post.image | strip_newlines}}",
+                url: "{{post.url | strip_newlines}}",
+                excerpt: "{{post.excerpt | strip_newlines}}",
+                date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}")
+            }); { % endfor %
+            }
 
-            Enumerable.From(posts).OrderByDescending("$.date").Take(4).ForEach(function(post, index) {
-                User.items.push({
-                    template: "postTemplate",
-                    date: new Date(post.date),
-                    type: "feed",
-                    item: post
+            Enumerable.From(posts)
+                .OrderByDescending("$.date")
+                .Take(4)
+                .ForEach(function(post, index) {
+                    User.items.push({
+                        template: "postTemplate",
+                        date: new Date(post.date),
+                        type: "feed",
+                        item: post
+                    });
                 });
-            });
-            
+
         }
     },
     delicious: {
@@ -226,7 +248,9 @@ User = {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    User.items.push({
+                    while (User.items()[i].date < new Date(value.dt) && i++);
+
+                    User.items.splice(i, 0, {
                         template: "bookmarkTemplate",
                         date: new Date(value.dt),
                         type: "delicious",
