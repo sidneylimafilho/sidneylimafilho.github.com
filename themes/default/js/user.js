@@ -81,7 +81,7 @@ User = {
                     });
                 });
                 
-                User.items(User.items().sort(function(a,b){ return a.date > b.date; }););
+                User.items(User.items().sort(function(a,b){ return a.date > b.date; }));
             });
         }
     },
@@ -124,7 +124,7 @@ User = {
                     });
                 });
 
-                User.items(User.items().sort(function(a,b){ return a.date > b.date; }););
+                User.items(User.items().sort(function(a,b){ return a.date > b.date; }));
             });
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
@@ -139,7 +139,7 @@ User = {
                     });
                 });
 
-                User.items(User.items().sort(function(a,b){ return a.date > b.date; }););
+                User.items(User.items().sort(function(a,b){ return a.date > b.date; }));
             });
         }
     },
@@ -183,7 +183,7 @@ User = {
                     });
                 });
 
-                User.items(User.items().sort(function(a,b){ return a.date > b.date; }););
+                User.items(User.items().sort(function(a,b){ return a.date > b.date; }));
             });
         }
     },
@@ -215,7 +215,7 @@ User = {
                 });
             });
 
-            User.items(User.items().sort(function(a,b){ return a.date > b.date; }););            
+            User.items(User.items().sort(function(a,b){ return a.date > b.date; }));            
         }
     },
     delicious: {
@@ -246,7 +246,7 @@ User = {
                     });
                 });
 
-                User.items(User.items().sort(function(a,b){ return a.date > b.date; }););
+                User.items(User.items().sort(function(a,b){ return a.date > b.date; }));
             });
         }
     }
