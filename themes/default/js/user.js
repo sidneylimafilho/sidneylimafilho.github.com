@@ -71,12 +71,12 @@ User = {
         loadItems: function() {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
-                var i = 0;
+                var i = User.items().length-1;
                 Enumerable.From(result.feed.entries).Take(6).ForEach(function(slide, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    while (User.items()[i++].date < new Date(slide.publishedDate));
+                    while (User.items()[i--].date <= new Date(slide.publishedDate) && i);
 
                     User.items.splice(i, 0, {
                         template: "slideTemplate",
@@ -117,14 +117,14 @@ User = {
         loadItems: function() {
 
             $.getJSON(this.getApiFeedUrl(), function(json) {
-                var i = 0;
+                var i = User.items().length-1;
                 Enumerable.From(json)
                     .Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id")
                     .Take(1)
                     .ForEach(function(tweet, index) {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
-                        while (User.items()[i++].date < new Date(tweet.created_at));
+                        while (User.items()[i--].date <= new Date(tweet.created_at) && i);
 
                         User.items.splice(i, 0, {
                             template: "tweetTemplate",
@@ -136,14 +136,14 @@ User = {
             });
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
-                var i = 0;
+                var i = User.items().length-1;
                 Enumerable.From(json)
                 .Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id")
                 .Take(6)
                 .ForEach(function(tweet, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + tweet.created_at + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
-                    while (User.items()[i++].date < new Date(tweet.created_at));
+                    while (User.items()[i--].date <= new Date(tweet.created_at) && i);
 
                     User.items.splice(i, 0, {
                         template: "tweetTemplate",
@@ -184,7 +184,7 @@ User = {
         loadItems: function() {
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 // bubble sort
-                var i = 0;
+                var i = User.items().length-1;
                 Enumerable.From(json.data.items)
                     .Where("$.video.accessControl.embed === 'allowed'")
                     .Take(6)
@@ -192,7 +192,7 @@ User = {
                         //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.created + "')").First();
                         //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                        while (User.items()[i++].date < new Date(value.created));
+                        while (User.items()[i--].date <= new Date(value.created) && i);
 
                         User.items.splice(i, 0, {
                             template: "videoTemplate",
@@ -248,12 +248,12 @@ User = {
         loadItems: function() {
             return false; // temporariamente cancelado pois será feito no layout            
             $.getJSON(this.getApiFeedUrl(), function(json) {
-                var i = 0;
+                var i = User.items().length-1;
                 Enumerable.From(json).Take(6).ForEach(function(value, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + value.dt + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
 
-                    while (User.items()[i++].date >= new Date(value.dt));
+                    while (User.items()[i--].date <= new Date(value.dt) && i);
 
                     User.items.splice(i, 0, {
                         template: "bookmarkTemplate",
