@@ -45,6 +45,7 @@ Esta página tem o objetivo de apresentar uma atividade interessante por semana 
 	15.	Festival Vale do Café - Vale do Café (Piraí, Volta Redonda, Barra do Piraí e Vassouras)  
 	16.	Arraiá do Arraial do Cabo 
 	17.	Festival de Inverno de Itatiaia 
+	Niver Ediana 
 
 ## Maio
 
@@ -57,9 +58,9 @@ Esta página tem o objetivo de apresentar uma atividade interessante por semana 
 ## Junho
 
 	23.	Restaurante japonês 
-	24.	Passeio de barco 
+	24.	Niver Nuch 
 	25.	Restaurante exótico 
-	26.	Caminho do beija flor 
+	26.	Niver Irani 
 
 ## Julho
 
@@ -73,12 +74,12 @@ Esta página tem o objetivo de apresentar uma atividade interessante por semana 
 	31.	Prainha ou Grumari
 	32.	Circo 
 	33.	Hansl 
-	34.	Niver Irani 
-	35.	Niver Roberta 
+	34.	Caminho do beija flor 
+	35.	Passeio de barco
 
 ## Setembro
 
-	36.	Niver Ediana 
+	36.	Niver Roberta 
 	37.	Trilha pedra bonita 
 	38.	Sítio Roberto burle marx 
 	39.	Polo Gastronomico de Guaratiba
