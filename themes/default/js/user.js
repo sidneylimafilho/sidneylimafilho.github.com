@@ -1,16 +1,16 @@
 ---
-layout: nil
+    layout: nil
 ---
 
 
 User = {
     items: [],
     name: "sidneylimafilho",
-    quotes : [{
-        author: "Sidney Lima Filho",        
+    quotes: [{
+        author: "Sidney Lima Filho",
         text: "Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.",
         banner: "craftsmanship-cover.jpg"
-    },{
+    }, {
         author: "Garry Kasparov",
         text: "O que interessa é desenvolver um sistema de agressividade controlada, a fim de nos separarmos dos inertes. Agressividade, nesse contexto, significa dinamismo, coragem e muita vontade de agir.",
         banner: "nurture_seedling_in_hands_low_level.jpg"
@@ -25,11 +25,11 @@ User = {
     }, {
         author: "Albert Schweitzer",
         text: "Faça coisas maravilhosas na vida, ao ponto de as pessoas quererem imitá-lo",
-        banner: "nurture_seedling_in_hands_low_level.jpg"
+        banner: "craftsmanship-cover.jpg"
     }, {
         author: "Garry Kasparov",
         text: "Uma ameaça geralmente é tão forte quanto sua execução.",
-        banner: "nurture_seedling_in_hands_low_level.jpg"
+        banner: "road.jpg"
     }, {
         author: "Leonardo Boff",
         text: "O cuidado previne danos futuros, ao mesmo tempo que repara danos passados. Quando amamos cuidamos e quando cuidamos amamos",
@@ -37,9 +37,9 @@ User = {
     }, {
         author: "Savielly Grigoryevich Tartakower",
         text: "Tática é saber o que fazer quando há o que fazer; Estratégia é saber o que fazer quando não há nada a fazer.",
-        banner: "nurture_seedling_in_hands_low_level.jpg"
+        banner: "craftsmanship-cover.jpg"
     }],
-    getRandomQuote: function(){
+    getRandomQuote: function() {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
     },
     mail: {
@@ -50,7 +50,9 @@ User = {
     },
     github: {
         name: "sidneylimafilho",
-        getUrl: function() { return "http://www.github.com/" + this.name; }
+        getUrl: function() {
+            return "http://www.github.com/" + this.name;
+        }
     },
     slideshare: {
         name: "sidneylimafilho",
@@ -61,12 +63,12 @@ User = {
         getApiFeedUrl: function() {
             return "http://www.slideshare.net/rss/user/" + this.name;
         },
-        getImageUrl: function(url){
+        getImageUrl: function(url) {
             return url.replace("http:", "")
-                     .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
-                     .replace("-thumbnail-2", "/95/slide-1-638");
+                .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
+                .replace("-thumbnail-2", "/95/slide-1-638");
         },
-        loadItems: function() {
+        loadItems: function(callback) {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
                 Enumerable.From(result.feed.entries).Take(4).ForEach(function(slide, index) {
@@ -80,8 +82,8 @@ User = {
                         item: slide
                     });
                 });
-                
-                User.items.sort(function(a,b){ return a.date < b.date; });
+
+                callback();
             });
         }
     },
@@ -109,7 +111,7 @@ User = {
         getApiFavoritesUrl: function() {
             return "http://api.twitter.com/1/favorites.json?screen_name=" + this.name + "&callback=?";
         },
-        loadItems: function() {
+        loadItems: function(callback) {
 
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 Enumerable.From(json).Where("!$.in_reply_to_status_id && !$.in_reply_to_user_id").Take(1).ForEach(function(tweet, index) {
@@ -124,7 +126,7 @@ User = {
                     });
                 });
 
-                User.items.sort(function(a,b){ return a.date < b.date; });
+
             });
 
             $.getJSON(this.getApiFavoritesUrl(), function(json) {
@@ -139,7 +141,7 @@ User = {
                     });
                 });
 
-                User.items.sort(function(a,b){ return a.date < b.date; });
+                callback();
             });
         }
     },
@@ -169,7 +171,7 @@ User = {
                 $(this).hide().find("div").html("");
             });
         },
-        loadItems: function() {
+        loadItems: function(callback) {
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 // bubble sort
                 Enumerable.From(json.data.items).Where("$.video.accessControl.embed === 'allowed'").Take(4).ForEach(function(value, index) {
@@ -182,8 +184,8 @@ User = {
                         item: value.video
                     });
                 });
-
-                User.items.sort(function(a,b){ return a.date < b.date; });
+                
+                callback();
             });
         }
     },
@@ -192,19 +194,21 @@ User = {
         getUrl: function() {
             return "http://feeds.feedburner.com/sidneyfilho/";
         },
-        loadItems: function() {
-            
+        loadItems: function(callback) {
+
             var posts = [];
 
-            {% for post in site.posts limit:4 %} 
-            posts.unshift({ 
-                title: "{{post.title | strip_newlines}}", 
-                image: "{{post.image | strip_newlines}}", 
-                url: "{{post.url | strip_newlines}}", 
-                excerpt: "{{post.excerpt | strip_newlines}}", 
-                date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}") 
-            }); 
-            {% endfor %}
+            { %
+                for post in site.posts limit: 4 %
+            }
+            posts.unshift({
+                title: "{{post.title | strip_newlines}}",
+                image: "{{post.image | strip_newlines}}",
+                url: "{{post.url | strip_newlines}}",
+                excerpt: "{{post.excerpt | strip_newlines}}",
+                date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}")
+            }); { % endfor %
+            }
 
             Enumerable.From(posts).OrderByDescending("$.date").Take(4).ForEach(function(post, index) {
                 User.items.push({
@@ -215,7 +219,7 @@ User = {
                 });
             });
 
-            User.items.sort(function(a,b){ return a.date < b.date; });            
+            callback();
         }
     },
     delicious: {
@@ -227,7 +231,7 @@ User = {
         getApiFeedUrl: function() {
             return "http://feeds.delicious.com/v2/json/" + this.name + "/" + this.tag + "?callback=?";
         },
-        loadItems: function() {
+        loadItems: function(callback) {
             return false; // temporariamente cancelado pois será feito no layout            
             $.getJSON(this.getApiFeedUrl(), function(json) {
                 Enumerable.From(json).Take(4).ForEach(function(value, index) {
@@ -246,7 +250,7 @@ User = {
                     });
                 });
 
-                User.items.sort(function(a,b){ return a.date < b.date; });
+                callback();
             });
         }
     }

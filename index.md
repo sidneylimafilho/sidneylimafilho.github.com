@@ -112,14 +112,22 @@ layout: default
 
             google.load("feeds", "1");            
             google.setOnLoadCallback(function () {                     
-                it.user.feed.loadItems();
-                it.user.youtube.loadItems();
-                it.user.twitter.loadItems(); 
-                it.user.slideshare.loadItems(); 
+                it.user.feed.loadItems(it.loaded);
+                it.user.youtube.loadItems(it.loaded);
+                it.user.twitter.loadItems(it.loaded); 
+                it.user.slideshare.loadItems(it.loaded); 
             });
                 
             ko.applyBindings(it, node);           
         };  
+
+        this.sourcesCount = 0;
+        
+        this.loaded = function(){            
+            if (++this.sourcesCount < 4) return;
+
+            this.items.sort(function(a,b){ return a.date < b.date; });
+        }
     }
 
     (vm = new ViewModel(User)).initialize($(".post-wall").get(0)); 
