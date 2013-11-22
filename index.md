@@ -98,7 +98,8 @@ layout: default
 
 <script type="text/javascript">    
     function ViewModel(user) {  
-        /* Constructor */      
+        /* Constructor */ 
+        var $this = this;     
         this.user = user;
         user.items = this.items = ko.observableArray();
 
@@ -122,11 +123,11 @@ layout: default
         };  
 
         this.sourcesCount = 0;
-        
-        this.loaded = function(){            
-            if (++this.sourcesCount < 4) return;
 
-            this.items.sort(function(a,b){ return a.date < b.date; });
+        this.loaded = function(){            
+            if (++$this.sourcesCount < 4) return;
+
+            $this.items.sort(function(a,b){ return a.date < b.date; });
         }
     }
 
