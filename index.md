@@ -128,7 +128,7 @@ layout: default
             if (++$this.sourcesCount < 3) return;
 
             $this.items.sort(function(a,b){ 
-                return a.date < b.date; 
+                return b.date - a.date; 
             });
         }
     }
