@@ -11,6 +11,10 @@ published:  false
 categories: page 52-Semanas
 ---
 
+# 52 Semanas
+
+## O que é essa lista?
+
 Esta página tem o objetivo de apresentar uma atividade interessante por semana durante um ano inteiro. A cada semana uma atividade interessante que reflete meu estilo de vida e isso pode variar de acordo com cada um. Aqui fica minha proposta para que você faça este exercicio e sempre retorne a essa lista quando estiver na dúvida sobre o que fazer no próximo final de semana.
 
 1.	Praia com amigos 
