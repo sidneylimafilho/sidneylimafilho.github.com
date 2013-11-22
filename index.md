@@ -115,7 +115,7 @@ layout: default
             google.setOnLoadCallback(function () {                     
                 it.user.feed.loadItems(it.loaded);
                 it.user.youtube.loadItems(it.loaded);
-                it.user.twitter.loadItems(it.loaded); 
+                //it.user.twitter.loadItems(it.loaded); 
                 it.user.slideshare.loadItems(it.loaded); 
             });
                 
@@ -125,7 +125,7 @@ layout: default
         this.sourcesCount = 0;
 
         this.loaded = function(){            
-            if (++$this.sourcesCount < 4) return;
+            if (++$this.sourcesCount < 3) return;
 
             $this.items.sort(function(a,b){ return a.date < b.date; });
         }
