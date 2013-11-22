@@ -127,7 +127,9 @@ layout: default
         this.loaded = function(){            
             if (++$this.sourcesCount < 3) return;
 
-            $this.items.sort(function(a,b){ return a.date < b.date; });
+            $this.items.sort(function(a,b){ 
+                return a.date < b.date; 
+            });
         }
     }
 
