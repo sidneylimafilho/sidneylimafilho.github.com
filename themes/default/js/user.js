@@ -38,6 +38,10 @@ User = {
         author: "Savielly Grigoryevich Tartakower",
         text: "Tática é saber o que fazer quando há o que fazer; Estratégia é saber o que fazer quando não há nada a fazer.",
         banner: "craftsmanship-cover.jpg"
+    }, {
+        author: "Chico Xavier",
+        text: "Cada pessoa é aquilo que crê, fala do que gosta, retém o que procura, ensina o que aprende, tem o que dá e vale o que faz",
+        banner: "craftsmanship-cover.jpg"
     }],
     getRandomQuote: function() {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
@@ -184,7 +188,7 @@ User = {
                         item: value.video
                     });
                 });
-                
+
                 callback();
             });
         }
@@ -198,15 +202,17 @@ User = {
 
             var posts = [];
 
-            {% for post in site.posts limit: 4 %}
+            { %
+                for post in site.posts limit: 4 %
+            }
             posts.unshift({
                 title: "{{post.title | strip_newlines}}",
                 image: "{{post.image | strip_newlines}}",
                 url: "{{post.url | strip_newlines}}",
                 excerpt: "{{post.excerpt | strip_newlines}}",
                 date: Date.parse("{{post.date | date:'%a, %d %b %Y %H:%M:%S %z'}}")
-            }); 
-            {% endfor %}
+            }); { % endfor %
+            }
 
             Enumerable.From(posts).OrderByDescending("$.date").Take(4).ForEach(function(post, index) {
                 User.items.push({
