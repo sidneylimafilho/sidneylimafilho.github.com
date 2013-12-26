@@ -4,7 +4,7 @@ layout:     post
 title:      'Porque precisamos de férias?'
 author:     Sidney Lima Filho
 image:      /post/porque-precisamos-de-ferias/capa.jpg
-
+ 
 excerpt:    > 
             Férias, evento tão desejado e aguardado durante um ano inteiro, que nos remete a coisas boas, momentos felizes, descanso e relaxamento. 
             Ei um momento, se férias é um paraíso então não-férias significa o que? Inferno?
