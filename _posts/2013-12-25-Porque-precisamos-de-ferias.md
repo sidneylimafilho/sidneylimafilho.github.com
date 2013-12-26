@@ -1,4 +1,4 @@
-﻿--- 
+---
 layout:     post
 
 title:      'Porque precisamos de férias?'
@@ -6,12 +6,12 @@ author:     Sidney Lima Filho
 image:      /post/porque-trabalhamos-8-horas-por-dia-e-o-trabalhador-do-conhecimento/capa.jpg
 
 excerpt:    > 
-            Férias, evento tão desejado e aguardado durante um ano inteiro, que nos remete a coisas boas, momentos felizes, descanso e relaxamento. Ei um momento, se férias é um paraíso então não-férias significa o que? Inferno?
+            Férias, evento tão desejado e aguardado durante um ano inteiro, que nos remete a coisas boas, momentos felizes, descanso e relaxamento. 
+            Ei um momento, se férias é um paraíso então não-férias significa o que? Inferno?
            
 published:  true
 categories: post
 tags:       [Férias]
-
 ---
 
 ## Férias para que?
@@ -35,3 +35,5 @@ Este post é um pensamento alto de algumas perguntas que tentei responder e colo
 	Nas férias vou descansar e dormir sem hora para acordar. Se nas férias você fizer uma viagem, então esquece você provavelmente irão acordar cedo todos, pois dias para fazer passeios, mas você deve pensar: "Ah, mas é diferente", talvez até seja, mas o cansaço físico continuará existindo.
 
 	Eu não sei se dá para viver sem precisar de férias, mas eu tenho uma vontade imensa em conseguir um estilo de vida em que isso seja possível. Trabalhar 8 horas por dia em algo em que eu realmente goste
+
+
