@@ -1,4 +1,4 @@
-﻿---
+﻿--- 
 layout:     post
 
 title:      'Porque precisamos de férias?'
@@ -11,7 +11,10 @@ excerpt:    >
 published:  true
 categories: post
 tags:       [Férias]
+
 ---
+
+## Férias para que?
 
 Férias, evento tão desejado e aguardado durante um ano inteiro, que nos remete a coisas boas, momentos felizes, descanso e relaxamento. Ei um momento, se férias é um paraíso então não-férias significa o que? Inferno?
 
