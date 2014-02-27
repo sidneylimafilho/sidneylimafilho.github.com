@@ -42,6 +42,10 @@ User = {
         author: "Chico Xavier",
         text: "Cada pessoa é aquilo que crê, fala do que gosta, retém o que procura, ensina o que aprende, tem o que dá e vale o que faz",
         banner: "craftsmanship-cover.jpg"
+    }, {
+        author: "Sidney Lima Filho",
+        text: "A Cultura de uma empresa emerge dos comportamentos de todos os envolvidos. Para mudar uma cultura deve-se mudar o comportamento.",
+        banner: "craftsmanship-cover.jpg"
     }],
     getRandomQuote: function() {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
