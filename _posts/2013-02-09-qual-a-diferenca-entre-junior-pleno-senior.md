@@ -9,7 +9,7 @@ excerpt:    >
             A verdade seja dita, ninguém gosta de ser rotulado, por outro lado também existe uma diferenciação entre os profissionais 
             que precisa de uma qualificação, como fazer? 
 
-published:  true
+published:  false
 categories: post
 tags:       [Carreira, Agilidade, CLT, Filosofia, Psicologia]
 ---
