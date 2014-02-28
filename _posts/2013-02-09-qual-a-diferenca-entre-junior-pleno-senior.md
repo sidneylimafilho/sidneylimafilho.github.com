@@ -1,4 +1,4 @@
-﻿---
+--- 
 layout:     post
 
 title:      Porque classificar de Júnior, Pleno e Sênior é interessante, mas ineficaz?
@@ -9,9 +9,7 @@ excerpt:    >
             que precisa de uma qualificação, como fazer? 
 
 published:  true
-
-categories: posts
-
+categories: post
 tags:       [Carreira, Agilidade, CLT, Filosofia, Psicologia]
 ---
 
