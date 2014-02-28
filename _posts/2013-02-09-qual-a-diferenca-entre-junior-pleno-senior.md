@@ -1,17 +1,18 @@
 ﻿---
 layout:     post
 
-title:      OPorque classificar de Júnior, Pleno e Sênior é interessante, mas ineficaz?
+title:      Porque classificar de Júnior, Pleno e Sênior é interessante, mas ineficaz?
 author:     Sidney Lima Filho
-image:      /files/2012-05-02-rest-parte-1-StateMachineWF.jpg
+image:      /post/qual-a-diferenca-entre-junior-pleno-senior/escada.jpg
 excerpt:    > 
-            REST é uma sigla para Representational State Transfer, que em bom português significa Transferência Representacional de Estados, 
-            um padrão de arquitetura para serviços distribuidos (A Web é um bom exemplo de serviço distribuido).
+            A verdade seja dita, ninguém gosta de ser rotulado, por outro lado também existe uma diferenciação entre os profissionais 
+            que precisa de uma qualificação, como fazer? 
 
 published:  true
 categories: post
-tags:       [Arquitetura, REST]
+tags:       [Carreira, Agilidade, CLT, Filosofia, Psicologia]
 ---
+
 
 A verdade seja dita, ninguém gosta de ser rotulado, por outro lado, também existe uma diferenciação entre os profissionais, que precisa de uma qualificação, como fazer? 
 
@@ -32,7 +33,7 @@ Os [trabalhadores do conhecimento][knowwork] usam múltiplas fontes de informaç
 ## Precisamos desses nomes?
 
 <img src="arrested.jpg" style="float:left; margin: 0px 20px 20px 0px;" /> 
-
+ 
 Não precisamos desses nomes, porém já existe uma cultura no Brasil em que esses nomes são largamente usados e perguntados sobre.
 
 Um [rótulo é limitante][rotulo], pois um rótulo impede que você seja outra coisa se quiser, faz com que o trabalho seja direcionado de acordo com seu rótulo e o desafio que ajudaria o profissional se desenvolver acaba indo para a fila do sênior.
