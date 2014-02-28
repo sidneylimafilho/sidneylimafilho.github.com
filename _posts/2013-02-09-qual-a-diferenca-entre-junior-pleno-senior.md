@@ -9,7 +9,9 @@ excerpt:    >
             que precisa de uma qualificação, como fazer? 
 
 published:  true
-categories: post
+
+categories: posts
+
 tags:       [Carreira, Agilidade, CLT, Filosofia, Psicologia]
 ---
 
