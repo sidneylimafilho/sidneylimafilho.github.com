@@ -105,7 +105,7 @@
                 <div class="tag-cloud">
                     {% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %} {% assign tags = tagsAsString | split:"," | sort %} {% for tag in tags %}
                     <span>
-                        <a href="/tags.html#{{tag | downcase | replace:" ","- " | replace:". "," " }}" style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
+                        <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:"."," " }}" style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
                     </span>
                     {% endfor %}
                 </div>
