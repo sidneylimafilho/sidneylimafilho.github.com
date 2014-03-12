@@ -12,8 +12,8 @@ layout: default
             <resume>
                 <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
-                    <month data-bind="text: moment(date).format('MMM').toUpperCase()"></month>
-                    <year data-bind="text: moment(date).format('YYYY').toUpperCase()"></year>
+                    <month data-bind="text: moment(date).format('MM')"></month>
+                    <year data-bind="text: moment(date).format('YYYY')"></year>
                 </time>
                 <div class="title" data-bind="text: item.title"></div>
                 

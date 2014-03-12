@@ -222,6 +222,9 @@ section {
                 width: 250px;
                 .title {
                     min-height: 44px;
+                    display: inline-block;
+                    max-width: 200px;
+                    vertical-align: top;
                 }
                 .excerpt {
                     display: none
@@ -245,7 +248,7 @@ section {
     time {
         width: 24px;
         text-align: left;
-        float: left;
+        display: inline-block;
         font-size: 16px;
         padding-right: 20px;
         margin-top: -2px;
@@ -266,7 +269,7 @@ section {
         position: absolute;
         top: 15px;
         font-size: 18px;
-        .opacity(0.3);
+        .opacity(0.6);
         margin-left: 15px;
         color: rgb(252, 211, 137);
     }
@@ -430,7 +433,6 @@ footer {
     }
     .tag-cloud {
         text-align: justify;
-        
         span {
             padding: 3px;
             display: inline-block;
