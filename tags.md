@@ -4,8 +4,8 @@ layout: default
 ---
 <h1> Lista de Assuntos </h1>
 <div class="tag-list">
-     {% assign tags = site.tags | sort %}
-     {% for t in tags %} {% capture tag %}{{t | first}}{% endcapture %}
+     
+     {% for tag in tags sort %} 
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
         <ul class="tag">       
