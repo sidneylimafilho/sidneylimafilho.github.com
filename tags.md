@@ -5,7 +5,7 @@ layout: default
 <h1> Lista de Assuntos </h1>
 <div class="tag-list">
      
-     {% for tag in tags sort %} 
+     {% for tag in site.tags | sort %} 
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
         <ul class="tag">       
