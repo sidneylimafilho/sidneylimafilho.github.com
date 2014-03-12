@@ -8,8 +8,8 @@ layout: default
     
 {% capture tags %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
 
-     {% for t in tags | split:',' | sort %} {% capture tag %}{{t | first}}{% endcapture %}
-        {{t}}
+     {% for tag in tags | split:',' | sort %} 
+       
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
         <ul class="tag">       
