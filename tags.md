@@ -9,7 +9,7 @@ layout: default
 {% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
 {% capture tags %}{{ tagsAsString | split:',' | sort }}{% endcapture %}
 
-     {% for tag in tags | split:',' | sort %} 
+     {% for tag in tags %} 
        
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
