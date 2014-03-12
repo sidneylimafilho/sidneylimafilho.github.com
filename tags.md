@@ -2,10 +2,10 @@
 author: Sidney Lima Filho
 layout: default
 ---
+
 <h1> Lista de Assuntos </h1>
 <div class="tag-list">
-     
-     {% for tag in site.tags | sort %} 
+     {% for t in site.tags sort %} {% capture tag %}{{t | first}}{% endcapture %}
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
         <ul class="tag">       
