@@ -5,7 +5,7 @@ layout: default
 
 <h1> Lista de Assuntos </h1>
 <div class="tag-list">
-    {% assign tags = site.tags | map:0 %}
+    {% assign tags = site.tags | map:first %}
      {% for t in tags %} {% capture tag %}{{t | first}}{% endcapture %}
         {{t}}
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
