@@ -103,7 +103,9 @@
         <div class="super">
             <div class="wrapper">
                 <div class="tag-cloud">
-                    {% for t in site.tags %} {% capture tag %}{{t | first}}{% endcapture %}
+                    {% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
+                    {% assign tags = tagsAsString | split:"," | sort %}
+                    {% for t in tags %} 
                     <span>
                         <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}" style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
                     </span>
