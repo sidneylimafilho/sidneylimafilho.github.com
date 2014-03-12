@@ -4,10 +4,10 @@ layout: default
 <article>
     <h1>
         {{ page.title }}
-        <time>
-            <year>{{ page.date | date: "%Y" }}</year>
+        <time>            
             <day>{{ page.date | date: "%d" }}</day>
             <month>{{ page.date | date: "%b" | upcase }}</month>
+            <year>{{ page.date | date: "%Y" }}</year>
         </time>
     </h1>
 
