@@ -6,7 +6,8 @@ layout: default
 <h1> Lista de Assuntos </h1>
 <div class="tag-list">
     
-{% capture tags %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
+{% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
+{% capture tags %}{{ tagsAsString | split:',' | sort }}{% endcapture %}
 
      {% for tag in tags | split:',' | sort %} 
        
