@@ -70,7 +70,7 @@ header {
     menu {
         float: right;
         margin: 0px;
-        padding: 3.3% 0 1% 0;
+        padding: 0% 0 1% 0;
         text-align: center;
         /*width:300px;*/
         ul {
@@ -99,8 +99,8 @@ header {
         }
     }
     section {
-        text-align: right;
-        position: absolute;
+        background: none;
+        margin-bottom: 4px;
     }
 }
 banner {
@@ -124,7 +124,7 @@ banner {
         background-color: rgba(0, 0, 0, 0.26);
         margin: 10px;
         left: 0px;
-        width: 840px;
+        max-width: 840px;
     }
     author {
         .text-shadow(0px, 0px, 4px, rgba(0, 0, 0, 1));
@@ -429,12 +429,14 @@ footer {
         padding: 30px 0px 0px;
     }
     .tag-cloud {
+        text-align: justify;
+        
         span {
             padding: 3px;
             display: inline-block;
             /* background-color: @background-dark2;
-            border-radius: 4px;*/
-            margin: 5px;
+            border-radius: 4px;
+            margin: 5px;*/
         }
     }
 }
@@ -471,7 +473,7 @@ h1, h2, h3, h4, h5, h6, quote {
     font-weight: normal;
     .text-shadow(0px, 0px, 8px, rgba(0, 0, 0, 0));
     color: #000;
-    clear:both;
+    /*clear:both;  Removido devido aos titulos dos posts não flutuarem com as imagens*/
 }
 p, ul, li, ol, table, h1, h2, h3, h4, h5, h6, pre, dl {
     margin:5px 0px 15px;
