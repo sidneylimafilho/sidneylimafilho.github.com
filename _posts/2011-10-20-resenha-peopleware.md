@@ -11,7 +11,7 @@ categories: post
 tags:       [Resenha, Qualidade, Produtividade, Métricas, Ambiente de Trabalho]
 ---
 
-<img src="PEOPLEWARE.jpg" style="float:right; margin: 0px 0px 20px 20px;" /> 
+<img src="PEOPLEWARE.jpg" style="float:left; margin: 0px 20px 20px 0px;" /> 
 A muito tempo que eu não leio um bom livro, apesar de sempre buscar indicações eu não encontrava um livro que realmente mexesse com meus brios e fizesse minha sede de conhecimento aflorar, porém como a vida é uma caixinha de surpresas, um [GRANDE colaborador][1] me indicou este livro [Peopleware: Como tornar equipes e projetos mais produtivos][2]. Quando ele deu exemplos sobre o que o livro tratava, começou a me dar um comichão que a tempos não sentia. 
 
 Imediatamente iniciei sua leitura e percebi que o livro não só era destinado aos Gerentes de Projetos, mas também a todos que lidam com pessoas, coordenam atividades, delegam tarefas e esperam resultados, principalmente em software. Logo não vou ficar falando das coisas técnicas de gerência, mas vou focar naquilo que fez esse livro se tornar especial.
