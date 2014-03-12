@@ -7,9 +7,8 @@ layout: default
 <div class="tag-list">
     
 {% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
-{% capture tags %}{{ tagsAsString | split:',' | sort }}{% endcapture %}
 
-     {% for tag in tags %} 
+     {% for tag in tags  split:','  sort %} 
        
         <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
         <h2>{{tag}}</h2>
