@@ -13,6 +13,16 @@
     <meta name="google-site-verification" content="Pr8cH5u5tY0QHDX951vrlp84EyJlWdOnCgS9UQhxLmg" />
     <meta name="author" content="{{page.author}}" />
 
+    <meta itemprop="description" content="{{page.excerpt}}" />
+    <meta itemprop="image" content="{{page.image}}" />
+
+    <meta property='og:locale' content='pt_BR' />
+    <meta property='og:title' content="{{ page.title }}" />
+    <meta property='og:url' content="{{ page.url }}" />
+    <meta property='og:site_name' content="SidneyLimaFilho" />
+    <meta property='og:image' content="{{page.image}}" />
+
+
     <!-- Ao colocar os scripts do google no rodapé, buga a página  -->
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script src="/themes/default/js/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
@@ -105,7 +115,7 @@
                 <div class="tag-cloud">
                     {% capture tagsAsString %}{% for tag in site.tags %}{{ tag | first }},{% endfor %}{% endcapture %} {% assign tags = tagsAsString | split:"," | sort %} {% for tag in tags %}
                     <span>
-                        <a href="/tags.html#{{tag | downcase | replace:" ","-" | replace:"."," " }}" style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
+                        <a href="/tags.html#{{tag | downcase | replace:" ","- " | replace:". "," " }}" style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
                     </span>
                     {% endfor %}
                 </div>
@@ -113,7 +123,8 @@
                     <small>Este site possui todo seu conteúdo aberto e disponível em um
                         <a href="http://github.com/sidneylimafilho/sidneylimafilho.github.com" target="_blank">repositório público</a>.
                     </small>
-                    <br/><br/>
+                    <br/>
+                    <br/>
                     <a href="https://travis-ci.org/sidneylimafilho/sidneylimafilho.github.com">
                         <img src='https://travis-ci.org/sidneylimafilho/sidneylimafilho.github.com.png?branch=master' />
                     </a>

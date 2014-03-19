@@ -67,42 +67,48 @@ header {
         top:0px;
         right:0px;
     }
-    menu {
-        float: right;
-        margin: 0px;
-        padding: 0% 0 1% 0;
-        text-align: center;
-        /*width:300px;*/
-        ul {
-            list-style:none;
-            padding:0px;
-            margin: 0px;
-        }
-        li {
-            padding: 0px 10px;
-            margin-bottom: 0px;
-            display: inline-block;
-            /*border-right:1px solid #d2d2d2;
-            height: 70px;*/
-            vertical-align: middle;
-            a {
-                display:block;
-                text-align:center;
-                font-size:18px;
-                color: #696B33;
-                .text-shadow(0px, 0px, 0px, rgba(0, 0, 0, 0));
-            }
-            /*a:hover, a.selected{
-                text-decoration: none;
-                border-top: 1px solid @linkColorHover;
-            }*/
-        }
-    }
+
     section {
         background: none;
-        margin-bottom: 4px;
+        margin-bottom: 12px;
     }
 }
+
+menu {
+    float: right;
+    margin: 0px;
+    padding: 0% 0 1% 0;
+    text-align: center;
+    /*width:300px;*/
+    ul {
+        list-style:none;
+        padding:0px;
+        margin: 0px;
+    }
+    li {
+        padding: 0px 10px;
+        margin-bottom: 0px;
+        display: inline-block;
+        /*border-right:1px solid #d2d2d2;
+        height: 70px;*/
+        vertical-align: middle;
+        a {
+            display:block;
+            text-align:center;
+            font-size:18px;
+            color: #696B33;
+            .text-shadow(0px, 0px, 0px, rgba(0, 0, 0, 0));
+        }
+
+        /*
+        a.button:hover, a.selected{
+            text-decoration: none;
+            border-top: 1px solid @linkColorHover;
+        }
+        */
+    }
+}
+
 banner {
     position: relative;
     z-index: 1;
@@ -297,6 +303,12 @@ section {
         background-size: 100%;
         background-position: 0px 100%;
     }
+    a.button:hover {
+        width: 24px;
+        margin-bottom: -8px;
+        height: 24px;
+    }
+
     a.twitter {
         background-image: url(../img/twitter.png);
     }
