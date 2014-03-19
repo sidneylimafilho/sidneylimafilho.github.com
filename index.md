@@ -8,7 +8,7 @@ layout: default
 
 <div id="postTemplate" style="display:none">
     <div class="widget" data-bind="attr:{'style': 'background-image:url('+ item.image +');'}">
-        <a data-bind="attr:{'href': item.url}">
+        <a class="socialButton feed" data-bind="attr:{'href': item.url}">
             <resume>
                 <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
