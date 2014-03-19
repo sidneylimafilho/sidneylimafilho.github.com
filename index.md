@@ -20,7 +20,7 @@ layout: default
                 <small class="excerpt" data-bind="text: item.excerpt.substr(0, 300)"></small>                
             </resume>
         </a>
-        <a target="_blank" class="button feed" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>
+        <a target="_blank" class="socialButton feed" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>
     </div>
 </div>
 
@@ -39,7 +39,7 @@ layout: default
                 <small class="excerpt" data-bind="text: item.description.substr(0, 300)"></small>                          
             </resume>
         </a>
-        <a target="_blank" class="button youtube" data-bind="attr:{href: $root.user.youtube.getUrl(), title: $root.user.youtube.title}"></a>       
+        <a target="_blank" class="socialButton youtube" data-bind="attr:{href: $root.user.youtube.getUrl(), title: $root.user.youtube.title}"></a>       
     </div>
 </div>
 
@@ -57,7 +57,7 @@ layout: default
             </resume>
         </a>
         
-        <a target="_blank" class="button twitter" data-bind="attr:{href: $root.user.twitter.getUrl(), title: $root.user.twitter.title}"></a>
+        <a target="_blank" class="socialButton twitter" data-bind="attr:{href: $root.user.twitter.getUrl(), title: $root.user.twitter.title}"></a>
     </div>
 
 
@@ -79,7 +79,7 @@ layout: default
     <div class="widget" data-bind="attr:{style:'background-image:url('+ $root.user[type].getImageUrl(item.mediaGroups[0].contents[0].thumbnails[0].url) +');'}">        
         <!-- <iframe width="600" height="300" frameborder="0" allowfullscreen="yes" ></iframe> 
         <img width="300" data-bind="attr:{src: item.thumbnail.hqDefault, title: item.title}" /> -->
-        <a data-bind="attr:{href: item.link}">
+        <a data-bind="click:$root.user.slideshare.showSlide">
             <resume>
                 <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
@@ -90,7 +90,7 @@ layout: default
                 <small class="excerpt" data-bind="text: item.mediaGroups[0].contents[0].description.substr(0, 300)"></small>                                             
             </resume>
         </a>
-        <a target="_blank" class="button slideshare" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>       
+        <a target="_blank" class="socialButton slideshare" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>       
     </div>
 </div>
 

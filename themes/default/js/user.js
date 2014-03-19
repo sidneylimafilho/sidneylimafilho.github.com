@@ -76,12 +76,30 @@ User = {
                 .replace("cdn.slidesharecdn.com/ss_thumbnails", "image.slidesharecdn.com")
                 .replace("-thumbnail-2", "/95/slide-1-638");
         },
+        showSlide: function(slide) {
+            $("overlay").show(0).animate({
+                opacity: 1
+            }, 1000, function() {
+                $(this).click(function() {
+                    User.slideshare.closeSlide();
+                }).find("div").html('<iframe src="http://www.slideshare.net/slideshow/embed_code/'+ slide.item.id +'" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>');
+            });
+        },
+        closeSlide: function() {
+            $("overlay").animate({
+                opacity: 0
+            }, 1000, function() {
+                $(this).hide().find("div").html("");
+            });
+        },
         loadItems: function(callback) {
             var apresentacoes = new google.feeds.Feed(this.getApiFeedUrl());
             apresentacoes.load(function(result) {
                 Enumerable.From(result.feed.entries).Take(4).ForEach(function(slide, index) {
                     //var temp = Enumerable.From(User.items()).Where("$.date < new Date('" + slide.publishedDate + "')").First();
                     //var start = Enumerable.From(User.items()).IndexOf(temp);
+
+                    
 
                     User.items.push({
                         template: "slideTemplate",
