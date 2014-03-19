@@ -177,12 +177,16 @@ section {
         float: left;
         min-height: 200px;
         margin: 16px 0px 12px 24px;
+        cursor:pointer;
         background-position: 0% 100%;
         background-repeat: no-repeat;
         .transition(background-position, 2000ms);
     }
     .widget:hover {
         background-position: 100% 50%;
+         .excerpt {
+            display: block
+        }
     }
     .widget::after {
         content:'';
@@ -199,24 +203,18 @@ section {
         margin: 12px 0px 12px 24px;
     }
     .post-wall {
-        a {
+        small {
             display: block;
-            text-decoration: none;
-            height: 100%;
-            background: none;
-            .transition(opacity, 400ms);
-            small {
-                display: block;
-            }
-            resume {
-                display: block;
-                background-color: @smoke;
-                color: #FFF;
-                bottom: 0px;
-                padding: 5px;
-                position: absolute;
-                width: 250px;
-                /*
+        }
+        resume {
+            display: block;
+            background-color: @smoke;
+            color: #FFF;
+            bottom: 0px;
+            padding: 5px;
+            position: absolute;
+            width: 250px;
+            /*
                 .title {
                     min-height: 44px;
                     display: inline-block;
@@ -224,24 +222,15 @@ section {
                     vertical-align: top;
                 }
                 */
-                .excerpt {
-                    display: none
-                }
+            .excerpt {
+                display: none
             }
         }
-        a:hover .excerpt {
-            display: block
-        }
+        
         .twitter table {
             height: 210px;
         }
-        a.button {
-            position: absolute;
-            top: -18px;
-            left: 50%;
-            margin-left: -18px;
-            /*.opacity(0.4);*/
-        }
+
     }
     /*
     time {
