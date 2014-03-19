@@ -79,19 +79,7 @@ User = {
                 .replace("-thumbnail-2", "/95/slide-1-638");
         },
         click: function(slide) {
-            $("overlay").show(0).animate({
-                opacity: 1
-            }, 1000, function() {
-                $(this).click(function() {
-                    //User.slideshare.closeSlide();
-                    $("overlay").animate({
-                        opacity: 0
-                    }, 1000, function() {
-                        $(this).hide().find("div").html("");
-                    });
-
-                }).find("div").html('<iframe src="' + slide.item.link + '" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>');
-            });
+            window.open(slide.item.link, 'newWindow');
         },
 
         loadItems: function(callback) {
