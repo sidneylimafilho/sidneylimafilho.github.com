@@ -76,10 +76,10 @@ layout: default
 </div>
 
 <div id="slideTemplate" style="display:none">
-    <div class="widget" data-bind="attr:{style:'background-image:url('+ $root.user[type].getImageUrl(item.mediaGroups[0].contents[0].thumbnails[0].url) +');'}">        
+    <div class="widget" data-bind="click:$root.user.slideshare.click, attr:{style:'background-image:url('+ $root.user[type].getImageUrl(item.mediaGroups[0].contents[0].thumbnails[0].url) +');'}">        
         <!-- <iframe width="600" height="300" frameborder="0" allowfullscreen="yes" ></iframe> 
         <img width="300" data-bind="attr:{src: item.thumbnail.hqDefault, title: item.title}" /> -->
-        <a href="javascript:;" data-bind="click:$root.user.slideshare.click">
+        <a href="javascript:;">
             <resume>
                 <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
