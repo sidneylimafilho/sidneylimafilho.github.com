@@ -65,6 +65,8 @@ User = {
     slideshare: {
         name: "sidneylimafilho",
         title: "Veja meus slides no Slideshare.",
+        apiKey: "kpnW3dUw",
+        sharedSecret: "benj7bzK",
         getUrl: function() {
             return "http://www.slideshare.net/" + this.name;
         },
@@ -82,7 +84,7 @@ User = {
             }, 1000, function() {
                 $(this).click(function() {
                     User.slideshare.closeSlide();
-                }).find("div").html('<iframe src="http://www.slideshare.net/slideshow/embed_code/'+ slide.item.id +'" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>');
+                }).find("div").html('<iframe src="'+ slide.item.link +'" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>');
             });
         },
         closeSlide: function() {
