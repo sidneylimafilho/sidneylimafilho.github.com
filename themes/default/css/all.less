@@ -75,12 +75,12 @@ header {
 menu {
     float: right;
     margin: 0px;
-    padding: 0% 0 1% 0;
+    padding: 0px;
     text-align: center;
     /*width:300px;*/
     ul {
         list-style:none;
-        padding:0px;
+        padding:8px 0 16px;
         margin: 0px;
     }
     li {
@@ -398,16 +398,15 @@ footer {
 }
 a.socialButton {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px 100%;
+    .opacity(0.4);
 }
 a.socialButton:hover {
-    width: 24px;
-    margin-bottom: -8px;
-    height: 24px;
+    .opacity(1);
 }
 a.twitter {
     background-image: url(../img/twitter.png);
