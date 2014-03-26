@@ -10,11 +10,11 @@ layout: default
     <div class="widget" data-bind="attr:{'style': 'background-image:url('+ item.image +');'}">
         <a data-bind="attr:{'href': item.url}">
             <resume>
-                <time>
+                <!-- <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
                     <month data-bind="text: moment(date).format('MM')"></month>
                     <year data-bind="text: moment(date).format('YYYY')"></year>
-                </time>
+                </time> -->
                 <div class="title" data-bind="text: item.title"></div>
                 
                 <small class="excerpt" data-bind="text: item.excerpt.substr(0, 300)"></small>                
@@ -30,11 +30,11 @@ layout: default
         <img width="300" data-bind="attr:{src: item.thumbnail.hqDefault, title: item.title}" /> -->
         <a href="javascript:;">
             <resume>
-                <time>
+                <!-- <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
                     <month data-bind="text: moment(date).format('MM')"></month>
                     <year data-bind="text: moment(date).format('YYYY')"></year>
-                </time>
+                </time> -->
                 <div class="title" data-bind="text: item.title"></div>  
                 <small class="excerpt" data-bind="text: item.description.substr(0, 300)"></small>                          
             </resume>
@@ -48,11 +48,11 @@ layout: default
         <a href="javascript:;">
             <table><tr><td data-bind="text: item.text" style="text-align: center; padding: 20px;"></td></tr></table>
              <resume>
-                <time>
+                <!-- <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
                     <month data-bind="text: moment(date).format('MM')"></month>
                     <year data-bind="text: moment(date).format('YYYY')"></year>
-                </time>
+                </time> -->
                 <div class="title" data-bind="text: type">Últimas do Twitter</div>                                        
             </resume>
         </a>
@@ -81,11 +81,11 @@ layout: default
         <img width="300" data-bind="attr:{src: item.thumbnail.hqDefault, title: item.title}" /> -->
         <a href="javascript:;">
             <resume>
-                <time>
+               <!--  <time>
                     <day data-bind="text: moment(date).format('DD')"></day>
                     <month data-bind="text: moment(date).format('MM')"></month>
                     <year data-bind="text: moment(date).format('YYYY')"></year>
-                </time>
+                </time> -->
                 <div class="title" data-bind="text: item.title"></div>     
                 <small class="excerpt" data-bind="text: item.mediaGroups[0].contents[0].description.substr(0, 300)"></small>                                             
             </resume>
