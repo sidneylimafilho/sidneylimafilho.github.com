@@ -31,7 +31,6 @@ Esta página tem o objetivo de apresentar uma atividade interessante por semana 
 	10.	Festa Junina 
 	11.	Churrasco com amigos 
 	12.	Dia dos Namorados 
-	13.	Cinema 
 	14.	FLIP - Festa Literária de Paraty
 	15.	Festival Vale do Café - Vale do Café (Piraí, Volta Redonda, Barra do Piraí e Vassouras)  
 	16.	Arraiá do Arraial do Cabo 
@@ -40,16 +39,11 @@ Esta página tem o objetivo de apresentar uma atividade interessante por semana 
 	19.	Passeio em Itaipuaçú 
 	20.	Passear no Jardim Botânico 
 	21.	Viagem Praia (Angra, Ilha Grande, Cabo Frio, Búzios, etc) 
-	22.	Museu de Arte Contemporânea 
-	23.	Restaurante japonês 
-	24.	Niver Esposa 
-	25.	Restaurante exótico 
-	26.	Niver Mãe 
-	27.	Praias niterói 
+	22.	Museu de Arte Contemporânea  
 	28.	Praticar Mergulho 
 	29.	Saltar parapente/asa delta 
 	30.	Serenatas em conservatória 
-	31.	Prainha ou Grumari
+	31. Paraty
 	32.	Circo 
 	33.	Hansl 
 	34.	Caminho do beija flor 
