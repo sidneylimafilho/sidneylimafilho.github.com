@@ -9,7 +9,7 @@ User = {
     quotes: [{
         author: "Sidney Lima Filho",
         text: "Desenvolver Software é a arte de cultivar a informação de forma que ela cresça naturalmente através de mãos distintas.",
-        banner: "craftsmanship-cover.jpg"
+        banner: "mergulho-noronha.jpg"
     }, {
         author: "Garry Kasparov",
         text: "O que interessa é desenvolver um sistema de agressividade controlada, a fim de nos separarmos dos inertes. Agressividade, nesse contexto, significa dinamismo, coragem e muita vontade de agir.",
@@ -17,7 +17,7 @@ User = {
     }, {
         author: "Margaret Thatcher",
         text: "Nunca tome uma decisão até que ela seja necessária.",
-        banner: "nurture_seedling_in_hands_low_level.jpg"
+        banner: "sidney-meditation.jpg"
     }, {
         author: "Goethe",
         text: "Saber não basta, devemos aplicar. Desejar não basta, devemos fazer.",
@@ -25,11 +25,11 @@ User = {
     }, {
         author: "Albert Schweitzer",
         text: "Faça coisas maravilhosas na vida, ao ponto de as pessoas quererem imitá-lo",
-        banner: "craftsmanship-cover.jpg"
+        banner: "mergulho-noronha.jpg"
     }, {
         author: "Garry Kasparov",
         text: "Uma ameaça geralmente é tão forte quanto sua execução.",
-        banner: "road.jpg"
+        banner: "sidney-meditation.jpg"
     }, {
         author: "Leonardo Boff",
         text: "O cuidado previne danos futuros, ao mesmo tempo que repara danos passados. Quando amamos cuidamos e quando cuidamos amamos",
@@ -37,15 +37,15 @@ User = {
     }, {
         author: "Savielly Grigoryevich Tartakower",
         text: "Tática é saber o que fazer quando há o que fazer; Estratégia é saber o que fazer quando não há nada a fazer.",
-        banner: "craftsmanship-cover.jpg"
+        banner: "mergulho-noronha.jpg"
     }, {
         author: "Chico Xavier",
         text: "Cada pessoa é aquilo que crê, fala do que gosta, retém o que procura, ensina o que aprende, tem o que dá e vale o que faz",
-        banner: "craftsmanship-cover.jpg"
+        banner: "sidney-meditation.jpg"
     }, {
         author: "Sidney Lima Filho",
         text: "A Cultura de uma empresa emerge dos comportamentos de todos os envolvidos. Para mudar uma cultura deve-se mudar o comportamento.",
-        banner: "craftsmanship-cover.jpg"
+        banner: "mergulho-noronha.jpg"
     }],
     getRandomQuote: function() {
         return this.quotes[Math.floor(Math.random() * this.quotes.length)];
