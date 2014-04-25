@@ -1,10 +1,10 @@
 @import url(base.less);
 
-/* -------------------------------- */
+/* -------------------------------- 
 
-/* Font Definitions                 */
+Font Definitions                 
 
-/* -------------------------------- */
+-------------------------------- */
  @font-face {
     font-family:"HelveticaNeueThCn";
     src: url('../fonts/HelveticaNeueLTCom-ThCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-ThCn.woff') format('woff');
@@ -17,11 +17,11 @@
     font-family:"HelveticaNeueBdCn";
     src: url('../fonts/HelveticaNeueLTCom-BdCn.ttf') format('truetype'), url('../fonts/HelveticaNeueLTCom-BdCn.woff') format('woff');
 }
-/* -------------------------------- */
+/* -------------------------------- 
 
-/* Structure                        */
+Structure                       
 
-/* -------------------------------- */
+-------------------------------- */
  header, banner, section, footer {
     width:100%;
 }
@@ -172,66 +172,10 @@ section {
         width: 100%;
         padding-top: 24px;
     }
-    .widget {
-        border: 1px solid lightgray;
-        background-color: white;
-        position: relative;
-        width: 260px;
-        float: left;
-        min-height: 200px;
-        margin: 16px 0px 12px 24px;
-        cursor:pointer;
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        .transition(background-position, 2000ms);
-    }
-    .widget:hover {
-        background-position: 100% 50%;
-        .excerpt {
-            display: block
-        }
-    }
-    .widget::after {
-        content:'';
-        position: absolute;
-        height: 7px;
-        bottom: -7px;
-        left: 0;
-        background: url(../img/shadow2.png) no-repeat top center;
-        width: 100%;
-    }
     .searchbox {
         width: 260px;
         float: left;
         margin: 12px 0px 12px 24px;
-    }
-    .post-wall {
-        small {
-            display: block;
-        }
-        resume {
-            display: block;
-            background-color: @smoke;
-            color: #FFF;
-            bottom: 0px;
-            padding: 5px;
-            position: absolute;
-            width: 250px;
-            /*
-                .title {
-                    min-height: 44px;
-                    display: inline-block;
-                    max-width: 200px;
-                    vertical-align: top;
-                }
-                */
-            .excerpt {
-                display: none
-            }
-        }
-        .twitter table {
-            height: 210px;
-        }
     }
     /*
     time {
@@ -363,6 +307,69 @@ section {
         }
     }
 }
+.post-wall {
+    small {
+        display: block;
+    }
+    resume {
+        display: block;
+        background-color: @smoke;
+        color: #FFF;
+        bottom: 0px;
+        padding: 5px;
+        position: absolute;
+        width: 250px;
+        min-height: 32px;
+        /*
+                .title {
+                    min-height: 44px;
+                    display: inline-block;
+                    max-width: 200px;
+                    vertical-align: top;
+                }
+                */
+        .excerpt {
+            display: none
+        }
+    }
+    .twitter table {
+        height: 210px;
+    }
+}
+.widget {
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+    width: 260px;
+    float: left;
+    min-height: 200px;
+    margin: 16px 0px 12px 24px;
+    cursor:pointer;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    .transition(background-position, 2000ms);
+
+    a.socialButton {
+        right: 5px;
+        position: absolute;
+        top: 5px;
+    }
+}
+.widget:hover {
+    background-position: 100% 50%;
+    .excerpt {
+        display: block
+    }
+}
+.widget::after {
+    content:'';
+    position: absolute;
+    height: 7px;
+    bottom: -7px;
+    left: 0;
+    background: url(../img/shadow2.png) no-repeat top center;
+    width: 100%;
+}
 footer {
     clear: both;
     display: block;
@@ -401,8 +408,8 @@ a.socialButton {
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0px 100%;
+    background-size: cover;
+    background-position: 50px 50%;
     .opacity(0.4);
 }
 a.socialButton:hover {
