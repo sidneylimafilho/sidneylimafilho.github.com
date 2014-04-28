@@ -348,9 +348,10 @@ section {
     min-height: 200px;
     margin: 16px 0px 12px 24px;
     cursor:pointer;
-    background-position: 0% 100%;
+    background-position: 50% 50%;
+    background-size: 110%;
     background-repeat: no-repeat;
-    .transition(background-position, 2000ms);
+    .transition(all, 200ms);
 
     a.socialButton {
         right: 5px;
@@ -359,7 +360,8 @@ section {
     }
 }
 .widget:hover {
-    background-position: 100% 50%;
+    background-position: 50% 50%;
+    background-size: 125%;
     .excerpt {
         display: block
     }
