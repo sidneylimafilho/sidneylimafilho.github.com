@@ -17,7 +17,7 @@ layout: default
                 </time> -->
                 <div class="title" data-bind="text: item.title"></div>
                 
-                <small class="excerpt" data-bind="text: item.excerpt.substr(0, 300)"></small>                
+                <small class="excerpt" data-bind="text: item.excerpt.split(/(\.|\?)/)[0]"></small>                
             </resume>
         </a>
         <a target="_blank" class="socialButton feed" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>
@@ -36,7 +36,7 @@ layout: default
                     <year data-bind="text: moment(date).format('YYYY')"></year>
                 </time> -->
                 <div class="title" data-bind="text: item.title"></div>  
-                <small class="excerpt" data-bind="text: item.description.substr(0, 300)"></small>                          
+                <small class="excerpt" data-bind="text: item.description.split(/(\.|\?)/)[0]"></small>                          
             </resume>
         </a>
         <a target="_blank" class="socialButton youtube" data-bind="attr:{href: $root.user.youtube.getUrl(), title: $root.user.youtube.title}"></a>       
@@ -87,7 +87,7 @@ layout: default
                     <year data-bind="text: moment(date).format('YYYY')"></year>
                 </time> -->
                 <div class="title" data-bind="text: item.title"></div>     
-                <small class="excerpt" data-bind="text: item.mediaGroups[0].contents[0].description.substr(0, 300)"></small>                                             
+                <small class="excerpt" data-bind="text: item.mediaGroups[0].contents[0].description.split(/(\.|\?)/)[0]"></small>                                             
             </resume>
         </a>
         <a target="_blank" class="socialButton slideshare" data-bind="attr:{href: $root.user[type].getUrl(), title: $root.user[type].title}"></a>       
