@@ -314,49 +314,48 @@ section {
     small {
         display: block;
     }
-    resume {
-        display: block;
-        background-color: @smoke;
-        color: #FFF;
-        bottom: 0px;
-        padding: 5px;
-        position: absolute;
-        width: 250px;
-        min-height: 32px;
-        /*
-                .title {
-                    min-height: 44px;
-                    display: inline-block;
-                    max-width: 200px;
-                    vertical-align: top;
-                }
-                */
-        .excerpt {
-            display: none
-        }
-    }
     .twitter table {
         height: 210px;
     }
+}
+.post-wall * {
+    .transition(all, 200ms);
 }
 .widget {
     border: 1px solid lightgray;
     background-color: white;
     position: relative;
-    width: 260px;
+    width: 420px;
     float: left;
-    min-height: 200px;
-    margin: 16px 0px 12px 24px;
+    min-height: 236px;
+    margin: 5px 0 5px 10px;
     cursor:pointer;
     background-position: 50% 50%;
     background-size: 110%;
     background-repeat: no-repeat;
-    .transition(all, 200ms);
-
     a.socialButton {
         right: 5px;
         position: absolute;
         top: 5px;
+    }
+    resume {
+        display: block;
+        background-color: @smoke;
+        color: #FFF;
+        bottom: 0px;
+        position: absolute;
+        width: 250px;
+        min-height: 32px;
+        .title {
+            font: 20px"HelveticaNeueLtCn", Arial, sans-serif;
+            padding: 5px;
+        }
+        .excerpt {
+            display: none;
+            font: 11px Arial, sans-serif;
+            padding: 0px 5px 5px;
+            color: #E4E4E4;
+        }
     }
 }
 .widget:hover {
@@ -364,6 +363,9 @@ section {
     background-size: 125%;
     .excerpt {
         display: block
+    }
+    resume {
+        background-color: fadeout(@smoke, 34%);
     }
 }
 .widget::after {
