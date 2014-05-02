@@ -340,33 +340,32 @@ section {
     }
     resume {
         display: block;
-        background-color: @smoke;
+        background-color: fadeout(@smoke, 34%);
         color: #FFF;
         bottom: 0px;
         position: absolute;
         width: 250px;
         min-height: 32px;
-        .title {
-            font: 20px"HelveticaNeueLtCn", Arial, sans-serif;
-            padding: 5px;
-        }
-        .excerpt {
-            display: none;
-            font: 11px Arial, sans-serif;
-            padding: 0px 5px 5px;
-            color: #E4E4E4;
-        }
+    }
+    .title {
+        font: 20px"HelveticaNeueLtCn", Arial, sans-serif;
+        padding: 5px;
+    }
+    .excerpt {        
+        font: 11px Arial, sans-serif;
+        padding: 0px 5px 5px;
+        color: #E4E4E4;
     }
 }
 .widget:hover {
     background-position: 50% 50%;
     background-size: 125%;
-    .excerpt {
+  /*  .excerpt {
         display: block
     }
     resume {
-        background-color: fadeout(@smoke, 34%);
-    }
+        background-color: @smoke;
+    }*/
 }
 .widget::after {
     content:'';
