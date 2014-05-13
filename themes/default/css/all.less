@@ -83,7 +83,7 @@ menu {
     /*width:300px;*/
     ul {
         list-style:none;
-        padding:8px 0 16px;
+        padding:16px 0 16px;
         margin: 0px;
     }
     li {
@@ -108,7 +108,7 @@ banner {
     padding-top: 70px;
     display: block;
     height: 330px;
-    background: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
+    background-image: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -340,7 +340,7 @@ section {
     }
     resume {
         display: block;
-        background-color: fadeout(@smoke, 34%);
+        background-color: @smoke;
         color: #FFF;
         bottom: 0px;
         position: absolute;
@@ -351,7 +351,7 @@ section {
         font: 20px"HelveticaNeueLtCn", Arial, sans-serif;
         padding: 5px;
     }
-    .excerpt {        
+    .excerpt {
         font: 11px Arial, sans-serif;
         padding: 0px 5px 5px;
         color: #E4E4E4;
@@ -360,7 +360,7 @@ section {
 .widget:hover {
     background-position: 50% 50%;
     background-size: 125%;
-  /*  .excerpt {
+    /*  .excerpt {
         display: block
     }
     resume {
@@ -409,44 +409,48 @@ footer {
     padding: 0px 4px;
     position: relative;
 }
-a.socialButton {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    .opacity(0.4);
-}
-a.socialButton:hover {
-    .opacity(1);
-}
-a.twitter {
-    background-image: url(../img/twitter.png);
-}
-a.facebook {
-    background-image: url(../img/facebook.png);
-}
-a.linkedin {
-    background-image: url(../img/linkedin.png);
-}
-a.feed {
-    background-image: url(../img/feed.png);
-}
-a.slideshare {
-    background-image: url(../img/slideshare.png);
-}
-a.github {
-    background-image: url(../img/github.png);
-}
-a.youtube {
-    background-image: url(../img/youtube.png);
-}
-a.delicious {
-    background-image: url(../img/delicious.png);
-}
-a.mail {
-    background-image: url(../img/mail.png);
+.socialButtons {
+    display: none;
+
+    a.socialButton {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        .opacity(0.4);
+    }
+    a.socialButton:hover {
+        .opacity(1);
+    }
+    a.twitter {
+        background-image: url(../img/twitter.png);
+    }
+    a.facebook {
+        background-image: url(../img/facebook.png);
+    }
+    a.linkedin {
+        background-image: url(../img/linkedin.png);
+    }
+    a.feed {
+        background-image: url(../img/feed.png);
+    }
+    a.slideshare {
+        background-image: url(../img/slideshare.png);
+    }
+    a.github {
+        background-image: url(../img/github.png);
+    }
+    a.youtube {
+        background-image: url(../img/youtube.png);
+    }
+    a.delicious {
+        background-image: url(../img/delicious.png);
+    }
+    a.mail {
+        background-image: url(../img/mail.png);
+    }
 }
 /* -------------------------------- 
  Generics                         
