@@ -108,7 +108,7 @@ banner {
     padding-top: 70px;
     display: block;
     height: 330px;
-    background-image: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);
+    /*background-image: url(../img/banner/nurture_seedling_in_hands_low_level.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,9 +325,9 @@ section {
     border: 1px solid lightgray;
     background-color: white;
     position: relative;
-    width: 330px;
+    width: 420px;
     float: left;
-    min-height: 186px;
+    min-height: 236px;
     margin: 5px 0 5px 10px;
     cursor:pointer;
     background-position: 50% 50%;
@@ -411,7 +411,6 @@ footer {
 }
 .socialButtons {
     display: none;
-
     a.socialButton {
         display: inline-block;
         width: 24px;
@@ -563,6 +562,10 @@ th {
 @media print, screen and (max-width: 960px) {
 }
 @media print, screen and (max-width: 720px) {
+    .widget {
+        width: 330px;
+        min-height: 186px;
+    }
 }
 @media print, screen and (max-width: 480px) {
 }
