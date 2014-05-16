@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      'Estimativas de software: Quando fazer e quando não fazer?'
+title:      'Estimativas de software: Quando fazer? e quando não fazer?'
 author:     Sidney Lima Filho
 image:      /post/estimativas-de-software-quando-fazer-e-quando-nao-fazer/capa.jpg
 
