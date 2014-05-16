@@ -11,7 +11,7 @@ layout: default
 
      {% for tag in tags %} 
        
-        <div id="{{tag | downcase | replace:" ","-" | replace:".","" }}">
+        <div id='{{tag | downcase | replace:" ","-" | replace:".","" }}'>
         <h2>{{tag}}</h2>
         <ul class="tag">       
             {% for post in site.tags[tag] %} 
