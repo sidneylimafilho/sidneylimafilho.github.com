@@ -8,12 +8,10 @@ image:      /post/estimativas-de-software-quando-fazer-e-quando-nao-fazer/capa.j
 excerpt:    > 
             Estimativas quase sempre falha ponto, mas mesmo assim (e sabendo disso) os usuários/clientes precisam para planejamento de outras atividades e agora? Como faz?
 
-published:  false
+published:  true
 categories: post
 tags:       [Estimativas, Prazo, Teoria Geral dos Sistemas, Sistemas de Informação, Entropia da informação, Teoria do Sistemas Complexos, Cynefin]
 ---
-
-Estimativas quase sempre falha ponto, mas mesmo assim (e sabendo disso) os usuários/clientes precisam para planejamento de outras atividades e agora? Como faz?
 
 # Uma breve história sobre estimativas
 
