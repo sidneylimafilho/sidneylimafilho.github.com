@@ -144,7 +144,8 @@ var $banner = $("banner");
 $banner.find(".excerpt author").text(q.author);
 $banner.find(".excerpt quote").text(q.text);
 $banner.css({
-    background: 'url(/themes/default/img/banner/' + q.banner + ')'
+    backgroundImage: "url(/themes/default/img/banner/" + q.banner + ")",
+    backgroundSize: "cover"
 });
 </script>
 
