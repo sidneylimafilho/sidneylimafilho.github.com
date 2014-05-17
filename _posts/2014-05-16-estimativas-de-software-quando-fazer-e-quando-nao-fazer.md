@@ -21,7 +21,7 @@ Após escolher um lindo terno, que gostei muito, eu precisava fazer bainha da ca
 
 A minha escolha foi acertada e como podemos ver estimativas é uma ferramenta de tomada de decisão, nem de longe quero comparar a complexidade de fazer software com a simples costura da bainha (que ainda sim pode ser comparada, pois estamos falando de pessoas e sistemas de produção, logo nada mais é simples :P), semelhante a este caso posso enumerar vários outros onde a estimativa será determinante para uma tomada de decisão e isso também vai acontecer com software. 
 
-_Estimativas não são um problema de desenvolvimento de software, mas uma ferramenta que a sociedade usa para tomada de decisão, o erro está em acreditar que estimativa é preciso, se fosse preciso não era estimativa, era certeza._.
+**Estimativas não são um problema de desenvolvimento de software, mas uma ferramenta que a sociedade usa para tomada de decisão, o erro está em acreditar que estimativa é preciso, se fosse preciso não era estimativa, era certeza.**
 
 A frase acima nos mostra que a pergunta deixa de ser "se devemos fazer estimativa ou não" (como vimos **ÀS VEZES** é necessária), mas qual nível de confiança e transparência passamos ao realizar estimativas. 
 
@@ -47,7 +47,7 @@ Caso troquemos a água para um copo de outro formato, as moléculas de água int
 
 O software tem uma característica inerente, talvez até um efeito colateral, que ao resolver um problema do usuário, automaticamente expõe novas cenários de uso, novos problemas, novos desafios a serem superados, geralmente faz o ambiente do usuário precisar de novas informações.
 
-_Tanto o processo de fazer o software, quando o software em si possuem a mesma natureza complexa e de adaptabilidade._
+**Tanto o processo de fazer o software, quando o software em si possuem a mesma natureza complexa e de adaptabilidade.**
 
 ## Estimativa e Software
 
