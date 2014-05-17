@@ -13,7 +13,7 @@ categories: post
 tags:       [Estimativas, Prazo, Teoria Geral dos Sistemas, Sistemas de Informação, Entropia da informação, Teoria do Sistemas Complexos, Cynefin]
 ---
 
-# Uma breve história sobre estimativas
+## Uma breve história sobre estimativas
 
 Eu recentemente tive um compromisso onde era importante usar uma roupa mais formal, então resolvi tirar meu terno empoeirado do armário e descubro para minha infelicidade que engordei tanto que o dito cujo não cabe mais em mim, então com raiva e desesperado vou ao shopping comprar um terno novo.
 
@@ -25,7 +25,7 @@ _Estimativas não são um problema de desenvolvimento de software, mas uma ferra
 
 A frase acima nos mostra que a pergunta deixa de ser "se devemos fazer estimativa ou não" (como vimos **ÀS VEZES** é necessária), mas qual nível de confiança e transparência passamos ao realizar estimativas. 
 
-# Qual a base do meu raciocínio?
+## Qual a base do meu raciocínio?
 
 O [Manifesto Ágil][MA]{:target=_blank}, [MA]{:target=_blank} para os íntimos, claro. Raciocine comigo:
 
@@ -35,7 +35,7 @@ O erro fatal aqui é a mania de alguns desenvolvedores com largo histórico de c
 
 O lado oposto é também alguns desenvolvedores com ego muito algo, ou se acharem fod@, querem mostrar como são rápidos, como são diferenciados e dão uma estimativa ridiculamente baixa para algo complexo, dizendo que para desenvolver um projeto inteiro de construção de viadutos só leva 4 horas.
 
-# A natureza do software
+## A natureza do software
 
 Vamos pegar um objeto simples como um copo de água. O copo de água é composto de átomos de silício que são derretidos e modelados formando o copo e átomos de água despejados no seu interior. Os átomos do copo de água formam um sistema.
 
@@ -49,7 +49,7 @@ O software tem uma característica inerente, talvez até um efeito colateral, qu
 
 _Tanto o processo de fazer o software, quando o software em si possuem a mesma natureza complexa e de adaptabilidade._
 
-# Estimativa e Software
+## Estimativa e Software
 
 Complexo é tudo aquilo que (depende do/usa o) estado anterior para determinar o próximo estado, com isso toda tentativa de determinar prazos está sujeita a falhar, pois a entrada de novas informações é constante, com isso o "estado anterior" nunca é fixo, logo fica muito difícil determinar o próximo estado.
 
@@ -57,7 +57,7 @@ O que toda essa história tem haver com estimativas? Vamos seguindo.
 
 O famoso escopo fechado é uma tentativa de impedir a entrada de novas informações num processo de desenvolvimento de software, a contra partida de fechar o escopo é que impede aperfeiçoar, melhorar, aumentar o valor agregado do resultado final.
 
-## Mas e quando não é possível estimar a menor parte do software? 
+### Mas e quando não é possível estimar a menor parte do software? 
 
 Em muitos casos, e isso é MUITO COMUM, não é possível estimar precisamente, mesmo a menor parte de um software, pois se houver algum desafio técnico em que o desenvolvedor enfrente dificuldades então sua estimativa falhará, vivemos cercados de novas tecnologias e a todo o momento não possuímos domínio completo de algum artefato de software, e para piorar outra característica do software é que no momento da sua construção aprendemos mais sobre as tecnologias e o negócio envolvido, portanto mais informações aparecem que pode influenciar no resultado final.
 
@@ -67,7 +67,7 @@ Uma das disciplinas de análise de sistemas é sobre acoplamento e coesão, quan
 
 <img src="estimativa-chute.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
-# O problema nunca foi a estimativa
+## O problema nunca foi a estimativa
 
 Os Gerentes de Projetos <strike>Ágeis</strike> sensatos dizem que não tem problema o escopo mudar e que basta se comunicar que tudo dá certo, então o PMP atualiza seu Gráfico de Gantt e apresenta ao cliente o novo prazo final.
 
@@ -82,7 +82,7 @@ Se um amigo perguntasse quanto tempo você leva para organizar uns poucos papeis
 Agora se um cliente te perguntar quanto tempo você leva para organizar uns poucos papéis e caso você não termine a tempo há uma multa de 10 mil reais, quanto tempo você diria? 4 horas? 1 semana?
 
  
-# Estimativa como ferramenta de pressão e controle
+## Estimativa como ferramenta de pressão e controle
 
 A estimativa numa via contrária, pode ser usada como ferramenta de controle, onde o cliente mesmo não precisando da estimativa, ainda sim pede apenas pela sensação de controle. Isso é muito comum no ambiente corporativo, onde os clientes são os chefes, usam e abusam das estimativas, para tentar obter uma melhor performance dos colaboradores, sendo que na verdade ocorre o contrário.
 
@@ -97,7 +97,7 @@ As consultorias, fábricas de software, empresas que vendem desenvolvimento de s
 **[Software funcionando:][MA]{:target=_blank}** O ideal é entregar para o cliente, pequenas partes do software funcionando, o tempo todo, assim ele mesmo pode priorizar o que quer receber antes ou depois, dessa forma maximiza o valor para o cliente, maximiza o tempo da equipe fazendo apenas o que importa e todos ganham.
 
 
-# Base científica
+## Base científica
 
 Eu estudei uma base teórica cientifica forte, para chegar à conclusão que escrevi aqui e não pretendo deixar esse texto morto, pois continuo me aprofundando no assunto, mas também não queria ficar explicando cada teoria senão esse post viraria um TCC, artigo científico, sei lá. :-)
 
