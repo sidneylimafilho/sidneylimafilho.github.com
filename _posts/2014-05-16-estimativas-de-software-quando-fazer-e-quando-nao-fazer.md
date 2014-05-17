@@ -27,9 +27,9 @@ A frase acima nos mostra que a pergunta deixa de ser "se devemos fazer estimativ
 
 # Qual a base do meu raciocínio?
 
-O [Manifesto Ágil](MA), [MA] para os íntimos, claro. Raciocine comigo:
+O [Manifesto Ágil][MA]{:target=_blank}, [MA]{:target=_blank} para os íntimos, claro. Raciocine comigo:
 
-**[Colaboração com o Cliente:][MA]** A estimativa é um protocolo de comunicação que pode determinar a próxima etapa no sistema humano de atividades, logo devemos colaborar constantemente com o cliente para garantir que qualquer variação da estimativa inicial ele esteja ciente e sejamos transparentes.
+**[Colaboração com o Cliente:][MA]{:target=_blank}** A estimativa é um protocolo de comunicação que pode determinar a próxima etapa no sistema humano de atividades, logo devemos colaborar constantemente com o cliente para garantir que qualquer variação da estimativa inicial ele esteja ciente e sejamos transparentes.
 
 O erro fatal aqui é a mania de alguns desenvolvedores com largo histórico de criticas, cansado de tomar porrada do chefe de atrasos errados, ou que gosta de sempre entregar antes, querem mostrar que são responsáveis, com discurso de não iludir o cliente, então dão uma estimativa irreal, dizendo que algo trivial de fazer, demora 2 anos e meio. O efeito pernicioso é que o cliente aos poucos para de acreditar na sua estimativa e passa a usar o chicote, a porrada, ameaça, ação judicial, coerção, tudo para que fique pronto logo. Bye Bye Agilidade.
 
@@ -61,9 +61,9 @@ O famoso escopo fechado é uma tentativa de impedir a entrada de novas informaç
 
 Em muitos casos, e isso é MUITO COMUM, não é possível estimar precisamente, mesmo a menor parte de um software, pois se houver algum desafio técnico em que o desenvolvedor enfrente dificuldades então sua estimativa falhará, vivemos cercados de novas tecnologias e a todo o momento não possuímos domínio completo de algum artefato de software, e para piorar outra característica do software é que no momento da sua construção aprendemos mais sobre as tecnologias e o negócio envolvido, portanto mais informações aparecem que pode influenciar no resultado final.
 
-Uma das disciplinas de análise de sistemas é sobre acoplamento e coesão, quando você começa a juntar as partes prontas você aumenta o nível de acoplamento do sistema, com isso é necessário validar se as partes ao serem juntadas não afeta o todo, pois geralmente 2 + 2 pode ser igual a 10, apenas pelo fato da sinergia entre as partes potencializar o todo. Quando isso acontece estamos retirando [entropia da informação][entropia] no software, agora há conhecimento sobre o primeiro 2, o segundo 2 e qual é o fator potencializador.
+Uma das disciplinas de análise de sistemas é sobre acoplamento e coesão, quando você começa a juntar as partes prontas você aumenta o nível de acoplamento do sistema, com isso é necessário validar se as partes ao serem juntadas não afeta o todo, pois geralmente 2 + 2 pode ser igual a 10, apenas pelo fato da sinergia entre as partes potencializar o todo. Quando isso acontece estamos retirando [entropia da informação][entropia]{:target=_blank} no software, agora há conhecimento sobre o primeiro 2, o segundo 2 e qual é o fator potencializador.
 
-**[Responder as mudanças:][MA]** A estimativa não impede responder as mudanças, inclusive ajuda, pois ao se deparar com este cenário, quebramos o escopo em Casos de Uso, Requisitos, Especificação Funcional, etc, e estimamos as partes assim caso alguma nova informação apareça, o cliente pode decidir melhor. (Olha a tomada de decisão aí novamente)
+**[Responder as mudanças:][MA]{:target=_blank}** A estimativa não impede responder as mudanças, inclusive ajuda, pois ao se deparar com este cenário, quebramos o escopo em Casos de Uso, Requisitos, Especificação Funcional, etc, e estimamos as partes assim caso alguma nova informação apareça, o cliente pode decidir melhor. (Olha a tomada de decisão aí novamente)
 
 <img src="estimativa-chute.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
@@ -94,14 +94,14 @@ O valor do software não está em ser entregue antes, mas fazer aquilo que o usu
 
 As consultorias, fábricas de software, empresas que vendem desenvolvimento de software geralmente enxergam a velocidade como valor para o negócio (para o cliente o que importa é o resultado final, num prazo justo), pois tem a premissa que se aumentar a velocidade da equipe, então a mesma equipe pode fazer mais software e no fim do mês pagar o mesmo salário. Basta repararmos que empresas que vendem profissional alocado (body shop), nem se importam com estimativas, prazo, pois o cliente vai pagar pelo tempo e não pelo resultado, já vi empresas de consultoria até retardando a entrega do trabalho, só para receber mais.
 
-**[Software funcionando:][MA]** O ideal é entregar para o cliente, pequenas partes do software funcionando, o tempo todo, assim ele mesmo pode priorizar o que quer receber antes ou depois, dessa forma maximiza o valor para o cliente, maximiza o tempo da equipe fazendo apenas o que importa e todos ganham.
+**[Software funcionando:][MA]{:target=_blank}** O ideal é entregar para o cliente, pequenas partes do software funcionando, o tempo todo, assim ele mesmo pode priorizar o que quer receber antes ou depois, dessa forma maximiza o valor para o cliente, maximiza o tempo da equipe fazendo apenas o que importa e todos ganham.
 
 
 # Base científica
 
 Eu estudei uma base teórica cientifica forte, para chegar à conclusão que escrevi aqui e não pretendo deixar esse texto morto, pois continuo me aprofundando no assunto, mas também não queria ficar explicando cada teoria senão esse post viraria um TCC, artigo científico, sei lá. :-)
 
-Vale a pena muito citar os seguintes temas: [Teoria Geral dos Sistemas][TGS], [Sistemas de Informação][SI], [Entropia da informação][entropia], [Teoria do Sistemas Complexos][complexsystem], [Cynefin][cynefin], 
+Vale a pena muito citar os seguintes temas: [Teoria Geral dos Sistemas][TGS]{:target=_blank}, [Sistemas de Informação][SI]{:target=_blank}, [Entropia da informação][entropia]{:target=_blank}, [Teoria do Sistemas Complexos][complexsystem]{:target=_blank}, [Cynefin][cynefin]{:target=_blank}, 
 
 
 [MA]:               http://agilemanifesto.org/
