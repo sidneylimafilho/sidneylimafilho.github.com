@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Desenvolvimento, Código, Linguagens de Programação, Software Legado, Maturidade Profissional, Testes Unitários]
+tags:       [Linguagens de Programação, Software Legado, Maturidade Profissional, Testes Unitários]
 ---
 
 <img src="book.jpg" style="float:right; margin: 0px 0px 20px 20px;" />

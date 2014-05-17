@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Informação, Sistemas, Empreendedorismo, Resenha, Escrever, Filosofia]
+tags:       [Sistemas de Informação, Empreendedorismo, Resenha, Blog, Filosofia]
 ---
 
 <img src="capa.jpg" style="float:right; margin: 0px 0px 20px 20px;" />

@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Estimativas, Prazo, Teoria Geral dos Sistemas, Sistemas de Informação, Entropia da informação, Teoria do Sistemas Complexos, Cynefin]
+tags:       [Estimativas, Prazo, Teoria Geral dos Sistemas, Sistemas de Informação, Entropia da informação, Teoria do Sistemas Complexos, Cynefin, Carreira, Cliente, Processos, Produtividade, Psicologia]
 ---
 
 ## Uma breve história sobre estimativas
