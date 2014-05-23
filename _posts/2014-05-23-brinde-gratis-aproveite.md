@@ -1,13 +1,17 @@
 ---
-author: Sidney Lima Filho
-title: ' Brinde Grátis, Aproveite! '
-excerpt:
-layout: post
-published: false
-tags: [ ]
-post_format: [ ]
+author:     Sidney Lima Filho
+title:      Brinde Grátis, Aproveite!
+layout:     post
+image:      /post/estimativas-de-software-quando-fazer-e-quando-nao-fazer/capa.jpg
+excerpt:    > 
+            Mais um grande livro feito pelo GURU Seth Godin, ele entende muito de comportamento humano e sociedade, pois traduz num livro simples e curto as 3 coisas que tornam um produto irresistível, o livro foi escrito para ilustrar o como devemos pensar quando queremos colocar adjetivos nos produtos que fazemos, mas se você olhar com outra ótica perceberá que o livro também é sobre empreendedorismo, RH, status-quo, business, e muito mais. 90% é sobre nós e 10% sobre produtos.
+
+published:  true
+categories: post
+tags:       [Produtos, Resenha]
 ---
-Mais um grande livro feito pelo GURU Seth Godin, ele entende muito de comportamento humano e sociedade, pois traduz num livro simples e curto as 3 coisas que tornam um produto irresistível, o livro foi escrito para ilustrar o como devemos pensar quando queremos colocar adjetivos nos produtos que fazemos, mas se você olhar com outra ótica perceberá que o livro também é sobre empreendedorismo, RH, status-quo, business, e muito mais€¦ 90% é sobre nós e 10% sobre produtos.
+
+Mais um grande livro feito pelo GURU Seth Godin, ele entende muito de comportamento humano e sociedade, pois traduz num livro simples e curto as 3 coisas que tornam um produto irresistível, o livro foi escrito para ilustrar o como devemos pensar quando queremos colocar adjetivos nos produtos que fazemos, mas se você olhar com outra ótica perceberá que o livro também é sobre empreendedorismo, RH, status-quo, business, e muito mais. 90% é sobre nós e 10% sobre produtos.
 
 O livro foi dividido em 3 grandes momentos: O porquê precisamos de um brinde; Como vender a idéia; Como criar um brinde.
 
@@ -87,11 +91,3 @@ Uma boa lista de limites a serem explorados são:
 *   Crie uma obsessão por um único elemento;
 *   Fale em tom de voz diferente;
 
-[![][2]</img>][2] [![][3]</img>][3] [![][4]</img>][4] 
-
-![][4]
-
- []: http://feeds.feedburner.com/~ff/vivina?a=nC_x6j1jWnc:WlUiIb-UmNs:yIl2AUoC8zA
- []: http://feeds.feedburner.com/~ff/vivina?a=nC_x6j1jWnc:WlUiIb-UmNs:qj6IDK7rITs
- []: http://feeds.feedburner.com/~ff/vivina?a=nC_x6j1jWnc:WlUiIb-UmNs:63t7Ie-LG7Y
- [4]: http://feeds.feedburner.com/~r/vivina/~4/nC_x6j1jWnc
