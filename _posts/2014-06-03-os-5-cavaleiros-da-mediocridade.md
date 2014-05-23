@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 
 title:      'Os 5 cavaleiros da mediocridade'
@@ -13,7 +13,7 @@ categories: post
 tags:       [Mediocridade, Gestão de Pessoas, Ambiente de Trabalho, Agilidade, Psicologia, Filosofia, Maturidade Profissional, Excelência Técnica]
 ---
 
-**Mediocridade** é uma palavra vem do latim medium, do grego meso, significa estar entre 2 termos, atributo de quem é mediocre. 
+**Mediocridade** é uma palavra vem do latim medium, do grego meso, significa estar entre 2 termos, atributo de quem é mediocre.
 
 Atualmente falar que alguém é mediocre, se tornou até algo pejorativo, sinomino de burrice, incapacidade, lentidão, ou algo que não é bom ser, mas na verdade não é nada disso a mediocridade não é sinonimo de algo ruim, mas é uma caracteristica das pessoas que não buscam ir além do que elas são capazes, que também é uma escolha legítima, afinal a sociedade moderna que nos empurra para sempre ser melhor, ser mais bonito, ser mais, mais, mais, melhor, melhor melhor.
 
