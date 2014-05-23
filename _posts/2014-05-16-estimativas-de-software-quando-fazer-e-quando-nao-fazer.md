@@ -107,9 +107,20 @@ Alguns materiais para estudar sobre quando ou como estimar projetos de software:
 +   Livro do Tom Demarco: [Peopleware][Peopleware]{:target=_blank}
     - Explica os ganhos de não estimar e o porque buscar não fazer
 
+### Técnicas para estimativas 
+
+Como dar prazo para as coisas é um assunto que mexe mais com o psicológico do que com o processo científico de fazer software, grandes mentes pesquisaram sobre o assunto e o mesmo evoluiu bastante, agora tem técnica para dar chute, técnica para calcular a porcentagem de gordura, além de usar heuristica para determinar o prazo de coisas distintas, usando os mesmos critérios. Vejamos alguns deles e minha visão sobre cada um:
+
++   [COCOMO][COCOMO]{:target=_blank} (Constructive Cost Model): Utiliza equações para prever o número de programadores/mês e o tempo de desenvolvimento, calculados usando medidas de linhas de código ou Pontos de Função com ajustes por indices de complexidade, ou seja, é na subjetividade deste indice de complexidade onde os Gerentes de Projeto aplicam a gordura.
+
++   [Putnam Model][PutnamModel]{:target=_blank}: É um modelo empirico, mas que no final é no estilo COCOMO, busca relacionar algumas variáveis numa equação onde algumas das variáveis são subjetivas, e é nessas variáveis onde entra a ineficiência.
+
++   [Análise por Pontos por Caso de Uso, Use Case Points (UCP)][UCP]{:target=_blank}: Explora o modelo e descrição do caso de uso, substituindo algumas características técnicas proposta pelos Pontos de Função, ignora completamente a experiência do desenvolvedor na linguagem, no assunto, nas tecnologias envolvidas, etc.
+
++   [Análise por Pontos de Função][APF]{:target=_blank}: Busca medir a complexidade do produto pela quantificação de funcionalidades expressas pela visão que o usuário tem do mesmo, assim como UCP é independente da tecnologia usada e mede uma aplicação pelas funções desempenhadas devido a complexidade para o usuário, ignorando a complexidade para quem realmente faz. Muito utilizada hoje em dia e por muitas empresas considerada como medida aceitável.
+
 
 ## Estimar não é o problema
-
 
 Os Gerentes de Projetos <strike>Ágeis</strike> sensatos dizem que não tem problema o escopo mudar e que basta se comunicar que tudo dá certo, então o PMP atualiza seu Gráfico de Gantt e apresenta ao cliente o novo prazo final.
 
@@ -128,20 +139,18 @@ Isso é um círculo vicioso, pois quanto mais rígida forem as retaliações por
  
 ## Estimativa como ferramenta de comando e controle
 
-<img src="estimativa2.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
+<img src="estimativas2.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
 A estimativa numa via contrária, pode ser usada como ferramenta de controle, onde o cliente mesmo não precisando da estimativa, ainda sim pede apenas pela sensação de controle. Isso é muito comum no ambiente corporativo, onde os clientes são os chefes, usam e abusam das estimativas, para tentar obter uma melhor performance dos colaboradores, sendo que na verdade ocorre o contrário.
 
-O desenvolvimento de software é um processo criativo e todo processo criativo não é linear.
+**O desenvolvimento de software é um processo criativo e todo processo criativo não é linear.**
 
-Toda atividade onde o valor está na velocidade então não exige criatividade. Toda relação onde o valor está no cumprimento de metas então a criatividade pode ser o fator potencializador.
-
-O valor do software não está em ser entregue antes, mas fazer aquilo que o usuário final espera que ele faça.
+Toda atividade onde o valor está na velocidade então não exige criatividade. Toda relação onde o valor está no cumprimento de metas então a criatividade pode ser o fator potencializador. O valor do software não está em ser entregue antes, mas fazer aquilo que o usuário final espera que ele faça.
 
 As consultorias, fábricas de software, empresas que vendem desenvolvimento de software geralmente enxergam a velocidade como valor para o negócio (para o cliente o que importa é o resultado final, num prazo justo), pois tem a premissa que se aumentar a velocidade da equipe, então a mesma equipe pode fazer mais software e no fim do mês pagar o mesmo salário. Basta repararmos que empresas que vendem profissional alocado (body shop), nem se importam com estimativas, prazo, pois o cliente vai pagar pelo tempo e não pelo resultado, já vi empresas de consultoria até retardando a entrega do trabalho, só para receber mais.
 
 **[Software funcionando:][MA]{:target=_blank}** O ideal é entregar para o cliente, pequenas partes do software funcionando, o tempo todo, assim ele mesmo pode priorizar o que quer receber antes ou depois, dessa forma maximiza o valor para o cliente, maximiza o tempo da equipe fazendo apenas o que importa e todos ganham.
-
+  
 ## O que é o Movimento #NoEstimates?
 
 O movimento #NoEstimates é uma idéia que vem ganhando grande apelo, liderado por profissionais reconhecidamente competentes como [Ron Jeffries][RonJeffries], Joshua Kerievsky, [Woody Zuill][WoodyZuill]{:target=_blank} e [Neil Killick][NeilKillick]{:target=_blank}, que prega a completa abolição de estimativas em desenvolvimento de software
@@ -149,13 +158,17 @@ O movimento #NoEstimates é uma idéia que vem ganhando grande apelo, liderado p
 Apesar do discurso ser aparentemente extremista, assim como o XP é, eu considero um movimento inteligente e de acordo com os valores ágeis, mas como já expliquei, não é aplicável em todos os cenários, não é bala de prata e você não deve falar que ninguém deve estimar. O discurso não é esse. O discurso é que existem técnicas para que não seja necessário estimar, se há necessidade de estimar então deve haver uma falta de confiança latente e que deve ser eliminada, mas em nenhum momento ignora o valor da estimativa, quando há.
 
 ### Argumentos a favor e contra
+
 <img src="noestimates-money.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
 Os opositores deste movimento argumentam o óbvio, que nem sempre pode trabalhar sem estimativas, principalmente quando o cliente tem um orçamento limitado e precisa decidir entre as funcionalidades candidatas, qual o máximo de valor agregado em software ele consegue construir.
 
 O [Akita tem um belo texto com argumentos contra][Akita]{:target=_blank}, onde ele mostra sob uma perspectiva economica a necessidade das estimativas, onde também mostra muita familiaridade com os conceitos teóricos que expus e mesmo assim apresenta argumentos consistentes para sua visão.
 
-Aqui também segue [um post do Kudoos com 3 grandes agilistas brasileiros][kudoos] expondo suas visões sobre o #NoEstimates.
+Aqui também segue [um post do Kudoos com 3 grandes agilistas brasileiros][kudoos] expondo suas visões a favor sobre o #NoEstimates.
+
+Ron Jeffries, o programador pragmático tem 2 excelentes posts, um falando sobre como [estimar é ruim][EstimateIsEvil]{:target=_blank} e outro sobre [#NoEstimates][RonJeffries]{:target=_blank}.
+
 
 ## Base científica
 
@@ -163,7 +176,6 @@ Para ter certeza que não estava tirando conclusões baseado em achismos, estude
 
 Para quem se interessar em entender em como cheguei a conclusão acima, vale a pena muito estudar os seguintes temas: [Teoria Geral dos Sistemas][TGS]{:target=_blank}, [Sistemas de Informação][SI]{:target=_blank}, [Entropia da informação][entropia]{:target=_blank}, [Teoria do Sistemas Complexos][complexsystem]{:target=_blank}, [Cynefin][cynefin]{:target=_blank}
 
-Existe também um material muito rico na internet com várias pessoas experientes expressando sua opinião que vale a pena 
 
 
 [MA]:               http://agilemanifesto.org/
@@ -185,3 +197,8 @@ Existe também um material muito rico na internet com várias pessoas experiente
 [RonJeffries]:      http://xprogramming.com/articles/the-noestimates-movement/
 [Akita]:            http://www.akitaonrails.com/2013/10/07/off-topic-noestimates-debunked#.U39P1PldU75
 [kudoos]:           http://blog.kudoos.com.br/gestao/gestao-de-riscos-e-no-estimate-dois-temas-comentados-por-grandes-agilistas-brasileiros/
+[EstimateIsEvil]:   http://pragprog.com/magazines/2013-02/estimation-is-evil
+[COCOMO]:           http://en.wikipedia.org/wiki/COCOMO
+[PutnamModel]:      http://en.wikipedia.org/wiki/Putnam_model
+[UCP]:              http://en.wikipedia.org/wiki/Use_Case_Points
+[APF]:              http://pt.wikipedia.org/wiki/An%C3%A1lise_de_pontos_de_fun%C3%A7%C3%A3o
