@@ -63,7 +63,6 @@ Abaixo está aquilo que me dá frio na barriga só de pensar que estarei fazendo
         + Nova Zelândia
         + Bora Bora
 + Ter mais contato com meus 10 melhores amigos
-+ Conhecer lugares interessantes
 + Falar fluentemente 3 idiomas (Inglês, Espanhol, a alguma asiática a definir)
 + Doar Sangue 2x por ano
 + Doar Medula 1x na vida
@@ -71,11 +70,10 @@ Abaixo está aquilo que me dá frio na barriga só de pensar que estarei fazendo
 + Poder aposentar entre 40-45 anos (acho que mesmo podendo eu não iria, mas quero ter segurança de poder parar)
 + Praticar as 7 virtudes espirituais (**Castidade** x Luxúria, **Generosidade** x Avareza, **Auto-controle** x Gula, **Presteza** x Preguiça, **Paciência** x Ira, **Caridade** x Inveja, **Humildade** x Soberba)
 + Colocar meu conhecimento a disposição dos mais jovens
-+ Aprender a surfar
 + <del>Fazer Yoga</del> &#x2713;
 + Voltar a pesar 85Kg :(
 + Praticar Mergulho 2x por ano
 + Ter mais fotos subaquáticas
-+ Tirar mais fotos
+
 
 Essa lista irá crescer portanto não acredite que apenas isso me satisfará. ;)
