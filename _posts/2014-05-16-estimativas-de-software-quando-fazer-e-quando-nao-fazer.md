@@ -144,11 +144,18 @@ As consultorias, fábricas de software, empresas que vendem desenvolvimento de s
 
 ## O que é o Movimento #NoEstimates?
 
-O movimento #NoEstimates é uma idéia que vem ganhando grande apelo, liderado por profissionais reconhecidamente competentes como Joshua Kerievsky, [Woody Zuill][WoodyZuill]{:target=_blank} e [Neil Killick][NeilKillick]{:target=_blank}
+O movimento #NoEstimates é uma idéia que vem ganhando grande apelo, liderado por profissionais reconhecidamente competentes como [Ron Jeffries][RonJeffries], Joshua Kerievsky, [Woody Zuill][WoodyZuill]{:target=_blank} e [Neil Killick][NeilKillick]{:target=_blank}, que prega a completa abolição de estimativas em desenvolvimento de software
 
-### Argumentos contra
+Apesar do discurso ser aparentemente extremista, assim como o XP é, eu considero um movimento inteligente e de acordo com os valores ágeis, mas como já expliquei, não é aplicável em todos os cenários, não é bala de prata e você não deve falar que ninguém deve estimar. O discurso não é esse. O discurso é que existem técnicas para que não seja necessário estimar, se há necessidade de estimar então deve haver uma falta de confiança latente e que deve ser eliminada, mas em nenhum momento ignora o valor da estimativa, quando há.
+
+### Argumentos a favor e contra
 <img src="noestimates-money.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
+Os opositores deste movimento argumentam o óbvio, que nem sempre pode trabalhar sem estimativas, principalmente quando o cliente tem um orçamento limitado e precisa decidir entre as funcionalidades candidatas, qual o máximo de valor agregado em software ele consegue construir.
+
+O [Akita tem um belo texto com argumentos contra][Akita]{:target=_blank}, onde ele mostra sob uma perspectiva economica a necessidade das estimativas, onde também mostra muita familiaridade com os conceitos teóricos que expus e mesmo assim apresenta argumentos consistentes para sua visão.
+
+Aqui também segue [um post do Kudoos com 3 grandes agilistas brasileiros][kudoos] expondo suas visões sobre o #NoEstimates.
 
 ## Base científica
 
@@ -175,3 +182,6 @@ Existe também um material muito rico na internet com várias pessoas experiente
 [KlausVideo]:       http//www.youtube.com/embed/eCXqCHBirng?rel=0
 [WoodyZuill]:       http://zuill.us/WoodyZuill/
 [NeilKillick]:      http://neilkillick.com/
+[RonJeffries]:      http://xprogramming.com/articles/the-noestimates-movement/
+[Akita]:            http://www.akitaonrails.com/2013/10/07/off-topic-noestimates-debunked#.U39P1PldU75
+[kudoos]:           http://blog.kudoos.com.br/gestao/gestao-de-riscos-e-no-estimate-dois-temas-comentados-por-grandes-agilistas-brasileiros/
