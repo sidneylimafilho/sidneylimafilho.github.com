@@ -3,7 +3,7 @@ layout:     post
 
 title:      'Os 5 cavaleiros da mediocridade'
 author:     Sidney Lima Filho
-image:      /post/os-4-cavaleiros-da-mediocridade/capa.jpg
+image:      /post/os-5-cavaleiros-da-mediocridade/capa.jpg
 
 excerpt:    > 
             A mediocridade é o mal do século 21, a cada dia mais pessoas querem ser mais reconhecidas, valorizadas, recebedoras de atenção e consideradas especiais, mesmo quando desempenham o papel de um verdadeiro cavaleiro da mediocridade. 
@@ -31,16 +31,12 @@ O tamanho da sua mediocridade é exatamente o tamanho de quanto você está feli
 
 Todo mundo acha que deveria ganhar o que merece, todo mundo acha que merece mais do que realmente vale.
 
-Os 5 cavaleiros da mediocridade são aqueles que fazem você ficar na M.É.D.I.A:
+Os 5 cavaleiros da mediocridade são aqueles que fazem você ficar na M.E.D.I.A:
 
 +   **M**edo: Eu tenho familia para alimentar, o risco não compensa.
-
 +   **E**goísmo/Negligencia: Eles criaram, cancelaram, decidiram, nem pediram minha opinião, então não é minha culpa.
-
 +   **D**esamparo: Meu chefe não vai deixar, então nem tento.
-
 +   **I**ncerteza: Eu não sei se vai dar certo, será que vale a pena? 
-
 +   **A**rrogância: Eles não me pagam o suficiente para gastar tanta energia, não vou me sacrificar a toa.
 
 Pense nisso.
