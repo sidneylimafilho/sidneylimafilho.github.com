@@ -1,7 +1,7 @@
----
+﻿---
 layout:     post
 
-title:      'Os 4 cavaleiros da mediocridade'
+title:      'Os 5 cavaleiros da mediocridade'
 author:     Sidney Lima Filho
 image:      /post/os-4-cavaleiros-da-mediocridade/capa.jpg
 
