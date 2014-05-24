@@ -176,6 +176,10 @@ Para ter certeza que não estava tirando conclusões baseado em achismos, estude
 
 Para quem se interessar em entender em como cheguei a conclusão acima, vale a pena muito estudar os seguintes temas: [Teoria Geral dos Sistemas][TGS]{:target=_blank}, [Sistemas de Informação][SI]{:target=_blank}, [Entropia da informação][entropia]{:target=_blank}, [Teoria do Sistemas Complexos][complexsystem]{:target=_blank}, [Cynefin][cynefin]{:target=_blank}
 
+## Base não cientifica (para descontrair)
+
+Para descontrair, basta acessar o site [EstimaAi][EstimaAi]{:target=_blank} e simular seus futuros prazos e o do seu cliente também.
+
 
 
 [MA]:               http://agilemanifesto.org/
@@ -202,3 +206,4 @@ Para quem se interessar em entender em como cheguei a conclusão acima, vale a p
 [PutnamModel]:      http://en.wikipedia.org/wiki/Putnam_model
 [UCP]:              http://en.wikipedia.org/wiki/Use_Case_Points
 [APF]:              http://pt.wikipedia.org/wiki/An%C3%A1lise_de_pontos_de_fun%C3%A7%C3%A3o
+[EstimaAi]:         http://estimaai.com/
