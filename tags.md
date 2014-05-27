@@ -1,5 +1,8 @@
 ---
 author: Sidney Lima Filho
+title: Tags
+excerpt: 'Uma lista das tags e todos os artigos publicados no site.'
+categories: 'page tags'
 layout: default
 ---
 
