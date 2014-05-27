@@ -76,12 +76,14 @@
                     <li>
                         <a href="/quem-e-sidney.html" {%if page.categories contains 'quem-e-sidney'%}class="selected" {%endif%} title="Um pequeno resumo de quem eu sou e porque você deveria acompanhar essa história.">QUEM É SIDNEY</a>
                     </li>
+                    <!--
                     <li>
                         <a href="/life-list.html" {%if page.categories contains 'life-list'%}class="selected" {%endif%} title="Uma lista de coisas que acho imprescindível realizar antes de morrer.">LIFE LIST</a>
                     </li>
                     <li>
                         <a href="/52-semanas.html" {%if page.categories contains '52-Semanas'%}class="selected" {%endif%} title="Um evento por semana durante o ano inteiro">52 SEMANAS</a>
                     </li>
+                    -->
                     <li>
                         <a href="/palestras.html" {%if page.categories contains 'palestras'%}class="selected" {%endif%} title="Eventos em que participei palestrando.">PALESTRAS</a>
                     </li>
@@ -137,6 +139,13 @@
                         <a href='/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}' style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
                     </span>
                     {% endfor %}
+                    
+                    <span>
+                        <a href="/52-semanas.html">52 Semanas</a>
+                    </span>
+                     <span>
+                        <a href="/life-list.html">Life List</a>
+                    </span>
                 </div>
                 <p class="hosting">
                     <small>Este site possui todo seu conteúdo aberto e disponível em um
