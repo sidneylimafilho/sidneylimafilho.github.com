@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Processos, Cliente, Lean, Agilidade, Evolução Ágil, Planejamento, Execução, Excelência Técnica, Kaizen, Melhoria Continua, Kanban]
+tags:       [Processos, Cliente, Lean, Desenvolvimento Ágil, Transição Ágil, Planejamento, Execução, Excelência Técnica, Kaizen, Melhoria Continua, Kanban]
 ---
 
 <img src="capa.jpg" style="float:right; margin: 0px 0px 20px 20px;" />

@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Mediocridade, Gestão de Pessoas, Ambiente de Trabalho, Agilidade, Psicologia, Filosofia, Maturidade Profissional, Excelência Técnica]
+tags:       [Mediocridade, Gestão de Pessoas, Ambiente de Trabalho, Desenvolvimento Ágil, Psicologia, Filosofia, Maturidade Profissional, Excelência Técnica]
 ---
 
 **Mediocridade** é uma palavra vem do latim medium, do grego meso, significa estar entre 2 termos, atributo de quem é mediocre.

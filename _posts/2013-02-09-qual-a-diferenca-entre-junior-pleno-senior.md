@@ -10,7 +10,7 @@ excerpt:    >
 
 published:  true
 categories: post
-tags:       [Carreira, Agilidade, CLT, Filosofia, Psicologia]
+tags:       [Carreira, Desenvolvimento Ágil, CLT, Filosofia, Psicologia]
 ---
 
 
