@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 
 title:      'Estimativas de software: Quando fazer? e quando não fazer?'
