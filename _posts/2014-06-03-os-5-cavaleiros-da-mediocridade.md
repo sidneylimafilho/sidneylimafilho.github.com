@@ -23,13 +23,13 @@ O ponto é que ser ou não mediocre, ficar ou não na mediocridade, tem que ser 
 
 Ninguém nasce mediocre, porém a vida moderna é uma maquina de criar zonas de conforto, onde o que é confortável é valorizado, as pessoas trabalham e pagam cada vez mais caro pelo conforto, as pessoas cultuam empregos estáveis por criar uma noção mental de conforto, a zona de conforto é o terreno da mediocridade, onde as pessoas são ancoradas, sugadas, amarradas, incentivadas para permanecer naquele estado.
 
-<img src="peixe-no-aquario.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
-
 Largar a mediocridade requer ações que poucos estão dispostos a fazer e justamente por ser dificil poucos fazem.
 
 O tamanho da sua mediocridade é exatamente o tamanho de quanto você está feliz e confortável com a situação atual.
 
 Todo mundo acha que deveria ganhar o que merece, todo mundo acha que merece mais do que realmente vale.
+
+<img src="peixe-no-aquario.jpg"  style="float:right; margin: 0px 0px 20px 20px;" />
 
 Os 5 cavaleiros da mediocridade são aqueles que fazem você ficar na M.E.D.I.A:
 
