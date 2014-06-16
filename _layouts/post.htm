@@ -24,9 +24,8 @@ layout: default
         Eu já escrevi sobre esses assuntos 
   
         {% for tag in page.tags %}             
-            {% for post in site.tags[tag] %} 
-                
-                {% if post.published %}
+            {% for post in site.tags[tag] %}                
+                {% if post.published and post.title != page.title %}
                     <a href="{{ post.url }}" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
                     {% unless forloop.last %} e também {% endunless %}.
                 {% endif %} 
