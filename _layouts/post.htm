@@ -25,19 +25,19 @@ layout: default
                 {% if post.published and post.title != page.title and count < 3 %} 
                     
                     {% if count == 2 %} 
-                        e também outro <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                        {% assign count = 3 %} 
+                        e também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                        {% assign count = 3 %} que complementam os temas.
                     {% endif %} 
 
                     {% if count == 1 %} 
                         <h2>Você pode gostar também ...</h2> 
-                        Recentemente escrevi um post sobre este mesmo assunto com título <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>   
+                        Se você se interessa por estes assuntos, então você pode gostar também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>   
                         {% assign count = 2 %}                     
                     {% endif %}
 
                 {% endif %} 
 
-                {% if count == 2 %}
+                {% if count == 3 %}
                     <p>Espero que goste.</p>
                 {% endif %} 
             {% endfor %}             
