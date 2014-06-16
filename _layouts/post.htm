@@ -23,13 +23,15 @@ layout: default
         
         Eu já escrevi sobre esses assuntos 
   
+        {% assign count = 0 %}
         {% for tag in page.tags %}             
             {% for post in site.tags[tag] %}                
-                {% if post.published and post.title != page.title %}
+                {% if post.published and post.title != page.title and count != 2%}
+                    {% assign count = count + 1 %}
                     <a href="{{ post.url }}" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
-                    {% unless forloop.last %} e também {% endunless %}.
+                    {% if count != 2%} e também sobre {% endif %}             
                 {% endif %} 
-            {% endfor %} 
+            {% endfor %}             
         {% endfor %} 
 
     </div>
