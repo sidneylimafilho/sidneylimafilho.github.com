@@ -23,6 +23,7 @@ layout: default
         
         Eu já escrevi sobre esses assuntos 
         {% capture tagsAsString %}{% for tag in page.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
+         {{ tagsAsString }}
         {% assign tags = tagsAsString | split:"," | sort %}    
         {% for tag in tags %} 
             {{ tag }}
