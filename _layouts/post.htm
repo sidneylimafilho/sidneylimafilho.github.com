@@ -25,10 +25,10 @@ layout: default
         {% capture tagsAsString %}{% for tag in page.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
         {% assign tags = tagsAsString | split:"," | sort %}    
         {% for tag in tags %} 
-            {% for post in site.tags[tag] limit:2 %} 
+            {% for post in site.tags[tag] %} 
                 {% if post.published %}
                     <a href="{{ post.url }}" rel="previous" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
-                    {% unless forloop.first %} e também {% endunless %} 
+                    {% unless forloop.last %} e também {% endunless %} 
                     .
                 {% endif %} 
             {% endfor %} 
@@ -36,34 +36,36 @@ layout: default
 
     </div>
    
+   <div class="nav-next-prev">
+        
+        <!-- <h2>Outros artigos interessantes ...</h2>
+        <div class="previous">
+            {% if page.previous.url %}
+            <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+            &laquo;&nbsp;
+            {% endif %}
+        </div>
+        <div class="next">
+            {% if page.next.url %}
+            &nbsp;&raquo;
+            <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
+            {% endif %}
+        </div> -->
+
+        <div class="tags">
+            {% if page.tags %} 
+            Conheça artigos com os mesmos assuntos deste:  {% for tag in page.tags %} <strong><a href="/tags.html#{{ tag | downcase | replace:" ","-" | replace:".","" }}">{{ tag }}</a></strong> 
+            {% unless forloop.last %}, {% endunless %} 
+            {% endfor %} 
+            {% endif %}
+        </div>
+    </div>
 
     <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6890667'></div>
 
 </article>
 
-<div class="nav-next-prev">
-    <h2>Outros artigos interessantes ...</h2>
-    <div class="previous">
-        {% if page.previous.url %}
-        <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
-        &laquo;&nbsp;
-        {% endif %}
-    </div>
-    <div class="next">
-        {% if page.next.url %}
-        &nbsp;&raquo;
-        <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
-        {% endif %}
-    </div>
 
-    <div class="tags">
-        {% if page.tags %} 
-        Conheça artigos com os mesmos assuntos deste:  {% for tag in page.tags %} <strong><a href="/tags.html#{{ tag | downcase | replace:" ","-" | replace:".","" }}">{{ tag }}</a></strong> 
-        {% unless forloop.last %}, {% endunless %} 
-        {% endfor %} 
-        {% endif %}
-    </div>
-</div>
 
 
 {% unless page.no_comments %}
