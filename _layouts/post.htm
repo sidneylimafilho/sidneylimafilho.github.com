@@ -26,6 +26,7 @@ layout: default
                     
                     {% if count = 2 %} 
                         e também outro <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                        {% assign count = 3 %} 
                     {% endif %} 
 
                     {% if count = 1 %} 
