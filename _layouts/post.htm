@@ -22,23 +22,25 @@ layout: default
         {% assign count = 1 %}
         {% for tag in page.tags %}             
             {% for post in site.tags[tag] %}                
-                {% if post.published and post.title != page.title and count < 3 %} 
-                    
-                    {% if count == 2 %} 
-                        e também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                        {% assign count = 3 %} que complementam os temas.
-                    {% endif %} 
+                {% if post.published and post.title != page.title and count != 3 %} 
+                                        
 
                     {% if count == 1 %} 
                         <h2>Você pode gostar também ...</h2> 
-                        Se você se interessa por estes assuntos, então você pode gostar também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>   
-                        {% assign count = 2 %}                     
+                        Se você se interessa por estes assuntos, então você pode gostar também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>                                            
                     {% endif %}
+
+                    {% if count == 2 %} 
+                        e também do post <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> que complementam os temas.
+                    {% endif %} 
+
+                    {% assign count = count + 1 %}  
 
                 {% endif %} 
 
                 {% if count == 3 %}
                     <p>Espero que goste.</p>
+                    {% assign count = count + 1 %} 
                 {% endif %} 
             {% endfor %}             
         {% endfor %} 
