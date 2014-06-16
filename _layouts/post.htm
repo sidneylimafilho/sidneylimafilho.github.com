@@ -25,7 +25,9 @@ layout: default
         {% capture tagsAsString %}{% for tag in page.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
         {% assign tags = tagsAsString | split:"," | sort %}    
         {% for tag in tags %} 
+            {{ tag }}
             {% for post in site.tags[tag] %} 
+                {{ post.title  }}
                 {% if post.published %}
                     <a href="{{ post.url }}" rel="previous" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
                     {% unless forloop.last %} e também {% endunless %} 
