@@ -22,7 +22,7 @@ layout: default
         {% assign count = 1 %}
         {% for tag in page.tags %}             
             {% for post in site.tags[tag] %}                
-                {% if post.published and post.title != page.title and count != 3 %} 
+                {% if post.published and post.title != page.title and count < 3 %} 
                                         
 
                     {% if count == 1 %} 
