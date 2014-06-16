@@ -59,6 +59,30 @@
     ga('send', 'pageview');
     </script>
 
+    <!-- Shareholic -->
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+        var shr = document.createElement('script');
+        shr.setAttribute('data-cfasync', 'false');
+        shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+        shr.type = 'text/javascript';
+        shr.async = 'true';
+        shr.onload = shr.onreadystatechange = function() {
+            var rs = this.readyState;
+            if (rs && rs != 'complete' && rs != 'loaded') return;
+            var site_id = '2b66555c24216556df1f069ef5d4e19c';
+            try {
+                Shareaholic.init(site_id);
+            } catch (e) {}
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(shr, s);
+    })();
+    //]]>
+    </script>
+
+
 </head>
 
 <body>
@@ -139,11 +163,11 @@
                         <a href='/tags.html#{{tag | downcase | replace:" ","-" | replace:".","" }}' style="font-size:{{site.tags[tag] | size | minus:1 | times:20 | plus:80}}%">{{tag}} ({{site.tags[tag] | size}})</a>
                     </span>
                     {% endfor %}
-                    
+
                     <span>
                         <a href="/52-semanas.html">52 Semanas</a>
                     </span>
-                     <span>
+                    <span>
                         <a href="/life-list.html">Life List</a>
                     </span>
                 </div>
@@ -177,8 +201,8 @@ $banner.css({
 });
 </script>
 
-<!-- Share buttons in posts  -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script>
+<!-- Share buttons in posts  
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=undefined"></script>-->
 
 
 
