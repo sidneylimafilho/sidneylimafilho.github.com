@@ -22,17 +22,13 @@ layout: default
         <h2>Você pode gostar também ...</h2>
         
         Eu já escrevi sobre esses assuntos 
-        {% capture tagsAsString %}{% for tag in page.tags %}{{ tag | first }},{% endfor %}{% endcapture %}
-         {{ tagsAsString }}
-        {% assign tags = tagsAsString | split:"," | sort %}    
-        {% for tag in tags %} 
-            {{ tag }}
+  
+        {% for tag in page.tags %}             
             {% for post in site.tags[tag] %} 
-                {{ post.title  }}
+                
                 {% if post.published %}
-                    <a href="{{ post.url }}" rel="previous" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
-                    {% unless forloop.last %} e também {% endunless %} 
-                    .
+                    <a href="{{ post.url }}" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
+                    {% unless forloop.last %} e também {% endunless %}.
                 {% endif %} 
             {% endfor %} 
         {% endfor %} 
