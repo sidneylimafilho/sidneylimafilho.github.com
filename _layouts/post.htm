@@ -19,20 +19,33 @@ layout: default
 
         {{ content }}
 
-        <h2>Você pode gostar também ...</h2>
         
-        Eu já escrevi sobre esses assuntos 
+        
+         
   
         {% assign count = 0 %}
         {% for tag in page.tags %}             
             {% for post in site.tags[tag] %}                
-                {% if post.published and post.title != page.title and count != 2%}
+                {% if post.published and post.title != page.title and count != 2%} 
+
+                    {% if count = 0%} 
+                        <h2>Você pode gostar também ...</h2> 
+                        Recentemente escrevi um post sobre este mesmo assunto com título <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                    {% endif %}
+                     
+                    {% if count = 1%} 
+                        e também outro <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                    {% endif %}  
+
                     {% assign count = count + 1 %}
-                    <a href="{{ post.url }}" title="{{ post.title }}">aqui</a> onde escrevo sobre "{{ post.excerpt }}"
-                    {% if count != 2%} e também sobre {% endif %}             
+                {% endif %} 
+
+                {% if count = 2%}
+                    <p>Espero que goste.</p>
                 {% endif %} 
             {% endfor %}             
         {% endfor %} 
+
 
     </div>
    
