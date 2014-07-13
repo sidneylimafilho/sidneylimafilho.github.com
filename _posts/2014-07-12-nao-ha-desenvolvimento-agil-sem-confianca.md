@@ -31,11 +31,15 @@ O desenvolvimento para ser ágil precisa de uma gestão ágil em paralelo.
 
 O desenvolvimento ágil, sem uma gestão ágil, cria uma camada superficial de alto desempenho que não sustenta a operação por longos períodos.
 
+A gestão ágil, sem um desenvolvimento ágil, implantará uma adoção fragil que não suportará a primeira onda de pressão.
+
 Gestão é o ato de administrar. Administrar é planejar, organizar, dirigir e controlar.
 
 Confiar vem de co-fiar, fiar junto, fiar é acreditar, ter fé. Confiar é acreditar junto. 
 
-A gestão ágil também precisa de planejamento, organização, direção e controle, porém o caminho para desempenhar esses papéis é outro. Ao invés de centralizar os papeis, busca descentralizar a gestão, delegar, proporciona o amadurecimento assistido através de coaching, acredita junto com as pessoas que elas podem fazer o trabalho e entregar o resultado. Confiam.
+A gestão ágil também precisa de planejamento, organização, direção e controle, porém o caminho para desempenhar esses papéis é outro. Ao invés de centralizar os papeis, busca descentralizar a gestão, delegar, proporciona o amadurecimento assistido através de coaching, acredita junto com as pessoas que elas podem fazer o trabalho e entregar o resultado. 
+
+**Confiam.**
 
 A gestão de um projeto requer muito controle e responsabilidade para que fique na mão de um só. A equipe precisa contribuir e se auto-gerir, mas isso só vem com confiança.
 
@@ -43,7 +47,7 @@ A mudança de status-quo na gestão centralizada, hierárquica, submissa requer 
 
 ## A confiança nos outros setores
 
-Empresas de diversos setores que não conhecem o desenvolvimento ágil estão se tornando cada vez mais ágeis por adotar os mesmos princípios, que são vários, mas a base é a confiança.
+Empresas de diversos setores, que não conhecem o desenvolvimento ágil, estão se tornando cada vez mais ágeis por adotar os mesmos princípios, que são vários, mas a base é a confiança.
 
 A Morning Star uma fabricante de derivados de tomate está, cada vez mais, sendo reconhecida como modelo em gestão por adotar esses princípios. 
 
@@ -53,11 +57,11 @@ A habilidade de construir confiança será um talento cada vez mais admirado num
 
 ## E quando ainda sim não confia? 
 
-Confiança é uma ferramenta delicada, frágil e não pode ser usada de forma displicente, isso significa que uma vez a empresa opta por confiar então se torna imperativo que a equipe a mantenha firme.
+Confiança é um atributo delicado, frágil e não pode ser usado de forma displicente, isso significa que uma vez a empresa opta por confiar, então se torna imperativo que a equipe honre.
 
-O caminho deve ser sem volta, então quando um colaborador ou uma equipe não sustenta a confiança, a empresa deve dispensar todos os não-confiáveis. Isso mesmo TODOS, doa o que doer.
+O caminho deve ser sem volta, então quando um colaborador ou uma equipe não sustenta a confiança, a empresa deve dispensar todos os não-confiáveis. Isso mesmo TODOS OS NÃO-CONFIÁVEIS, doa o que doer.
 
 O mais comum das tentativas frustradas de implantação de desenvolvimento ágil numa empresa é quando um colaborador ou um time perde a confiança a empresa, que ao invés de cortar na própria carne, os mantém e retorna ao estilo anterior de gestão. Comandando e controlando na base da pressão, no estilo Pavlov.
 
-**A confiança tem que ser o alicerce.**
+**A confiança é o valor principal e inviolável de um time ágil.**
 
