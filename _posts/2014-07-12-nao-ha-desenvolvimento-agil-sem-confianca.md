@@ -1,14 +1,14 @@
 ---
 layout:     post
 
-title:      'A confiança é a base do desenvolvimento ágil'
+title:      'Não há desenvolvimento ágil sem confiança'
 author:     Sidney Lima Filho
-image:      /post/folder/capa.jpg
+image:      /post/capa.jpg
 
 excerpt:    > 
             O desenvolvimento ágil é uma forma de desenvolver software que valoriza mais o relacionamento humano, com intuito de permitir a adaptação e evolução constante de um software, do que os artefatos, cerimônias, processos e longos planejamentos. 
 
-published:  false
+published:  true
 categories: post
 tags:       [Confiança, Desenvolvimento Ágil]
 ---
@@ -17,7 +17,7 @@ tags:       [Confiança, Desenvolvimento Ágil]
 
 O desenvolvimento ágil é uma forma de desenvolver software que valoriza mais o relacionamento humano, do que os artefatos, cerimônias, processos e longos planejamentos.
 
-Se os projetos não precisam de mudanças, não serão evoluídos, tampouco precisa de adaptabilidade, então o desenvolvimento ágil não possui grande valor, porém este cenário é bastante raro.
+Se os projetos não precisam de mudanças, não serão evoluídos, tampouco precisa de adaptabilidade, então o desenvolvimento ágil não possui grande valor, mas este cenário é bastante raro.
 
 Fatos conhecidos por todos, mesmo que sempre esquecidos:
 
